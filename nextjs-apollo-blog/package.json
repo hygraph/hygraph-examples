@@ -1,0 +1,33 @@
+{
+  "name": "nextjs-apollo-blog",
+  "version": "1.0.0",
+  "description": "GraphCMS skeleton using Apollo Client and Next.js",
+  "repository": "https://github.com/hmeissner/graphcms-templates",
+  "author": "Hugo Meissner <hugomeissner@icloud.com>",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "standard"
+  },
+  "dependencies": {
+    "apollo-client-preset": "^1.0.3",
+    "graphql": "^0.11.7",
+    "graphql-anywhere": "^4.0.1",
+    "graphql-tag": "^2.5.0",
+    "isomorphic-unfetch": "^2.0.0",
+    "next": "^4.1.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1",
+    "react-apollo": "^2.0.1",
+    "react-dom": "^16.1.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "standard": "^10.0.3"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
