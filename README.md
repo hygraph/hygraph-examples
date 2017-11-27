@@ -1,2 +1,2 @@
-# graphcms-templates
-Templates for GraphCMS projects.
+# GraphCMS Examples
+Example projects to help you get started with GraphCMS.
