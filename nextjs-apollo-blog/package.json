@@ -6,13 +6,14 @@
   "author": "Hugo Meissner <hugomeissner@icloud.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "standard"
   },
   "dependencies": {
     "apollo-client-preset": "^1.0.3",
+    "express": "^4.16.2",
     "graphql": "^0.11.7",
     "graphql-anywhere": "^4.0.1",
     "graphql-tag": "^2.5.0",

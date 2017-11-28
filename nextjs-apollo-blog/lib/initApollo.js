@@ -3,7 +3,7 @@ import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import fetch from 'isomorphic-unfetch'
 
-const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/skeletonBlog'
+const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/starterBlog'
 let apolloClient = null
 
 // Polyfill fetch() on the server (used by apollo-client)

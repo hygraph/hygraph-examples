@@ -1,18 +1,29 @@
+import Head from 'next/head'
 import Header from './Header'
 
-export default ({ children, pathname }) => (
-  <main>
+const App = ({ children, pathname }) => [
+  <Head key='next-head'>
+    <meta name='viewport' content='initial-scale=1.0, width=device-width' key='viewport' />
+  </Head>,
+
+  <div key='app'>
     <Header pathname={pathname} />
-    {children}
+    <main>
+      {children}
+    </main>
     <style jsx global>{`
       * {
         font-family: 'Source Sans Pro', sans-serif;
       }
       body {
         margin: 0;
-        padding: 32px 64px;
         font-size: 16px;
         line-height: 1.5;
+      }
+      main {
+        max-width: 650px;
+        margin: 32px auto;
+        padding: 0 24px;
       }
       a {
         color: deepskyblue;
@@ -23,5 +34,7 @@ export default ({ children, pathname }) => (
         max-width: 650px;
       }
     `}</style>
-  </main>
-)
+  </div>
+]
+
+export default App

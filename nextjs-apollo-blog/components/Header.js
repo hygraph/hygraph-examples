@@ -1,28 +1,43 @@
 import Link from 'next/link'
 
-export default ({ pathname }) => (
+const Header = ({ pathname }) => (
   <header>
-    <Link prefetch href='/'>
-      <a className={pathname === '/' && 'is-active'}>
-        Home
-      </a>
-    </Link>
-    <Link prefetch href='/about'>
-      <a className={pathname === '/about' && 'is-active'}>
-        About
-      </a>
-    </Link>
+    <h1>GraphCMS's Starter blog</h1>
+    <nav>
+      <Link prefetch href='/'>
+        <a className={pathname === '/' && 'is-active'}>
+          Home
+        </a>
+      </Link>
+      <Link prefetch href='/about'>
+        <a className={pathname === '/about' && 'is-active'}>
+          About
+        </a>
+      </Link>
+    </nav>
     <style jsx>{`
       header {
-        margin-bottom: 24px;
+        padding: 24px 32px;
+        margin-bottom: 32px;
+        text-align: center;
+      }
+      h1 {
+        font-weight: 100;
+      }
+      nav {
+        max-width: 650px;
+        margin: 0 auto;
       }
       a {
         font-size: 18px;
         margin-right: 16px;
       }
       .is-active {
-        color: midnightblue;
+        font-weight: bold;
+        text-decoration: underline;
       }
     `}</style>
   </header>
 )
+
+export default Header

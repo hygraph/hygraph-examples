@@ -1,8 +1,11 @@
 import withData from '../lib/withData'
 import App from '../components/App'
+import PostList from '../components/PostList'
 
-export default withData(props => (
+const IndexPage = withData(props => (
   <App pathname={props.url.pathname}>
-    <h1>I'm an Index page!</h1>
+    <PostList />
   </App>
 ))
+
+export default IndexPage
