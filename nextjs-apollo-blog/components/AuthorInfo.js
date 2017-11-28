@@ -29,7 +29,7 @@ const AuthorInfo = ({ data: { loading, error, author } }) => {
 
 export const aboutAuthor = gql`
   query aboutAuthor($authorId: ID!) {
-    author: allAuthors(id: $authorId) {
+    author: Author(id: $authorId) {
       name
       bibliography
       avatar {
