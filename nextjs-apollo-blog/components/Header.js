@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const Header = ({ pathname }) => (
   <header>
-    <h1>GraphCMS's Starter blog</h1>
+    <h1>GraphCMS Starter blog</h1>
     <nav>
       <Link prefetch href='/'>
         <a className={pathname === '/' && 'is-active'}>

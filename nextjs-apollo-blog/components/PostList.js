@@ -39,6 +39,8 @@ const PostList = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMoreP
             align-items: center;
             margin-bottom: 16px;
             border: 1px solid #eee;
+            overflow: hidden;
+            border-radius: 5px;
           }
           a {
             display: flex;
