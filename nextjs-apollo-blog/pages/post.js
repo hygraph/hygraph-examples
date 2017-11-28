@@ -1,10 +1,10 @@
 import withData from '../lib/withData'
 import App from '../components/App'
-import PostContent from '../components/PostContent'
+import Post from '../components/Post'
 
 const AboutPage = withData(props => (
   <App pathname={props.url.pathname}>
-    <PostContent slug={props.url.query.slug} />
+    <Post slug={props.url.query.slug} />
   </App>
 ))
 

@@ -2,16 +2,18 @@ import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import ErrorMessage from '../components/ErrorMessage'
 
-const AuthorInfo = ({ data: { loading, error, author } }) => {
+const AuthorInfo = ({ data: { loading, error, allAuthors } }) => {
   if (error) return <ErrorMessage message='Error loading author.' />
   if (!loading) {
     return (
       <div>
-        <div className='info-header'>
-          <img src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${author.avatar.handle}`} />
-          <h1>Hello! My name is {author.name}</h1>
-        </div>
-        <p>{author.bibliography}</p>
+        {allAuthors.map(author => [
+          <div key='h' className='info-header'>
+            <img src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${author.avatar.handle}`} />
+            <h1>Hello! My name is {author.name}</h1>
+          </div>,
+          <p key='p'>{author.bibliography}</p>
+        ])}
         <style jsx>{`
           .info-header {
             text-align: center;
@@ -27,9 +29,9 @@ const AuthorInfo = ({ data: { loading, error, author } }) => {
   return <h2>Loading author...</h2>
 }
 
-export const aboutAuthor = gql`
-  query aboutAuthor($authorId: ID!) {
-    author: Author(id: $authorId) {
+export const allAuthors = gql`
+  query allAuthors {
+    allAuthors {
       name
       bibliography
       avatar {
@@ -39,6 +41,4 @@ export const aboutAuthor = gql`
   }
 `
 
-export default graphql(aboutAuthor, {
-  options: ({ authorId }) => ({ variables: { authorId } })
-})(AuthorInfo)
+export default graphql(allAuthors)(AuthorInfo)

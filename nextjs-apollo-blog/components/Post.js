@@ -10,7 +10,10 @@ const PostContent = ({ data: { loading, error, post } }) => {
       <article>
         <h1>{post.title}</h1>
         <div className='placeholder'>
-          <img src={`https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.coverImage.handle}`} />
+          <img
+            alt={post.title}
+            src={`https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.coverImage.handle}`}
+          />
         </div>
         <Markdown
           source={post.content}

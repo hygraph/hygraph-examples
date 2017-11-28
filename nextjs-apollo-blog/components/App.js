@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Header from './Header'
 
 const App = ({ children, pathname }) => (
