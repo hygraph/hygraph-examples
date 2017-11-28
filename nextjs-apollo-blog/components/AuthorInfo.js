@@ -1,6 +1,5 @@
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
-import App from '../components/App'
 import ErrorMessage from '../components/ErrorMessage'
 
 const AuthorInfo = ({ data: { loading, error, author } }) => {
@@ -29,8 +28,8 @@ const AuthorInfo = ({ data: { loading, error, author } }) => {
 }
 
 export const aboutAuthor = gql`
-  query aboutAuthor {
-    author: Author(id: "cjajfxawnh2i10112hbcn9hqv") {
+  query aboutAuthor($authorId: ID!) {
+    author: allAuthors(id: $authorId) {
       name
       bibliography
       avatar {
@@ -40,4 +39,6 @@ export const aboutAuthor = gql`
   }
 `
 
-export default graphql(aboutAuthor)(AuthorInfo)
+export default graphql(aboutAuthor, {
+  options: ({ authorId }) => ({ variables: { authorId } })
+})(AuthorInfo)

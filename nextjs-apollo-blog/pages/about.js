@@ -4,7 +4,7 @@ import AuthorInfo from '../components/AuthorInfo'
 
 const AboutPage = withData(props => (
   <App pathname={props.url.pathname}>
-    <AuthorInfo />
+    <AuthorInfo authorId='cjajfxawnh2i10112hbcn9hqv' />
   </App>
 ))
 
