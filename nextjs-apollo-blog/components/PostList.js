@@ -17,7 +17,10 @@ const PostList = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMoreP
               <Link prefetch href={`/post?slug=${post.slug}`} as={`/post/${post.slug}`}>
                 <a>
                   <div className='placeholder'>
-                    <img src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`} />
+                    <img
+                      alt={post.title}
+                      src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`}
+                    />
                   </div>
                   <h3>{post.title}</h3>
                 </a>
@@ -27,7 +30,9 @@ const PostList = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMoreP
         </ul>
         <div className='show-more-wrapper'>
           {areMorePosts
-            ? <button onClick={() => loadMorePosts()}>{loading ? 'Loading...' : 'Show More Posts'}</button>
+            ? <button onClick={() => loadMorePosts()}>
+              {loading ? 'Loading...' : 'Show More Posts'}
+            </button>
             : ''}
         </div>
         <style jsx>{`
@@ -40,7 +45,7 @@ const PostList = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMoreP
             margin-bottom: 16px;
             border: 1px solid #eee;
             overflow: hidden;
-            border-radius: 5px;
+            border-radius: 5px;
           }
           a {
             display: flex;
@@ -57,9 +62,6 @@ const PostList = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMoreP
           img {
             display: block;
             height: 100%;
-          }
-          h2 {
-            margin-bottom: 8px;
           }
           .show-more-wrapper {
             display: flex;

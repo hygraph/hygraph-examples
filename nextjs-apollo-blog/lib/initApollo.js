@@ -3,6 +3,7 @@ import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import fetch from 'isomorphic-unfetch'
 
+// Replace this with your project's endpoint
 const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/starterBlog'
 let apolloClient = null
 
@@ -13,10 +14,9 @@ if (!process.browser) {
 
 function create (initialState) {
   return new ApolloClient({
-    connectToDevTools: process.browser,
     ssrMode: !process.browser, // Disables forceFetch on the server (so queries are only run once)
     link: new HttpLink({
-      uri: GRAPHCMS_API, // Server URL (must be absolute)
+      uri: GRAPHCMS_API,
       credentials: 'same-origin' // Additional fetch() options like `credentials` or `headers`
     }),
     cache: new InMemoryCache().restore(initialState || {})

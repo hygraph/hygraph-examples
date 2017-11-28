@@ -249,16 +249,6 @@ apollo-cache@^1.0.1:
   dependencies:
     apollo-utilities "^1.0.2"
 
-apollo-client-preset@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/apollo-client-preset/-/apollo-client-preset-1.0.3.tgz#e1f5d2d34115806c5021ae17cd09a88f61f623f5"
-  dependencies:
-    apollo-cache-inmemory "^1.1.1"
-    apollo-client "^2.0.3"
-    apollo-link "1.0.0"
-    apollo-link-http "1.1.0"
-    graphql-tag "^2.4.2"
-
 apollo-client@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.0.3.tgz#f99f32e2c851bbd52da1e1b113ce8f6a0cf94945"
@@ -277,16 +267,9 @@ apollo-link-dedup@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/apollo-link-dedup/-/apollo-link-dedup-1.0.2.tgz#bab659dde41f8dd627839142d4dad90e55251110"
 
-apollo-link-http@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/apollo-link-http/-/apollo-link-http-1.1.0.tgz#a85cc43d9a5286bb54ac32213f7a16bef3554ae4"
-
-apollo-link@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/apollo-link/-/apollo-link-1.0.0.tgz#3d334285789c217f95712ebce434d56ce7f3e991"
-  dependencies:
-    apollo-utilities "^0.2.0-beta.0"
-    zen-observable "^0.6.0"
+apollo-link-http@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/apollo-link-http/-/apollo-link-http-1.2.0.tgz#48464c2ebfa6474f7a89908696827d66b2deb5cc"
 
 apollo-link@^1.0.0:
   version "1.0.3"
@@ -295,10 +278,6 @@ apollo-link@^1.0.0:
     "@types/zen-observable" "0.5.3"
     apollo-utilities "^1.0.0"
     zen-observable "^0.6.0"
-
-apollo-utilities@^0.2.0-beta.0:
-  version "0.2.0-rc.3"
-  resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-0.2.0-rc.3.tgz#7bd93be0f587f20c5b46e21880272e305759fdc2"
 
 apollo-utilities@^1.0.0, apollo-utilities@^1.0.2:
   version "1.0.2"
@@ -2660,7 +2639,7 @@ graphql-anywhere@^4.0.1:
   dependencies:
     apollo-utilities "^1.0.2"
 
-graphql-tag@^2.4.2, graphql-tag@^2.5.0:
+graphql-tag@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.5.0.tgz#b43bfd8b5babcd2c205ad680c03e98b238934e0f"
 
