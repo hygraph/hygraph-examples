@@ -5,19 +5,21 @@ import ErrorMessage from './ErrorMessage'
 
 const POSTS_PER_PAGE = 2
 
-const PostList = ({ data: { loading, error, allBlogPosts, _allBlogPostsMeta }, loadMorePosts }) => {
+const PostList = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts }) => {
   if (error) return <ErrorMessage message='Error loading posts.' />
   if (!loading) {
-    const areMorePosts = allBlogPosts.length < _allBlogPostsMeta.count
+    const areMorePosts = allPosts.length < _allPostsMeta.count
     return (
       <section>
         <ul>
-          {allBlogPosts.map(post => (
+          {allPosts.map(post => (
             <li key={`post-${post.id}`}>
-              <Link prefetch href={`/post?slug=${post.postSlug}`} as={`/post/${post.postSlug}`}>
+              <Link prefetch href={`/post?slug=${post.slug}`} as={`/post/${post.slug}`}>
                 <a>
-                  <img src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.postImage.handle}`} />
-                  <h3>{post.postTitle}</h3>
+                  <div className='placeholder'>
+                    <img src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`} />
+                  </div>
+                  <h3>{post.title}</h3>
                 </a>
               </Link>
             </li>
@@ -45,11 +47,14 @@ const PostList = ({ data: { loading, error, allBlogPosts, _allBlogPostsMeta }, l
           a:hover {
             box-shadow: 1px 1px 5px #999;
           }
-          img {
-            height: 100px;
-            width: auto;
-            border: 1px solid #eee;
+          .placeholder {
+            background-color: #eee;
+            min-width: 100px;
             margin-right: 24px;
+          }
+          img {
+            display: block;
+            height: 100%;
           }
           h2 {
             margin-bottom: 8px;
@@ -77,38 +82,38 @@ const PostList = ({ data: { loading, error, allBlogPosts, _allBlogPostsMeta }, l
   return <h2>Loading posts...</h2>
 }
 
-export const allBlogPosts = gql`
-  query allBlogPosts($first: Int!, $skip: Int!) {
-    allBlogPosts(orderBy: postDateAndTime_DESC, first: $first, skip: $skip) {
+export const allPosts = gql`
+  query allPosts($first: Int!, $skip: Int!) {
+    allPosts(orderBy: dateAndTime_DESC, first: $first, skip: $skip) {
       id
-      postSlug
-      postTitle
-      postDateAndTime
-      postImage {
+      slug
+      title
+      dateAndTime
+      coverImage {
         handle
       }
     },
-    _allBlogPostsMeta {
+    _allPostsMeta {
       count
     }
   }
 `
 
-export const allBlogPostsQueryVars = {
+export const allPostsQueryVars = {
   skip: 0,
   first: POSTS_PER_PAGE
 }
 
-export default graphql(allBlogPosts, {
+export default graphql(allPosts, {
   options: {
-    variables: allBlogPostsQueryVars
+    variables: allPostsQueryVars
   },
   props: ({ data }) => ({
     data,
     loadMorePosts: () => {
       return data.fetchMore({
         variables: {
-          skip: data.allBlogPosts.length
+          skip: data.allPosts.length
         },
         updateQuery: (previousResult, { fetchMoreResult }) => {
           if (!fetchMoreResult) {
@@ -116,7 +121,7 @@ export default graphql(allBlogPosts, {
           }
           return Object.assign({}, previousResult, {
             // Append the new posts results to the old one
-            allBlogPosts: [...previousResult.allBlogPosts, ...fetchMoreResult.allBlogPosts]
+            allPosts: [...previousResult.allPosts, ...fetchMoreResult.allPosts]
           })
         }
       })
