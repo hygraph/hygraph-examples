@@ -1,7 +1,7 @@
 {
   "name": "nextjs-apollo-blog",
   "version": "1.0.0",
-  "description": "GraphCMS skeleton using Apollo Client and Next.js",
+  "description": "GraphCMS Blog starter using Apollo Client and Next.js",
   "repository": "https://github.com/hmeissner/graphcms-templates",
   "author": "Hugo Meissner <hugomeissner@icloud.com>",
   "license": "MIT",
