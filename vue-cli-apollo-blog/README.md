@@ -1,4 +1,4 @@
-# vue-apollo-blog
+# VueCLI + Apollo blog example
 
 > GraphCMS Blog starter using Apollo Client and Vue.js
 
