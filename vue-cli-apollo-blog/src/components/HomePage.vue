@@ -59,7 +59,6 @@
     },
     methods: {
       loadMorePosts () {
-        console.log(this)
         this.$apollo.queries.allPosts.fetchMore({
           variables: {
             skip: this.allPosts.length
