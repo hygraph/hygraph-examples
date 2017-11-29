@@ -15,10 +15,7 @@ if (!process.browser) {
 function create (initialState) {
   return new ApolloClient({
     ssrMode: !process.browser, // Disables forceFetch on the server (so queries are only run once)
-    link: new HttpLink({
-      uri: GRAPHCMS_API,
-      credentials: 'same-origin' // Additional fetch() options like `credentials` or `headers`
-    }),
+    link: new HttpLink({ uri: GRAPHCMS_API }),
     cache: new InMemoryCache().restore(initialState || {})
   })
 }
