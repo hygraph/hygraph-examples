@@ -1,58 +1,124 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        nuxt-apollo-blog
-      </h1>
-      <h2 class="subtitle">
-        GraphCMS Blog starter using Apollo Client and Nuxt.js
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div>
-    </div>
+  <h2 v-if="loading > 0">
+    Loading...
+  </h2>
+  <section v-else>
+    <ul>
+      <li v-for="post in allPosts" :key="post.id">
+        <router-link :to="`/post/${post.slug}`" class="link">
+          <div class="placeholder">
+            <img
+              :alt="post.title"
+              :src="`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`"
+            />
+          </div>
+          <h3>{{post.title}}</h3>
+        </router-link>
+      </li>
+    </ul>
+    <button v-if="_allPostsMeta.count > allPosts.length" @click="loadMorePosts">
+      {{loading ? 'Loading...' : 'Show more'}}
+    </button>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+  import gql from 'graphql-tag'
 
-export default {
-  components: {
-    Logo
+  const POSTS_PER_PAGE = 2
+
+  const allPosts = gql`
+    query allPosts($first: Int!, $skip: Int!) {
+      allPosts(orderBy: dateAndTime_DESC, first: $first, skip: $skip) {
+        id
+        slug
+        title
+        dateAndTime
+        coverImage {
+          handle
+        }
+      }
+    }
+  `
+
+  export default {
+    name: 'HomePage',
+    data: () => ({
+      loading: 0
+    }),
+    apollo: {
+      $loadingKey: 'loading',
+      allPosts: {
+        query: allPosts,
+        variables: {
+          skip: 0,
+          first: POSTS_PER_PAGE
+        }
+      },
+      _allPostsMeta: gql`{ _allPostsMeta { count } }`
+    },
+    methods: {
+      loadMorePosts () {
+        this.$apollo.queries.allPosts.fetchMore({
+          variables: {
+            skip: this.allPosts.length
+          },
+          updateQuery: (previousResult, { fetchMoreResult }) => {
+            if (!fetchMoreResult) {
+              return previousResult
+            }
+            return Object.assign({}, previousResult, {
+              allPosts: [...previousResult.allPosts, ...fetchMoreResult.allPosts]
+            })
+          }
+        })
+      }
+    }
   }
-}
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+<style scoped>
+  ul {
+    padding: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .link {
+    display: flex;
+    color: #000;
+  }
+  .link:hover {
+    box-shadow: 1px 1px 5px #999;
+  }
+  .placeholder {
+    background-color: #eee;
+    min-width: 100px;
+    margin-right: 24px;
+  }
+  img {
+    display: block;
+    height: 100%;
+  }
+  .show-more-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px 24px;
+    background: deepskyblue;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+  }
 </style>

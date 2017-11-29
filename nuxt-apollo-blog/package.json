@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "GraphCMS Blog starter using Apollo Client and Nuxt.js",
   "author": "hmeissner <hugomeissner@icloud.com>",
-  "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -13,7 +13,14 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0-rc11"
+    "@nuxtjs/apollo": "^3.0.0",
+    "apollo-cache-inmemory": "^1.1.1",
+    "apollo-link": "^1.0.3",
+    "apollo-link-http": "^1.2.0",
+    "graphql": "^0.11.7",
+    "graphql-tag": "^2.5.0",
+    "nuxt": "^1.0.0-rc11",
+    "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
