@@ -1,7 +1,8 @@
+import { Fragment } from 'react'
 import Header from './Header'
 
 const App = ({ children, pathname }) => (
-  <div id='app'>
+  <Fragment>
     <Header pathname={pathname} />
     <main>
       {children}
@@ -27,7 +28,7 @@ const App = ({ children, pathname }) => (
         max-width: 650px;
       }
     `}</style>
-  </div>
+  </Fragment>
 )
 
 export default App
