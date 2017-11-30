@@ -1,7 +1,5 @@
 # VueCLI + Apollo blog example
 
-### Project bootstrapped with `webpack` template.
-
 ## Build Setup
 
 ``` bash
