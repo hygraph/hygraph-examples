@@ -2,18 +2,18 @@ import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Header from './Header'
-import HomePage from './HomePage'
-import AboutPage from './AboutPage'
-import PostPage from './PostPage'
+import Home from './Home'
+import About from './About'
+import Post from './Post'
 
 const App = () => (
   <Router>
     <div>
       <Header />
       <main>
-        <Route exact path='/' component={HomePage} />
-        <Route path='/about' component={AboutPage} />
-        <Route path='/post/:slug' component={PostPage} />
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/post/:slug' component={Post} />
       </main>
     </div>
   </Router>

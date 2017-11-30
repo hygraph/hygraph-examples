@@ -2,14 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
-import ErrorMessage from '../ErrorMessage'
 
-import './HomePage.css'
-
-const POSTS_PER_PAGE = 2
+const POSTS_PER_PAGE = 4
 
 const HomePage = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts }) => {
-  if (error) return <ErrorMessage message='Error loading posts.' />
+  if (error) return <h1>Error fetching posts!</h1>
   if (!loading) {
     const areMorePosts = allPosts.length < _allPostsMeta.count
     return (

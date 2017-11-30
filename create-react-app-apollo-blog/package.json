@@ -1,5 +1,5 @@
 {
-  "name": "cra-apollo-blog",
+  "name": "create-react-app-apollo-blog",
   "version": "1.0.0",
   "description": "GraphCMS Blog starter using Apollo Client and create-react-app",
   "repository": "https://github.com/hmeissner/graphcms-templates",
@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "standard && react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "standard"
+    "lint": "standard --fix"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",

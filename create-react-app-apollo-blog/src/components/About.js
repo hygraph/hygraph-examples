@@ -1,17 +1,14 @@
 import React from 'react'
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
-import ErrorMessage from '../ErrorMessage'
-
-import './AboutPage.css'
 
 const AboutPage = ({ data: { loading, error, allAuthors } }) => {
-  if (error) return <ErrorMessage message='Error loading author.' />
+  if (error) return <h1>Error fetching authors!</h1>
   if (!loading) {
     return (
       <div>
         {allAuthors.map(author => (
-          <div key='author.id'>
+          <div className='AboutPage-author' key={author.id}>
             <div className='AboutPage-infoHeader'>
               <img
                 className='AboutPage-img'

@@ -1,9 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-import './Header.css'
-
-const Header = () => (
+export default () => (
   <header className='Header-header'>
     <h1 className='Header-h1'>GraphCMS Starter blog</h1>
     <nav className='Header-nav'>
@@ -24,5 +22,3 @@ const Header = () => (
     </nav>
   </header>
 )
-
-export default Header

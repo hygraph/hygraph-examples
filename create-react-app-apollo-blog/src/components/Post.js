@@ -2,12 +2,9 @@ import React from 'react'
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import Markdown from 'react-markdown'
-import ErrorMessage from '../ErrorMessage'
-
-import './PostPage.css'
 
 const PostContent = ({ data: { loading, error, post } }) => {
-  if (error) return <ErrorMessage message='Error loading post.' />
+  if (error) return <h1>Error fetching the post!</h1>
   if (!loading) {
     return (
       <article>
