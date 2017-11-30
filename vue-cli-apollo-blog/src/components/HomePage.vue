@@ -1,25 +1,27 @@
 <template>
-  <h2 v-if="loading > 0">
-    Loading...
-  </h2>
-  <section v-else>
-    <ul>
-      <li v-for="post in allPosts" :key="post.id">
-        <router-link :to="`/post/${post.slug}`" class="link">
-          <div class="placeholder">
-            <img
-              :alt="post.title"
-              :src="`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`"
-            />
-          </div>
-          <h3>{{post.title}}</h3>
-        </router-link>
-      </li>
-    </ul>
-    <button v-if="_allPostsMeta.count > allPosts.length" @click="loadMorePosts">
-      {{loading ? 'Loading...' : 'Show more'}}
-    </button>
-  </section>
+  <div>
+    <section v-if="allPosts">
+      <ul>
+        <li v-for="post in allPosts" :key="post.id">
+          <router-link :to="`/post/${post.slug}`" class="link">
+            <div class="placeholder">
+              <img
+                :alt="post.title"
+                :src="`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`"
+              />
+            </div>
+            <h3>{{post.title}}</h3>
+          </router-link>
+        </li>
+      </ul>
+      <button v-if="postCount && postCount > allPosts.length" @click="loadMorePosts">
+        {{loading ? 'Loading...' : 'Show more'}}
+      </button>
+    </section>
+    <h2 v-else>
+      Loading...
+    </h2>
+  </div>
 </template>
 
 <script>
@@ -55,7 +57,10 @@
           first: POSTS_PER_PAGE
         }
       },
-      _allPostsMeta: gql`{ _allPostsMeta { count } }`
+      postCount: {
+        query: gql`{ _allPostsMeta { count } }`,
+        update: ({ _allPostsMeta }) => _allPostsMeta.count
+      }
     },
     methods: {
       loadMorePosts () {
