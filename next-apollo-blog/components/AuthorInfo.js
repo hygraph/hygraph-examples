@@ -9,7 +9,7 @@ const AuthorInfo = ({ data: { loading, error, allAuthors } }) => {
     return (
       <Fragment>
         {allAuthors.map(author => (
-          <Fragment key={author.id}>
+          <div className='author' key={author.id}>
             <div className='info-header'>
               <img
                 alt={author.name}
@@ -18,9 +18,12 @@ const AuthorInfo = ({ data: { loading, error, allAuthors } }) => {
               <h1>Hello! My name is {author.name}</h1>
             </div>
             <p>{author.bibliography}</p>
-          </Fragment>
+          </div>
         ))}
         <style jsx>{`
+          .author {
+            margin-bottom: 72px;
+          }
           .info-header {
             text-align: center;
           }

@@ -4,7 +4,7 @@
   </h2>
   <div v-else>
     <div v-for="author in allAuthors" :key="author.id">
-      <div>
+      <div class='author'>
         <div class='info-header'>
           <img
             :alt="author.name"
@@ -49,6 +49,9 @@
 </script>
 
 <style scoped>
+  .author {
+    margin-bottom: 72px;
+  }
   .info-header {
     text-align: center;
   }

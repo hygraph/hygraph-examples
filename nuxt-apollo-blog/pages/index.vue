@@ -3,8 +3,8 @@
     <section v-if="allPosts">
       <ul>
         <li v-for="post in allPosts" :key="post.id">
-          <router-link :to="`/post/${post.slug}`" class="link">
-            <div class="placeholder">
+          <router-link :to="`/post/${post.slug}`" class='link'>
+            <div class='placeholder'>
               <img
                 :alt="post.title"
                 :src="`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`"

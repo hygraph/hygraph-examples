@@ -8,7 +8,7 @@ const IndexPage = ({ data }) => (
   <section>
     <ul className={styles.ul}>
       {data.allPosts.edges.map(post => (
-        <li className={styles.li} key={`post-${post.node.id}`}>
+        <li className={styles.li} key={post.node.id}>
           <Link to={`/post/${post.node.slug}`} className={styles.a}>
             <div className={styles.placeholder}>
               <img
