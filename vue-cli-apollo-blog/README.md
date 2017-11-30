@@ -1,6 +1,6 @@
 # VueCLI + Apollo blog example
 
-> GraphCMS Blog starter using Apollo Client and Vue.js
+### Project bootstrapped with `webpack` template.
 
 ## Build Setup
 
