@@ -10,6 +10,8 @@ const App = ({ children, pathname }) => (
     <style jsx global>{`
       body {
         font-family: 'Source Sans Pro', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         margin: 0;
         font-size: 16px;
         line-height: 1.5;
