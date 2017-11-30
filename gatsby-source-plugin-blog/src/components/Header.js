@@ -7,7 +7,7 @@ const Header = () => (
   <header className={styles.header}>
     <h1 className={styles.h1}>GraphCMS Starter blog</h1>
     <nav className={styles.nav}>
-      <Link to='/' className={styles.link} activeClassName={styles.active}>
+      <Link to='/' exact className={styles.link} activeClassName={styles.active}>
         Home
       </Link>
       <Link to='/about' className={styles.link} activeClassName={styles.active}>
