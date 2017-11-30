@@ -9,9 +9,12 @@ const AuthorInfo = ({ data: { loading, error, allAuthors } }) => {
     return (
       <Fragment>
         {allAuthors.map(author => (
-          <Fragment>
+          <Fragment key={author.id}>
             <div className='info-header'>
-              <img src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${author.avatar.handle}`} />
+              <img
+                alt={author.name}
+                src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${author.avatar.handle}`}
+              />
               <h1>Hello! My name is {author.name}</h1>
             </div>
             <p>{author.bibliography}</p>
@@ -35,6 +38,7 @@ const AuthorInfo = ({ data: { loading, error, allAuthors } }) => {
 export const allAuthors = gql`
   query allAuthors {
     allAuthors {
+      id
       name
       bibliography
       avatar {
