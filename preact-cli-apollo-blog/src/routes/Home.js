@@ -1,5 +1,4 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'preact-router/match'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
 
@@ -14,7 +13,7 @@ const Home = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
         <ul className='Home-ul'>
           {allPosts.map(post => (
             <li className='Home-li' key={`post-${post.id}`}>
-              <Link to={`/post/${post.slug}`} className='Home-link'>
+              <Link href={`/post/${post.slug}`} className='Home-link'>
                 <div className='Home-placeholder'>
                   <img
                     alt={post.title}

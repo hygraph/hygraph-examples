@@ -1,4 +1,3 @@
-import React from 'react'
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 import Markdown from 'react-markdown'
@@ -41,9 +40,7 @@ export const singlePost = gql`
 `
 
 export default graphql(singlePost, {
-  options: ({ match }) => ({
-    variables: {
-      slug: match.params.slug
-    }
+  options: ({ slug }) => ({
+    variables: { slug }
   })
 })(Post)
