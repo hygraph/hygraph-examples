@@ -1,12 +1,11 @@
 import Link from 'next/link'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
-import ErrorMessage from './ErrorMessage'
 
 const POSTS_PER_PAGE = 2
 
 const PostList = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts }) => {
-  if (error) return <ErrorMessage message='Error loading posts.' />
+  if (error) return <h1>Error loading posts.</h1>
   if (!loading) {
     const areMorePosts = allPosts.length < _allPostsMeta.count
     return (

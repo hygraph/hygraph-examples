@@ -1,10 +1,9 @@
 import { Fragment } from 'react'
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
-import ErrorMessage from '../components/ErrorMessage'
 
 const AuthorInfo = ({ data: { loading, error, allAuthors } }) => {
-  if (error) return <ErrorMessage message='Error loading author.' />
+  if (error) return <h1>Error loading author.</h1>
   if (!loading) {
     return (
       <Fragment>
