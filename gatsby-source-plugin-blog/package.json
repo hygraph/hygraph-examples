@@ -5,7 +5,6 @@
   "author": "Hugo Meissner <hugomeissner@icloud.com>",
   "license": "MIT",
   "dependencies": {
-    "crypto": "^1.0.1",
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-manifest": "^1.0.9",

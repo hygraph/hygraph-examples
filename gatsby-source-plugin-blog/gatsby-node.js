@@ -1,6 +1,5 @@
 const path = require('path')
 const slash = require('slash')
-const crypto = require('crypto')
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -54,10 +53,7 @@ exports.onCreateNode = ({ node, boundActionCreators }) => {
         type: `${node.internal.type}Markdown`,
         mediaType: `text/markdown`,
         content: node.content,
-        contentDigest: crypto
-          .createHash(`md5`)
-          .update(JSON.stringify(node.content))
-          .digest(`hex`)
+        contentDigest: node.internal.contentDigest
       }
     })
   }
