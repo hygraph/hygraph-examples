@@ -29,6 +29,7 @@ module.exports = {
         }`
       }
     },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

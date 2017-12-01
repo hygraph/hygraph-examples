@@ -1,5 +1,6 @@
 const path = require('path')
 const slash = require('slash')
+const crypto = require('crypto')
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -39,4 +40,26 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       resolve()
     })
   })
+}
+
+// we create markdown nodes here so transformer-remark can process them
+exports.onCreateNode = ({ node, boundActionCreators }) => {
+  const { createNode } = boundActionCreators
+  console.log(node.internal.type)
+  if (node.internal.type === `Posts`) {
+    createNode({
+      id: `md-${node.id}`,
+      parent: node.id,
+      children: [],
+      internal: {
+        type: `PostsMarkdown`,
+        mediaType: `text/markdown`,
+        content: node.internal.content,
+        contentDigest: crypto
+          .createHash(`md5`)
+          .update(JSON.stringify(node.internal.content))
+          .digest(`hex`)
+      }
+    })
+  }
 }

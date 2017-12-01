@@ -5,12 +5,14 @@
   "author": "Hugo Meissner <hugomeissner@icloud.com>",
   "license": "MIT",
   "dependencies": {
+    "crypto": "^1.0.1",
     "gatsby": "^1.9.119",
     "gatsby-link": "^1.6.28",
     "gatsby-plugin-manifest": "^1.0.9",
     "gatsby-plugin-offline": "^1.0.11",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-source-graphcms": "^0.0.1",
+    "gatsby-transformer-remark": "^1.7.23",
     "react-markdown": "^3.0.2"
   },
   "scripts": {
