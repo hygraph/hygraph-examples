@@ -51,7 +51,7 @@ exports.onCreateNode = ({ node, boundActionCreators }) => {
       parent: node.id,
       children: [],
       internal: {
-        type: `PostsMarkdown`,
+        type: `${node.internal.type}Markdown`,
         mediaType: `text/markdown`,
         content: node.internal.content,
         contentDigest: crypto
