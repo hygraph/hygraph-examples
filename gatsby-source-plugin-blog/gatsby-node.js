@@ -45,7 +45,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 // we create markdown nodes here so transformer-remark can process them
 exports.onCreateNode = ({ node, boundActionCreators }) => {
   const { createNode } = boundActionCreators
-  console.log(node.internal.type)
   if (node.internal.type === `Posts`) {
     createNode({
       id: `md-${node.id}`,
