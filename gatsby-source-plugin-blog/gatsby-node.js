@@ -53,10 +53,10 @@ exports.onCreateNode = ({ node, boundActionCreators }) => {
       internal: {
         type: `${node.internal.type}Markdown`,
         mediaType: `text/markdown`,
-        content: node.internal.content,
+        content: node.content,
         contentDigest: crypto
           .createHash(`md5`)
-          .update(JSON.stringify(node.internal.content))
+          .update(JSON.stringify(node.content))
           .digest(`hex`)
       }
     })
