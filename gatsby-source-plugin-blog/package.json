@@ -10,9 +10,7 @@
     "gatsby-plugin-manifest": "^1.0.9",
     "gatsby-plugin-offline": "^1.0.11",
     "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-source-graphcms": "^0.0.1",
-    "gatsby-transformer-remark": "^1.7.23",
-    "react-markdown": "^3.0.2"
+    "gatsby-source-graphcms": "^0.0.1"
   },
   "scripts": {
     "build": "gatsby build",
