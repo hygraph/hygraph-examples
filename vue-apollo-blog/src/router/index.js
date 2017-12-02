@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomePage from '../components/HomePage.vue'
-import AboutPage from '../components/AboutPage.vue'
-import PostPage from '../components/PostPage.vue'
+import Home from '../components/Home.vue'
+import About from '../components/About.vue'
+import Post from '../components/Post.vue'
 
 Vue.use(Router)
 
@@ -12,17 +12,17 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: HomePage
+      component: Home
     },
     {
       path: '/about',
       name: 'about',
-      component: AboutPage
+      component: About
     },
     {
       path: '/post/:slug',
       name: 'post',
-      component: PostPage
+      component: Post
     }
   ]
 })

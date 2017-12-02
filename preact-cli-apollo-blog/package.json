@@ -27,8 +27,7 @@
     "preact": "^8.2.1",
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.5",
-    "react-apollo": "^2.0.1",
-    "react-markdown": "^3.1.0"
+    "react-apollo": "^2.0.1"
   },
   "devDependencies": {
     "eslint": "^4.12.1",

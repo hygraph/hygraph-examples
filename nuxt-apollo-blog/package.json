@@ -19,8 +19,7 @@
     "apollo-link-http": "^1.2.0",
     "graphql": "^0.11.7",
     "graphql-tag": "^2.5.0",
-    "nuxt": "^1.0.0-rc11",
-    "vue-markdown": "^2.2.4"
+    "nuxt": "^1.0.0-rc11"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

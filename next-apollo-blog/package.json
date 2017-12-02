@@ -24,8 +24,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-apollo": "^2.0.1",
-    "react-dom": "^16.2.0",
-    "react-markdown": "^3.0.2"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
