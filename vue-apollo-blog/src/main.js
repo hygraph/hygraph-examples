@@ -8,7 +8,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory'
 import VueApollo from 'vue-apollo'
 
 import App from './App.vue'
-import router from './router'
+import router from './router.js'
 
 // Replace this with your project's endpoint
 const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/starterBlog'
