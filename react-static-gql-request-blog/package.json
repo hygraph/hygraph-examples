@@ -14,7 +14,8 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
-    "react-static": "^4.3.4"
+    "react-static": "^4.3.4",
+    "react-static-routes": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
