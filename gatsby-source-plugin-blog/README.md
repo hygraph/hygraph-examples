@@ -5,7 +5,7 @@ For an overview of the project structure please refer to the [Gatsby documentati
 
 ## How to start
 ```
-git clone https://github.com/GraphCMS/graphcms-examples/tree/master/gatsby-source-plugin-blog && cd gatsby-source-plugin-blog && yarn && yarn develop
+git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/gatsby-source-plugin-blog && yarn && yarn develop
 ```
 
 ## Deploy
