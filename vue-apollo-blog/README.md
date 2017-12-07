@@ -1,19 +1,10 @@
-# VueCLI + Apollo blog example
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+# GraphCMS starter blog with React Static & graphql-request
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+For an overview of how things work in `Vue` please refer to the [Vue docs](https://vuejs.org/v2/guide/)
+
+## How to start
+```
+git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/vue-apollo-blog && yarn && yarn dev
+```

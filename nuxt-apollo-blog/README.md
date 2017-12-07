@@ -1,22 +1,8 @@
-# nuxt-apollo-blog
+# GraphCMS starter blog with Nuxt.js & Apollo Client
 
-> GraphCMS Blog starter using Apollo Client and Nuxt.js
+For an overview of how things work in `Nuxt.js` please refer to the [Nuxt.js docs](https://nuxtjs.org/guide)
 
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+## How to start
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/nuxt-apollo-blog && yarn && yarn dev
+```

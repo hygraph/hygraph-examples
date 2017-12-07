@@ -1,19 +1,8 @@
-# {{ name }}
+# GraphCMS starter blog with Preact & Apollo Client
 
-## CLI Commands
+For an overview of how things work in `preact-cli` please refer to the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md)
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# test the production build locally
-npm run serve
+## How to start
 ```
-
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/preact-cli-apollo-blog && yarn && yarn dev
+```

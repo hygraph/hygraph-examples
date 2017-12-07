@@ -1,10 +1,8 @@
-# React-Static - Basic Example
+# GraphCMS starter blog with React Static & graphql-request
 
-This example is the most basic version of react-static available. It includes:
-- Babel
-- CSS imports
-- Image imports
-- File imports
-- Automatic Routing
+For an overview of how things work in `React Static` please refer to the [React Static docs](https://github.com/nozzle/react-static#react-static)
 
-To get started, run `react-static create` and use the `basic` template.
+## How to start
+```
+git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/react-static-gql-request-blog && yarn && yarn start
+```
