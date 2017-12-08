@@ -1,5 +1,6 @@
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
+import Markdown from 'react-markdown'
 
 const PostContent = ({ data: { loading, error, post } }) => {
   if (error) return <h1>Error loading post.</h1>
@@ -13,7 +14,10 @@ const PostContent = ({ data: { loading, error, post } }) => {
             src={`https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.coverImage.handle}`}
           />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: post.content }} />
+        <Markdown
+          source={post.content}
+          escapeHtml={false}
+        />
         <style jsx>{`
           .placeholder {
             height: 366px;

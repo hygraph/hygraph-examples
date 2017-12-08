@@ -11,7 +11,7 @@
           :src="`https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.coverImage.handle}`"
         />
       </div>
-      <div v-html="post.content" />
+      <vue-markdown>{{post.content}}</vue-markdown>
     </article>
   </div>
 </template>
@@ -49,7 +49,8 @@
           }
         }
       }
-    }
+    },
+    components: { VueMarkdown }
   }
 </script>
 

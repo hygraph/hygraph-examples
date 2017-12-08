@@ -1,5 +1,6 @@
 import React from 'react'
 import { getRouteProps } from 'react-static'
+import Markdown from 'react-markdown'
 
 export default getRouteProps(({ post }) => (
   <article>
@@ -10,6 +11,9 @@ export default getRouteProps(({ post }) => (
         src={`https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.coverImage.handle}`}
       />
     </div>
-    <div dangerouslySetInnerHTML={{ __html: post.content }} />
+    <Markdown
+      source={post.content}
+      escapeHtml={false}
+    />
   </article>
 ))

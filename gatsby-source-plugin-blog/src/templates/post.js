@@ -1,5 +1,6 @@
 /* global graphql */
 import React from 'react'
+import Markdown from 'react-markdown'
 
 import styles from '../styles/post.module.css'
 
@@ -14,7 +15,10 @@ export default ({ data }) => {
           src={`https://media.graphcms.com/resize=w:650,h:366,fit:crop/${post.coverImage.handle}`}
         />
       </div>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <Markdown
+        source={post.content}
+        escapeHtml={false}
+      />
     </article>
   )
 }
