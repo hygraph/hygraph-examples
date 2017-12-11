@@ -18,6 +18,7 @@
 
 <script>
   import gql from 'graphql-tag'
+  import VueMarkdown from 'vue-markdown'
 
   const post = gql`
     query post($slug: String!) {
