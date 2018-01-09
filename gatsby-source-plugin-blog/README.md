@@ -1,4 +1,4 @@
-# GraphCMS starter blog with Gatsby & gatsby-source-graphcms
+# GraphCMS starter blog with Gatsby & gatsby-source-graphcms [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
 The default Gatsby starter
 
 For an overview of how things work in `Gatsby` please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/)
