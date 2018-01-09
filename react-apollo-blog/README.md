@@ -1,4 +1,4 @@
-# GraphCMS starter blog with React & Apollo Client
+# GraphCMS starter blog with React & Apollo Client [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
