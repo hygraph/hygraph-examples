@@ -1,4 +1,4 @@
-# GraphCMS starter blog with Preact & Apollo Client
+# GraphCMS starter blog with Preact & Apollo Client [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
 
 For an overview of how things work in `preact-cli` please refer to the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md)
 
