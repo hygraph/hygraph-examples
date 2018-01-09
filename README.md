@@ -1,7 +1,5 @@
-# GraphCMS Examples
+# GraphCMS Examples [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
 Example projects to help you get started with GraphCMS.
-
-## Help & Community [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
 
 # Guides
 - ### [How to set up a project](https://graphcms.com/docs/getting-started/setting_up_the_project/)
