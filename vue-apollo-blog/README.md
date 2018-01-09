@@ -1,4 +1,4 @@
-# GraphCMS starter blog with Vue.js & Apollo Client
+# GraphCMS starter blog with Vue.js & Apollo Client [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
