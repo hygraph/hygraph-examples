@@ -1,9 +1,9 @@
 import React from 'react'
-import { NavLink } from 'react-static'
+import { NavLink, withSiteData } from 'react-static'
 
-export default () => (
+export default withSiteData(({ title }) => (
   <header className='header-header'>
-    <h1 className='header-h1'>GraphCMS Starter blog</h1>
+    <h1 className='header-h1'>{title}</h1>
     <nav className='header-nav'>
       <NavLink className='header-link' exact to='/'>
         Home
@@ -13,4 +13,4 @@ export default () => (
       </NavLink>
     </nav>
   </header>
-)
+))
