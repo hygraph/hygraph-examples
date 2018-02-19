@@ -9,7 +9,7 @@ class Home extends React.Component {
     first: 4
   }
 
-  render() {
+  render () {
     return (
       <Connect
         query={query(Posts, { first: this.state.first })}
@@ -19,32 +19,32 @@ class Home extends React.Component {
             const {allPosts, _allPostsMeta} = data
             const areMorePosts = allPosts.length < _allPostsMeta.count
             return (
-            <section>
-              <ul className='Home-ul'>
-                {allPosts.map(post => (
-                  <li className='Home-li' key={`post-${post.id}`}>
-                    <Link to={`/post/${post.slug}`} className='Home-link'>
-                      <div className='Home-placeholder'>
-                        <img
-                          alt={post.title}
-                          className='Home-img'
-                          src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`}
+              <section>
+                <ul className='Home-ul'>
+                  {allPosts.map(post => (
+                    <li className='Home-li' key={`post-${post.id}`}>
+                      <Link to={`/post/${post.slug}`} className='Home-link'>
+                        <div className='Home-placeholder'>
+                          <img
+                            alt={post.title}
+                            className='Home-img'
+                            src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`}
                         />
-                      </div>
-                      <h3>{post.title}</h3>
-                    </Link>
-                  </li>
+                        </div>
+                        <h3>{post.title}</h3>
+                      </Link>
+                    </li>
                 ))}
-              </ul>
-              <div className='Home-showMoreWrapper'>
-              {areMorePosts
+                </ul>
+                <div className='Home-showMoreWrapper'>
+                  {areMorePosts
                 ? <button className='Home-button' onClick={() => this.setState(({ first }) => ({ first: first + POSTS_PER_PAGE }))}>
                   {!loaded ? 'Loading...' : 'Load next page'}
                 </button>
                 : ''}
-              </div>
-            </section>
-          )
+                </div>
+              </section>
+            )
           }
           return <div>Loading...</div>
         }

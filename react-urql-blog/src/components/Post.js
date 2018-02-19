@@ -6,7 +6,6 @@ const Post = ({match}) => (
   <Connect
     query={query(SinglePost, {slug: match.params.slug})}
     children={({loaded, data, error}) => {
-
       if (error) return <div>Error!</div>
       if (!loaded) return <div>Loading post...</div>
 
@@ -46,4 +45,4 @@ query singlePost($slug: String!) {
 
 `
 
-export default Post;
+export default Post

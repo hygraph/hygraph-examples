@@ -6,14 +6,8 @@
   "author": "Hugo Meissner <hugomeissner@icloud.com>",
   "license": "MIT",
   "dependencies": {
-    "apollo-cache-inmemory": "^1.1.1",
-    "apollo-client": "^2.0.3",
-    "apollo-link-http": "^1.2.0",
-    "graphql": "^0.11.7",
-    "graphql-tag": "^2.5.0",
-    "react": "^16.1.1",
-    "react-apollo": "^2.0.1",
-    "react-dom": "^16.1.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-markdown": "^3.1.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
@@ -27,7 +21,7 @@
     "lint": "standard --fix"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.2",
+    "babel-eslint": "^8.2.1",
     "standard": "^10.0.3"
   },
   "standard": {

@@ -8,25 +8,25 @@ const About = () => (
       if (error) return <div>Error!</div>
       if (!loaded) return <div>Loading...</div>
 
-      return ( 
+      return (
         <div>
-        {data.authors.map(author => (
-          <div className='About-author' key={author.id}>
-            <div className='About-infoHeader'>
-              <img
-                className='About-img'
-                alt={author.name}
-                src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${author.avatar.handle}`}
+          {data.authors.map(author => (
+            <div className='About-author' key={author.id}>
+              <div className='About-infoHeader'>
+                <img
+                  className='About-img'
+                  alt={author.name}
+                  src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${author.avatar.handle}`}
               />
-              <h1>Hello! My name is {author.name}</h1>
+                <h1>Hello! My name is {author.name}</h1>
+              </div>
+              <p>{author.bibliography}</p>
             </div>
-            <p>{author.bibliography}</p>
-          </div>
         ))}
-      </div>
+        </div>
       )
-      }
-    } 
+    }
+    }
   />
   )
 
