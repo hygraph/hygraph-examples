@@ -5,9 +5,9 @@ import gql from 'graphql-tag'
 
 const POSTS_PER_PAGE = 4
 
-const Home = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts }) => {
+const Home = ({ data: { loading, error, allPosts, _allPostsMeta, networkStatus }, loadMorePosts }) => {
   if (error) return <h1>Error fetching posts!</h1>
-  if (!loading) {
+  if (allPosts && _allPostsMeta) {
     const areMorePosts = allPosts.length < _allPostsMeta.count
     return (
       <section>
@@ -29,7 +29,7 @@ const Home = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts
         </ul>
         <div className='Home-showMoreWrapper'>
           {areMorePosts
-            ? <button className='Home-button' onClick={() => loadMorePosts()}>
+            ? <button className='Home-button' disabled={loading} onClick={() => loadMorePosts()}>
               {loading ? 'Loading...' : 'Show More Posts'}
             </button>
             : ''}
@@ -64,7 +64,8 @@ export const allPostsQueryVars = {
 
 export default graphql(allPosts, {
   options: {
-    variables: allPostsQueryVars
+    variables: allPostsQueryVars,
+    notifyOnNetworkStatusChange: true
   },
   props: ({ data }) => ({
     data,

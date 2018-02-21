@@ -87,6 +87,10 @@ article {
   border-radius: 0;
   cursor: pointer;
 }
+.Home-button:disabled{
+  background: grey;
+  cursor: not-allowed;
+}
 
 /* About */
 .About-infoHeader {
