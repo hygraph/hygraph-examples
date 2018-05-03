@@ -37,7 +37,8 @@
   export default {
     name: 'AboutPage',
     data: () => ({
-      loading: 0
+      loading: 0,
+      allAuthors: null
     }),
     apollo: {
       $loadingKey: 'loading',

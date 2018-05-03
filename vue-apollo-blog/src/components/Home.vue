@@ -46,7 +46,9 @@
   export default {
     name: 'HomePage',
     data: () => ({
-      loading: 0
+      loading: 0,
+      allPosts: null,
+      postCount: null
     }),
     apollo: {
       $loadingKey: 'loading',
