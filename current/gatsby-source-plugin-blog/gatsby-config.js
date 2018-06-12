@@ -8,7 +8,7 @@ module.exports = {
       options: {
         endpoint: `https://api-useast.graphcms.com/v1/cjiacyow100ob01eqwnghonw2/master`,
         query: `{
-          posts {
+          allPosts: posts {
             id
             slug
             title
@@ -18,7 +18,7 @@ module.exports = {
               handle
             }
           },
-          authors {
+          allAuthors: authors {
             id
             name
             bibliography
