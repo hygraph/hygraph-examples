@@ -1,0 +1,29 @@
+{
+  "name": "gatsby-source-plugin-blog",
+  "description": "GraphCMS Starter blog",
+  "version": "1.0.0",
+  "author": "Hugo Meissner <hugomeissner@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^1.9.119",
+    "gatsby-link": "^1.6.28",
+    "gatsby-plugin-manifest": "^1.0.9",
+    "gatsby-plugin-offline": "^1.0.11",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-source-graphcms": "^0.0.1",
+    "postcss-preset-env": "^5.1.0",
+    "react-markdown": "^3.1.0"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "lint": "standard --fix"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "standard": "^10.0.3"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
