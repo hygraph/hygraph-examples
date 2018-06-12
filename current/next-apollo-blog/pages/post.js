@@ -2,10 +2,10 @@ import withData from '../lib/withData'
 import App from '../components/App'
 import Post from '../components/Post'
 
-const AboutPage = withData(props => (
+const PostPage = withData(props => (
   <App pathname={props.url.pathname}>
-    <Post slug={props.url.query.slug} />
+    <Post id={props.url.query.slug} />
   </App>
 ))
 
-export default AboutPage
+export default PostPage

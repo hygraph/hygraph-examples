@@ -2,12 +2,12 @@ import { Fragment } from 'react'
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 
-const AuthorInfo = ({ data: { loading, error, allAuthors } }) => {
+const AuthorInfo = ({ data: { loading, error, authors } }) => {
   if (error) return <h1>Error loading author.</h1>
   if (!loading) {
     return (
       <Fragment>
-        {allAuthors.map(author => (
+        {authors.map(author => (
           <div className='author' key={author.id}>
             <div className='info-header'>
               <img
@@ -39,7 +39,7 @@ const AuthorInfo = ({ data: { loading, error, allAuthors } }) => {
 
 export const allAuthors = gql`
   query allAuthors {
-    allAuthors {
+    authors {
       id
       name
       bibliography

@@ -20,7 +20,7 @@
     "graphql-anywhere": "^4.0.1",
     "graphql-tag": "^2.5.0",
     "isomorphic-unfetch": "^2.0.0",
-    "next": "^4.1.4",
+    "next": "^6.0.3",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-apollo": "^2.0.1",

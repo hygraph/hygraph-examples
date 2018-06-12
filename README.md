@@ -8,7 +8,7 @@ Example projects to help you get started with GraphCMS.
 
 | Project | Current | Legacy |
 |---|---|---|
-| gatsby-source-plugin-blog |[&#x2718;](../current/gatsby-source-plugin-blog/README.md)|[&#10004;](../legacy/gatsby-source-plugin-blog/README.md)|
+| gatsby-source-plugin-blog |[&#10004;](../current/gatsby-source-plugin-blog/README.md)|[&#10004;](../legacy/gatsby-source-plugin-blog/README.md)|
 | react-apollo-blog |[&#x2718;](../current/react-apollo-blog/README.md)|[&#10004;](../legacy/react-apollo-blog/README.md)|
 | react-urql-blog |[&#x2718;](../current/react-urql-blog/README.md)|[&#10004;](../legacy/react-urql-blog/README.md)|
 | x0-gql-request-swapi |[&#x2718;](../current/x0-gql-request-swapi/README.md)|[&#10004;](../legacy/x0-gql-request-swapi/README.md)|

@@ -3,7 +3,7 @@ import { graphql } from 'react-apollo'
 import Markdown from 'react-markdown'
 
 const PostContent = ({ data: { loading, error, post } }) => {
-  if (error) return <h1>Error loading post.</h1>
+  if (error) return <h1>Error loading post {JSON.stringify(error)}.</h1>
   if (!loading) {
     return (
       <article>
@@ -31,8 +31,10 @@ const PostContent = ({ data: { loading, error, post } }) => {
 }
 
 export const singlePost = gql`
-  query singlePost($slug: String!) {
-    post: Post(slug: $slug) {
+  query singlePost($id: ID!) {
+    post(where: {
+      id: $id
+    }) {
       id
       slug
       title
@@ -46,5 +48,5 @@ export const singlePost = gql`
 `
 
 export default graphql(singlePost, {
-  options: ({ slug }) => ({ variables: { slug } })
+  options: ({ id }) => ({ variables: { id } })
 })(PostContent)
