@@ -7,6 +7,7 @@ Example projects to help you get started with GraphCMS.
 - ### [Getting started with GraphCMS & Vue](https://graphcms.com/docs/getting-started/beginners_guide_with_vue/)
 
 | Project | Current | Legacy |
+|---|---|---|
 | gatsby-source-plugin-blog |[]|[x]|
 | react-apollo-blog |[]|[x]|
 | react-urql-blog |[]|[x]|
