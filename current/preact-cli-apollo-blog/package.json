@@ -34,6 +34,6 @@
     "eslint": "^4.12.1",
     "eslint-config-synacor": "^2.0.2",
     "if-env": "^1.0.0",
-    "preact-cli": "^2.0.0"
+    "preact-cli": "^2.2.1"
   }
 }

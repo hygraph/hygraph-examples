@@ -1,9 +1,9 @@
 <template>
   <div>
-    <section v-if="allPosts">
+    <section v-if="posts">
       <ul>
-        <li v-for="post in allPosts" :key="post.id">
-          <router-link :to="`/post/${post.slug}`" class="link">
+        <li v-for="post in posts" :key="post.id">
+          <router-link :to="`/post/${post.id}`" class="link">
             <div class="placeholder">
               <img
                 :alt="post.title"
@@ -14,7 +14,7 @@
           </router-link>
         </li>
       </ul>
-      <button v-if="postCount && postCount > allPosts.length" @click="loadMorePosts">
+      <button v-if="postCount && postCount > posts.length" @click="loadMorePosts">
         {{loading ? 'Loading...' : 'Show more'}}
       </button>
     </section>
@@ -29,9 +29,9 @@
 
   const POSTS_PER_PAGE = 2
 
-  const allPosts = gql`
-    query allPosts($first: Int!, $skip: Int!) {
-      allPosts(orderBy: dateAndTime_DESC, first: $first, skip: $skip) {
+  const posts = gql`
+    query posts($first: Int!, $skip: Int!) {
+      posts(orderBy: dateAndTime_DESC, first: $first, skip: $skip) {
         id
         slug
         title
@@ -47,35 +47,35 @@
     name: 'HomePage',
     data: () => ({
       loading: 0,
-      allPosts: null,
+      posts: null,
       postCount: null
     }),
     apollo: {
       $loadingKey: 'loading',
-      allPosts: {
-        query: allPosts,
+      posts: {
+        query: posts,
         variables: {
           skip: 0,
           first: POSTS_PER_PAGE
         }
       },
       postCount: {
-        query: gql`{ _allPostsMeta { count } }`,
-        update: ({ _allPostsMeta }) => _allPostsMeta.count
+        query: gql`{ postsConnection { aggregate { count } } }`,
+        update: ({ postsConnection }) => postsConnection.aggregate.count
       }
     },
     methods: {
       loadMorePosts () {
-        this.$apollo.queries.allPosts.fetchMore({
+        this.$apollo.queries.posts.fetchMore({
           variables: {
-            skip: this.allPosts.length
+            skip: this.posts.length
           },
           updateQuery: (previousResult, { fetchMoreResult }) => {
             if (!fetchMoreResult) {
               return previousResult
             }
             return Object.assign({}, previousResult, {
-              allPosts: [...previousResult.allPosts, ...fetchMoreResult.allPosts]
+              posts: [...previousResult.posts, ...fetchMoreResult.posts]
             })
           }
         })

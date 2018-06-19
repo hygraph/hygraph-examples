@@ -31,7 +31,7 @@ const About = () => (
   )
 
 export const Authors = `query allAuthors {
-    authors: allAuthors {
+    authors {
       id
       name
       bibliography

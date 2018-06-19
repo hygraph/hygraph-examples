@@ -16,14 +16,14 @@ class Home extends React.Component {
         children={({ loaded, data, error, refetch }) => {
           if (error) return <div>Error!</div>
           if (loaded) {
-            const {allPosts, _allPostsMeta} = data
-            const areMorePosts = allPosts.length < _allPostsMeta.count
+            const {posts, postsConnection} = data
+            const areMorePosts = posts.length < postsConnection.aggregate.count
             return (
               <section>
                 <ul className='Home-ul'>
-                  {allPosts.map(post => (
+                  {posts.map(post => (
                     <li className='Home-li' key={`post-${post.id}`}>
-                      <Link to={`/post/${post.slug}`} className='Home-link'>
+                      <Link to={`/post/${post.id}`} className='Home-link'>
                         <div className='Home-placeholder'>
                           <img
                             alt={post.title}
@@ -54,8 +54,8 @@ class Home extends React.Component {
 }
 
 export const Posts = `
-  query allPosts($first: Int!) {
-    allPosts(orderBy: dateAndTime_DESC, first: $first) {
+  query posts($first: Int!) {
+    posts(orderBy: dateAndTime_DESC, first: $first) {
       id
       slug
       title
@@ -64,8 +64,10 @@ export const Posts = `
         handle
       }
     }
-    _allPostsMeta {
+    postsConnection {
+      aggregate {
         count
+      }
     }
   }
 `

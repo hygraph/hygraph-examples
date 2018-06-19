@@ -10,12 +10,12 @@ import {
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 
-const About = ({ data: { loading, error, allAuthors } }) => {
+const About = ({ data: { loading, error, authors } }) => {
   if (error) return <Text>Error fetching authors!</Text>
   if (!loading) {
     return (
       <FlatList
-        data={allAuthors}
+        data={authors}
         renderItem={({ item }) => (
           <View style={styles.listItem}>
             <Image
@@ -52,9 +52,9 @@ const styles = StyleSheet.create({
   }
 })
 
-export const allAuthors = gql`
-  query allAuthors {
-    allAuthors {
+export const authors = gql`
+  query authors {
+    authors {
       id
       name
       bibliography
@@ -65,4 +65,4 @@ export const allAuthors = gql`
   }
 `
 
-export default graphql(allAuthors)(About)
+export default graphql(authors)(About)

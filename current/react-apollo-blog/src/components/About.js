@@ -2,12 +2,12 @@ import React from 'react'
 import gql from 'graphql-tag'
 import { graphql } from 'react-apollo'
 
-const About = ({ data: { loading, error, allAuthors } }) => {
+const About = ({ data: { loading, error, authors } }) => {
   if (error) return <h1>Error fetching authors!</h1>
   if (!loading) {
     return (
       <div>
-        {allAuthors.map(author => (
+        {authors.map(author => (
           <div className='About-author' key={author.id}>
             <div className='About-infoHeader'>
               <img
@@ -26,9 +26,9 @@ const About = ({ data: { loading, error, allAuthors } }) => {
   return <h2>Loading author...</h2>
 }
 
-export const allAuthors = gql`
-  query allAuthors {
-    allAuthors {
+export const authors = gql`
+  query authors {
+    authors {
       id
       name
       bibliography
@@ -39,4 +39,4 @@ export const allAuthors = gql`
   }
 `
 
-export default graphql(allAuthors)(About)
+export default graphql(authors)(About)

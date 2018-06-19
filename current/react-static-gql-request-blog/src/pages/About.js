@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
 import { withRouteData } from 'react-static'
 
-export default withRouteData(({ allAuthors }) => (
+export default withRouteData(({ authors }) => (
   <Fragment>
-    {allAuthors.map(author => (
+    {authors.map(author => (
       <div className='about-author' key={author.id}>
         <div className='about-header'>
           <img

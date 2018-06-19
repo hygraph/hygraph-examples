@@ -3,7 +3,7 @@
     Loading...
   </h2>
   <div v-else>
-    <div v-for="author in allAuthors" :key="author.id">
+    <div v-for="author in authors" :key="author.id">
       <div class='author'>
         <div class='info-header'>
           <img
@@ -21,9 +21,9 @@
 <script>
   import gql from 'graphql-tag'
 
-  export const allAuthors = gql`
-    query allAuthors {
-      allAuthors {
+  export const authors = gql`
+    query authors {
+      authors {
         id
         name
         bibliography
@@ -41,8 +41,8 @@
     }),
     apollo: {
       $loadingKey: 'loading',
-      allAuthors: {
-        query: allAuthors
+      authors: {
+        query: authors
       }
     }
   }

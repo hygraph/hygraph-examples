@@ -21,8 +21,8 @@
   import VueMarkdown from 'vue-markdown'
 
   const post = gql`
-    query post($slug: String!) {
-      post: Post(slug: $slug) {
+    query post($id: ID!) {
+      post(where: {id: $id}) {
         id
         slug
         title
@@ -46,7 +46,7 @@
         query: post,
         variables () {
           return {
-            slug: this.$route.params.slug
+            id: this.$route.params.slug
           }
         }
       }

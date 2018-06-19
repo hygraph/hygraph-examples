@@ -1,9 +1,9 @@
 import { request } from 'graphql-request'
 
-const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/starterBlog'
+const GRAPHCMS_API = 'https://api-useast.graphcms.com/v1/cjiacyow100ob01eqwnghonw2/master'
 
 const query = `{
-  allPosts {
+  posts {
     id
     slug
     title
@@ -12,7 +12,7 @@ const query = `{
     }
     content
   }
-  allAuthors {
+  authors {
     id
     name
     avatar {
@@ -28,8 +28,8 @@ export default {
   }),
   getRoutes: async () => {
     const {
-      allPosts,
-      allAuthors
+      posts,
+      authors
      } = await request(GRAPHCMS_API, query)
 
     return [
@@ -37,10 +37,10 @@ export default {
         path: '/',
         component: 'src/pages/Home',
         getData: () => ({
-          allPosts
+          posts
         }),
-        children: allPosts.map(post => ({
-          path: `/post/${post.slug}`,
+        children: posts.map(post => ({
+          path: `/post/${post.id}`,
           component: 'src/pages/Post',
           getData: () => ({
             post
@@ -51,7 +51,7 @@ export default {
         path: '/about',
         component: 'src/pages/About',
         getData: () => ({
-          allAuthors
+          authors
         })
       },
       {

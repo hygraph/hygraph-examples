@@ -1,12 +1,12 @@
 import React from 'react'
 import { withRouteData, Link } from 'react-static'
 
-export default withRouteData(({ allPosts }) => (
+export default withRouteData(({ posts }) => (
   <section>
     <ul className='home-ul'>
-      {allPosts.map(post => (
+      {posts.map(post => (
         <li className='home-li' key={post.id}>
-          <Link to={`/post/${post.slug}`} className='home-link'>
+          <Link to={`/post/${post.id}`} className='home-link'>
             <div className='home-placeholder'>
               <img
                 className='home-link'

@@ -11,7 +11,7 @@ import App from './App.vue'
 import router from './router.js'
 
 // Replace this with your project's endpoint
-const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/starterBlog'
+const GRAPHCMS_API = 'https://api-useast.graphcms.com/v1/cjiacyow100ob01eqwnghonw2/master'
 
 const apolloClient = new ApolloClient({
   link: new HttpLink({ uri: GRAPHCMS_API }),

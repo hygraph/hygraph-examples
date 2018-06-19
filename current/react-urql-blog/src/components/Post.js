@@ -4,7 +4,7 @@ import Markdown from 'react-markdown'
 
 const Post = ({match}) => (
   <Connect
-    query={query(SinglePost, {slug: match.params.slug})}
+    query={query(SinglePost, {id: match.params.slug})}
     children={({loaded, data, error}) => {
       if (error) return <div>Error!</div>
       if (!loaded) return <div>Loading post...</div>
@@ -30,8 +30,8 @@ const Post = ({match}) => (
 )
 
 export const SinglePost = `
-query singlePost($slug: String!) {
-  post: Post(slug: $slug) {
+query singlePost($id: ID!) {
+  post(where: {id: $id}) {
     id
     slug
     title

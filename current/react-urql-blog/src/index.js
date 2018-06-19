@@ -8,11 +8,8 @@ import './index.css'
 
 import registerServiceWorker from './registerServiceWorker'
 
-// Replace this with your project's endpoint
-const GRAPHCMS_API = 'https://api.graphcms.com/simple/v1/starterBlog'
-
 const client = new Client({
-  url: 'https://api.graphcms.com/simple/v1/starterBlog'
+  url: 'https://api-useast.graphcms.com/v1/cjiacyow100ob01eqwnghonw2/master'
 })
 
 ReactDOM.render(

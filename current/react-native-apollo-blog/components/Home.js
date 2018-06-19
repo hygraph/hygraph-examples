@@ -14,15 +14,15 @@ import gql from 'graphql-tag'
 
 const POSTS_PER_PAGE = 4
 
-const Home = ({ data: { loading, error, allPosts, _allPostsMeta }, loadMorePosts }) => {
+const Home = ({ data: { loading, error, posts, postsConnection }, loadMorePosts }) => {
   if (error) return <Text>Error fetching posts!</Text>
   if (!loading) {
-    const areMorePosts = allPosts.length < _allPostsMeta.count
+    const areMorePosts = posts.length < postsConnection.aggregate.count
     return (
       <View style={{flex: 1, paddingBottom: 32}}>
         <ScrollView>
-          {allPosts.map(post => (
-            <Link to={`/post/${post.slug}`} key={post.id}>
+          {posts.map(post => (
+            <Link to={`/post/${post.id}`} key={post.id}>
               <View style={styles.wrapper}>
                 <Image
                   style={styles.image}
@@ -67,9 +67,9 @@ const styles = StyleSheet.create({
   }
 })
 
-export const allPosts = gql`
-  query allPosts($first: Int!, $skip: Int!) {
-    allPosts(orderBy: dateAndTime_DESC, first: $first, skip: $skip) {
+export const posts = gql`
+  query posts($first: Int!, $skip: Int!) {
+    posts(orderBy: dateAndTime_DESC, first: $first, skip: $skip) {
       id
       slug
       title
@@ -78,27 +78,29 @@ export const allPosts = gql`
         handle
       }
     },
-    _allPostsMeta {
-      count
+    postsConnection {
+      aggregate {
+        count
+      }
     }
   }
 `
 
-export const allPostsQueryVars = {
+export const postsQueryVars = {
   skip: 0,
   first: POSTS_PER_PAGE
 }
 
-export default graphql(allPosts, {
+export default graphql(posts, {
   options: {
-    variables: allPostsQueryVars
+    variables: postsQueryVars
   },
   props: ({ data }) => ({
     data,
     loadMorePosts: () => {
       return data.fetchMore({
         variables: {
-          skip: data.allPosts.length
+          skip: data.posts.length
         },
         updateQuery: (previousResult, { fetchMoreResult }) => {
           if (!fetchMoreResult) {
@@ -106,7 +108,7 @@ export default graphql(allPosts, {
           }
           return Object.assign({}, previousResult, {
             // Append the new posts results to the old one
-            allPosts: [...previousResult.allPosts, ...fetchMoreResult.allPosts]
+            posts: [...previousResult.posts, ...fetchMoreResult.posts]
           })
         }
       })

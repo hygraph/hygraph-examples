@@ -25,8 +25,8 @@ const Post = ({ data: { loading, error, post } }) => {
 }
 
 export const singlePost = gql`
-  query singlePost($slug: String!) {
-    post: Post(slug: $slug) {
+  query singlePost($id: ID!) {
+    post(where: {id: $id}) {
       id
       slug
       title
@@ -41,6 +41,6 @@ export const singlePost = gql`
 
 export default graphql(singlePost, {
   options: ({ slug }) => ({
-    variables: { slug }
+    variables: { id: slug }
   })
 })(Post)
