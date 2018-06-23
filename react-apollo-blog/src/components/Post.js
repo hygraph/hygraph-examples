@@ -35,7 +35,7 @@ export const singlePost = gql`
         handle
       }
       content
-      dateAndTime
+      dateTime
     }
   }
 `
