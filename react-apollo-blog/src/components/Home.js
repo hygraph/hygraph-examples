@@ -42,11 +42,11 @@ const Home = ({ data: { loading, error, allPosts, _allPostsMeta, networkStatus }
 
 export const allPosts = gql`
   query allPosts($first: Int!, $skip: Int!) {
-    allPosts(orderBy: dateAndTime_DESC, first: $first, skip: $skip) {
+    allPosts(orderBy: dateTime_DESC, first: $first, skip: $skip) {
       id
       slug
       title
-      dateAndTime
+      dateTime
       coverImage {
         handle
       }

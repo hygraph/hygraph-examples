@@ -13,7 +13,7 @@ const About = ({ data: { loading, error, allAuthors } }) => {
               <img
                 className='About-img'
                 alt={author.name}
-                src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${author.avatar.handle}`}
+                src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${author.image.handle}`}
               />
               <h1>Hello! My name is {author.name}</h1>
             </div>
@@ -32,7 +32,7 @@ export const allAuthors = gql`
       id
       name
       bibliography
-      avatar {
+      image {
         handle
       }
     }
