@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "nodemon": "^1.12.1",
-    "serve": "^6.4.1"
+    "serve": "^9.4.0"
   },
   "scripts": {
     "start": "node ./main.js",
