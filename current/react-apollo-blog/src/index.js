@@ -12,7 +12,10 @@ import './index.css'
 import registerServiceWorker from './registerServiceWorker'
 
 // Replace this with your project's endpoint
-const GRAPHCMS_API = 'https://api-useast.graphcms.com/v1/cjiacyow100ob01eqwnghonw2/master'
+// this one works
+// const GRAPHCMS_API = 'https://api-useast.graphcms.com/v1/cjiacyow100ob01eqwnghonw2/master'
+// mine does not work.
+const GRAPHCMS_API = 'https://api-uswest.graphcms.com/v1/cjn652yks0ecs01gh893ud2ta/master'
 
 const client = new ApolloClient({
   link: new HttpLink({ uri: GRAPHCMS_API }),
