@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
-    "serve": "^6.1.0",
+    "serve": "^7.0.0",
     "standard": "^10.0.3"
   },
   "standard": {
