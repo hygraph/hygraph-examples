@@ -6,5 +6,6 @@ const GRAPHCMS_API = 'https://api-useast.graphcms.com/v1/cjiacyow100ob01eqwnghon
 
 export default () => ({
   link: new HttpLink({ uri: GRAPHCMS_API }),
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
+  defaultHttpLink: false
 })
