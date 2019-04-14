@@ -5,14 +5,14 @@
   "author": "Hugo Meissner <hugomeissner@icloud.com>",
   "license": "MIT",
   "dependencies": {
-    "gatsby": "^1.9.119",
-    "gatsby-link": "^1.6.28",
-    "gatsby-plugin-manifest": "^1.0.9",
-    "gatsby-plugin-offline": "^1.0.11",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-source-graphcms": "^0.0.1",
-    "postcss-preset-env": "^5.1.0",
-    "react-markdown": "^3.1.0"
+    "gatsby": "^2.3.22",
+    "gatsby-plugin-manifest": "^2.0.29",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-source-graphql": "^2.0.18",
+    "postcss-preset-env": "^6.6.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-markdown": "^4.0.6"
   },
   "scripts": {
     "build": "gatsby build",
@@ -20,8 +20,8 @@
     "lint": "standard --fix"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.2",
-    "standard": "^10.0.3"
+    "babel-eslint": "^10.0.1",
+    "standard": "^12.0.1"
   },
   "standard": {
     "parser": "babel-eslint"

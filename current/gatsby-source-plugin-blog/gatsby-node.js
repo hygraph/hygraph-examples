@@ -1,42 +1,43 @@
-const path = require('path')
-const slash = require('slash')
+const path = require('path');
+const slash = require('slash');
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions;
   return new Promise((resolve, reject) => {
-    const postTemplate = path.resolve(`src/templates/post.js`)
+    const postTemplate = path.resolve(`src/templates/post.js`);
 
     graphql(`
       {
-        allPosts {
-          edges {
-            node {
-              id
-              title
-              slug
-              coverImage {
-                handle
+        gcms {
+          allPosts: postsConnection {
+            edges {
+              node {
+                id
+                title
+                slug
+                coverImage {
+                  handle
+                }
+                content
               }
-              content
             }
           }
         }
       }
-    `
-    ).then(result => {
+    `).then(result => {
       if (result.errors) {
-        console.log(result.errors)
+        console.log(result.errors);
       }
-      result.data.allPosts.edges.map(({ node }) => {
+      result.data.gcms.allPosts.edges.map(({ node }) => {
         createPage({
           path: `/post/${node.slug}`,
           component: slash(postTemplate),
           context: {
-            slug: node.slug
-          }
-        })
-      })
-      resolve()
-    })
-  })
-}
+            slug: node.slug,
+          },
+        });
+      });
+      resolve();
+    });
+  });
+};
