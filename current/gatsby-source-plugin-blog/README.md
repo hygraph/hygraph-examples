@@ -9,7 +9,7 @@ For an overview of how things work in `Gatsby` please refer to the [Gatsby docs]
 ## How to start
 
 ```
-git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/gatsby-source-plugin-blog && yarn && yarn develop
+git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/current/gatsby-source-plugin-blog && yarn && yarn develop
 ```
 
 ## Deploy

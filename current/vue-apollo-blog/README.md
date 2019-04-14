@@ -5,6 +5,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 For an overview of how things work in `Vue` please refer to the [Vue docs](https://vuejs.org/v2/guide/)
 
 ## How to start
+
 ```
-git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/vue-apollo-blog && yarn && yarn dev
+git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/current/vue-apollo-blog && yarn && yarn dev
 ```

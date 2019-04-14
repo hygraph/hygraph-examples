@@ -7,6 +7,7 @@ For an overview of how things work in `React` please refer to the [React docs](h
 URQL documentation can be found [here](https://github.com/FormidableLabs/urql)
 
 ## How to start
+
 ```
-git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/react-urql-blog && yarn && yarn start
+git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/current/react-urql-blog && yarn && yarn start
 ```
