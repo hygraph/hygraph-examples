@@ -37,6 +37,7 @@
         title
         dateAndTime
         coverImage {
+          id
           handle
         }
       }
