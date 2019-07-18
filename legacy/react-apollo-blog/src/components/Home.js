@@ -48,6 +48,7 @@ export const allPosts = gql`
       title
       dateAndTime
       coverImage {
+        id
         handle
       }
     },
