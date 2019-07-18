@@ -37,6 +37,7 @@ const posts = gql`
       title
       dateAndTime
       coverImage {
+        id
         handle
       }
     }

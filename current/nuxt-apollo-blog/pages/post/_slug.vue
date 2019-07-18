@@ -27,6 +27,7 @@
         slug
         title
         coverImage {
+          id
           handle
         }
         content

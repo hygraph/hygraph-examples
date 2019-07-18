@@ -44,6 +44,7 @@ export const allAuthors = gql`
       name
       bibliography
       avatar {
+        id
         handle
       }
     }

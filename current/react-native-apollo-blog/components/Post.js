@@ -63,6 +63,7 @@ export const singlePost = gql`
       slug
       title
       coverImage {
+        id
         handle
       }
       content

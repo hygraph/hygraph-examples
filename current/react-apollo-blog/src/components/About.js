@@ -33,6 +33,7 @@ export const authors = gql`
       name
       bibliography
       avatar {
+        id
         handle
       }
     }

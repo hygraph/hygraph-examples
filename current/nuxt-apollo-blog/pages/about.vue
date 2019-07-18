@@ -28,6 +28,7 @@
         name
         bibliography
         avatar {
+          id
           handle
         }
       }
