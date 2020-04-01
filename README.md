@@ -4,6 +4,12 @@ Example projects to help you get started with GraphCMS.
 [Join our Slack](https://slack.graphcms.com)
 
 # Guides
+
+## Next
+
+- ### [Documentation](https://graphcms.com/docs) 
+
+## Current
 - ### [How to set up a project](https://docs.graphcms.com/docs/getting-started/start-from-scratch)
 - ### [Getting started with GraphCMS & React](https://docs.graphcms.com/docs/tutorials/beginners-guide-with-react)
 - ### [Getting started with GraphCMS & Vue](https://docs.graphcms.com/docs/tutorials/beginners-guide-with-vue)
