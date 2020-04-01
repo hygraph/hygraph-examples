@@ -10,10 +10,10 @@ Example projects to help you get started with GraphCMS.
 
 # Examples
 
-| Project | Current |
-|---|---|
+| Project | Current | Next
+|---|---| --- |
 | gatsby-source-plugin-blog |[&#10004;](current/gatsby-source-plugin-blog/README.md)|
-| react-apollo-blog |[&#10004;](current/react-apollo-blog/README.md)|
+| react-apollo-blog |[&#10004;](current/react-apollo-blog/README.md)|[&#10004;](next/react-apollo-blog/README.md)
 | react-urql-blog |[&#10004;](current/react-urql-blog/README.md)|
 | next-apollo-blog |[&#10004;](current/next-apollo-blog/README.md)|
 | react-native-apollo-blog |[&#10004;](current/react-native-apollo-blog/README.md)|
