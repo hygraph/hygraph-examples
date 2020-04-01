@@ -1,10 +1,12 @@
-# GraphCMS Examples [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
+# GraphCMS Examples
 Example projects to help you get started with GraphCMS.
 
+[Join our Slack](https://slack.graphcms.com)
+
 # Guides
-- ### [How to set up a project](https://graphcms.com/docs/getting-started/start-from-scratch/)
-- ### [Getting started with GraphCMS & React](https://graphcms.com/docs/tutorials/beginners-guide-with-react/)
-- ### [Getting started with GraphCMS & Vue](https://graphcms.com/docs/tutorials/beginners-guide-with-vue/)
+- ### [How to set up a project](https://docs.graphcms.com/docs/getting-started/start-from-scratch)
+- ### [Getting started with GraphCMS & React](https://docs.graphcms.com/docs/tutorials/beginners-guide-with-react)
+- ### [Getting started with GraphCMS & Vue](https://docs.graphcms.com/docs/tutorials/beginners-guide-with-vue)
 
 # Examples
 
