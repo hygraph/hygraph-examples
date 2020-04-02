@@ -1,4 +1,6 @@
-# GraphCMS starter blog with Nuxt.js & Apollo Client [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
+# GraphCMS starter blog with Nuxt.js & Apollo Client 
+
+[Join our Slack](https://slack.graphcms.com)
 
 For an overview of how things work in `Nuxt.js` please refer to the [Nuxt.js docs](https://nuxtjs.org/guide)
 

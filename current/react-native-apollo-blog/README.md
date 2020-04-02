@@ -1,4 +1,6 @@
-# GraphCMS starter blog with React Native & Apollo Client [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
+# GraphCMS starter blog with React Native & Apollo Client 
+
+[Join our Slack](https://slack.graphcms.com)
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 

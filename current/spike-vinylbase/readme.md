@@ -1,6 +1,8 @@
 ### Example by [Jeff Escalante](https://github.com/jescalan)
 
-# GraphCMS, Spike, & Netlify Example [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
+[Join our Slack](https://slack.graphcms.com)
+
+# GraphCMS, Spike, & Netlify Example 
 
 This is an example static site made with [graphcms](https://graphcms.com/) and [spike](https://spike.cf), and hosted on [netlify](https://netlify.com). You can see the full sample app live [here](https://spike-graphcms.netlify.com/)!
 

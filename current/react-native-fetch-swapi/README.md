@@ -1,6 +1,8 @@
 ### Example by [Jonas Faber](https://github.com/flexzuu)
 
-# GraphCMS SWAPI example with React Native & fetch [![Slack Status](https://slack.graphcms.com/badge.svg)](https://slack.graphcms.com)
+[Join our Slack](https://slack.graphcms.com)
+
+# GraphCMS SWAPI example with React Native & fetch 
 
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
