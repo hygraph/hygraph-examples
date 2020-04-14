@@ -8,7 +8,7 @@ body {
   line-height: 1.5;
 }
 main {
-  max-width: 650px;
+  max-width: 800px;
   margin: 32px auto;
   padding: 0 24px;
 }
@@ -18,7 +18,7 @@ a {
 }
 article {
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 800px;
 }
 
 /* Header styles */
@@ -54,22 +54,28 @@ article {
   border: 1px solid #eee;
   overflow: hidden;
   border-radius: 5px;
+  padding-right: 10px;
+}
+.Home-title {
+  display: flex;
+  align-self: center;
 }
 .Home-link {
   display: flex;
   color: #000;
+  vertical-align: middle;
 }
 .Home-link:hover {
-  box-shadow: 1px 1px 5px #999;
+  color: rgb(0, 153, 255);
 }
 .Home-placeholder {
-  background-color: #eee;
-  min-width: 100px;
+  background-color: #fff;
+  min-width: 200px;
   margin-right: 24px;
 }
 .Home-img {
   display: block;
-  height: 100%;
+  max-height: 120px;
 }
 .Home-showMoreWrapper {
   display: flex;
@@ -107,5 +113,7 @@ article {
 /* Post */
 .Post-placeholder {
   height: 366px;
-  background-color: #eee;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
 }

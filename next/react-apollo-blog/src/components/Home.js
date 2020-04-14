@@ -20,10 +20,10 @@ const Home = ({ data: { loading, error, posts, postsConnection, networkStatus },
                   <img
                     alt={post.title}
                     className='Home-img'
-                    src={`https://media.graphcms.com/resize=w:100,h:100,fit:crop/${post.coverImage.handle}`}
+                    src={`https://media.graphcms.com/resize=w:200,fit:crop/${post.coverImage.handle}`}
                   />
                 </div>
-                <h3>{post.title}</h3>
+                <h3 className="Home-title">{post.title}</h3>
               </Link>
             </li>
           ))}
