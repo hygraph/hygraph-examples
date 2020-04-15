@@ -2,6 +2,7 @@
 node_modules
 build
 .now
+.next
 public
 .env
 .DS_Store
