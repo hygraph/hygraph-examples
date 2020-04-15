@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "dev": "gatsby develop"
+  },
+  "dependencies": {
+    "gatsby": "2.20.15",
+    "gatsby-source-graphql": "2.3.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "dotenv": "8.2.0"
+  }
+}
