@@ -1,0 +1,7 @@
+{
+  "extends": ["config:semverAllMonthly"],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  }
+}
