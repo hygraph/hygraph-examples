@@ -15,3 +15,7 @@ For an overview of how things work in `React` please refer to the [React docs](h
 ```
 git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/next/react-apollo-blog && yarn && yarn start
 ```
+
+## Using a GraphCMS Template
+
+If you want to create your own "Blog Starter" project, simply head to [next.graphcms.com](https://next.graphcms.com) and choose the "Blog Starter" Tempalte right next to "Create Project".
