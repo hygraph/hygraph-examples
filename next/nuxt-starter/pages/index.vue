@@ -1,20 +1,19 @@
 <template>
-  <div class="container">
-    <div>
+  <div class="container mx-auto text-center">
+    <div class="pt-4">
       <logo />
-      <h1 class="title">nuxt-starter</h1>
-      <h2 class="subtitle">
+      <h1 class="font-bold text-xl my-4">nuxt-starter</h1>
+      <h2 class="text-xl">
         Nuxt starter for GraphCMS
       </h2>
-      <div>
+      <div class="flex justify-center -mx-4 my-4">
         <router-link
           v-for="product in products"
           :to="{ name: 'product-slug', params: { slug: product.slug } }"
           :key="product.slug"
         >
-          <article>
-            <h1>{{ product.name }}</h1>
-            <p>{{ product.description }}</p>
+          <article class="border rounded-md p-6 mx-2">
+            <h1 class="fopnt-bold text-xl">{{ product.name }}</h1>
           </article>
         </router-link>
       </div>
@@ -45,34 +44,4 @@ export default {
   @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>
