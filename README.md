@@ -19,7 +19,7 @@ Example projects to help you get started with GraphCMS.
   - [Nuxt Starter ](nuxt-starter/README.md)
   - [Vue Starter ](vue-starter/README.md)
 
-# Community Examples
+## Community Examples
 
 - UnlyEd: [Next.js 9 and Zeit Now Boilerplate](https://github.com/UnlyEd/next-right-now/)
 - UnlyEd: [Cache Boilerplate](https://github.com/UnlyEd/GraphCMS-cache-boilerplate)
