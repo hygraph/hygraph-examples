@@ -2,10 +2,6 @@
 
 This example demonstrates how to query from GraphCMS with Gridsom Static Site generator.
 
-## Deploy on Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/gridsome-starter)
-
 ## How to Use
 
 ### Download manually
@@ -30,5 +26,11 @@ yarn dev
 Clone the Env
 
 ```bash
-cp .env.sample .env
+cp env.sample .env
 ```
+
+## Deploy on [Vercel](https://vercel.com/signup?next=onboarding)
+
+1. From the root of
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/gridsome-starter)
