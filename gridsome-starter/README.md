@@ -1,14 +1,34 @@
-# Default starter for Gridsome
+# Gridsome Starter
 
-This is the project you get when you run `gridsome create new-project`.
+This example demonstrates how to query from GraphCMS with Gridsom Static Site generator.
 
-### 1. Install Gridsome CLI tool if you don't have
+## Deploy on Vercel
 
-`npm install --global @gridsome/cli`
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/gridsome-starter)
 
-### 2. Create a Gridsome project
+## How to Use
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+### Download manually
+
+Download the example:
+
+```bash
+curl https://codeload.github.com/GraphCMS/graphcms-examples/tar.gz/master | tar -xz --strip-components=1 graphcms-examples-master/gridsome-starter
+cd gridsome-starter
+```
+
+Install it and run:
+
+```bash
+npm install
+npm run dev
+# or
+yarn
+yarn dev
+```
+
+Clone the Env
+
+```bash
+cp .env.sample .env
+```
