@@ -1,4 +1,4 @@
-![GraphCMS Logo](assets/gcms-logo.svg)
+![GraphCMS Logo](https://github.com/GraphCMS/graphcms-examples/blob/master/assets/gcms-logo.svg)
 
 # GraphCMS Examples
 
