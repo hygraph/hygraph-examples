@@ -1,5 +1,5 @@
-import { request } from 'graphql-request'
-import useSWR from 'swr'
+import { request } from 'graphql-request';
+import useSWR from 'swr';
 
 function Product({ id, name }) {
   const { data } = useSWR(
@@ -16,14 +16,14 @@ function Product({ id, name }) {
         query,
         { id }
       )
-  )
+  );
 
   return (
     <React.Fragment>
       <h1>{name}</h1>
       {data ? data.productVotes.aggregate.count : 'Loading'}
     </React.Fragment>
-  )
+  );
 }
 
-export default Product
+export default Product;

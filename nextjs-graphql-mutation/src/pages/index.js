@@ -1,11 +1,11 @@
-import { request } from 'graphql-request'
+import { request } from 'graphql-request';
 
-import Product from '../components/product'
+import Product from '../components/product';
 
 function Index({ products }) {
-  const Component = (product, index) => <Product key={index} {...product} />
+  const Component = (product, index) => <Product key={index} {...product} />;
 
-  return products.map(Component)
+  return products.map(Component);
 }
 
 export async function getStaticProps() {
@@ -17,13 +17,13 @@ export async function getStaticProps() {
       name
     }
   }`
-  )
+  );
 
   return {
     props: {
       products,
     },
-  }
+  };
 }
 
-export default Index
+export default Index;
