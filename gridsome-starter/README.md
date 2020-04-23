@@ -4,18 +4,17 @@ This example demonstrates how to query from GraphCMS with Gridsome Static Site g
 
 ## How to Use
 
-### Download manually
-
-Download the example:
+### Download Manually
 
 ```bash
-curl https://codeload.github.com/GraphCMS/graphcms-examples/tar.gz/master | tar -xz --strip-components=1 graphcms-examples-master/gridsome-starter
-cd gridsome-starter
+curl https://codeload.github.com/GraphCMS/graphcms-examples/tar.gz/master | \
+tar -xz --strip-components=1 graphcms-examples-master/gridsome-starter
 ```
 
-Install it and run:
+Install & Run:
 
 ```bash
+cd gridsome-starter
 npm install
 npm run dev
 # or
@@ -23,8 +22,10 @@ yarn
 yarn dev
 ```
 
+### Run on Codesandbox
+
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/gridsome-readme-update/gridsome-starter)
+
 ## Deploy on [Vercel](https://vercel.com/signup?next=onboarding)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/gridsome-readme-update/gridsome-starter)
-
-[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/gridsome-readme-update/gridsome-starter)
