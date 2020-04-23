@@ -33,8 +33,4 @@ cp env.sample .env
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/gridsome-readme-update/gridsome-starter)
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/GraphCMS/graphcms-examples/tree/gridsome-readme-update/gridsome-starter)
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://app.netlify.com/start/deploy?repository=https://github.com/GraphCMS/graphcms-examples/tree/gridsome-readme-update/gridsome-starter)
-
 [![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/gridsome-readme-update/gridsome-starter)
