@@ -32,3 +32,5 @@ cp env.sample .env
 ## Deploy on [Vercel](https://vercel.com/signup?next=onboarding)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/gridsome-starter)
+
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/gridsome-starter)
