@@ -1,6 +1,6 @@
 # Gridsome Starter
 
-This example demonstrates how to query from GraphCMS with Gridsom Static Site generator.
+This example demonstrates how to query from GraphCMS with Gridsome Static Site generator.
 
 ## How to Use
 
@@ -21,12 +21,6 @@ npm run dev
 # or
 yarn
 yarn dev
-```
-
-Clone the Env
-
-```bash
-cp env.sample .env
 ```
 
 ## Deploy on [Vercel](https://vercel.com/signup?next=onboarding)
