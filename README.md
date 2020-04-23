@@ -13,7 +13,7 @@ Example projects to help you get started with GraphCMS.
 # Examples
 
 - React
-  - [Next.js GraphQl Request](nextjs-graphql-request/README.md)
+  - [Next.js GraphQL Request](nextjs-graphql-request/README.md)
   - [Next.js GraphQL Mutation](nextjs-graphql-mutation/README.md)
   - [Gatsby Source GraphQL](gatsby-source-graphql/README.md)
   - [React Apollo Blog](react-apollo-blog/README.md)
