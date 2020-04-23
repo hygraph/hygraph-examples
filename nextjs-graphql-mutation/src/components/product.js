@@ -21,10 +21,29 @@ function Product({ id, name }) {
       )
   );
 
+  async function handleClick() {
+    const newCount = data.productVotes.aggregate.count + 1;
+
+    mutate(
+      { ...data, productVotes: { aggregate: { count: newCount } } },
+      false
+    );
+
+    await fetch('/api/upvote', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify({ id }),
+    });
+  }
+
   return (
     <React.Fragment>
       <h1>{name}</h1>
-      {data ? data.productVotes.aggregate.count : 'Loading'}
+      <button onClick={handleClick} disabled={!data}>
+        {data ? data.productVotes.aggregate.count : 'Loading'}
+      </button>
     </React.Fragment>
   );
 }
