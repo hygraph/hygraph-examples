@@ -6,26 +6,26 @@ Example projects to help you get started with GraphCMS.
 
 [Join our Slack](https://slack.graphcms.com)
 
-## Guides
 
-- ### [Documentation](https://graphcms.com/docs)
+## [Documentation](https://graphcms.com/docs)
+
 
 ## Examples
 
-### Using GraphCMS
+### GraphCMS Features & Recipes
 
 Examples demonstrating how to use GraphCMS features.
 
-| Name                                   | Description                                                                                                                                                                                                                                        |
+| Features       | Description                                                                                                                                                                                                                             |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Using Mutations](using-mutations)     | [Next.js](https://nextjs.org) app demonstrating how to use GraphCMS mutations with [`graphql-request`](https://github.com/prisma-labs/graphql-request), [`SWR`](https://github.com/zeit/swr) and API routes                                        |
 | [Using Union Types](using-union-types) | A basic product marketing site using union types to compose UI 'blocks' with components. Built with [Next.js](https://nextjs.org), [`graphql-request`](https://github.com/prisma-labs/graphql-request) and [Tailwind CSS](https://tailwindcss.com) |
 
-### Working with
+### Frameworks & Libraries
 
 Examples demonstrating how to use GraphCMS with popular application frameworks.
 
-| Name                      | Description                                                                                                                                                                                   |
+| Frameworks & Libraries    | Description                                                                                                                                                                                   |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Gatsby](with-gatsby)     | A basic [Gatsby](https://www.gatsbyjs.org/) site that uses [`gatsby-source-graphql`](https://www.gatsbyjs.org/packages/gatsby-source-graphql/) to build product pages with data from GraphCMS |
 | [Gridsome](with-gridsome) |                                                                                                                                                                                               |
