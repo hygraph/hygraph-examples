@@ -1,9 +1,9 @@
 function Feature({ content, title }) {
   return (
-    <>
-      <h3>{title}</h3>
+    <div>
+      <h3 className="font-medium mb-2 text-lg">{title}</h3>
       <p>{content}</p>
-    </>
+    </div>
   );
 }
 
