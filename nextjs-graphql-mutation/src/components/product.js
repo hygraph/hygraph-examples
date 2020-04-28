@@ -18,7 +18,8 @@ function Product({ id, name }) {
         'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
         query,
         { id }
-      )
+      ),
+    { revalidateOnFocus: false }
   );
 
   async function handleClick() {
