@@ -1,4 +1,3 @@
-
 <img src="https://raw.githubusercontent.com/GraphCMS/graphcms-examples/master/assets/gcms-logo.svg?sanitize=true" width="700px" alt="GraphCMS Logo" />
 
 # GraphCMS Examples
@@ -14,8 +13,9 @@ Example projects to help you get started with GraphCMS.
 # Examples
 
 - React
-  - [NextJs GraphQL Request](nextjs-graphql-request)
-  - [NextJs GraphQL Mutation](nextjs-graphql-mutation)
+  - [Next.js GraphQL Request](nextjs-graphql-request)
+  - [Next.js GraphQL Mutation](nextjs-graphql-mutation)
+  - [Next.js Union Types](nextjs-graphql-mutation)
   - [Gatsby Source GraphQL](gatsby-source-graphql)
   - [React Apollo Blog](react-apollo-blog)
 - Vue
