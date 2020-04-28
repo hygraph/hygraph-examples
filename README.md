@@ -14,13 +14,14 @@ Example projects to help you get started with GraphCMS.
 # Examples
 
 - React
-  - [NextJs GraphQl Request ](nextjs-graphql-request/README.md)
-  - [Gatsby Source GraphQL ](gatsby-source-graphql/README.md)
-  - [React Apollo Blog ](react-apollo-blog/README.md)
+  - [NextJs GraphQL Mutation](nextjs-graphql-request/README.md)
+  - [NextJs GraphQL Mutation](nextjs-graphql-mutation/README.md)
+  - [Gatsby Source GraphQL](gatsby-source-graphql/README.md)
+  - [React Apollo Blog](react-apollo-blog/README.md)
 - Vue
-  - [Gridsome Starter ](gatsby-source-graphql/README.md)
-  - [Nuxt Starter ](nuxt-starter/README.md)
-  - [Vue Starter ](vue-starter/README.md)
+  - [Gridsome Starter](gatsby-source-graphql/README.md)
+  - [Nuxt Starter](nuxt-starter/README.md)
+  - [Vue Starter](vue-starter/README.md)
 
 ## Community Examples
 
