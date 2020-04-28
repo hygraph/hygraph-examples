@@ -23,6 +23,10 @@ export async function getStaticProps() {
       page(where: { slug: $slug }) {
         blocks {
           __typename
+          ... on Cta {
+            content
+            title
+          }
           ... on Grid {
             columns {
               __typename
