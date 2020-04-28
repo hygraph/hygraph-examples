@@ -1,17 +1,30 @@
-# GraphCMS starter blog with React & Apollo Client 
+# GraphCMS Starter Blog with Apollo Client
 
 [Join our Slack](https://slack.graphcms.com)
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This example demonstrates how to query from GraphCMS with Apollo Client.
 
-For an overview of how things work in `React` please refer to the [React docs](https://reactjs.org/docs/hello-world.html)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/react-apollo-blog)
 
-# Preview
+## How to Use
 
-[Codesandbox Preview](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/next/react-apollo-blog)
+### Download Manually
 
-## How to start
-
+```bash
+npx create-gcms-app react-apollo-blog
 ```
-git clone https://github.com/GraphCMS/graphcms-examples.git && cd graphcms-examples/next/react-apollo-blog && yarn && yarn start
+
+Install & Run:
+
+```bash
+cd react-apollo-blog
+npm install
+npm run dev
+# or
+yarn
+yarn dev
 ```
+
+### Run on Codesandbox
+
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/react-apollo-blog)
