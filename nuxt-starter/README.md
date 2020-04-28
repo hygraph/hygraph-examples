@@ -1,22 +1,38 @@
-# nuxt-starter
+# NuxtJs Starter
 
-> Nuxt starter for GraphCMS
+[Join our Slack](https://slack.graphcms.com)
 
-## Build Setup
+This example demonstrates how to query from GraphCMS with NuxtJs.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/nuxt-starter)
+
+## How to Use
+
+### Download Manually
 
 ```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+npx create-gcms-app nuxt-starter
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Install & Run:
+
+```bash
+cd nuxt-starter
+npm install
+npm run dev
+# or
+yarn
+yarn dev
+```
+
+### generate static project
+
+```bash
+npm run generate
+# or
+yarn generate
+```
+
+### Run on Codesandbox
+
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/nuxt-starter)
