@@ -25,14 +25,14 @@ Examples demonstrating how to use GraphCMS features.
 
 Examples demonstrating how to use GraphCMS with popular application frameworks.
 
-| Frameworks & Libraries    | Description                                                                                                                                                                                   |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Frameworks & Libraries    | Description |
+| ------------------------- | ----------- |
 | [Gatsby](with-gatsby)     | A basic [Gatsby](https://www.gatsbyjs.org/) site that uses [`gatsby-source-graphql`](https://www.gatsbyjs.org/packages/gatsby-source-graphql/) to build product pages with data from GraphCMS |
-| [Gridsome](with-gridsome) |                                                                                                                                                                                               |
+| [Gridsome](with-gridsome) | A basic starter using `gridsome create` CLI and `@gridsome/source-graphql` |
 | [React.js](with-reactjs)  | [`create-react-app`](https://github.com/facebook/create-react-app) example that uses [`apollo-client`](https://github.com/apollographql/apollo-client) to build a blog                        |
 | [Next.js](with-nextjs)    | A basic [Next.js](https://nextjs.org) application, featuring `getStaticProps` and `getStaticPaths` to build static product pages                                                              |
-| [Nuxt.js](with-nuxtjs)    |                                                                                                                                                                                               |
-| [Vue.js](with-vuejs)      |                                                                                                                                                                                               |
+| [Nuxt.js](with-nuxtjs)    | A simple NuxtJs starter using `create-nuxt-app` CLI with Tailwind and Axios added |
+| [Vue.js](with-vuejs)      | A vanilla VueJs starter using `vue create` CLI with Vue Router |
 
 ### Built by the community
 
