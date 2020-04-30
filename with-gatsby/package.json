@@ -1,4 +1,5 @@
 {
+  "name": "graphcms-with-gatsby",
   "private": true,
   "scripts": {
     "build": "gatsby build",

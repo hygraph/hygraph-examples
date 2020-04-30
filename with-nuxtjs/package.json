@@ -1,9 +1,7 @@
 {
-  "name": "nuxt-starter",
-  "version": "1.0.0",
-  "description": "Nuxt starter for GraphCMS",
-  "author": "Jesse",
+  "name": "graphcms-with-nuxtjs",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
