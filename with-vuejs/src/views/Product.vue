@@ -37,15 +37,18 @@ export default {
       this.loading = true;
       // replace `getPost` with your data fetching util / API wrapper
       try {
-        const response = await fetch(process.env.VUE_APP_GRAPHCMS_ENDPOINT, {
-          method: 'POST',
-          body: JSON.stringify({
-            query: `query GetProduct($slug: String){ product(where: {slug: $slug}) { name description price } }`,
-            variables: {
-              slug: this.$route.params.slug,
-            },
-          }),
-        });
+        const response = await fetch(
+          'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
+          {
+            method: 'POST',
+            body: JSON.stringify({
+              query: `query GetProduct($slug: String){ product(where: {slug: $slug}) { name description price } }`,
+              variables: {
+                slug: this.$route.params.slug,
+              },
+            }),
+          }
+        );
         const { data } = await response.json();
         this.loading = false;
         this.error = data.error;

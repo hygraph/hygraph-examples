@@ -27,12 +27,15 @@ export default {
     };
   },
   async created() {
-    const response = await fetch(process.env.VUE_APP_GRAPHCMS_ENDPOINT, {
-      method: 'POST',
-      body: JSON.stringify({
-        query: `{ products { name slug } }`,
-      }),
-    });
+    const response = await fetch(
+      'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          query: `{ products { name slug } }`,
+        }),
+      }
+    );
 
     const { data } = await response.json();
 
