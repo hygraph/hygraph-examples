@@ -1,4 +1,4 @@
-# Basic union types example
+# GraphQl Union Types in GraphCMS with Next.js
 
 [Join our Slack](https://slack.graphcms.com)
 
@@ -6,29 +6,30 @@ GraphCMS supports [polymorphic relations](https://graphcms.com/docs/guides/conce
 
 This example is built with [Next.js](https://nextjs.org), [`graphql-request`](https://github.com/prisma-labs/graphql-request) and [Tailwind CSS](https://tailwindcss.com).
 
-• [Demo](https://nextjs-union-types.now.sh/)
+• [Demo](https://graphcms-using-union-types.now.sh)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/gatsby-source-graphql)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/using-union-types)
 
 ## How to Use
 
 ### Download Manually
 
 ```bash
-npx create-gcms-app next-union-types
+npx create-gcms-app using-union-types
 ```
 
 Install & Run:
 
 ```bash
-cd next-union-types
+cd using-union-types
 npm install
 npm run dev
 # or
+cd using-union-types
 yarn
 yarn dev
 ```
 
 ### Run on Codesandbox
 
-[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/next-union-types)
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/using-union-types)
