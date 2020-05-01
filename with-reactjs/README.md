@@ -2,7 +2,7 @@
 
 [Join our Slack](https://slack.graphcms.com)
 
-This example demonstrates how to query from GraphCMS with `apollo-client`.
+This example demonstrates how to query from GraphCMS with `graphql-request` in React.js.
 
 • [Demo](https://graphcms-with-reactjs.now.sh)
 

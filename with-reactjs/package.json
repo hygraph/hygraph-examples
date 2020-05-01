@@ -3,30 +3,34 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "apollo-cache-inmemory": "^1.1.1",
-    "apollo-client": "^2.0.3",
-    "apollo-link-http": "^1.2.0",
-    "graphql": "^0.11.7",
-    "graphql-tag": "^2.5.0",
-    "react": "^16.1.1",
-    "react-apollo": "^2.0.1",
-    "react-dom": "^16.1.1",
-    "react-markdown": "^3.1.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "graphql-request": "1.8.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "standard && react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "lint": "standard --fix"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "babel-eslint": "^8.0.2",
-    "standard": "^10.0.3"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "standard": {
-    "parser": "babel-eslint"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
