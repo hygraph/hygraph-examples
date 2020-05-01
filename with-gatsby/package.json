@@ -1,6 +1,7 @@
 {
   "name": "graphcms-with-gatsby",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",

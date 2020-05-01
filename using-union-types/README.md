@@ -1,4 +1,4 @@
-# GraphQl Union Types in GraphCMS with Next.js
+# Working with union types in GraphCMS
 
 [Join our Slack](https://slack.graphcms.com)
 
