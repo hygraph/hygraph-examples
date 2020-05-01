@@ -1,11 +1,10 @@
 {
-  "name": "nextjs-graphcms",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "graphcms-with-nextjs",
+  "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "next build",
     "dev": "next",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {

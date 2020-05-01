@@ -1,9 +1,6 @@
 {
-  "name": "create-react-app-apollo-blog",
-  "version": "1.0.0",
-  "description": "GraphCMS Blog starter using Apollo Client and create-react-app",
-  "repository": "https://github.com/hmeissner/graphcms-templates",
-  "author": "Hugo Meissner <hugomeissner@icloud.com>",
+  "name": "graphcms-with-reactjs",
+  "private": true,
   "license": "MIT",
   "dependencies": {
     "apollo-cache-inmemory": "^1.1.1",

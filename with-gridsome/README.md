@@ -1,29 +1,31 @@
-# Gridsome Starter
+# GraphCMS ⨯ Gridsome
 
-This example demonstrates how to query from GraphCMS with Gridsome Static Site generator.
+This example demonstrates how to query data from GraphCMS with `@gridsome/source-graphql`.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/gridsome-starter)
+• [Demo](https://graphcms-with-gridsome.now.sh)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-gridsome)
 
 ## How to Use
 
 ### Download Manually
 
 ```bash
-curl https://codeload.github.com/GraphCMS/graphcms-examples/tar.gz/master | \
-tar -xz --strip-components=1 graphcms-examples-master/gridsome-starter
+npx create-gcms-app with-gridsome
 ```
 
 Install & Run:
 
 ```bash
-cd gridsome-starter
+cd with-gridsome
 npm install
 npm run dev
 # or
+cd with-gridsome
 yarn
 yarn dev
 ```
 
 ### Run on Codesandbox
 
-[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/gridsome-starter)
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/with-gridsome)

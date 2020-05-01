@@ -1,7 +1,6 @@
 {
-  "name": "nextjs-union-types",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "graphcms-using-union-types",
+  "private": true,
   "license": "MIT",
   "scripts": {
     "dev": "next",
