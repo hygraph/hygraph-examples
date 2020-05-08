@@ -33,6 +33,7 @@ Examples demonstrating how to use GraphCMS with popular application frameworks.
 | [Next.js](with-nextjs)    | A basic [Next.js](https://nextjs.org) application, featuring `getStaticProps` and `getStaticPaths` to build static product pages                                                              |
 | [Nuxt.js](with-nuxtjs)    | A simple NuxtJs starter using `create-nuxt-app` CLI with Tailwind and Axios added |
 | [Vue.js](with-vuejs)      | A vanilla VueJs starter using `vue create` CLI with Vue Router |
+| [Sapper](with-sapper)      | A SeveltJs example using Sapper. |
 
 ### Built by the community
 
