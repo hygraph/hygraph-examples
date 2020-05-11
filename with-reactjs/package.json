@@ -15,13 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-<<<<<<< HEAD
     "eject": "react-scripts eject",
     "lint": "standard --fix"
-=======
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
->>>>>>> b54f5dfc2cdef1dc68958b1b84ed8e8b7e315a08
   },
   "eslintConfig": {
     "extends": "react-app"
