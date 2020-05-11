@@ -1,15 +1,12 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "graphcms-with-sapper",
+  "description": "Example starter with Sapper",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper build",
+    "build": "ls && sapper build",
     "export": "sapper export",
-    "start": "node __sapper__/build",
-    "cy:run": "cypress run",
-    "cy:open": "cypress open",
-    "test": "run-p --race dev cy:run"
+    "start": "node __sapper__/build"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
