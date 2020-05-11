@@ -30,9 +30,12 @@ export default {
     Logo
   },
   async asyncData() {
-    const { data } = await axios.post(process.env.GRAPHCMS_ENDPOINT, {
-      query: `{ products { name slug } }`
-    })
+    const { data } = await axios.post(
+      'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
+      {
+        query: `{ products { name slug } }`
+      }
+    )
     return { products: data.data.products }
   }
 }

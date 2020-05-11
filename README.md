@@ -6,9 +6,7 @@ Example projects to help you get started with GraphCMS.
 
 [Join our Slack](https://slack.graphcms.com)
 
-
 ## [Documentation](https://graphcms.com/docs)
-
 
 ## Examples
 
@@ -16,24 +14,26 @@ Example projects to help you get started with GraphCMS.
 
 Examples demonstrating how to use GraphCMS features.
 
-| Features       | Description                                                                                                                                                                                                                             |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Using Mutations](using-mutations)     | [Next.js](https://nextjs.org) app demonstrating how to use GraphCMS mutations with [`graphql-request`](https://github.com/prisma-labs/graphql-request), [`SWR`](https://github.com/zeit/swr) and API routes                                        |
-| [Using Union Types](using-union-types) | A basic product marketing site using union types to compose UI 'blocks' with components. Built with [Next.js](https://nextjs.org), [`graphql-request`](https://github.com/prisma-labs/graphql-request) and [Tailwind CSS](https://tailwindcss.com) |
+| Features                               | Description                                                                                                                                                                                                                                        | Demo                                      |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| [Using Mutations](using-mutations)     | [Next.js](https://nextjs.org) app demonstrating how to use GraphCMS mutations with [`graphql-request`](https://github.com/prisma-labs/graphql-request), [`SWR`](https://github.com/zeit/swr) and API routes                                        | https://graphcms-using-mutations.now.sh   |
+| [Using Union Types](using-union-types) | A basic product marketing site using union types to compose UI 'blocks' with components. Built with [Next.js](https://nextjs.org), [`graphql-request`](https://github.com/prisma-labs/graphql-request) and [Tailwind CSS](https://tailwindcss.com) | https://graphcms-using-union-types.now.sh |
 
 ### Frameworks & Libraries
 
 Examples demonstrating how to use GraphCMS with popular application frameworks.
 
-| Frameworks & Libraries    | Description |
-| ------------------------- | ----------- |
-| [Gatsby](with-gatsby)     | A basic [Gatsby](https://www.gatsbyjs.org/) site that uses [`gatsby-source-graphql`](https://www.gatsbyjs.org/packages/gatsby-source-graphql/) to build product pages with data from GraphCMS |
-| [Gridsome](with-gridsome) | A basic starter using `gridsome create` CLI and `@gridsome/source-graphql` |
-| [React.js](with-reactjs)  | [`create-react-app`](https://github.com/facebook/create-react-app) example that uses [`apollo-client`](https://github.com/apollographql/apollo-client) to build a blog                        |
-| [Next.js](with-nextjs)    | A basic [Next.js](https://nextjs.org) application, featuring `getStaticProps` and `getStaticPaths` to build static product pages                                                              |
-| [Nuxt.js](with-nuxtjs)    | A simple NuxtJs starter using `create-nuxt-app` CLI with Tailwind and Axios added |
-| [Vue.js](with-vuejs)      | A vanilla VueJs starter using `vue create` CLI with Vue Router |
-| [Sapper](with-sapper)      | A SeveltJs example using Sapper. |
+| Frameworks & Libraries                | Description                                                                                                                                                                                   | Demo                                        |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| [Gatsby](with-gatsby)                 | A basic [Gatsby](https://www.gatsbyjs.org/) site that uses [`gatsby-source-graphql`](https://www.gatsbyjs.org/packages/gatsby-source-graphql/) to build product pages with data from GraphCMS | https://graphcms-with-gatsby.now.sh         |
+| [Gatsby Image](with-gatsby-image)     | How to use [`gatsby-image`](https://www.gatsbyjs.org/packages/gatsby-image/) with GraphCMS assets                                                                                             | https://graphcms-with-gatsby-image.now.sh   |
+| [GraphCMS Image](with-graphcms-image) | How to use [`graphcms-image`](https://github.com/GraphCMS/graphcms-image) with Gatsby                                                                                                         | https://graphcms-with-graphcms-image.now.sh |
+| [Gridsome](with-gridsome)             | A basic example using `gridsome create` CLI and [`@gridsome/source-graphql`](https://www.npmjs.com/package/@gridsome/source-graphql)                                                          | https://graphcms-with-gridsome.now.sh       |
+| [Next.js](with-nextjs)                | A basic [Next.js](https://nextjs.org) application, featuring `getStaticProps` and `getStaticPaths` to build static product pages                                                              | https://graphcms-with-nextjs.now.sh         |
+| [Nuxt.js](with-nuxtjs)                | A simple Nuxt.js starter using `create-nuxt-app` CLI with Tailwind and Axios added                                                                                                            | https://graphcms-with-nuxtjs.now.sh         |
+| [React.js](with-reactjs)              | [`create-react-app`](https://github.com/facebook/create-react-app) example that uses [`apollo-client`](https://github.com/apollographql/apollo-client) to build a blog                        | https://graphcms-with-reactjs.now.sh        |
+| [Vue.js](with-vuejs)                  | A vanilla Vue.js starter using `vue create` CLI with Vue Router                                                                                                                               | https://graphcms-with-vuejs.now.sh          |
+| [Sapper](with-sapper)                 | A SeveltJs example using Sapper.                                                                                                                                                              | https://graphcms-with-sapper.now.sh         |
 
 ### Built by the community
 

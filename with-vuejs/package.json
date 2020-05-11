@@ -1,7 +1,7 @@
 {
-  "name": "vue-starter",
-  "version": "0.1.0",
+  "name": "graphcms-with-vuejs",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

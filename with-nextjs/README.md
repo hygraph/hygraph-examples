@@ -1,30 +1,33 @@
-# NextJs GraphQl GraphQL Request
+# GraphCMS ⨯ Next.js
 
 [Join our Slack](https://slack.graphcms.com)
 
-This example demonstrates how to query from GraphCMS with GraphQL Request in NextJs.
+This example demonstrates how to query from GraphCMS with `graphql-request` in Next.js.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/nextjs-graphql-request)
+• [Demo](https://graphcms-with-nextjs.now.sh)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-nextjs)
 
 ## How to Use
 
 ### Download Manually
 
 ```bash
-npx create-gcms-app nextjs-graphql-request
+npx create-gcms-app with-nextjs
 ```
 
 Install & Run:
 
 ```bash
-cd nextjs-graphql-request
+cd with-nextjs
 npm install
 npm run dev
 # or
+cd with-nextjs
 yarn
 yarn dev
 ```
 
 ### Run on Codesandbox
 
-[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/nextjs-graphql-request)
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/with-nextjs)

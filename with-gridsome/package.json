@@ -1,6 +1,7 @@
 {
-  "name": "gridsome-starter",
+  "name": "graphcms-with-gridsome",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
