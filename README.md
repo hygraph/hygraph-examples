@@ -33,6 +33,7 @@ Examples demonstrating how to use GraphCMS with popular application frameworks.
 | [Nuxt.js](with-nuxtjs)                | A simple Nuxt.js starter using `create-nuxt-app` CLI with Tailwind and Axios added                                                                                                            | https://graphcms-with-nuxtjs.now.sh         |
 | [React.js](with-reactjs)              | [`create-react-app`](https://github.com/facebook/create-react-app) example that uses [`apollo-client`](https://github.com/apollographql/apollo-client) to build a blog                        | https://graphcms-with-reactjs.now.sh        |
 | [Vue.js](with-vuejs)                  | A vanilla Vue.js starter using `vue create` CLI with Vue Router                                                                                                                               | https://graphcms-with-vuejs.now.sh          |
+| [Sapper](with-sapper)                 | A SeveltJs example using Sapper.                                                                                                                                                              | https://graphcms-with-sapper.now.sh         |
 
 ### Built by the community
 
