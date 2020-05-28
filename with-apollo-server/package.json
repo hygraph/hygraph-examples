@@ -1,0 +1,14 @@
+{
+  "name": "graphcms-with-apollo-server",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "micro"
+  },
+  "dependencies": {
+    "apollo-datasource-graphql": "1.3.2",
+    "apollo-server-micro": "2.14.0",
+    "graphql": "15.0.0",
+    "micro": "9.3.4"
+  }
+}
