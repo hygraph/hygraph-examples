@@ -1,5 +1,0 @@
-{
-  "name": "graphcms-with-apollo-server",
-  "description": "Pull a GraphCMS schema into Apollo Server",
-  "repository": "https://github.com/GraphCMS/graphcms-examples/tree/master/with-apollo-server"
-}
