@@ -1,5 +1,5 @@
 const { GraphQLDataSource } = require('apollo-datasource-graphql');
-const { gql } = require('apollo-server-micro');
+const { gql } = require('apollo-server');
 
 const getProductsQuery = gql`
   {
