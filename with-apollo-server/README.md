@@ -4,9 +4,9 @@
 
 Using [`apollo-datasource-graphql`](https://github.com/poetic/apollo-datasource-graphql) to pull a GraphCMS schema into an existing Apollo Server.
 
-• [Demo](https://graphcms-with-apollo-server.now.sh)
+• [Demo](https://graphcms-with-apollo-server.herokuapp.com)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-apollo-server)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## How to Use
 
