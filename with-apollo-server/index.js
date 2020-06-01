@@ -1,4 +1,4 @@
-const { ApolloServer, gql } = require('apollo-server-micro');
+const { ApolloServer, gql } = require('apollo-server');
 
 const GraphCMSAPI = require('./datasources/graphcms');
 
@@ -23,7 +23,7 @@ const resolvers = {
   },
 };
 
-const apolloServer = new ApolloServer({
+const server = new ApolloServer({
   typeDefs,
   resolvers,
   dataSources: () => ({ GraphCMS: new GraphCMSAPI() }),
@@ -31,4 +31,6 @@ const apolloServer = new ApolloServer({
   playground: true,
 });
 
-module.exports = apolloServer.createHandler({ path: '/graphql' });
+server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+  console.log(`🚀 Server ready at ${url}`);
+});
