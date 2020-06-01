@@ -6,8 +6,6 @@ Using [`apollo-datasource-graphql`](https://github.com/poetic/apollo-datasource-
 
 • [Demo](https://graphcms-with-apollo-server.herokuapp.com)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
 ## How to Use
 
 ### Download Manually
