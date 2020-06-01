@@ -3,6 +3,7 @@ node_modules
 build
 .now
 .next
+.vercel
 public
 .env
 .DS_Store
