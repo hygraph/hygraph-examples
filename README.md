@@ -1,12 +1,10 @@
-<img src="https://raw.githubusercontent.com/GraphCMS/graphcms-examples/master/assets/gcms-logo.svg?sanitize=true" width="700px" alt="GraphCMS Logo" />
+<img src="https://raw.githubusercontent.com/GraphCMS/graphcms-examples/master/assets/gcms-logo.svg?sanitize=true" width="350px" alt="GraphCMS Logo" />
 
 # GraphCMS Examples
 
 Example projects to help you get started with GraphCMS.
 
-[Join our Slack](https://slack.graphcms.com)
-
-## [Documentation](https://graphcms.com/docs)
+[Join our Slack](https://slack.graphcms.com) &middot; [Read the Docs](https://graphcms.com/docs) &middot; [Learn more about GraphCMS](https://graphcms.com)
 
 ## Examples
 
@@ -35,7 +33,6 @@ Examples demonstrating how to use GraphCMS with popular application frameworks.
 | [React.js](with-reactjs)              | [`create-react-app`](https://github.com/facebook/create-react-app) example that uses [`apollo-client`](https://github.com/apollographql/apollo-client) to build a blog                                 | https://graphcms-with-reactjs.now.sh              |
 | [Vue.js](with-vuejs)                  | A vanilla Vue.js starter using `vue create` CLI with Vue Router                                                                                                                                        | https://graphcms-with-vuejs.now.sh                |
 | [Sapper](with-sapper)                 | A SeveltJs example using Sapper.                                                                                                                                                                       | https://graphcms-with-sapper.now.sh               |
-
 ### Built by the community
 
 | Name                                                                                | Author |
