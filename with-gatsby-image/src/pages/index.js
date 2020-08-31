@@ -29,8 +29,8 @@ const IndexPage = () => {
     gcms: { products },
   } = useStaticQuery(pageQuery);
 
-  return products.map((product) => (
-    <div style={{ textAlign: 'center' }}>
+  return products.map((product, index) => (
+    <div style={{ textAlign: 'center' }} key={index}>
       <Img
         fluid={product.image.node.childImageSharp.fluid}
         style={{ margin: '0 auto', maxWidth: '50%' }}
