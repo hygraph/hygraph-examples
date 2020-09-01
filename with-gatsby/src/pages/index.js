@@ -3,8 +3,8 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 
 const pageQuery = graphql`
   {
-    gcms {
-      products {
+    products: allGraphCmsProduct {
+      nodes {
         name
         slug
         price
@@ -14,11 +14,9 @@ const pageQuery = graphql`
 `;
 
 const IndexPage = () => {
-  const {
-    gcms: { products },
-  } = useStaticQuery(pageQuery);
+  const { products } = useStaticQuery(pageQuery);
 
-  return products.map(({ slug, ...product }) => (
+  return products.nodes.map(({ slug, ...product }) => (
     <Link key={slug} to={`/products/${slug}`}>
       {product.name}
     </Link>
