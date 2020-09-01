@@ -1,0 +1,38 @@
+fragment Product on Product {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  name
+  slug
+  description
+  price
+  reviews {
+    ... on Review {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+  votes {
+    ... on Vote {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+  image {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+  content {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
+  content2
+}

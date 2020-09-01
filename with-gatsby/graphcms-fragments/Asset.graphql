@@ -1,0 +1,18 @@
+fragment Asset on Asset {
+  stage
+  locale
+  remoteId: id
+  handle
+  fileName
+  height
+  width
+  size
+  mimeType
+  productImage {
+    ... on Product {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+  url
+}

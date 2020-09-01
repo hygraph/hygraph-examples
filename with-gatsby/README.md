@@ -2,7 +2,7 @@
 
 [Join our Slack](https://slack.graphcms.com)
 
-This example demonstrates how to query data from GraphCMS with `gatsby-source-graphql`.
+This example demonstrates how to query data from GraphCMS with [`gatsby-source-graphcms`](https://github.com/GraphCMS/gatsby-source-graphcms).
 
 • [Demo](https://graphcms-with-gatsby.now.sh)
 
