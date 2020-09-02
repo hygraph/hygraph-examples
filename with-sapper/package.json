@@ -13,11 +13,11 @@
     "compression": "^1.7.1",
     "isomorphic-unfetch": "^3.0.0",
     "polka": "next",
-    "sirv": "^0.4.0"
+    "sirv": "^1.0.0"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5",
-    "sapper": "^0.27.0",
+    "sapper": "^0.28.0",
     "svelte": "^3.0.0",
     "svelte-loader": "^2.9.0",
     "webpack": "^4.7.0"

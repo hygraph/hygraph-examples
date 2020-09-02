@@ -27,12 +27,12 @@ async@0.9.x:
   resolved "https://registry.yarnpkg.com/async/-/async-0.9.2.tgz#aea74d5e61c1f899613bf64bda66d4c78f2fd17d"
   integrity sha1-rqdNXmHB+JlhO/ZL2mbUx48v0X0=
 
-awesome-graphql-client@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/awesome-graphql-client/-/awesome-graphql-client-0.3.2.tgz#d954e06fe1e3c2bb462c2424d70a1a912634e29f"
-  integrity sha512-p0YKhZIL8zS+5W2arNnszAJHWAamB117h7dIzC6UNQcQ5m6xG1RSO1IkN7RJyUrAdYmsKD6QwpA4wHp9D4uhAA==
+awesome-graphql-client@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/awesome-graphql-client/-/awesome-graphql-client-0.5.0.tgz#93c6b8900545e0c5f4e47cd708c7b3974181fdb2"
+  integrity sha512-gsgcjLp0ZbCNjkiGyc9qVSNS/K1u5eZjbNAi97itl0o4AhUd9z6OXiTHdkCPZSA1OpOiPF0BTKtv8LGC30WAeA==
   dependencies:
-    extract-files "^8.1.0"
+    extract-files "9.0.0"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -138,10 +138,10 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-ejs@3.1.3:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.3.tgz#514d967a8894084d18d3d47bd169a1c0560f093d"
-  integrity sha512-wmtrUGyfSC23GC/B1SMv2ogAUgbQEtDmTIhfqielrG5ExIM9TP4UoYdi90jLF1aTcsWCJNEO0UrgKzP0y3nTSg==
+ejs@3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.5.tgz#aed723844dc20acb4b170cd9ab1017e476a0d93b"
+  integrity sha512-dldq3ZfFtgVTJMLjOe+/3sROTzALlL9E34V4/sDtUd/KlBSS0s6U1/+WPE1B4sj9CXHJpL1M6rhNJnc9Wbal9w==
   dependencies:
     jake "^10.6.1"
 
@@ -201,10 +201,10 @@ express@4.17.1:
     utils-merge "1.0.1"
     vary "~1.1.2"
 
-extract-files@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/extract-files/-/extract-files-8.1.0.tgz#46a0690d0fe77411a2e3804852adeaa65cd59288"
-  integrity sha512-PTGtfthZK79WUMk+avLmwx3NGdU8+iVFXC2NMGxKsn0MnihOG2lvumj+AZo8CTwTrwjXDgZ5tztbRlEdRjBonQ==
+extract-files@9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/extract-files/-/extract-files-9.0.0.tgz#8a7744f2437f81f5ed3250ed9f1550de902fe54a"
+  integrity sha512-CvdFfHkC95B4bBBk36hcEmvdR2awOdhhVUYH6S/zrVj3477zven/fJMYg7121h4T1xHZC+tetUpubpAhxwI7hQ==
 
 filelist@^1.0.1:
   version "1.0.1"
