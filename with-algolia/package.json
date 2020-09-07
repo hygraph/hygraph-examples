@@ -1,0 +1,16 @@
+{
+  "name": "graphcms-with-algolia",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "algoliasearch": "4.4.0",
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-instantsearch-dom": "6.7.0"
+  }
+}
