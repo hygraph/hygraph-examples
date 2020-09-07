@@ -4,7 +4,7 @@
 
 This example demonstrates how to query from GraphCMS with `graphql-request` in Next.js.
 
-• [Demo](https://graphcms-with-nextjs.vercel.app)
+• [Demo](https://graphcms-with-nextjs.now.sh)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-nextjs)
 

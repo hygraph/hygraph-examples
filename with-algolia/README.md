@@ -2,8 +2,6 @@
 
 [Join our Slack](https://slack.graphcms.com)
 
-Using [`apollo-datasource-graphql`](https://github.com/poetic/apollo-datasource-graphql) to pull a GraphCMS schema into an existing Apollo Server.
-
 Using [GraphCMS webhooks](https://graphcms.com/webhooks) to sync data to [Algolia](https://algolia.com) on new published content.
 
 • [Demo](https://graphcms-with-algolia.vercel.app)

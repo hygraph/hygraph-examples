@@ -4,7 +4,7 @@
 
 This example demonstrates how to use `gatsby-image` in conjunction with [`gatsby-source-graphcms`](https://github.com/GraphCMS/gatsby-source-graphcms).
 
-• [Demo](https://graphcms-with-gatsby-image.vercel.app)
+• [Demo](https://graphcms-with-gatsby-image.now.sh)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-gatsby-image)
 

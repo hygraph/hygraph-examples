@@ -4,7 +4,7 @@
 
 This example demonstrates how to query from GraphCMS with Nuxt.js.
 
-• [Demo](https://graphcms-with-nuxtjs.vercel.app)
+• [Demo](https://graphcms-with-nuxtjs.now.sh)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-nuxtjs)
 

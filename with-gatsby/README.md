@@ -4,7 +4,7 @@
 
 This example demonstrates how to query data from GraphCMS with [`gatsby-source-graphcms`](https://github.com/GraphCMS/gatsby-source-graphcms).
 
-• [Demo](https://graphcms-with-gatsby.vercel.app)
+• [Demo](https://graphcms-with-gatsby.now.sh)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-gatsby)
 
