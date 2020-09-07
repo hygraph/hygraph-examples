@@ -5,15 +5,22 @@ const algolia = algoliasearch('HOUK2JPM8O', 'YOUR_ALGOLIA_ADMIN_API_KEY'); // Yo
 const index = algolia.initIndex('products');
 
 export default async (req, res) => {
-  if (req.method !== 'POST') return res.send();
+  if (req.method !== 'POST') return res.end();
 
-  const {
-    data: { PUBLISHED },
-  } = req.body;
+  if (req.headers['authorization'] !== process.env.WEBHOOK_SECRET_KEY)
+    return res.status(401).end();
 
-  const { id: objectID, ...data } = PUBLISHED;
+  try {
+    const {
+      data: { PUBLISHED },
+    } = req.body;
 
-  await index.saveObject({ objectID, ...data });
+    const { id: objectID, ...data } = PUBLISHED;
 
-  res.send(201);
+    await index.saveObject({ objectID, ...data });
+
+    res.send(201);
+  } catch (err) {
+    res.status(400).send(err?.message);
+  }
 };
