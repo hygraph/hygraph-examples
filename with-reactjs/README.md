@@ -4,7 +4,7 @@
 
 This example demonstrates how to query from GraphCMS with `graphql-request` in React.js.
 
-• [Demo](https://graphcms-with-reactjs.now.sh)
+• [Demo](https://graphcms-with-reactjs.vercel.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-reactjs)
 

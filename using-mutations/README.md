@@ -4,7 +4,7 @@
 
 This example demonstrates how to mutate GraphCMS data with Next.js.
 
-• [Demo](https://graphcms-using-mutations.now.sh)
+• [Demo](https://graphcms-using-mutations.vercel.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/using-mutations)
 

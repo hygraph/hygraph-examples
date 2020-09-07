@@ -4,7 +4,7 @@
 
 This example demonstrates how to query from GraphCMS with Vue.js.
 
-• [Demo](https://graphcms-with-vuejs.now.sh)
+• [Demo](https://graphcms-with-vuejs.vercel.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-vuejs)
 

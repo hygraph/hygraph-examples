@@ -6,7 +6,7 @@ GraphCMS supports [polymorphic relations](https://graphcms.com/docs/guides/conce
 
 This example is built with [Next.js](https://nextjs.org), [`graphql-request`](https://github.com/prisma-labs/graphql-request) and [Tailwind CSS](https://tailwindcss.com).
 
-• [Demo](https://graphcms-using-union-types.now.sh)
+• [Demo](https://graphcms-using-union-types.vercel.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/using-union-types)
 

@@ -6,7 +6,7 @@ Using [`apollo-datasource-graphql`](https://github.com/poetic/apollo-datasource-
 
 Using [GraphCMS webhooks](https://graphcms.com/webhooks) to sync data to [Algolia](https://algolia.com) on new published content.
 
-• [Demo](https://graphcms-with-algolia.now.sh)
+• [Demo](https://graphcms-with-algolia.vercel.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-algolia)
 
