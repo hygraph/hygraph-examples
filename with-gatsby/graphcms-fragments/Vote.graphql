@@ -1,0 +1,13 @@
+fragment Vote on Vote {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  product {
+    ... on Product {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}

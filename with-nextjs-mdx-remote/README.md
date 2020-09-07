@@ -4,7 +4,7 @@
 
 This example demonstrates how to use markdown fields from GraphCMS with `MDX` in Next.js.
 
-• [Demo](https://graphcms-with-nextjs-mdx-remote.now.sh)
+• [Demo](https://graphcms-with-nextjs-mdx-remote-ynnoj.graphcms.vercel.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-nextjs-mdx-remote)
 

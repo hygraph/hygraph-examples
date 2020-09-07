@@ -1,11 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-const ProductPage = ({
-  data: {
-    gcms: { product },
-  },
-}) => (
+const ProductPage = ({ data: { product } }) => (
   <React.Fragment>
     <h1>{product.name}</h1>
     <p>{product.description}</p>
@@ -19,13 +15,11 @@ const ProductPage = ({
 );
 
 export const pageQuery = graphql`
-  query ProductPageQuery($id: ID!) {
-    gcms {
-      product(where: { id: $id }) {
-        name
-        description
-        price
-      }
+  query ProductPageQuery($id: String!) {
+    product: graphCmsProduct(id: { eq: $id }) {
+      name
+      description
+      price
     }
   }
 `;
