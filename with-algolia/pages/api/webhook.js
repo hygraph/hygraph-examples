@@ -1,6 +1,6 @@
 const algoliasearch = require('algoliasearch');
 
-const algolia = algoliasearch('HOUK2JPM8O', 'YOUR_ALGOLIA_ADMIN_API_KEY'); // You'll need to provide your own API key!
+const algolia = algoliasearch('HOUK2JPM8O', process.env.ALGOLIA_ADMIN_API_KEY);
 
 const index = algolia.initIndex('products');
 
