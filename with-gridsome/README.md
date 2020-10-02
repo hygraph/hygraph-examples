@@ -11,7 +11,7 @@ This example demonstrates how to query data from GraphCMS with `@gridsome/source
 ### Download Manually
 
 ```bash
-npx create-gcms-app with-gridsome
+npx degit graphcms/graphcms-examples/with-gridsome with-gridsome
 ```
 
 Install & Run:
