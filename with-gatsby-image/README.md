@@ -13,7 +13,7 @@ This example demonstrates how to use `gatsby-image` in conjunction with [`gatsby
 ### Download Manually
 
 ```bash
-npx create-gcms-app with-gatsby-image
+npx degit graphcms/graphcms-examples/with-gatsby-image with-gatsby-image
 ```
 
 Install & Run:
