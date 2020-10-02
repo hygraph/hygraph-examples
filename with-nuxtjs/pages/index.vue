@@ -18,13 +18,22 @@
 </template>
 
 <script>
-export default {
-  async asyncData({ $graphcms, $gql }) {
-    const { products } = await $graphcms.request(
-      $gql`{ products { name slug } }`
-    )
+import { gql } from 'graphql-request';
 
-    return { products }
-  }
-}
+export default {
+  async asyncData({ $graphcms }) {
+    const { products } = await $graphcms.request(
+      gql`
+        {
+          products {
+            name
+            slug
+          }
+        }
+      `
+    );
+
+    return { products };
+  },
+};
 </script>

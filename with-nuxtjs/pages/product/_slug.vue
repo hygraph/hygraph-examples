@@ -7,7 +7,7 @@
         {{
           new Intl.NumberFormat('de-DE', {
             style: 'currency',
-            currency: 'EUR'
+            currency: 'EUR',
           }).format(product.price / 100)
         }}
       </p>
@@ -16,18 +16,28 @@
 </template>
 
 <script>
+import { gql } from 'graphql-request';
+
 export default {
-  async asyncData({ $graphcms, $gql, params }) {
-    const { slug } = params
+  async asyncData({ $graphcms, params }) {
+    const { slug } = params;
 
     const { product } = await $graphcms.request(
-      $gql`query GetProduct($slug: String){ product(where: {slug: $slug}) { name description price } }`,
+      gql`
+        query GetProduct($slug: String) {
+          product(where: { slug: $slug }) {
+            name
+            description
+            price
+          }
+        }
+      `,
       {
-        slug
+        slug,
       }
-    )
+    );
 
-    return { product }
+    return { product };
   },
   head() {
     return {
@@ -36,10 +46,10 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.product.description
-        }
-      ]
-    }
-  }
-}
+          content: this.product.description,
+        },
+      ],
+    };
+  },
+};
 </script>

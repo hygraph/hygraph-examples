@@ -4,13 +4,14 @@
   "license": "MIT",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "nuxt generate",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "export": "nuxt export",
+    "serve": "nuxt serve"
   },
   "dependencies": {
     "graphql": "15.3.0",
     "graphql-request": "3.1.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.14.0"
   }
 }
