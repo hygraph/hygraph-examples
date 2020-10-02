@@ -13,7 +13,7 @@ This example demonstrates how to query data from GraphCMS with [`gatsby-source-g
 ### Download Manually
 
 ```bash
-npx create-gcms-app with-gatsby
+npx degit graphcms/graphcms-examples/with-gatsby with-gatsby
 ```
 
 Install & Run:
