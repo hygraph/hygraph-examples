@@ -13,7 +13,7 @@ Using [GraphCMS webhooks](https://graphcms.com/webhooks) to sync data to [Algoli
 ### Download Manually
 
 ```bash
-npx create-gcms-app with-algolia
+npx degit graphcms/graphcms-examples/with-algolia with-algolia
 ```
 
 Install & Run:

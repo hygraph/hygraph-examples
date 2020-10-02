@@ -15,7 +15,7 @@ This example is built with [Next.js](https://nextjs.org), [`graphql-request`](ht
 ### Download Manually
 
 ```bash
-npx create-gcms-app using-union-types
+npx degit graphcms/graphcms-examples/using-union-types using-union-types
 ```
 
 Install & Run:

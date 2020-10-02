@@ -11,7 +11,7 @@ A simple [Express](https://expressjs.com/) app using `ejs` templating and [`awes
 ### Download Manually
 
 ```bash
-npx create-gcms-app with-express
+npx degit graphcms/graphcms-examples/with-express with-express
 ```
 
 Install & Run:

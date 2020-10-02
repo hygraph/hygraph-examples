@@ -13,7 +13,7 @@ This example demonstrates how to query from GraphCMS with Vue.js.
 ### Download Manually
 
 ```bash
-npx create-gcms-app with-vuejs
+npx degit graphcms/graphcms-examples/with-vuejs with-vuejs
 ```
 
 Install & Run:

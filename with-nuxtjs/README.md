@@ -13,7 +13,7 @@ This example demonstrates how to query from GraphCMS with Nuxt.js.
 ### Download Manually
 
 ```bash
-npx create-gcms-app with-nuxtjs
+npx degit graphcms/graphcms-examples/with-nuxtjs with-nuxtjs
 ```
 
 Install & Run:

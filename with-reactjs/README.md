@@ -13,7 +13,7 @@ This example demonstrates how to query from GraphCMS with `graphql-request` in R
 ### Download Manually
 
 ```bash
-npx create-gcms-app with-reactjs
+npx degit graphcms/graphcms-examples/with-reactjs with-reactjs
 ```
 
 Install & Run:

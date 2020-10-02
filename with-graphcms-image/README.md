@@ -13,7 +13,7 @@ This example demonstrates how to use `graphcms-image` with Gatsby.
 ### Download Manually
 
 ```bash
-npx create-gcms-app with-graphcms-image
+npx degit graphcms/graphcms-examples/with-graphcms-image with-graphcms-image
 ```
 
 Install & Run:

@@ -13,7 +13,7 @@ This example demonstrates how to use markdown fields from GraphCMS with `MDX` in
 ### Download Manually
 
 ```bash
-npx create-gcms-app with-nextjs-mdx-remote
+npx degit graphcms/graphcms-examples/with-nextjs-mdx-remote with-nextjs-mdx-remote
 ```
 
 Install & Run:
