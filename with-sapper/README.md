@@ -13,7 +13,7 @@ This example shows how to use the Svelte framework, Sapper, with GraphCMS. It us
 ### Download Manually
 
 ```bash
-npx create-gcms-app with-sapper
+npx degit graphcms/graphcms-examples/with-sapper with-sapper
 ```
 
 Install & Run:
