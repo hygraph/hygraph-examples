@@ -16,24 +16,23 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
-  async asyncData(context) {
-    const { data } = await axios.post(
-      'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
+  async asyncData({ $graphcms, $gql, params }) {
+    const { slug } = params
+
+    const { product } = await $graphcms.request(
+      $gql`query GetProduct($slug: String){ product(where: {slug: $slug}) { name description price } }`,
       {
-        query: `query GetProduct($slug: String){ product(where: {slug: $slug}) { name description price } }`,
-        variables: { slug: context.params.slug }
+        slug
       }
     )
-    return { product: data.data.product }
+
+    return { product }
   },
   head() {
     return {
       title: this.product.name,
       meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: 'description',
           name: 'description',
@@ -42,8 +41,5 @@ export default {
       ]
     }
   }
-  // and more functionality to discover
 }
 </script>
-
-<style></style>
