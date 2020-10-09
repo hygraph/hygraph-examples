@@ -10,6 +10,11 @@ Using [GraphCMS webhooks](https://graphcms.com/webhooks) to sync data to [Algoli
 
 ## How to Use
 
+- Create Algolia account
+- Insert an Algolia index called `products`
+- Enter your Algolia admin API key into `.env` as `ALGOLIA_ADMIN_API_KEY`
+- Edit `/pages/index.js` and replace the Algolia App ID and Search Only API key with your own
+
 ### Download Manually
 
 ```bash
