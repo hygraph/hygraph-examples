@@ -1,0 +1,15 @@
+fragment Review on Review {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  name
+  comment
+  product {
+    ... on Product {
+      remoteTypeName: __typename
+      remoteId: id
+    }
+  }
+}
