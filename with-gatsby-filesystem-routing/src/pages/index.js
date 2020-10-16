@@ -12,7 +12,7 @@ export const pageQuery = graphql`
     products: allGraphCmsProduct {
       nodes {
         name
-        gatsbyPath(filePath: "./{GraphCmsProduct.slug}")
+        gatsbyPath(filePath: "/{GraphCmsProduct.slug}")
       }
     }
   }
