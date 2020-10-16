@@ -2,7 +2,18 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 function ProductPage({ data: { product } }) {
-  return <pre>{JSON.stringify(product, null, 2)}</pre>;
+  return (
+    <React.Fragment>
+      <h1>{product.name}</h1>
+      <p>{product.description}</p>
+      <p>
+        {new Intl.NumberFormat('de-DE', {
+          style: 'currency',
+          currency: 'EUR',
+        }).format(product.price)}
+      </p>
+    </React.Fragment>
+  );
 }
 
 export const pageQuery = graphql`
