@@ -31,14 +31,14 @@ function IndexPage({
 export async function getStaticPaths() {
   const query = gql`
     {
-      products: productsConnection {
+      productsConnection {
         aggregate {
           count
         }
       }
     }
   `;
-  const { products } = await graphcms.request(query);
+  const { productsConnection } = await graphcms.request(query);
 
   function* numberOfPages({ total, limit }) {
     let page = 1;
@@ -52,11 +52,11 @@ export async function getStaticPaths() {
     }
   }
 
-  const paths = [...
-    numberOfPages({
-      total: products.aggregate.count,
+  const paths = [
+    ...numberOfPages({
+      total: productsConnection.aggregate.count,
       limit: perPage,
-    })
+    }),
   ].map((page) => ({
     params: { page: String(page) },
   }));
@@ -70,8 +70,8 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const query = gql`
     query indexPageQuery($limit: Int!, $offset: Int!) {
-      products: productsConnection(first: $limit, skip: $offset) {
-        edges {
+      productsConnection(first: $limit, skip: $offset) {
+        products: edges {
           node {
             id
           }
@@ -85,10 +85,7 @@ export async function getStaticProps({ params }) {
   `;
 
   const {
-    products: {
-      edges: products,
-      pageInfo: { hasNextPage, hasPreviousPage },
-    },
+    productsConnection: { products, pageInfo },
   } = await graphcms.request(query, {
     limit: perPage,
     offset: Number((params.page - 1) * perPage),
@@ -97,9 +94,8 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       currentPageNumber: Number(params.page),
-      hasNextPage,
-      hasPreviousPage,
       products,
+      ...pageInfo,
     },
   };
 }
