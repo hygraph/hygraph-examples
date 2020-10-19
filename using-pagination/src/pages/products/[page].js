@@ -52,12 +52,12 @@ export async function getStaticPaths() {
     }
   }
 
-  const paths = Array.from(
+  const paths = [...
     numberOfPages({
       total: products.aggregate.count,
       limit: perPage,
     })
-  ).map((page) => ({
+  ].map((page) => ({
     params: { page: String(page) },
   }));
 
