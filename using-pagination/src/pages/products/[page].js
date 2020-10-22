@@ -5,7 +5,7 @@ import { graphcms } from '../../../lib/_graphcms';
 
 const limit = 1;
 
-function IndexPage({
+function ProductPage({
   currentPageNumber,
   hasNextPage,
   hasPreviousPage,
@@ -69,11 +69,12 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const query = gql`
-    query indexPageQuery($limit: Int!, $offset: Int!) {
+    query productPageQuery($limit: Int!, $offset: Int!) {
       productsConnection(first: $limit, skip: $offset) {
         products: edges {
           node {
             id
+            name
           }
         }
         pageInfo {
@@ -100,4 +101,4 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default IndexPage;
+export default ProductPage;
