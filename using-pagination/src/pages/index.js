@@ -48,7 +48,7 @@ export async function getStaticProps() {
 
     let data = [];
 
-    for await (const produts of iterator) data = [...data, ...produts];
+    for await (const products of iterator) data = [...data, ...products];
 
     return data;
   }
