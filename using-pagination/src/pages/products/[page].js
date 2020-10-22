@@ -3,7 +3,7 @@ import { gql } from 'graphql-request';
 
 import { graphcms } from '../../../lib/_graphcms';
 
-const perPage = 1;
+const limit = 1;
 
 function IndexPage({
   currentPageNumber,
@@ -55,7 +55,7 @@ export async function getStaticPaths() {
   const paths = [
     ...numberOfPages({
       total: productsConnection.aggregate.count,
-      limit: perPage,
+      limit,
     }),
   ].map((page) => ({
     params: { page: String(page) },
@@ -87,8 +87,8 @@ export async function getStaticProps({ params }) {
   const {
     productsConnection: { products, pageInfo },
   } = await graphcms.request(query, {
-    limit: perPage,
-    offset: Number((params.page - 1) * perPage),
+    limit,
+    offset: Number((params.page - 1) * limit),
   });
 
   return {
