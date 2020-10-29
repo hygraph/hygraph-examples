@@ -1,0 +1,21 @@
+{
+  "name": "graphcms-with-nextjs-image",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "graphql": "15.4.0",
+    "graphql-request": "3.3.0",
+    "next": "10.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "postcss-preset-env": "6.7.0",
+    "tailwindcss": "1.9.6"
+  }
+}
