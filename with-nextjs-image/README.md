@@ -4,7 +4,7 @@
 
 This example demonstrates how to use the [Next.js Image Component](https://nextjs.org/docs/api-reference/next/image) with your GraphCMS assets.
 
-• [Demo](https://graphcms-with-nextjs-image.now.sh)
+• [Demo](https://graphcms-with-nextjs-image.vercel.app)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-nextjs-image)
 
