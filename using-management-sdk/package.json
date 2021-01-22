@@ -2,6 +2,9 @@
   "name": "graphcms-using-management-sdk",
   "private": true,
   "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "dependencies": {
     "@graphcms/management": "0.0.19"
   },
