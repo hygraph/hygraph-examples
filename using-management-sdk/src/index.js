@@ -25,7 +25,7 @@ migration.createRemoteTypeDefinition({
 
 migration.createRemoteTypeDefinition({
   definition:
-    'type StripePrice { active: Boolean!, currency: String!, unit_amount: Int!, type: String!, product: StripeProduct!, recurring: StripeRecurringPrice! }',
+    'type StripePrice { id: ID!, active: Boolean!, currency: String!, unit_amount: Int!, type: String!, product: StripeProduct!, recurring: StripeRecurringPrice! }',
   displayName: 'Stripe Price',
   description: 'Fields belonging to the recurring element of the Stripe Price.',
 });
