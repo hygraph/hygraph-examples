@@ -17,7 +17,7 @@ npx degit graphcms/graphcms-examples/using-management-sdk using-management-sdk
 Add .env:
 
 ```bash
-cp .env.sample
+cp .env.sample .env
 ```
 
 Provide values for `GRAPHCMS_MIGRATION_TOKEN`, `GRAPHCMS_URL` and `STRIPE_SECRET_KEY` keys.
