@@ -1,10 +1,14 @@
-<img src="https://raw.githubusercontent.com/GraphCMS/graphcms-examples/master/assets/gcms-logo.svg?sanitize=true" width="350px" alt="GraphCMS Logo" />
+<h3 align="center">
+  GraphCMS Examples
+</h3>
 
-# GraphCMS Examples
+<p align="center">
+  Example projects to help you get started with GraphCMS
+</p>
 
-Example projects to help you get started with GraphCMS.
+## Links
 
-[Join our Slack](https://slack.graphcms.com) &middot; [Read the Docs](https://graphcms.com/docs) &middot; [Learn more about GraphCMS](https://graphcms.com)
+[Join our Slack](https://slack.graphcms.com)</li> &middot; [Read the Docs](https://graphcms.com/docs) &middot; [Learn more about GraphCMS](https://graphcms.com)
 
 ## Examples
 
