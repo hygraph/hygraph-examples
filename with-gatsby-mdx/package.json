@@ -1,0 +1,19 @@
+{
+  "name": "graphcms-with-gatsby-mdx",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "dev": "gatsby develop"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "1.6.22",
+    "@mdx-js/react": "1.6.22",
+    "gatsby": "2.31.1",
+    "gatsby-plugin-mdx": "1.9.0",
+    "gatsby-source-graphcms": "2.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
+}
