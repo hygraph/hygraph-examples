@@ -2,7 +2,7 @@
 
 [Join our Slack](https://slack.graphcms.com)
 
-This example demonstrates how to programmatically build a project schema using the [GraphCMS Mamnagement SDK](https://www.npmjs.com/package/@graphcms/management).
+This example demonstrates how to programmatically build a project schema using the [GraphCMS Management SDK](https://www.npmjs.com/package/@graphcms/management).
 
 Using [Remote Fields](https://graphcms.com/docs/schema/field-types#remote), we create a `PricingPlan` model to query for product/price data directly from the [Stripe API](https://stripe.com/docs/api).
 
