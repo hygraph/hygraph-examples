@@ -1,8 +1,0 @@
-query ProductsHome {
-  products {
-    id
-    name
-    slug
-    description
-  }
-}

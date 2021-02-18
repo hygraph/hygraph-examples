@@ -3111,53 +3111,72 @@ export enum _SystemDateTimeFieldVariation {
   Combined = 'combined'
 }
 
-export type ProductsHomeQueryVariables = Exact<{ [key: string]: never; }>;
+export type AllProductsQueryVariables = Exact<{
+  orderBy?: Maybe<ProductOrderByInput>;
+  first?: Maybe<Scalars['Int']>;
+  skip?: Maybe<Scalars['Int']>;
+  where?: Maybe<ProductWhereInput>;
+}>;
 
 
-export type ProductsHomeQuery = (
+export type AllProductsQuery = (
   { __typename?: 'Query' }
   & { products: Array<(
     { __typename?: 'Product' }
-    & Pick<Product, 'id' | 'name' | 'slug' | 'description'>
+    & ProductSummaryFragment
   )> }
 );
 
+export type ProductSummaryFragment = (
+  { __typename?: 'Product' }
+  & Pick<Product, 'id' | 'name' | 'slug' | 'description' | 'publishedAt'>
+);
 
-export const ProductsHomeDocument = gql`
-    query ProductsHome {
-  products {
-    id
-    name
-    slug
-    description
-  }
+export const ProductSummaryFragmentDoc = gql`
+    fragment ProductSummary on Product {
+  id
+  name
+  slug
+  description
+  publishedAt
 }
     `;
+export const AllProductsDocument = gql`
+    query allProducts($orderBy: ProductOrderByInput, $first: Int, $skip: Int, $where: ProductWhereInput) {
+  products(orderBy: $orderBy, first: $first, skip: $skip, where: $where) {
+    ...ProductSummary
+  }
+}
+    ${ProductSummaryFragmentDoc}`;
 
 /**
- * __useProductsHomeQuery__
+ * __useAllProductsQuery__
  *
- * To run a query within a React component, call `useProductsHomeQuery` and pass it any options that fit your needs.
- * When your component renders, `useProductsHomeQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * To run a query within a React component, call `useAllProductsQuery` and pass it any options that fit your needs.
+ * When your component renders, `useAllProductsQuery` returns an object from Apollo Client that contains loading, error, and data properties
  * you can use to render your UI.
  *
  * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
  *
  * @example
- * const { data, loading, error } = useProductsHomeQuery({
+ * const { data, loading, error } = useAllProductsQuery({
  *   variables: {
+ *      orderBy: // value for 'orderBy'
+ *      first: // value for 'first'
+ *      skip: // value for 'skip'
+ *      where: // value for 'where'
  *   },
  * });
  */
-export function useProductsHomeQuery(baseOptions?: Apollo.QueryHookOptions<ProductsHomeQuery, ProductsHomeQueryVariables>) {
-        return Apollo.useQuery<ProductsHomeQuery, ProductsHomeQueryVariables>(ProductsHomeDocument, baseOptions);
+export function useAllProductsQuery(baseOptions?: Apollo.QueryHookOptions<AllProductsQuery, AllProductsQueryVariables>) {
+        return Apollo.useQuery<AllProductsQuery, AllProductsQueryVariables>(AllProductsDocument, baseOptions);
       }
-export function useProductsHomeLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<ProductsHomeQuery, ProductsHomeQueryVariables>) {
-          return Apollo.useLazyQuery<ProductsHomeQuery, ProductsHomeQueryVariables>(ProductsHomeDocument, baseOptions);
+export function useAllProductsLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<AllProductsQuery, AllProductsQueryVariables>) {
+          return Apollo.useLazyQuery<AllProductsQuery, AllProductsQueryVariables>(AllProductsDocument, baseOptions);
         }
-export type ProductsHomeQueryHookResult = ReturnType<typeof useProductsHomeQuery>;
-export type ProductsHomeLazyQueryHookResult = ReturnType<typeof useProductsHomeLazyQuery>;
-export type ProductsHomeQueryResult = Apollo.QueryResult<ProductsHomeQuery, ProductsHomeQueryVariables>;
+export type AllProductsQueryHookResult = ReturnType<typeof useAllProductsQuery>;
+export type AllProductsLazyQueryHookResult = ReturnType<typeof useAllProductsLazyQuery>;
+export type AllProductsQueryResult = Apollo.QueryResult<AllProductsQuery, AllProductsQueryVariables>;
 
       export interface PossibleTypesResultData {
         possibleTypes: {
