@@ -1,3 +1,5 @@
+import { gql } from '@apollo/client';
+import * as Apollo from '@apollo/client';
 export type Maybe<T> = T | null;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
 export type MakeOptional<T, K extends keyof T> = Omit<T, K> & { [SubKey in K]?: Maybe<T[SubKey]> };
@@ -3120,6 +3122,42 @@ export type ProductsHomeQuery = (
   )> }
 );
 
+
+export const ProductsHomeDocument = gql`
+    query ProductsHome {
+  products {
+    id
+    name
+    slug
+    description
+  }
+}
+    `;
+
+/**
+ * __useProductsHomeQuery__
+ *
+ * To run a query within a React component, call `useProductsHomeQuery` and pass it any options that fit your needs.
+ * When your component renders, `useProductsHomeQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useProductsHomeQuery({
+ *   variables: {
+ *   },
+ * });
+ */
+export function useProductsHomeQuery(baseOptions?: Apollo.QueryHookOptions<ProductsHomeQuery, ProductsHomeQueryVariables>) {
+        return Apollo.useQuery<ProductsHomeQuery, ProductsHomeQueryVariables>(ProductsHomeDocument, baseOptions);
+      }
+export function useProductsHomeLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<ProductsHomeQuery, ProductsHomeQueryVariables>) {
+          return Apollo.useLazyQuery<ProductsHomeQuery, ProductsHomeQueryVariables>(ProductsHomeDocument, baseOptions);
+        }
+export type ProductsHomeQueryHookResult = ReturnType<typeof useProductsHomeQuery>;
+export type ProductsHomeLazyQueryHookResult = ReturnType<typeof useProductsHomeLazyQuery>;
+export type ProductsHomeQueryResult = Apollo.QueryResult<ProductsHomeQuery, ProductsHomeQueryVariables>;
 
       export interface PossibleTypesResultData {
         possibleTypes: {

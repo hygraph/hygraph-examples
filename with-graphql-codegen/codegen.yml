@@ -4,6 +4,7 @@ documents: 'src/**/*.{ts,tsx,gql,graphql}'
 generates:
   src/generated/graphcms-schema.tsx:
     plugins:
-      - 'typescript'
-      - 'typescript-operations'
-      - 'fragment-matcher'
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+      - fragment-matcher
