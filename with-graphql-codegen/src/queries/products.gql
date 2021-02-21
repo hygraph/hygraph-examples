@@ -1,0 +1,18 @@
+query allProducts(
+  $orderBy: ProductOrderByInput
+  $first: Int
+  $skip: Int
+  $where: ProductWhereInput
+) {
+  products(orderBy: $orderBy, first: $first, skip: $skip, where: $where) {
+    ...ProductSummary
+  }
+}
+
+fragment ProductSummary on Product {
+  id
+  name
+  slug
+  description
+  publishedAt
+}

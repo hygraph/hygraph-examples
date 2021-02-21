@@ -1,0 +1,10 @@
+overwrite: true
+schema: https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master
+documents: 'src/**/*.{ts,tsx,gql,graphql}'
+generates:
+  src/generated/graphcms-schema.tsx:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+      - fragment-matcher
