@@ -2,7 +2,7 @@
 
 [Join our Slack](https://slack.graphcms.com)
 
-This example demonstrates how to query from GraphCMS with Apollo Client 3, TypeScript, and generated types for your GraphCMS project with [Apollo Code Generator](https://graphql-code-generator.com/docs/getting-started/index).
+This example demonstrates how to query from GraphCMS with Apollo Client 3, TypeScript, and generated types for your GraphCMS project with [GraphQL Code Generator](https://graphql-code-generator.com/docs/getting-started/index).
 
 • [Demo](https://graphcms-with-graphql-codegen.vercel.app)
 
