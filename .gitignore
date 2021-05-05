@@ -18,3 +18,4 @@ coverage
 /cypress/screenshots/
 /__sapper__/
 .nuxt
+.svelte-kit
