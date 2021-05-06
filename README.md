@@ -54,19 +54,6 @@ frameworks.
 | [Sapper]                           | A Svelte example using Sapper                                                                                          | https://graphcms-with-sapper.now.sh                        |
 | [SvelteKit]                        | A Svelte example using SvelteKit and graphql-request to fetch data                                                     | https://graphcms-with-sveltekit.now.sh                     |
 
-### Built by the community
-
-| Name                                                                                | Author |
-| ----------------------------------------------------------------------------------- | ------ |
-| [Next.js 9 and Zeit Now Boilerplate](https://github.com/UnlyEd/next-right-now/)     | UnlyEd |
-| [Cache Boilerplate](https://github.com/UnlyEd/GraphCMS-cache-boilerplate)           | UnlyEd |
-| [Next Admin Backoffice Boilerplate](https://github.com/UnlyEd/next-right-now-admin) | UnlyEd |
-| [Simple shopping cart using GridSome](https://github.com/Dunebook/gridsome)         | Deven  |
-
-If you have created any examples with GraphCMS and want to see them
-featured here, reach out via our on-site chat on
-[graphcms.com](https://graphcms.com)!
-
 <!-- Links -->
 
 [join our slack]: https://slack.graphcms.com
