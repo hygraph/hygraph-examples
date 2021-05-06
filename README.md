@@ -51,8 +51,8 @@ frameworks.
 | [Nuxt.js]                          | A simple Nuxt.js starter using `create-nuxt-app` CLI with Tailwind and Axios added                                       | https://graphcms-with-nuxtjs.now.sh                        |
 | [React.js]                         | This example demonstrates how to query from GraphCMS with graphql-request in React.js                                    | https://graphcms-with-reactjs.now.sh                       |
 | [Vue.js]                           | A vanilla Vue.js starter using `vue create` CLI with Vue Router                                                          | https://graphcms-with-vuejs.now.sh                         |
-| [Sapper]                           | A SeveltJs example using Sapper                                                                                          | https://graphcms-with-sapper.now.sh                        |
-| [SvelteKit]                        | A SeveltJs example using SvelteKit and graphql-request to fetch data                                                     | https://graphcms-with-sveltekit.now.sh                     |
+| [Sapper]                           | A Svelte example using Sapper                                                                                          | https://graphcms-with-sapper.now.sh                        |
+| [SvelteKit]                        | A Svelte example using SvelteKit and graphql-request to fetch data                                                     | https://graphcms-with-sveltekit.now.sh                     |
 
 ### Built by the community
 
