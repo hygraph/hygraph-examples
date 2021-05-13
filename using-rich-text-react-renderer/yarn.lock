@@ -39,10 +39,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@graphcms/rich-text-react-renderer@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@graphcms/rich-text-react-renderer/-/rich-text-react-renderer-0.1.1.tgz#018849be8ae307dd2b35efd9e5fdabaf0333940e"
-  integrity sha512-Rj9U72KuXQWKTTNFzAMRe74B3O+Cwx98DbZ/bIjf4qx+pHxHXy9l8NH+7Pvdh/JWFq38LmvNYW+r4OsFKYCnUA==
+"@graphcms/rich-text-react-renderer@latest":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@graphcms/rich-text-react-renderer/-/rich-text-react-renderer-0.1.2.tgz#37f25eb48c3dbf3d0d7839820d3f8580eb67aecf"
+  integrity sha512-nOpTfXFk+5Yxiwvltw8FxREzfDWbpJKf9rsN9Oa5orXB3aY6hdz00suTbM7wT8Kjd+rlOw/fMbIldwxUitaJxw==
   dependencies:
     "@graphcms/rich-text-types" "^0.1.1"
     escape-html "^1.0.3"

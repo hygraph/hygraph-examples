@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@graphcms/rich-text-react-renderer": "^0.1.1",
+    "@graphcms/rich-text-react-renderer": "latest",
     "graphql": "15.5.0",
     "graphql-request": "3.4.0",
     "next": "10.2.0",
