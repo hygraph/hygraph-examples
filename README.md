@@ -23,6 +23,7 @@ Examples demonstrating how to use GraphCMS features.
 | [Using Management SDK] | Basic [Management SDK] script to create a schema with [Remote Fields] to query data directly from the [Stripe API]                                    |                                              |
 | [Using Mutations]      | [Next.js] app demonstrating how to use GraphCMS mutations with [`graphql-request`], [`SWR`] and API routes                                            | https://graphcms-using-mutations.now.sh      |
 | [Using Pagination]     | [Next.js] app demonstrating how to paginate GraphCMS queries with [`graphql-request`]                                                                 | https://graphcms-using-pagination.vercel.app |
+| [Using Rich Text Renderer]     | [Next.js] app demonstrating how to render Rich Text with [`@graphcms/rich-text-react-renderer`]                                                                 | https://graphcms-using-rich-text-react-renderer.vercel.app |
 | [Using Union Types]    | A basic product marketing site using union types to compose UI 'blocks' with components. Built with [Next.js], [`graphql-request`] and [Tailwind CSS] | https://graphcms-using-union-types.now.sh    |
 
 ### Frameworks & Libraries
@@ -74,6 +75,8 @@ frameworks.
 [`graphql-request`]: https://github.com/prisma-labs/graphql-request
 [`swr`]: https://github.com/zeit/swr
 [using pagination]: using-pagintion
+[using rich text renderer]: using-rich-text-react-renderer
+[`@graphcms/rich-text-react-renderer`]: https://npmjs.com/package/@graphcms/rich-text-react-renderer
 [using union types]: using-union-types
 [tailwind css]: https://tailwindcss.com
 
