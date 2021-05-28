@@ -1,9 +1,9 @@
-import React from 'react';
 import { graphql, Link } from 'gatsby';
+import React from 'react';
 
 function IndexPage({ data: { products } }) {
   return products.nodes.map((product) => (
-    <Link key={product.id} to={product.gatsbyPath}>
+    <Link key={product.id} to={product.slug}>
       {product.name}
     </Link>
   ));
@@ -15,7 +15,7 @@ export const pageQuery = graphql`
       nodes {
         id
         name
-        gatsbyPath(filePath: "/{GraphCmsProduct.slug}")
+        slug
       }
     }
   }

@@ -1,5 +1,5 @@
-import React from 'react';
 import { graphql } from 'gatsby';
+import React from 'react';
 
 function ProductPage({ data: { product } }) {
   return (
@@ -17,8 +17,8 @@ function ProductPage({ data: { product } }) {
 }
 
 export const pageQuery = graphql`
-  query ProductPageQuery($id: String!) {
-    product: graphCmsProduct(id: { eq: $id }) {
+  query ProductPageQuery($slug: String!) {
+    product: graphCmsProduct(slug: { eq: $slug }) {
       description
       name
       price
