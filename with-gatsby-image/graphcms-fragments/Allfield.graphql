@@ -1,4 +1,4 @@
-fragment Review on Review {
+fragment Allfield on Allfield {
   stage
   remoteId: id
   createdAt
@@ -25,14 +25,18 @@ fragment Review on Review {
       stage
     }
   }
-  name
-  comment
-  product {
-    ... on Product {
+  asset {
+    ... on Asset {
       remoteTypeName: __typename
       remoteId: id
       locale
       stage
+    }
+  }
+  map {
+    ... on Location {
+      latitude
+      longitude
     }
   }
 }

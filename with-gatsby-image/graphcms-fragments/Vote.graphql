@@ -2,12 +2,35 @@ fragment Vote on Vote {
   stage
   remoteId: id
   createdAt
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
   updatedAt
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
   publishedAt
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
   product {
     ... on Product {
       remoteTypeName: __typename
       remoteId: id
+      locale
+      stage
     }
   }
 }

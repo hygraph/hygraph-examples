@@ -2,6 +2,30 @@ fragment Asset on Asset {
   stage
   locale
   remoteId: id
+  createdAt(variation: COMBINED)
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedAt(variation: COMBINED)
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedAt(variation: COMBINED)
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
   handle
   fileName
   height
@@ -12,6 +36,15 @@ fragment Asset on Asset {
     ... on Product {
       remoteTypeName: __typename
       remoteId: id
+      locale
+      stage
+    }
+  }
+  assetAllfield {
+    ... on Allfield {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
     }
   }
   url
