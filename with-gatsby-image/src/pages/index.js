@@ -1,6 +1,6 @@
-import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import React from 'react';
 
 const pageQuery = graphql`
   {
@@ -13,9 +13,7 @@ const pageQuery = graphql`
           url
           localFile {
             childImageSharp {
-              fluid(maxWidth: 560) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(width: 560, layout: CONSTRAINED)
             }
           }
         }
@@ -29,8 +27,8 @@ const IndexPage = () => {
 
   return products.nodes.map((product, index) => (
     <div style={{ textAlign: 'center' }} key={index}>
-      <Img
-        fluid={product.image.localFile.childImageSharp.fluid}
+      <GatsbyImage
+        image={product.image.localFile.childImageSharp.gatsbyImageData}
         style={{ margin: '0 auto', maxWidth: '50%' }}
       />
       <h1>{product.name}</h1>
