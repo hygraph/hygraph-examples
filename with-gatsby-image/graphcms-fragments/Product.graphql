@@ -1,9 +1,31 @@
 fragment Product on Product {
   stage
+  locale
   remoteId: id
-  createdAt
-  updatedAt
-  publishedAt
+  createdAt(variation: COMBINED)
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedAt(variation: COMBINED)
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedAt(variation: COMBINED)
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
   name
   slug
   description
@@ -12,18 +34,22 @@ fragment Product on Product {
     ... on Review {
       remoteTypeName: __typename
       remoteId: id
+      stage
     }
   }
   votes {
     ... on Vote {
       remoteTypeName: __typename
       remoteId: id
+      stage
     }
   }
   image {
     ... on Asset {
       remoteTypeName: __typename
       remoteId: id
+      locale
+      stage
     }
   }
   content {
@@ -34,5 +60,4 @@ fragment Product on Product {
       text
     }
   }
-  content2
 }
