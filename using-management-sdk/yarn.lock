@@ -2,14 +2,27 @@
 # yarn lockfile v1
 
 
-"@graphcms/management@0.0.19":
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/@graphcms/management/-/management-0.0.19.tgz#5a5ea50b3cd9c6cebf04cf4a783182254d875691"
-  integrity sha512-4nSYJ8pBSJ5y5PFRKBvXkDoNeRQC6qXkD4ORLVv+qv8pbkyT2ed1Uf2KUCbpHxZrGWbPelS20usqm8mMjvjpjQ==
+"@graphcms/management@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@graphcms/management/-/management-1.1.0.tgz#7799d4faf010102dd0a142c60df230f9ead0cb43"
+  integrity sha512-jN+qu06BvvX2fK+tz8Po1ySV43ls4iLqQzNxVyoCyHZTwKEQPOVkvp4TRpusTOkuTxyOeI5r+s1GnKfUeQdPdQ==
   dependencies:
-    graphql "^15.4.0"
-    graphql-request "^3.4.0"
-    uuid "^8.3.0"
+    "@types/nanoid" "2.1.0"
+    graphql "15.5.0"
+    graphql-request "3.4.0"
+    nanoid "3.1.22"
+
+"@types/nanoid@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@types/nanoid/-/nanoid-2.1.0.tgz#41edfda78986e9127d0dc14de982de766f994020"
+  integrity sha512-xdkn/oRTA0GSNPLIKZgHWqDTWZsVrieKomxJBOQUK9YDD+zfSgmwD5t4WJYra5S7XyhTw7tfvwznW+pFexaepQ==
+  dependencies:
+    "@types/node" "*"
+
+"@types/node@*":
+  version "15.12.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-15.12.2.tgz#1f2b42c4be7156ff4a6f914b2fb03d05fa84e38d"
+  integrity sha512-zjQ69G564OCIWIOHSXyQEEDpdpGl+G348RAKY0XXy9Z5kU9Vzv1GMNnkar/ZJ8dzXB3COzD9Mo9NtRZ4xfgUww==
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -35,10 +48,10 @@ delayed-stream@~1.0.0:
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
-dotenv@8.2.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
-  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+dotenv@10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-10.0.0.tgz#3d4227b8fb95f81096cdd2b66653fb2c7085ba81"
+  integrity sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==
 
 extract-files@^9.0.0:
   version "9.0.0"
@@ -54,7 +67,7 @@ form-data@^3.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-graphql-request@^3.4.0:
+graphql-request@3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-3.4.0.tgz#3a400cd5511eb3c064b1873afb059196bbea9c2b"
   integrity sha512-acrTzidSlwAj8wBNO7Q/UQHS8T+z5qRGquCQRv9J1InwR01BBWV9ObnoE+JS5nCCEj8wSGS0yrDXVDoRiKZuOg==
@@ -63,10 +76,10 @@ graphql-request@^3.4.0:
     extract-files "^9.0.0"
     form-data "^3.0.0"
 
-graphql@^15.4.0:
-  version "15.4.0"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.4.0.tgz#e459dea1150da5a106486ba7276518b5295a4347"
-  integrity sha512-EB3zgGchcabbsU9cFe1j+yxdzKQKAbGUWRb13DsrsMN1yyfmmIq+2+L5MqVWcDCE4V89R5AyUOi7sMOGxdsYtA==
+graphql@15.5.0:
+  version "15.5.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-15.5.0.tgz#39d19494dbe69d1ea719915b578bf920344a69d5"
+  integrity sha512-OmaM7y0kaK31NKG31q4YbD2beNYa6jBBKtMFT6gLYJljHLJr42IqJ8KX08u3Li/0ifzTU5HjmoOOrwa5BRLeDA==
 
 mime-db@1.45.0:
   version "1.45.0"
@@ -80,12 +93,12 @@ mime-types@^2.1.12:
   dependencies:
     mime-db "1.45.0"
 
+nanoid@3.1.22:
+  version "3.1.22"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.1.22.tgz#b35f8fb7d151990a8aebd5aa5015c03cf726f844"
+  integrity sha512-/2ZUaJX2ANuLtTvqTlgqBQNJoQO398KyJgZloL0PZkC0dpysjncRUPsFe3DUPzz/y3h+u7C46np8RMuvF3jsSQ==
+
 node-fetch@2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
-
-uuid@^8.3.0:
-  version "8.3.2"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
-  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
