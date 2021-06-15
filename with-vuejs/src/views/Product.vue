@@ -13,6 +13,8 @@
   </div>
 </template>
 <script>
+import { gql } from 'graphql-request';
+
 export default {
   data() {
     return {
@@ -22,34 +24,33 @@ export default {
     };
   },
   created() {
-    // fetch the data when the view is created and the data is
-    // already being observed
     this.fetchData();
   },
   watch: {
-    // call again the method if the route changes
     $route: 'fetchData',
   },
   methods: {
     async fetchData() {
       this.error = null;
-      this.post = null;
+      this.product = null;
       this.loading = true;
-      // replace `getPost` with your data fetching util / API wrapper
+
       try {
-        const response = await fetch(
-          'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
+        const data = await this.$graphcms.request(
+          gql`
+            query getProductBySlug($slug: String) {
+              product(where: { slug: $slug }) {
+                name
+                description
+                price
+              }
+            }
+          `,
           {
-            method: 'POST',
-            body: JSON.stringify({
-              query: `query GetProduct($slug: String){ product(where: {slug: $slug}) { name description price } }`,
-              variables: {
-                slug: this.$route.params.slug,
-              },
-            }),
+            slug: this.$route.params.slug,
           }
         );
-        const { data } = await response.json();
+
         this.loading = false;
         this.error = data.error;
         this.product = data.product;

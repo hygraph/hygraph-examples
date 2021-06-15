@@ -15,7 +15,8 @@
 </template>
 
 <script>
-// @ is an alias to /src
+import { gql } from 'graphql-request';
+
 export default {
   name: 'Home',
   components: {},
@@ -27,17 +28,16 @@ export default {
     };
   },
   async created() {
-    const response = await fetch(
-      'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
-      {
-        method: 'POST',
-        body: JSON.stringify({
-          query: `{ products { name slug } }`,
-        }),
-      }
+    const data = await this.$graphcms.request(
+      gql`
+        {
+          products {
+            name
+            slug
+          }
+        }
+      `
     );
-
-    const { data } = await response.json();
 
     this.errors = data.errors;
     this.loading = false;
