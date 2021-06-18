@@ -1,15 +1,41 @@
-<h3 align="center">
-  GraphCMS Examples
-</h3>
-
-<p align="center">
-  Example projects to help you get started with GraphCMS
-</p>
-
-## Links
-
-[Join our Slack]</li> &middot; [Read the Docs] &middot; [Learn more
-about GraphCMS]
+<div align="center">
+  <img src="/assets/gcms-logo.svg" alt="GraphCMS" height="90" />
+  <br>
+  <h1>GraphCMS Examples</h1>
+  <p align="center">Example projects to help you get started with GraphCMS</h4></p>
+  <img src="https://img.shields.io/npm/v/gatsby" />
+  <span>&nbsp;&nbsp;</span>
+  <img src="https://img.shields.io/npm/dw/gatsby-source-graphcms" />
+  <span>&nbsp;&nbsp;</span>
+  <img src="https://img.shields.io/bundlephobia/min/react" />
+  <span>&nbsp;&nbsp;</span>
+  <img src="https://img.shields.io/npm/l/gatsby-source-graphcms" />
+  <span>&nbsp;&nbsp;</span>
+  <img src="https://img.shields.io/github/contributors/graphcms/gatsby-source-graphcms" />
+  <br>
+  <br>
+  <a href="https://www.graphcms.com/">Demo</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://www.graphcms.com/">Website</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://www.graphcms.com/docs/">Docs</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://www.graphcms.com/blog">Blog</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://app.graphcms.com/">Login to GraphCMS</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://www.graphcms.com">How to GraphCMS</a>
+  <br>
+  <br>
+  <a href="https://www.graphcms.com/blog">Join Slack</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://graphcms.com/community/">Twitter</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://www.graphcms.com">YouTube</a>
+  <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+  <a href="https://graphcms.com/community/">Community</a>
+  <br>
+  <hr>
 
 ## Examples
 
@@ -17,14 +43,14 @@ about GraphCMS]
 
 Examples demonstrating how to use GraphCMS features.
 
-| Features               | Description                                                                                                                                           | Demo                                         |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| [Using Asset Upload]   | Programmatically upload assets using the [Asset Upload endpoint]                                                                                      |                                              |
-| [Using Management SDK] | Basic [Management SDK] script to create a schema with [Remote Fields] to query data directly from the [Stripe API]                                    |                                              |
-| [Using Mutations]      | [Next.js] app demonstrating how to use GraphCMS mutations with [`graphql-request`], [`SWR`] and API routes                                            | https://graphcms-using-mutations.now.sh      |
-| [Using Pagination]     | [Next.js] app demonstrating how to paginate GraphCMS queries with [`graphql-request`]                                                                 | https://graphcms-using-pagination.vercel.app |
-| [Using Rich Text Renderer]     | [Next.js] app demonstrating how to render Rich Text with [`@graphcms/rich-text-react-renderer`]                                                                 | https://graphcms-using-rich-text-react-renderer.vercel.app |
-| [Using Union Types]    | A basic product marketing site using union types to compose UI 'blocks' with components. Built with [Next.js], [`graphql-request`] and [Tailwind CSS] | https://graphcms-using-union-types.now.sh    |
+| Features                   | Description                                                                                                                                           | Demo                                                       |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| [Using Asset Upload]       | Programmatically upload assets using the [Asset Upload endpoint]                                                                                      |                                                            |
+| [Using Management SDK]     | Basic [Management SDK] script to create a schema with [Remote Fields] to query data directly from the [Stripe API]                                    |                                                            |
+| [Using Mutations]          | [Next.js] app demonstrating how to use GraphCMS mutations with [`graphql-request`], [`SWR`] and API routes                                            | https://graphcms-using-mutations.now.sh                    |
+| [Using Pagination]         | [Next.js] app demonstrating how to paginate GraphCMS queries with [`graphql-request`]                                                                 | https://graphcms-using-pagination.vercel.app               |
+| [Using Rich Text Renderer] | [Next.js] app demonstrating how to render Rich Text with [`@graphcms/rich-text-react-renderer`]                                                       | https://graphcms-using-rich-text-react-renderer.vercel.app |
+| [Using Union Types]        | A basic product marketing site using union types to compose UI 'blocks' with components. Built with [Next.js], [`graphql-request`] and [Tailwind CSS] | https://graphcms-using-union-types.now.sh                  |
 
 ### Frameworks & Libraries
 
@@ -32,7 +58,7 @@ Examples demonstrating how to use GraphCMS with popular application
 frameworks.
 
 | Frameworks & Libraries             | Description                                                                                                              | Demo                                                       |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | [Algolia]                          | Sync content to Algolia via webhooks on publish using Next.js API routes.                                                | https://graphcms-with-algolia.vercel.app                   |
 | [Apollo Client 3][1]               | Using [Apollo Client 3] to query data from GraphCMS.                                                                     | https://graphcms-with-apollo-client-3.vercel.app           |
 | [Apollo Server]                    | Using [`apollo-datasource-graphql`] to pull a GraphCMS schema into an existing [Apollo Server][2]                        | https://graphcms-with-apollo-server.herokuapp.com          |
@@ -52,7 +78,7 @@ frameworks.
 | [Nuxt.js]                          | A simple Nuxt.js starter using `create-nuxt-app` CLI with Tailwind and Axios added                                       | https://graphcms-with-nuxtjs.now.sh                        |
 | [React.js]                         | This example demonstrates how to query from GraphCMS with graphql-request in React.js                                    | https://graphcms-with-reactjs.now.sh                       |
 | [Vue.js]                           | A vanilla Vue.js starter using `vue create` CLI with Vue Router                                                          | https://graphcms-with-vuejs.now.sh                         |
-| [Sapper]                           | A Svelte example using Sapper                                                                                          | https://graphcms-with-sapper.now.sh                        |
+| [Sapper]                           | A Svelte example using Sapper                                                                                            | https://graphcms-with-sapper.now.sh                        |
 | [SvelteKit]                        | A Svelte example using SvelteKit and `graphql-request` to fetch data                                                     | https://graphcms-with-sveltekit.now.sh                     |
 
 <!-- Links -->
@@ -64,8 +90,7 @@ frameworks.
 <!-- GraphCMS Features & Recipes -->
 
 [using asset upload]: using-asset-upload
-[asset upload endpoint]:
-  https://graphcms.com/docs/content-api/assets#uploading-assets
+[asset upload endpoint]: https://graphcms.com/docs/content-api/assets#uploading-assets
 [using management sdk]: using-management-sdk
 [management sdk]: https://www.npmjs.com/package/@graphcms/management
 [remote fields]: https://graphcms.com/docs/schema/field-types#remote
@@ -86,44 +111,34 @@ frameworks.
 [1]: with-apollo-client-3
 [apollo client 3]: https://www.apollographql.com/docs/react
 [apollo server]: with-apollo-server
-[`apollo-datasource-graphql`]:
-  https://github.com/poetic/apollo-datasource-graphql
+[`apollo-datasource-graphql`]: https://github.com/poetic/apollo-datasource-graphql
 [2]: https://www.apollographql.com/docs/apollo-server/
 [3]: with-express
 [express]: https://expressjs.com/
-[`awesome-graphql-client`]:
-  https://github.com/lynxtaa/awesome-graphql-client
+[`awesome-graphql-client`]: https://github.com/lynxtaa/awesome-graphql-client
 [4]: with-gatsby
 [gatsby]: https://www.gatsbyjs.org/
-[`gatsby-source-graphcms`]:
-  https://github.com/GraphCMS/gatsby-source-graphcms
+[`gatsby-source-graphcms`]: https://github.com/GraphCMS/gatsby-source-graphcms
 [gatsby (file system route api)]: with-gatsby-filesystem-routing
-[file system route api]:
-  https://www.gatsbyjs.com/docs/file-system-page-creation
+[file system route api]: https://www.gatsbyjs.com/docs/file-system-page-creation
 [gatsby image]: with-gatsby-image
 [`gatsby-image`]: https://www.gatsbyjs.org/packages/gatsby-image/
 [graphcms image]: with-graphcms-image
 [`graphcms-image`]: https://github.com/GraphCMS/graphcms-image
 [graphql codegen]: with-graphql-codegen
-[graphql code generator]:
-  https://graphql-code-generator.com/docs/getting-started/index
+[graphql code generator]: https://graphql-code-generator.com/docs/getting-started/index
 [gridsome]: with-gridsome
-[`@gridsome/source-graphql`]:
-  https://www.npmjs.com/package/@gridsome/source-graphql
+[`@gridsome/source-graphql`]: https://www.npmjs.com/package/@gridsome/source-graphql
 [mdx (with gatsby)]: with-gatsby-mdx
-[`gatsby-plugin-mdx`]:
-  https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx
+[`gatsby-plugin-mdx`]: https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx
 [mdx (with next.js)]: with-nextjs-mdx-remote
 [5]: with-nextjs
 [next.js i18n routing]: with-nextjs-i18n-routing
-[next.js internationalized routing]:
-  https://nextjs.org/docs/advanced-features/i18n-routing
+[next.js internationalized routing]: https://nextjs.org/docs/advanced-features/i18n-routing
 [next.js image]: with-nextjs-image
-[next.js image component]:
-  https://nextjs.org/docs/api-reference/next/image
+[next.js image component]: https://nextjs.org/docs/api-reference/next/image
 [next.js image with custom loader]: with-nextjs-image-loader
-[custom loader]:
-  https://nextjs.org/docs/api-reference/next/image#loader
+[custom loader]: https://nextjs.org/docs/api-reference/next/image#loader
 [nuxt.js]: with-nuxtjs
 [react.js]: with-reactjs
 [vue.js]: with-vuejs
