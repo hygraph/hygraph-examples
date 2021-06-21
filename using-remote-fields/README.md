@@ -1,4 +1,4 @@
-# Working with the GraphCMS Management SDK
+# Working with the Remote Fields
 
 [Join our Slack](https://slack.graphcms.com)
 
@@ -11,7 +11,7 @@ Using [Remote Fields](https://graphcms.com/docs/schema/field-types#remote), we c
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/using-management-sdk using-management-sdk
+npx degit graphcms/graphcms-examples/using-remote-fields using-remote-fields
 ```
 
 Add .env:
