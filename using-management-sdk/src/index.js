@@ -54,12 +54,6 @@ authorModel.addSimpleField({
   type: FieldType.String,
 });
 
-authorModel.addSimpleField({
-  apiId: 'posts',
-  displayName: 'Posts',
-  type: FieldType.String,
-});
-
 // add relation to blog for author posts
 
 // create model for author
