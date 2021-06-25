@@ -20,7 +20,7 @@ Examples demonstrating how to use GraphCMS features.
 | Features               | Description                                                                                                                                           | Demo                                         |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
 | [Using Asset Upload]   | Programmatically upload assets using the [Asset Upload endpoint]                                                                                      |                                              |
-| [Using Management SDK] | Basic [Management SDK] script to create a schema with [Remote Fields] to query data directly from the [Stripe API]                                    |                                              |
+| [Using Remote Fields] | Basic [Management SDK] script to create a schema with [Remote Fields] to query data directly from the [Stripe API]                                    |                                              |
 | [Using Mutations]      | [Next.js] app demonstrating how to use GraphCMS mutations with [`graphql-request`], [`SWR`] and API routes                                            | https://graphcms-using-mutations.now.sh      |
 | [Using Pagination]     | [Next.js] app demonstrating how to paginate GraphCMS queries with [`graphql-request`]                                                                 | https://graphcms-using-pagination.vercel.app |
 | [Using Rich Text Renderer]     | [Next.js] app demonstrating how to render Rich Text with [`@graphcms/rich-text-react-renderer`]                                                                 | https://graphcms-using-rich-text-react-renderer.vercel.app |
@@ -66,7 +66,7 @@ frameworks.
 [using asset upload]: using-asset-upload
 [asset upload endpoint]:
   https://graphcms.com/docs/content-api/assets#uploading-assets
-[using management sdk]: using-management-sdk
+[using remote fields]: using-remote-fields
 [management sdk]: https://www.npmjs.com/package/@graphcms/management
 [remote fields]: https://graphcms.com/docs/schema/field-types#remote
 [stripe api]: https://stripe.com/docs/api

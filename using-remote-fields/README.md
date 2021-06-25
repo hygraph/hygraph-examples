@@ -25,11 +25,11 @@ Provide values for `GRAPHCMS_MIGRATION_TOKEN`, `GRAPHCMS_URL` and `STRIPE_SECRET
 Install & Run:
 
 ```bash
-cd using-management-sdk
+cd using-remote-fields
 npm install
 npm run start
 # or
-cd using-management-sdk
+cd using-remote-fields
 yarn
 yarn start
 ```
