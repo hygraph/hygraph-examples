@@ -1,4 +1,4 @@
-# Working with the GraphCMS Management SDK
+# Working with the Remote Fields
 
 [Join our Slack](https://slack.graphcms.com)
 
@@ -11,7 +11,7 @@ Using [Remote Fields](https://graphcms.com/docs/schema/field-types#remote), we c
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/using-management-sdk using-management-sdk
+npx degit graphcms/graphcms-examples/using-remote-fields using-remote-fields
 ```
 
 Add .env:
@@ -25,11 +25,11 @@ Provide values for `GRAPHCMS_MIGRATION_TOKEN`, `GRAPHCMS_URL` and `STRIPE_SECRET
 Install & Run:
 
 ```bash
-cd using-management-sdk
+cd using-remote-fields
 npm install
 npm run start
 # or
-cd using-management-sdk
+cd using-remote-fields
 yarn
 yarn start
 ```
