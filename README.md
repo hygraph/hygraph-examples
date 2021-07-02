@@ -24,7 +24,7 @@ Examples demonstrating how to use GraphCMS features.
 | [Using Remote Fields] ([Video][video3])                     | Basic [Management SDK] script to create a schema with [Remote Fields] to query data directly from the [Stripe API]                                    |
 | [Using Mutations] ([Demo][demo4], [Video][video4])          | [Next.js] app demonstrating how to use GraphCMS mutations with [`graphql-request`], [`SWR`] and API routes                                            |
 | [Using Pagination] ([Demo][demo5], [Video][video5])         | [Next.js] app demonstrating how to paginate GraphCMS queries with [`graphql-request`]                                                                 |
-| [Using Rich Text Renderer] ([Demo][demo6], [Video][video6]) | [Next.js] app demonstrating how to render Rich Text with [`@graphcms/rich-text-react-renderer`]                                                       |
+| [Using Rich Text Renderer] ([Demo][demo27], [Video][video27]) | [Next.js] app demonstrating how to render Rich Text with [`@graphcms/rich-text-react-renderer`]                                                       |
 | [Using Union Types]                                         | A basic product marketing site using union types to compose UI 'blocks' with components. Built with [Next.js], [`graphql-request`] and [Tailwind CSS] |
 
 ### Frameworks & Libraries
@@ -87,8 +87,8 @@ frameworks.
 [video5]: https://youtu.be/QTdPzdXyY40
 [demo5]: https://graphcms-using-pagination.vercel.app/
 [using rich text renderer]: using-rich-text-react-renderer
-[video5]: https://youtu.be/4rYbSlE6m6A
-[demo5]: https://graphcms-using-rich-text-react-renderer.vercel.app/
+[video27]: https://youtu.be/4rYbSlE6m6A
+[demo27]: https://graphcms-using-rich-text-react-renderer.vercel.app/
 [`@graphcms/rich-text-react-renderer`]: https://npmjs.com/package/@graphcms/rich-text-react-renderer
 [using union types]: using-union-types
 [video5]: #
