@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@graphcms/uix-react-sdk": "0.0.19",
-    "next": "10.2.3",
+    "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   }
