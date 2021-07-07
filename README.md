@@ -136,7 +136,8 @@ frameworks.
 [video14]: #
 [demo14]: https://graphcms-with-graphql-codegen.vercel.app/
 [graphql code generator]: https://graphql-code-generator.com/docs/getting-started/index
-[schema stitching (with graphql mesh)]: https://www.graphql-mesh.com
+[schema stitching (with graphql mesh)]: with-graphql-mesh
+[graphql mesh]: https://www.graphql-mesh.com
 [gridsome]: with-gridsome
 [video15]: https://youtu.be/XOxhA938c20
 [demo15]: https://graphcms-with-gridsome.now.sh/
