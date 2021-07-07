@@ -1,0 +1,22 @@
+sources:
+  - name: GraphCMS
+    handler:
+      graphql:
+        endpoint: https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master
+    transforms:
+      - prefix:
+          value: GraphCMS_
+  - name: CartQL
+    handler:
+      graphql:
+        endpoint: https://api.cartql.com
+    transforms:
+      - prefix:
+          value: CartQL_
+  - name: SpaceX
+    handler:
+      graphql:
+        endpoint: https://api.spacex.land/graphql/
+    transforms:
+      - prefix:
+          value: SpaceX_

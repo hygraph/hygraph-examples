@@ -17,15 +17,15 @@ about GraphCMS]
 
 Examples demonstrating how to use GraphCMS features.
 
-| Features                                                    | Description                                                                                                                                           |
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Using Asset Upload]                                        | Programmatically upload assets using the [Asset Upload endpoint]                                                                                      |
-| [Using Management SDK] ([Video][video2])                     | Basic [Management SDK] script to create a schema.                                                                                                     |
-| [Using Remote Fields] ([Video][video3])                     | Basic [Management SDK] script to create a schema with [Remote Fields] to query data directly from the [Stripe API]                                    |
-| [Using Mutations] ([Demo][demo4], [Video][video4])          | [Next.js] app demonstrating how to use GraphCMS mutations with [`graphql-request`], [`SWR`] and API routes                                            |
-| [Using Pagination] ([Demo][demo5], [Video][video5])         | [Next.js] app demonstrating how to paginate GraphCMS queries with [`graphql-request`]                                                                 |
+| Features                                                      | Description                                                                                                                                           |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Using Asset Upload]                                          | Programmatically upload assets using the [Asset Upload endpoint]                                                                                      |
+| [Using Management SDK] ([Video][video2])                      | Basic [Management SDK] script to create a schema.                                                                                                     |
+| [Using Remote Fields] ([Video][video3])                       | Basic [Management SDK] script to create a schema with [Remote Fields] to query data directly from the [Stripe API]                                    |
+| [Using Mutations] ([Demo][demo4], [Video][video4])            | [Next.js] app demonstrating how to use GraphCMS mutations with [`graphql-request`], [`SWR`] and API routes                                            |
+| [Using Pagination] ([Demo][demo5], [Video][video5])           | [Next.js] app demonstrating how to paginate GraphCMS queries with [`graphql-request`]                                                                 |
 | [Using Rich Text Renderer] ([Demo][demo27], [Video][video27]) | [Next.js] app demonstrating how to render Rich Text with [`@graphcms/rich-text-react-renderer`]                                                       |
-| [Using Union Types]                                         | A basic product marketing site using union types to compose UI 'blocks' with components. Built with [Next.js], [`graphql-request`] and [Tailwind CSS] |
+| [Using Union Types]                                           | A basic product marketing site using union types to compose UI 'blocks' with components. Built with [Next.js], [`graphql-request`] and [Tailwind CSS] |
 
 ### Frameworks & Libraries
 
@@ -43,6 +43,7 @@ frameworks.
 | [Gatsby Image] ([Demo][demo12], [Video][video12])                     | How to use [`gatsby-image`] with GraphCMS assets                                                                         |
 | [GraphCMS Image] ([Demo][demo13], [Video][video13])                   | How to use [`graphcms-image`] with Gatsby                                                                                |
 | [GraphQL Codegen] ([Demo][demo26])                                    | Automatically generate26 types for your GraphCMS project with [GraphQL Code Generator]                                   |
+| [Schema Stitching (with GraphQL Mesh)]                                | Stitch 3 GraphQL APIs into one with [GraphQL Mesh]                                                                       |
 | [Gridsome] ([Demo][demo15], [Video][video15])                         | A basic example using `gridsome create` CLI and [`@gridsome/source-graphql`]                                             |
 | [MDX (with Gatsby)] ([Demo][demo16], [Video][video16])                | How to use [`gatsby-plugin-mdx`] with `RichText` fields from GraphCMS.                                                   |
 | [MDX (with Next.js)] ([Demo][demo17], [Video][video17])               | This example demonstrates how to use markdown fields from GraphCMS with `MDX` in Next.js                                 |
@@ -135,6 +136,8 @@ frameworks.
 [video14]: #
 [demo14]: https://graphcms-with-graphql-codegen.vercel.app/
 [graphql code generator]: https://graphql-code-generator.com/docs/getting-started/index
+[schema stitching (with graphql mesh)]: with-graphql-mesh
+[graphql mesh]: https://www.graphql-mesh.com
 [gridsome]: with-gridsome
 [video15]: https://youtu.be/XOxhA938c20
 [demo15]: https://graphcms-with-gridsome.now.sh/
