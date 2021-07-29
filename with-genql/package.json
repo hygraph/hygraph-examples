@@ -1,0 +1,25 @@
+{
+  "name": "with-genql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "generate": "genql --endpoint https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master --output ./generated",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "Jamie Barton",
+  "license": "ISC",
+  "dependencies": {
+    "@genql/runtime": "2.6.0",
+    "graphql": "15.5.1",
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@genql/cli": "2.6.0"
+  }
+}
