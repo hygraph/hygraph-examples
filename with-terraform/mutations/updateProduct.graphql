@@ -1,0 +1,8 @@
+mutation updateProduct($id: ID!, $name: String, $slug: String, $price: Int) {
+  updateProduct(
+    where: { id: $id }
+    data: { name: $name, slug: $slug, price: $price }
+  ) {
+    id
+  }
+}
