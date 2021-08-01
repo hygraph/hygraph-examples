@@ -1,16 +1,11 @@
 {
-  "name": "using-where-filters",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "graphcms-using-order-by-filter",
+  "private": true,
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
-  "keywords": [],
-  "author": "Jamie Barton",
-  "license": "ISC",
   "dependencies": {
     "graphql": "15.5.1",
     "graphql-request": "3.5.0",
