@@ -19,3 +19,4 @@ coverage
 /__sapper__/
 .nuxt
 .svelte-kit
+.terraform
