@@ -34,13 +34,7 @@ export const getStaticProps = async () => {
 };
 
 export default function IndexPage({ initialData }) {
-  // const { query } = useRouter();
-
-  // const { orderBy } = query;
-
   const [orderBy, setOrderBy] = useState('price_ASC');
-
-  // const variables = { orderBy };
 
   const { data } = useSWR(
     [GetProductsQuery, orderBy],
