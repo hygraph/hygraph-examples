@@ -109,17 +109,6 @@ export default function IndexPage({
             }
           />
         </label>
-
-        {/* <select onChange={}>
-          {[
-            { label: 'Price asc.', value: 'price_ASC' },
-            { label: 'Price desc.', value: 'price_DESC' },
-          ].map(({ label, value }) => (
-            <option key={value} value={value}>
-              {label}
-            </option>
-          ))}
-        </select> */}
       </fieldset>
 
       {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading'}
