@@ -1,0 +1,196 @@
+*,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.focal-point {
+  padding: 10px;
+  display: grid;
+  grid-template-areas:
+    "controls controls"
+    "preview preview";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (orientation: landscape) {
+  .focal-point {
+    grid-template-areas:
+      "controls preview"
+      "controls preview";
+  }
+}
+
+.focal-point img {
+  user-select: none;
+}
+
+.focal-point .controls {
+  grid-area: controls;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (orientation: landscape) {
+  .focal-point .controls {
+    align-items: center;
+  }
+}
+
+.focal-point .picker {
+  position: relative;
+}
+
+.focal-point .picker img {
+  user-select: none;
+}
+
+.focal-point .controls .dot {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  background: hsla(0, 100%, 50%, 1);
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: 0 0 4px black;
+}
+
+.focal-point .previews {
+  grid-area: preview;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (orientation: landscape) {
+  .focal-point .previews {
+    align-items: center;
+  }
+}
+
+.focal-point .previews .collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "preview-2-1 preview-2-1 preview-2-1"
+    "preview-1-2 preview-1-1 preview-1-1"
+    "preview-1-2 preview-1-1 preview-1-1";
+  grid-gap: 1px;
+}
+
+.focal-point .previews .collage [class*="preview-"] {
+  position: relative;
+}
+
+.focal-point .preview-2-1 {
+  grid-area: preview-2-1;
+}
+
+.focal-point .preview-1-2 {
+  grid-area: preview-1-2;
+}
+
+.focal-point .preview-1-1 {
+  grid-area: preview-1-1;
+}
+
+.focal-point .previews img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.aspect-square {
+  width: 90vw;
+  height: 45vh;
+  max-width: 45vh;
+  max-height: 90vw;
+}
+
+@media (orientation: landscape) {
+  .aspect-square {
+    width: 45vw;
+    height: 90vh;
+    max-width: 90vh;
+    max-height: 45vw;
+  }
+}
+
+.fullScreen {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#expand {
+  min-width: 0;
+  text-decoration: none;
+  user-select: none;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 0;
+  align-items: center;
+  align-self: center;
+  border: 0;
+  border-radius: 4px;
+  position: relative;
+  appearance: none;
+  text-decoration: none;
+  height: 32px;
+  min-width: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #6663fd;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+#coords {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 35px;
+  background-color: #efefef;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.isTableCell .container {
+  display: none;
+}
