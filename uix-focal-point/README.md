@@ -19,6 +19,6 @@ npx degit graphcms/graphcms-examples/uix-focal-point uix-focal-point
 Install & Run:
 
 ```bash
-cd uix-focal-input
+cd uix-focal-point
 npx http-server
 ```
