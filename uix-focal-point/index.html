@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GraphCMS Focal Point UI extension</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script
+    src="https://cdn.jsdelivr.net/npm/@graphcms/zoid@9.0.64-alpha.1/lib/zoid.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@graphcms/uix-sdk@0.1.4/dist/gcuix.umd.production.min.js"></script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="container">
+    <button id="expand">Expand</button>
+    <div class="focal-point">
+      <div class="controls">
+        <div class="picker">
+          <img id="originalImage" draggable="false"
+            src="https://via.placeholder.com/900x675?text=This+is+a+placeholder+image"
+            ondragstart="return false;" />
+          <div class="dot"></div>
+        </div>
+      </div>
+      <div class="previews">
+        <div class="collage aspect-square">
+          <!-- 
+            inline JS isn't what we want, BUT onload seems
+            to be the most dependable solution to know
+            when we can run a script which is depending
+            on a specific image.
+            -->
+          <div class="preview-2-1">
+            <img id="preview-2-1" draggable="false"
+              src="https://via.placeholder.com/900x675?text=This+is+a+placeholder+image" />
+          </div>
+          <div class="preview-1-2">
+            <img id="preview-1-2" draggable="false"
+              src="https://via.placeholder.com/900x675?text=This+is+a+placeholder+image" />
+          </div>
+          <div class="preview-1-1">
+            <img id="preview-1-1" draggable="false"
+              src="https://via.placeholder.com/900x675?text=This+is+a+placeholder+image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="coords">-</div>
+
+  <script src="focal.js"></script>
+  <script src="uix.js"></script>
+</body>
+
+</html>
