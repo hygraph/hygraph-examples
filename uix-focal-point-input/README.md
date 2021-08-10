@@ -8,7 +8,7 @@ This is a simple example to demonstrate how to use [@graphcms/uix-sdk](https://g
 
 Deploy the code to Vercel, or run locally, and install on GraphCMS as a UI extension using the URL to your index page as the URL for your extension, and run the compatibility test.
 
-You can get started with our hosted example, but you should deploy and own this to your own host: `https://graphcms-uix-focal-point.vercel.app/`
+You can get started with our hosted example, but you should deploy and maintain this on your own host: `https://graphcms-uix-focal-point.vercel.app/`
 
 Follow the guide on [working with GraphCMS UI extensions](https://graphcms.com/guides/working-with-ui-extensions).
 
