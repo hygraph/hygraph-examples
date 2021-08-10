@@ -8,12 +8,12 @@
 
 ## Links
 
-[Join our Slack]</li> &middot; [Read the Docs] &middot; [Learn more
+[Join our Slack] &middot; [Read the Docs] &middot; [Learn more
 about GraphCMS]
 
 ## Examples
 
-### GraphCMS Features & Recipes
+### GraphCMS Content API Features & Recipes
 
 Examples demonstrating how to use GraphCMS features.
 
@@ -56,6 +56,15 @@ frameworks.
 | [Vue.js] ([Demo][demo24], [Video][video24])                           | A vanilla Vue.js starter using `vue create` CLI with Vue Router                                                          |
 | [Sapper] ([Demo][demo25])                                             | A Svelte example using Sapper                                                                                            |
 | [SvelteKit] ([Demo][demo26], [Video][video26])                        | A Svelte example using SvelteKit and `graphql-request` to fetch data                                                     |
+
+### UI Extensions
+
+We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensions) for you to get started with. These should show how to extend the GraphCMS UI with your own custom components.
+
+| Name                               | Type  | Description                                           |
+| ---------------------------------- | ----- | ----------------------------------------------------- |
+| [Quickstart](uix-basic-input)      | Input | A basic `<input />` showing how to use UI extensions. |
+| [Cloudinary](uix-cloudinary-input) | Input | A custom Cloudinary asset picker.                     |
 
 <!-- Links -->
 
@@ -179,3 +188,8 @@ frameworks.
 [sveltekit]: with-sveltekit
 [video26]: https://youtu.be/RHorjtLq1LY
 [demo26]: https://graphcms-with-sveltekit.now.sh/
+
+<!-- UIX -->
+
+[uix-basic-input]: uix-basic-input
+[uix-cloudinary-input]: uix-cloudinary-input
