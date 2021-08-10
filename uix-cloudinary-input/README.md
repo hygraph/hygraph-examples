@@ -8,7 +8,7 @@ UI extension to show how to use Cloudinary asset picker with GraphCMS UI Extensi
 
 Deploy the code to Vercel, or run locally, and install on GraphCMS as a UI extension using the URL to your index page as the URL for your extension, and run the compatibility test.
 
-You can get started with our hosted example, but you should deploy and own this to your own host: `https://graphcms-uix-cloudinary-input.vercel.app`
+You can get started with our hosted example, but you should deploy and own this to your own host: `https://graphcms-uix-cloudinary-input.vercel.app/`
 
 Follow the guide on [working with GraphCMS UI extensions](https://graphcms.com/guides/working-with-ui-extensions).
 
