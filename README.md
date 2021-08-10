@@ -57,7 +57,7 @@ frameworks.
 | [Sapper] ([Demo][demo25])                                             | A Svelte example using Sapper                                                                                            |
 | [SvelteKit] ([Demo][demo26], [Video][video26])                        | A Svelte example using SvelteKit and `graphql-request` to fetch data                                                     |
 
-### UI Extensions
+### UI Extensions
 
 We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensions) for you to get started with. These should show how to extend the GraphCMS UI with your own custom components.
 
