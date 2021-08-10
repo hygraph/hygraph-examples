@@ -1,4 +1,4 @@
-# Working with UI Extensions
+# UI Extensions ⨯ Basic Input
 
 [Join our Slack](https://slack.graphcms.com)
 
