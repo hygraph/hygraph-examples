@@ -61,10 +61,11 @@ frameworks.
 
 We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensions) for you to get started with. These should show how to extend the GraphCMS UI with your own custom components.
 
-| Name                               | Type  | Description                                           |
-| ---------------------------------- | ----- | ----------------------------------------------------- |
-| [Quickstart](uix-basic-input)      | Input | A basic `<input />` showing how to use UI extensions. |
-| [Cloudinary](uix-cloudinary-input) | Input | A custom Cloudinary asset picker.                     |
+| Name                                 | Type  | SDK        | Description                                           |
+| ------------------------------------ | ----- | ---------- | ----------------------------------------------------- |
+| [Quickstart](uix-basic-input)        | Input | React      | A basic `<input />` showing how to use UI extensions. |
+| [Cloudinary](uix-cloudinary-input)   | Input | React      | A custom Cloudinary asset picker.                     |
+| [Focal Point](uix-focal-point-input) | Input | JavaScript | A custom focal point picker.                          |
 
 <!-- Links -->
 
