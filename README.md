@@ -94,7 +94,7 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [next.js]: https://nextjs.org
 [`graphql-request`]: https://github.com/prisma-labs/graphql-request
 [`swr`]: https://github.com/zeit/swr
-[using pagination]: using-pagintion
+[using pagination]: using-pagination
 [video5]: https://youtu.be/QTdPzdXyY40
 [demo5]: https://graphcms-using-pagination.vercel.app/
 [using rich text renderer]: using-rich-text-react-renderer
