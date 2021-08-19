@@ -1,16 +1,15 @@
-import Link from 'next/link';
 import { gql, useQuery } from 'urql';
 
-export default function IndexPage() {
-  const ProductsQuery = gql`
-    {
-      products {
-        slug
-        name
-      }
+const ProductsQuery = gql`
+  {
+    products {
+      slug
+      name
     }
-  `;
+  }
+`;
 
+function App() {
   const [result] = useQuery({ query: ProductsQuery });
   const { data, fetching, error } = result;
 
@@ -20,12 +19,10 @@ export default function IndexPage() {
   return (
     <ul>
       {data.products.map(({ slug, name }) => (
-        <li key={slug}>
-          <Link href={`/products/${slug}`}>
-            <a>{name}</a>
-          </Link>
-        </li>
+        <li key={slug}>{name}</li>
       ))}
     </ul>
   );
 }
+
+export default App;
