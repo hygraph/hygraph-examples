@@ -1,0 +1,17 @@
+{
+  "name": "with-sveltekit-and-urql",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-vercel": "^1.0.0-next.31",
+    "@sveltejs/kit": "next",
+    "@urql/svelte": "^1.3.1",
+    "graphql": "^15.6.1",
+    "svelte": "^3.42.6"
+  },
+  "type": "module"
+}
