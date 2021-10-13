@@ -28,12 +28,13 @@ Follow the guide on [working with GraphCMS UI extensions](https://graphcms.com/g
 npx degit graphcms/graphcms-examples/uix-bynder-input uix-bynder-input
 ```
 
-Install & Run:
+You'll then need to run a server locally, if you're on Mac, you can run a simple Python server within your project directory:
 
 ```bash
-cd uix-focal-point
-npx http-server
+python -m SimpleHTTPServer 8000
 ```
+
+Alternatively, you could run something like [http-server](https://www.npmjs.com/package/http-server).
 
 ## Going further
 
