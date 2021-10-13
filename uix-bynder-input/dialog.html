@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>GraphCMS Bynder Extension Dialog</title>
+
+    <style>
+      body {
+        margin: 0px;
+      }
+
+      #bynder {
+        height: 800px;
+        width: 100%;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/@graphcms/zoid@9.0.64-alpha.1/lib/zoid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@graphcms/uix-sdk@0.1.2/dist/gcuix.umd.production.min.js"></script>
+    <script src="https://d8ejoa1fys2rk.cloudfront.net/5.0.5/modules/compactview/bynder-compactview-2-latest.js"></script>
+  </head>
+  <body>
+    <div id="bynder"></div>
+
+    <script>
+      (() => {
+        const declaration = {
+          extensionType: 'field',
+          fieldType: 'JSON',
+          name: 'Bynder',
+          description: '',
+          features: ['FieldRenderer'],
+        };
+
+        function deserialize(value) {
+          try {
+            return (value && JSON.parse(value)) || [];
+          } catch (error) {
+            console.log(error);
+            console.log('Invalid JSON: ' + value);
+            return null;
+          }
+        }
+
+        function serialize(value) {
+          try {
+            return value.length ? JSON.stringify(value) : '';
+          } catch (error) {
+            console.log(error);
+            return '';
+          }
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+          try {
+            window.GCUIX.init({
+              declaration,
+            }).then((initialState) => {
+              const { status, props } = initialState;
+              if (status === 'ok') {
+                const {
+                  defaultDomain,
+                  defaultDomainEditable,
+                  allowedAssetTypes,
+                  isList,
+                  selectedAssetIds,
+                  onCloseDialog,
+                } = props;
+
+                BynderCompactView.open({
+                  container: document.getElementById('bynder'),
+                  portal: {
+                    url: defaultDomain || '',
+                    editable: defaultDomainEditable,
+                  },
+                  language: 'en_US',
+                  mode: props.isList ? 'MultiSelect' : 'SingleSelect',
+                  assetTypes: deserialize(allowedAssetTypes) || [
+                    'image',
+                    'audio',
+                    'video',
+                    'document',
+                  ],
+                  selectedAssets: deserialize(selectedAssetIds) || [],
+                  onSuccess: function (assets, additionalInfo) {
+                    onCloseDialog(serialize(assets));
+                  },
+                });
+              }
+            });
+          } catch (error) {
+            console.error('Failed to init extension:', error.message);
+            console.error('- error code:', error.code);
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

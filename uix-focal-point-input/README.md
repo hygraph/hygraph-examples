@@ -15,7 +15,7 @@ Follow the guide on [working with GraphCMS UI extensions](https://graphcms.com/g
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/uix-focal-point uix-focal-point
+npx degit graphcms/graphcms-examples/uix-focal-point-input uix-focal-point-input
 ```
 
 Install & Run:

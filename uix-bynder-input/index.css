@@ -1,0 +1,90 @@
+body {
+  margin: 0px;
+}
+
+#assets {
+  min-height: 1px;
+}
+
+.assets-table {
+  display: flex;
+}
+
+#open-dialog-button {
+  margin-top: 15px;
+  cursor: pointer;
+  user-select: none;
+  display: none;
+  height: 32px;
+  line-height: 16px;
+  min-width: 64px;
+  padding: 0px 8px;
+  background-color: rgb(240, 242, 247);
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  text-align: center;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: rgb(102, 99, 253);
+}
+#open-dialog-button:active {
+  border: 2px solid rgba(98, 110, 153, 0.3);
+}
+
+.previewdiv {
+  margin-bottom: 5px;
+  display: flex;
+  position: relative;
+}
+.previewelt {
+  cursor: pointer;
+  width: 400px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.previewdiv-table {
+  display: flex;
+  position: relative;
+  height: 59px;
+  margin-right: 10px;
+}
+.previewelt-table {
+  cursor: pointer;
+  object-fit: cover;
+  height: 100%;
+  display: inline-block;
+}
+
+.overlay-text {
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 2px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 10px;
+  padding: 3px;
+}
+.remove-asset-button {
+  margin-left: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  user-select: none;
+  color: rgb(102, 99, 253);
+  background-color: transparent;
+  text-align: center;
+  line-height: 14px;
+  display: inline-flex;
+  border: 0px;
+  font-weight: 500;
+  font-family: sans-serif;
+  font-size: 12px;
+  vertical-align: middle;
+  padding: 4px;
+}
