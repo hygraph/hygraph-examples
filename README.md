@@ -56,6 +56,7 @@ frameworks.
 | [Vue.js] ([Demo][demo24], [Video][video24])                           | A vanilla Vue.js starter using `vue create` CLI with Vue Router                                                          |
 | [Sapper] ([Demo][demo25])                                             | A Svelte example using Sapper                                                                                            |
 | [SvelteKit] ([Demo][demo26], [Video][video26])                        | A Svelte example using SvelteKit and `graphql-request` to fetch data                                                     |
+| [SvelteKit with URQL] ([Demo][demo27], [Video][video27])              | A SvelteKit example URQL to fetch data                                                                                   |
 
 ### UI Extensions
 
@@ -190,6 +191,9 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [sveltekit]: with-sveltekit
 [video26]: https://youtu.be/RHorjtLq1LY
 [demo26]: https://graphcms-with-sveltekit.now.sh/
+[sveltekit with urql]: with-sveltekit-and-urql
+[video27]: #
+[demo27]: https://with-sveltekit-and-urql-xi.vercel.app/
 
 <!-- UIX -->
 
