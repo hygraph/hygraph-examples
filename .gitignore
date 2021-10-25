@@ -20,3 +20,5 @@ coverage
 .nuxt
 .svelte-kit
 .terraform
+.prettierrc
+pnpm-lock.yaml
