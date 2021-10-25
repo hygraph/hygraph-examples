@@ -1,4 +1,4 @@
-# GraphCMS x SvelteKit x GraphQL Request
+# GraphCMS ⨯ SvelteKit ⨯ GraphQL Request
 
 [Join our Slack](https://slack.graphcms.com)
 
