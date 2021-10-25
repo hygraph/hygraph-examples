@@ -1,38 +1,30 @@
-# create-svelte
+# GraphCMS x SvelteKit x GraphQL Request
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+[Join our Slack](https://slack.graphcms.com)
 
-## Creating a project
+This example shows how to use the SvelteKit and GraphQL Request with
+GraphCMS.
 
-If you're seeing this, you've probably already done this step. Congrats!
+• [Demo](https://with-sveltekit-and-graphql-request.vercel.app/)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-sveltekit-and-graphql-request)
+
+## How to Use
+
+### Download Manually
 
 ```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
+npx degit graphcms/graphcms-examples/with-sveltekit-and-graphql-request
 ```
 
-> Note: the `@next` is temporary
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install & Run:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
+cd with-sveltekit-and-graphql-request
+npm install
 npm run dev -- --open
 ```
 
-## Building
+### Run on Codesandbox
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/with-sveltekit-and-graphql-request)
