@@ -8,7 +8,7 @@
       }
     )
     const { product } = await graphcms.request(
-      `query ProductPageQuery($slug: String!) {
+      `query ProductPageQuery($slug: String!) { 
         product(where: { slug: $slug }) {
           name
           description

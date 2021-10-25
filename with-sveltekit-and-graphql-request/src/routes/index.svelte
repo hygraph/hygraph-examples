@@ -8,7 +8,7 @@
       }
     )
     const { products } = await graphcms.request(
-      `{ 
+      `query Products { 
         products {
           slug
           name
@@ -31,7 +31,7 @@
   <title>SvelteKit project template</title>
 </svelte:head>
 
-<h1>GraphCMS with SvelteKit!</h1>
+<h1>GraphCMS with SvelteKit and GraphQL Request</h1>
 
 {#each products as product}
   <p>
