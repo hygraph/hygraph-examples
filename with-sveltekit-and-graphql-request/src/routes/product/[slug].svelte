@@ -1,5 +1,5 @@
 <script context="module">
-  import { GraphQLClient } from 'graphql-request'
+  import { GraphQLClient } from 'graphql-request';
   export async function load(ctx) {
     const graphcms = new GraphQLClient(
       'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
@@ -8,7 +8,7 @@
       }
     )
     const { product } = await graphcms.request(
-      `query ProductPageQuery($slug: String!) {
+      `query ProductPageQuery($slug: String!) { 
         product(where: { slug: $slug }) {
           name
           description

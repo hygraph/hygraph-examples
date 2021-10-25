@@ -1,5 +1,5 @@
 <script context="module">
-  import { GraphQLClient } from 'graphql-request'
+  import { GraphQLClient } from 'graphql-request';
   export async function load() {
     const graphcms = new GraphQLClient(
       'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
@@ -8,7 +8,7 @@
       }
     )
     const { products } = await graphcms.request(
-      `{ 
+      `query Products { 
         products {
           slug
           name
@@ -31,7 +31,7 @@
   <title>SvelteKit project template</title>
 </svelte:head>
 
-<h1>GraphCMS with SvelteKit!</h1>
+<h1>GraphCMS with SvelteKit and GraphQL Request</h1>
 
 {#each products as product}
   <p>
