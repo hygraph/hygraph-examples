@@ -15,7 +15,7 @@ GraphCMS.
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-sveltekit-and-graphql-request
+npx degit graphcms/graphcms-examples/with-sveltekit-and-graphql-request with-sveltekit-and-graphql-request
 ```
 
 Install & Run:
