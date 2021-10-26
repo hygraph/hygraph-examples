@@ -5,7 +5,8 @@
 This example shows how to use the SvelteKit and GraphQL Request with
 GraphCMS.
 
-• [Demo](https://with-sveltekit-and-graphql-request.vercel.app/)
+•
+[Demo](https://graphcms-with-sveltekit-and-graphql-request.vercel.app/)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-sveltekit-and-graphql-request)
 
