@@ -1,0 +1,19 @@
+---
+pagination:
+  data: graphql
+  size: 1
+  alias: product
+  addAllPagesToCollections: true
+permalink: "/products/{{ product.name | slug }}/"
+tags: products
+layout: base.njk
+templateEngineOverride: md, njk
+eleventyComputed:
+  name: "{{ product.name }}"
+  description: "{{ product.description }}"
+---
+
+<h2>{{ product.name | safe }}</h2>
+<p>{{ product.description | safe }}</p>
+<p>{{ product.price | safe }}</p>
+<img src="{{ product.image.url | safe }}" alt="{{ product.name | safe }}">
