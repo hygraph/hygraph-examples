@@ -22,7 +22,7 @@ Install & Run:
 ```bash
 cd with-eleventy
 npm install
-npm run dev -- --open
+npm run dev
 ```
 
 ### Run on Codesandbox
