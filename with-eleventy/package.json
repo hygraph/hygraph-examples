@@ -1,0 +1,15 @@
+{
+  "name": "graphcms-with-eleventy",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "author": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "graphql": "^16.0.0",
+    "graphql-request": "^3.6.1"
+  }
+}
