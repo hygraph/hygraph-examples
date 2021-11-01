@@ -1,15 +1,12 @@
 {
-  "name": "with-eleventy",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "graphcms-with-eleventy",
+  "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy"
   },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "graphql": "^16.0.0",
