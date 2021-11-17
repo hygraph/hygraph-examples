@@ -1,0 +1,24 @@
+---
+import astroLogo from '../../public/assets/logo.svg'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>GraphCMS with Astro</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/style/global.css" />
+  </head>
+  <body>
+    <main>
+      <div style="text-align: center;">
+        <img style="width: 50px;" src={astroLogo} alt="Astro Logo" />
+      </div>
+      <header>
+        <h1>GraphCMS with Astro</h1>
+      </header>
+      <slot />
+    </main>
+  </body>
+</html>
