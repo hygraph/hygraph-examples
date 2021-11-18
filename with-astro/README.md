@@ -1,48 +1,29 @@
-# Welcome to [Astro](https://astro.build)
+# GraphCMS x Astro
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/snowpackjs/astro/tree/latest/examples/starter)
+[Join our Slack](https://slack.graphcms.com)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This example shows how to use the Astro with GraphCMS.
 
-## 🚀 Project Structure
+• [Demo](https://graphcms-with-astro.vercel.app)
 
-Inside of your Astro project, you'll see the following folders and
-files:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-astro)
 
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+## How to Use
+
+### Download Manually
+
+```bash
+npx degit graphcms/graphcms-examples/with-astro with-astro
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory.
-Each page is exposed as a route based on its file name.
+Install & Run:
 
-There's nothing special about `src/components/`, but that's where we
-like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+cd with-astro
+npm install
+npm run dev
+```
 
-Any static assets, like images, can be placed in the `public/`
-directory.
+### Run on Codesandbox
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command         | Action                                      |
-| :-------------- | :------------------------------------------ |
-| `npm install`   | Installs dependencies                       |
-| `npm run dev`   | Starts local dev server at `localhost:3000` |
-| `npm run build` | Build your production site to `./dist/`     |
-
-## 👀 Want to learn more?
-
-Feel free to check
-[our documentation](https://github.com/snowpackjs/astro) or jump into
-our [Discord server](https://astro.build/chat).
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/with-astro)
