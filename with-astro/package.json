@@ -11,8 +11,6 @@
   },
   "devDependencies": {
     "astro": "^0.20.12",
-    "graphql": "^16.0.1",
-    "graphql-request": "^3.6.1",
     "prettier-plugin-astro": "0.0.10"
   }
 }
