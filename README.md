@@ -57,6 +57,8 @@ frameworks.
 | [Sapper] ([Demo][demo25])                                             | A Svelte example using Sapper                                                                                            |
 | [SvelteKit] ([Demo][demo26], [Video][video26])                        | A Svelte example using SvelteKit and `graphql-request` to fetch data                                                     |
 | [SvelteKit with URQL] ([Demo][demo27], [Video][video27])              | A SvelteKit example URQL to fetch data                                                                                   |
+| [With Eleventy] ([Demo][demo28], [Video][video28])                    | An Eleventy example using `graphql-request` to fetch data.                                                               |
+| [With Astro] ([Demo][demo29], [Video][video29])                       | An Astro example using `graphql-request` to fetch data.                                                                  |
 
 ### UI Extensions
 
@@ -194,6 +196,12 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [sveltekit with urql]: with-sveltekit-and-urql
 [video27]: #
 [demo27]: https://with-sveltekit-and-urql-xi.vercel.app/
+[with eleventy]: with-eleventy
+[video28]: #
+[demo28]: https://graphcms-with-eleventy.vercel.app/
+[with astro]: with-astro
+[video29]: #
+[demo29]: https://graphcms-with-astro.vercel.app/
 
 <!-- UIX -->
 
