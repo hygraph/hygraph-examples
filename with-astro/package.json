@@ -2,6 +2,7 @@
   "name": "@example/starter",
   "version": "0.0.1",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
