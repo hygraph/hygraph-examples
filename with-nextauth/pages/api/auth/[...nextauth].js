@@ -135,6 +135,31 @@ const GetNextAuthSession = gql`
   ${NextAuthSessionFragment}
 `;
 
+const UpdateNextAuthSession = gql`
+  mutation UpdateNextAuthSession(
+    $sessionToken: String!
+    $data: NextAuthSessionUpdateInput!
+  ) {
+    updateSession(where: { sessionToken: $sessionToken }, data: $data) {
+      id
+      ...NextAuthSessionFragment
+      user {
+        ...NextAuthUserFragment
+      }
+    }
+  }
+  ${NextAuthSessionFragment}
+  ${NextAuthUserFragment}
+`;
+
+const DeleteNextAuthSession = gql`
+  mutation DeleteNextAuthSession($sessionToken: String!) {
+    deleteNextAuthSession(where: { sessionToken: $sessionToken }) {
+      id
+    }
+  }
+`;
+
 export function GraphCMSAdapter(options) {
   const { endpoint, token } = options;
 
@@ -154,6 +179,7 @@ export function GraphCMSAdapter(options) {
 
   return {
     createUser: async (data) => {
+      console.log('creating user');
       const { createNextAuthUser } = await client.request(CreateNextAuthUser, {
         data,
       });
@@ -161,6 +187,7 @@ export function GraphCMSAdapter(options) {
       return createNextAuthUser;
     },
     getUser: async (id) => {
+      console.log('getting user');
       const { nextAuthUser } = await client.request(GetNextAuthUserById, {
         id,
       });
@@ -169,6 +196,7 @@ export function GraphCMSAdapter(options) {
     },
 
     getUserByEmail: async (email) => {
+      console.log('getting user by email');
       const { nextAuthUser } = await client.request(GetNextAuthUserByEmail, {
         email,
       });
@@ -176,6 +204,7 @@ export function GraphCMSAdapter(options) {
       return nextAuthUser;
     },
     getUserByAccount: async (variables) => {
+      console.log('getting user by account');
       const { nextAuthAccounts } = await client.request(
         GetUserByProviderAccountId,
         variables
@@ -188,6 +217,7 @@ export function GraphCMSAdapter(options) {
       return account?.user ?? null;
     },
     updateUser: async ({ id, ...data }) => {
+      console.log('updating user');
       const { updateNextAuthUser } = await client.request(UpdateNextAuthUser, {
         id,
         data,
@@ -196,6 +226,7 @@ export function GraphCMSAdapter(options) {
       return updateNextAuthUser;
     },
     deleteUser: async (id) => {
+      console.log('deleting user');
       const { deleteNextAuthUser } = await client.request(DeleteNextAuthUser, {
         id,
       });
@@ -203,6 +234,7 @@ export function GraphCMSAdapter(options) {
       return deleteNextAuthUser;
     },
     linkAccount: async ({ userId, ...data }) => {
+      console.log('linking account');
       const { createNextAuthAccount } = await client.request(
         CreateNextAuthAccount,
         {
@@ -223,9 +255,14 @@ export function GraphCMSAdapter(options) {
     // unlinkAccount: async (variables) =>
     //   client.request(UnlinkAccountByProviderAndProviderId, variables),
     getSessionAndUser: async (sessionToken) => {
-      const { nextAuthSession } = await client.request(GetNextAuthSession, {
+      console.log('getting session and user');
+      const sesh = await client.request(GetNextAuthSession, {
         sessionToken,
       });
+
+      console.log(sesh);
+
+      const { nextAuthSession } = sesh;
 
       const { user, ...session } = nextAuthSession;
 
@@ -239,6 +276,7 @@ export function GraphCMSAdapter(options) {
       };
     },
     createSession: async ({ userId, sessionToken, expires }) => {
+      console.log('creating session');
       const { createNextAuthSession } = await client.request(
         CreateNextAuthSession,
         {
@@ -261,12 +299,22 @@ export function GraphCMSAdapter(options) {
       };
     },
     updateSession: async ({ sessionToken, ...data }) => {
-      // TODO: Implement
-      console.log('updating session');
+      const { updateSession } = await client.request(UpdateNextAuthSession, {
+        sessionToken,
+        data: {
+          ...data,
+        },
+      });
+
+      return {
+        ...updateSession,
+        expires: new Date(data.expires),
+      };
     },
     deleteSession: async (sessionToken) => {
-      // TODO: Implement
-      console.log('delete session');
+      await client.request(DeleteNextAuthSession, {
+        sessionToken,
+      });
     },
     createVerificationToken: async (data) => {
       // TODO: Implement
@@ -280,6 +328,7 @@ export function GraphCMSAdapter(options) {
 }
 
 export default NextAuth({
+  secret: process.env.NEXTAUTH_SECRET,
   jwt: {
     secret: process.env.NEXTAUTH_SECRET,
   },
@@ -291,15 +340,16 @@ export default NextAuth({
     GitHubProvider({
       clientId: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
+      scope: 'read:user',
     }),
   ],
-  callbacks: {
-    async jwt({ token, account }) {
-      if (account?.userId) {
-        token.userId = account.userId;
-      }
+  // callbacks: {
+  //   async jwt({ token, account }) {
+  //     if (account?.userId) {
+  //       token.userId = account.userId;
+  //     }
 
-      return Promise.resolve(token);
-    },
-  },
+  //     return Promise.resolve(token);
+  //   },
+  // },
 });

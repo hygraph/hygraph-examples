@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 
-export default function IndexPage() {
+export default function AccountPage() {
   return (
     <Layout>
       <h1>Account Settings</h1>
