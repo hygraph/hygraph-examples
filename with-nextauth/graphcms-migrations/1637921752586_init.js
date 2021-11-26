@@ -53,7 +53,7 @@ nextAuthAccount.addSimpleField({
 nextAuthAccount.addSimpleField({
   apiId: 'expires_at',
   displayName: 'Expires At',
-  type: FieldType.String,
+  type: FieldType.Int,
 });
 
 nextAuthAccount.addSimpleField({
