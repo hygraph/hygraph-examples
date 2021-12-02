@@ -1,4 +1,4 @@
-
+import React from 'react';
 import {
   Wrapper as ExtensionWrapper,
   useUiExtension,
@@ -6,6 +6,7 @@ import {
   FieldExtensionFeature,
   FieldExtensionDeclaration,
   VisibilityTypes,
+  VisibilityMap,
 } from '@graphcms/uix-react-sdk';
 
 // Typing the declaration will ensure correct types for the values returned by useUiExtension
@@ -40,31 +41,42 @@ export default function App() {
 function UIX() {
   // Pass a type parameter to useUiExtension hook for better developer experience
   // @ts-expect-error
-  const { setFieldsVisibility, fieldConfig } =
+  const { setFieldsVisibility, fieldConfig, onChange, value } =
     useUiExtension<typeof declaration>();
 
   const fieldsToToggle = (fieldConfig?.fieldsToToggle || '') as string;
 
- 
+  // Cross domain data transfer is a bit slow, so we use transitionary state for immediate UI feedback
+  const [isTransitioning, setIsTransitioning] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsTransitioning(false);
+  }, [value]);
+
+  React.useEffect(() => {
+    if (!fieldsToToggle) return;
+
+    const fieldsVisibilityMap = fieldsToToggle
+      .split(',')
+      .map((x) => x.trim())
+      .filter(Boolean)
+      .reduce<VisibilityMap>((acc, curr) => {
+        acc[curr] = value ? VisibilityTypes.READ_WRITE : VisibilityTypes.HIDDEN;
+        return acc;
+      }, {});
+
+    setFieldsVisibility(fieldsVisibilityMap);
+  }, [value, setFieldsVisibility, fieldsToToggle]);
+
   return (
     <label>
       <input
-        type="checkbox"     
-        onChange={(e) => {
-          if (!fieldsToToggle) return;
-
-          const fieldsVisibilityMap = fieldsToToggle
-            .split(',')
-            .map((x) => x.trim())
-            .reduce<Record<string, VisibilityTypes>>((acc, curr) => {
-              acc[curr] = e.target.checked
-                ? VisibilityTypes.READ_WRITE
-                : VisibilityTypes.HIDDEN;
-              return acc;
-            }, {});
-                    
-          setFieldsVisibility(fieldsVisibilityMap);
-
+        type="checkbox"
+        disabled={isTransitioning}
+        checked={Boolean(value)}
+        onChange={() => {
+          onChange(!value);
+          setIsTransitioning(true);
         }}
       />{' '}
       Toggle{' '}
@@ -76,5 +88,3 @@ function UIX() {
     </label>
   );
 }
-
-
