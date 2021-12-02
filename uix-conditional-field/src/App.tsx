@@ -40,7 +40,6 @@ export default function App() {
 
 function UIX() {
   // Pass a type parameter to useUiExtension hook for better developer experience
-  // @ts-expect-error
   const { setFieldsVisibility, fieldConfig, onChange, value } =
     useUiExtension<typeof declaration>();
 
