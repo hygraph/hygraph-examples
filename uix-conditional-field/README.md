@@ -1,8 +1,8 @@
-# UI Extensions x FieldConfig
+# UI Extensions x Conditional Fields
 
 [Join our Slack](https://slack.graphcms.com)
 
-UI extension to show how to change visibility for fields and use `fieldConfig`
+UI extension to show how to change visibility for other fields and use `fieldConfig`
 
 ## How to Use
 
