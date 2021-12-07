@@ -1177,18 +1177,18 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@graphcms/uix-react-sdk@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@graphcms/uix-react-sdk/-/uix-react-sdk-0.1.6.tgz#b4235494fb0189acb8eef06889125301a679f726"
-  integrity sha512-s1jWZrdGSivNxPVaiC6EJDCpqOXQzOJa/sJ68OsakaFokdXhXQdG3LCE3BzXHo7gE7EZm9OLaBGbZHQG2qmO0w==
+"@graphcms/uix-react-sdk@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@graphcms/uix-react-sdk/-/uix-react-sdk-0.1.7.tgz#d230e3a619348130925a6ec356cb3bdb883fba91"
+  integrity sha512-k6+TZjznpgvwjFmWmalyPIJxa5o37olJZTllXEln6uw1yUOjgqR6YS27Etq3DPMld6x3EhbbBePKb+yISsmJOA==
   dependencies:
-    "@graphcms/uix-sdk" "^0.1.6"
+    "@graphcms/uix-sdk" "^0.1.7"
     "@graphcms/zoid" "^9.0.64-alpha.2"
 
-"@graphcms/uix-sdk@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@graphcms/uix-sdk/-/uix-sdk-0.1.6.tgz#f07bcce69ce6e78f5d787d1fbd9c1a742634df53"
-  integrity sha512-Ktd7JjTuRVsi8rtMZRuj0BI7o3dXCYJqqslVZGvT/8dmGNuq6lqpJ6jzEoMrDH2wuslNqHegC3O/+YgO6CxJnQ==
+"@graphcms/uix-sdk@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@graphcms/uix-sdk/-/uix-sdk-0.1.7.tgz#0af96555b0c6f434b254a3b8fa48314e5d602a23"
+  integrity sha512-6BMqw/TMyv0qdVNcBSwDpH8zo/XN4iaucH8fHwgUcDsW5haSG94m502kRFtMEcjK37LajB+F4wHKpTePNX4pJw==
   dependencies:
     "@graphcms/zoid" "^9.0.64-alpha.2"
 
