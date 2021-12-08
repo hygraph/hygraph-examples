@@ -261,7 +261,7 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [demo29]: https://graphcms-with-astro.vercel.app/
 [with js]: with-vanilla-javascript
 [demo30]: https://graphcms-with-vanilla-js.vercel.app
-[with-nextauth-credentials]: with-nextauth-credentials
+[with-nextauth]: with-nextauth-credentials
 [demo31]: https://graphcms-with-nextauth-credentials.vercel.app
 
 <!-- UIX -->
