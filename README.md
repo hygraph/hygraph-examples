@@ -56,9 +56,10 @@ frameworks.
 | [Vue.js] ([Demo][demo24], [Video][video24])                           | A vanilla Vue.js starter using `vue create` CLI with Vue Router                                                          |
 | [Sapper] ([Demo][demo25])                                             | A Svelte example using Sapper                                                                                            |
 | [SvelteKit] ([Demo][demo26], [Video][video26])                        | A Svelte example using SvelteKit and `graphql-request` to fetch data                                                     |
-| [SvelteKit with URQL] ([Demo][demo27], [Video][video27])              | A SvelteKit example URQL to fetch data                                                                                   |
-| [With Eleventy] ([Demo][demo28], [Video][video28])                    | An Eleventy example using `graphql-request` to fetch data.                                                               |
-| [With Astro] ([Demo][demo29], [Video][video29])                       | An Astro example using `graphql-request` to fetch data.                                                                  |
+| [SvelteKit with URQL] ([Demo][demo27])                                | A SvelteKit example URQL to fetch data                                                                                   |
+| [With Eleventy] ([Demo][demo28])                                      | An Eleventy example using `graphql-request` to fetch data.                                                               |
+| [With Astro] ([Demo][demo29])                                         | An Astro example using `graphql-request` to fetch data.                                                                  |
+| [With Vanilla JavaScript] ([Demo][demo30])                            | Query in the browser with no frameworks, just use the Fetch API.                                                         |
 
 ### UI Extensions
 
@@ -113,7 +114,6 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 <!-- Frameworks & Libraries -->
 
 [algolia]: with-algolia
-[video6]: #
 [demo6]: https://graphcms-with-algolia.vercel.app/
 [1]: with-apollo-client-3
 [apollo client 3]: https://www.apollographql.com/docs/react
@@ -131,7 +131,6 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [`awesome-graphql-client`]: https://github.com/lynxtaa/awesome-graphql-client
 [4]: with-gatsby
 [gatsby]: https://www.gatsbyjs.org/
-[video10]: #
 [demo10]: https://graphcms-with-gatsby.now.sh/
 [`gatsby-source-graphcms`]: https://github.com/GraphCMS/gatsby-source-graphcms
 [gatsby (file system route api)]: with-gatsby-filesystem-routing
@@ -147,7 +146,6 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [demo13]: https://graphcms-with-graphcms-image.now.sh/
 [`graphcms-image`]: https://github.com/GraphCMS/graphcms-image
 [graphql codegen]: with-graphql-codegen
-[video14]: #
 [demo14]: https://graphcms-with-graphql-codegen.vercel.app/
 [graphql code generator]: https://graphql-code-generator.com/docs/getting-started/index
 [schema stitching (with graphql mesh)]: with-graphql-mesh
@@ -188,20 +186,17 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [video24]: https://youtu.be/CVM-BFLWwro
 [demo24]: https://graphcms-with-vuejs.now.sh/
 [sapper]: with-sapper
-[video25]: #
 [demo25]: https://graphcms-with-sapper.now.sh/
 [sveltekit]: with-sveltekit
 [video26]: https://youtu.be/RHorjtLq1LY
 [demo26]: https://graphcms-with-sveltekit.now.sh/
 [sveltekit with urql]: with-sveltekit-and-urql
-[video27]: #
 [demo27]: https://with-sveltekit-and-urql-xi.vercel.app/
 [with eleventy]: with-eleventy
-[video28]: #
 [demo28]: https://graphcms-with-eleventy.vercel.app/
 [with astro]: with-astro
-[video29]: #
 [demo29]: https://graphcms-with-astro.vercel.app/
+[demo30]: https://graphcms-with-vanilla-js.vercel.app
 
 <!-- UIX -->
 
