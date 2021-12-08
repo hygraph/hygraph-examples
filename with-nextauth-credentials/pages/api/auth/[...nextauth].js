@@ -38,7 +38,7 @@ export default NextAuth({
         email: {
           label: 'Email',
           type: 'email',
-          placeholder: 'jamie@graphql.wtf',
+          placeholder: 'jamie@graphcms.com',
         },
         password: {
           label: 'Password',
