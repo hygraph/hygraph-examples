@@ -63,11 +63,6 @@ Examples where we only query the data will hardcode the `GRAPHCMS_ENDPOINT` to g
 
 </details>
 
-## Links
-
-[Join our Slack] &middot; [Read the Docs] &middot; [Learn more
-about GraphCMS]
-
 ## Examples
 
 ### GraphCMS Content API Features & Recipes
@@ -261,3 +256,12 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 
 [uix-basic-input]: uix-basic-input
 [uix-cloudinary-input]: uix-cloudinary-input
+
+## Links
+
+[Join our Slack] &middot; [Read the Docs] &middot; [Learn more
+about GraphCMS]
+
+## Contributing
+
+Do you see something missing above that you're working with? Open a Pull Request with your example, and get it featured in our newsletter! [Learn more](https://graphcms.com/community).
