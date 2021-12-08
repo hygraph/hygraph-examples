@@ -6,6 +6,63 @@
   Example projects to help you get started with GraphCMS
 </p>
 
+## Using this repo
+
+All examples in this repo use the same GraphCMS project. You'll need to create your own project with schema shown below.
+
+When working with this repo locally with your own GraphCMS project, you'll need to add the following to your `.env`:
+
+```dosini
+GRAPHCMS_ENDPOINT=
+GRAPHCMS_TOKEN=
+```
+
+Examples where we only query the data will hardcode the `GRAPHCMS_ENDPOINT` to get you going using the example locally, or on Codesandbox.
+
+<details>
+  <summary>Create this schema when working locally</summary>
+
+## `Product` model
+
+- Display name: Product
+- API ID: Product
+- Plural API ID: Products
+
+### Fields
+
+- Name (String, Single line text, Localized, Required, Title)
+- Slug (String, Single line text, Required, Unique)
+- Description (String, Multi line text)
+- Price (Int, Required)
+- Reviews (Reference: Reviews, One to Many, Multiple Values, Two-way reference)
+- Votes (Reference: Votes, One to Many Multiple Values, Two-way reference, API only)
+- Image (Asset, Two-way reference)
+- Content (RichText, Rich text)
+
+## `Review` model
+
+- Display name: Review
+- API ID: Review
+- Plural API ID: Reviews
+
+### Fields
+
+- Name (String, Single line text)
+- Comment (String, Multi line text, Required)
+- Product (Reference: Product, Two way reference)
+
+## `Vote` model
+
+- Display name: Vote
+- API ID: Vote
+- Plural API ID: Votes
+
+### Fields
+
+- Product (Reference: Product, Two-way reference)
+
+</details>
+
 ## Links
 
 [Join our Slack] &middot; [Read the Docs] &middot; [Learn more
@@ -60,6 +117,7 @@ frameworks.
 | [With Eleventy] ([Demo][demo28])                                      | An Eleventy example using `graphql-request` to fetch data.                                                               |
 | [With Astro] ([Demo][demo29])                                         | An Astro example using `graphql-request` to fetch data.                                                                  |
 | [With JS] ([Demo][demo30])                                            | Query in the browser with no frameworks, just use the Fetch API.                                                         |
+| [With Remix] ([Demo][demo31])                                         | Query and mutate data with Remix.                                                                                        |
 
 ### UI Extensions
 

@@ -10,7 +10,7 @@ const {
 // Create a new `migration` instance
 const migration = newMigration({
   authToken: process.env.GRAPHCMS_MIGRATION_TOKEN,
-  endpoint: process.env.GRAPHCMS_URL,
+  endpoint: process.env.GRAPHCMS_ENDPOINT,
 });
 
 // create model for blog

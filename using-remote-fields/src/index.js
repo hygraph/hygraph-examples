@@ -5,7 +5,7 @@ const { newMigration, FieldType } = require('@graphcms/management');
 // Create a new `migration` instance
 const migration = newMigration({
   authToken: process.env.GRAPHCMS_MIGRATION_TOKEN,
-  endpoint: process.env.GRAPHCMS_URL,
+  endpoint: process.env.GRAPHCMS_ENDPOINT,
 });
 
 // Create the type definitions for objects returned from the Stripe API
@@ -66,8 +66,7 @@ pricingPlanModel.addRemoteField({
   apiId: 'stripeMonthlyPrice',
   displayName: 'Stripe Monthly Price',
   remoteConfig: {
-    url:
-      'https://api.stripe.com/v1/prices/{stripeMonthlyPriceId}?expand[]=product',
+    url: 'https://api.stripe.com/v1/prices/{stripeMonthlyPriceId}?expand[]=product',
     ...stripeRemoteConfig,
   },
 });
@@ -76,8 +75,7 @@ pricingPlanModel.addRemoteField({
   apiId: 'stripeAnnualPrice',
   displayName: 'Stripe Annual Price',
   remoteConfig: {
-    url:
-      'https://api.stripe.com/v1/prices/{stripeAnnualPriceId}?expand[]=product',
+    url: 'https://api.stripe.com/v1/prices/{stripeAnnualPriceId}?expand[]=product',
     ...stripeRemoteConfig,
   },
 });
