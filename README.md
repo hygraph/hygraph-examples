@@ -20,7 +20,7 @@ GRAPHCMS_TOKEN=
 Examples where we only query the data will hardcode the `GRAPHCMS_ENDPOINT` to get you going using the example locally, or on Codesandbox.
 
 <details>
-  <summary>Create this schema when working locally</summary>
+  <summary>Create this schema manually</summary>
 
 ## `Product` model
 
@@ -60,6 +60,15 @@ Examples where we only query the data will hardcode the `GRAPHCMS_ENDPOINT` to g
 ### Fields
 
 - Product (Reference: Product, Two-way reference)
+
+</details>
+
+<details>
+  <summary>Create this schema with migrations (EXPERIMENTAL)
+
+You'll need to create a Permanent Auth Token with Management API permissions enabled.
+
+Inside of the root of this monorepo, add `.env` (template above), and run `npx graphcms-migrate`.
 
 </details>
 
