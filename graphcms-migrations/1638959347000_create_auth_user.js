@@ -4,6 +4,7 @@ const {
   newMigration,
   FieldType,
   VisibilityTypes,
+  Renderer,
 } = require('@graphcms/management');
 
 const migration = newMigration({
@@ -15,6 +16,12 @@ const nextAuthUser = migration.createModel({
   apiId: 'NextAuthUser',
   apiIdPlural: 'NextAuthUsers',
   displayName: 'Next Auth User',
+});
+
+nextAuthUser.addSimpleField({
+  apiId: 'name',
+  displayName: 'Name',
+  type: FieldType.String,
 });
 
 nextAuthUser.addSimpleField({
@@ -31,6 +38,13 @@ nextAuthUser.addSimpleField({
   type: FieldType.String,
   isRequired: true,
   visibility: VisibilityTypes.ReadOnly,
+});
+
+nextAuthUser.addSimpleField({
+  apiId: 'bio',
+  displayName: 'Bio',
+  type: FieldType.String,
+  formRenderer: Renderer.MultiLine,
 });
 
 module.exports = migration;
