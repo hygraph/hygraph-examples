@@ -22,3 +22,5 @@ coverage
 .terraform
 .prettierrc
 pnpm-lock.yaml
+.yalc/
+yalc.lock
