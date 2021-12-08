@@ -5,10 +5,10 @@ const fs = require('fs');
 const Queue = require('bee-queue');
 
 const assetUpload = async (data) => {
-  const response = await fetch(`${process.env.GRAPHCMS_URL}/upload`, {
+  const response = await fetch(`${process.env.GRAPHCMS_ENDPOINT}/upload`, {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${process.env.GRAPHCMS_MUTATION_TOKEN}`,
+      Authorization: `Bearer ${process.env.GRAPHCMS_TOKEN}`,
       'Content-Type': 'application/x-www-form-urlencoded',
     },
     body: `url=${encodeURIComponent(data.url)}`,

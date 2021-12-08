@@ -6,10 +6,71 @@
   Example projects to help you get started with GraphCMS
 </p>
 
-## Links
+## Using this repo
 
-[Join our Slack] &middot; [Read the Docs] &middot; [Learn more
-about GraphCMS]
+All examples in this repo use the same GraphCMS project. You'll need to create your own project with schema shown below.
+
+When working with this repo locally with your own GraphCMS project, you'll need to add the following to your `.env`:
+
+```dosini
+GRAPHCMS_ENDPOINT=
+GRAPHCMS_TOKEN=
+```
+
+Examples where we only query the data will hardcode the `GRAPHCMS_ENDPOINT` to get you going using the example locally, or on Codesandbox.
+
+<details>
+  <summary>Create this schema manually</summary>
+
+## `Product` model
+
+- Display name: Product
+- API ID: Product
+- Plural API ID: Products
+
+### Fields
+
+- Name (String, Single line text, Localized, Required, Title)
+- Slug (String, Single line text, Required, Unique)
+- Description (String, Multi line text)
+- Price (Int, Required)
+- Reviews (Reference: Reviews, One to Many, Multiple Values, Two-way reference)
+- Votes (Reference: Votes, One to Many Multiple Values, Two-way reference, API only)
+- Image (Asset, Two-way reference)
+- Content (RichText, Rich text)
+
+## `Review` model
+
+- Display name: Review
+- API ID: Review
+- Plural API ID: Reviews
+
+### Fields
+
+- Name (String, Single line text)
+- Comment (String, Multi line text, Required)
+- Product (Reference: Product, Two way reference)
+
+## `Vote` model
+
+- Display name: Vote
+- API ID: Vote
+- Plural API ID: Votes
+
+### Fields
+
+- Product (Reference: Product, Two-way reference)
+
+</details>
+
+<details>
+  <summary>Create this schema with migrations (EXPERIMENTAL)</summary>
+
+You'll need to create a Permanent Auth Token with **ALL** Management API and Content API permissions enabled.
+
+Inside of the root of this monorepo, add `.env` (template above), and run `npx graphcms-migrate`.
+
+</details>
 
 ## Examples
 
@@ -65,12 +126,13 @@ frameworks.
 
 We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensions) for you to get started with. These should show how to extend the GraphCMS UI with your own custom components.
 
-| Name                                 | Type  | SDK        | Description                                                    |
-| ------------------------------------ | ----- | ---------- | -------------------------------------------------------------- |
-| [Quickstart](uix-basic-input)        | Input | React      | A basic `<input />` showing how to use UI extensions.          |
-| [Cloudinary](uix-cloudinary-input)   | Input | React      | A custom Cloudinary asset picker.                              |
-| [Focal Point](uix-focal-point-input) | Input | JavaScript | A custom focal point picker.                                   |
-| [Bynder](uix-bynder-input)           | Input | JavaScript | Browse assets from Bynder using the Compact View V2 component. |
+| Name                                        | Type  | SDK        | Description                                                                         |
+| ------------------------------------------- | ----- | ---------- | ----------------------------------------------------------------------------------- |
+| [Quickstart](uix-basic-input)               | Input | React      | A basic `<input />` showing how to use UI extensions.                               |
+| [Cloudinary](uix-cloudinary-input)          | Input | React      | A custom Cloudinary asset picker.                                                   |
+| [Focal Point](uix-focal-point-input)        | Input | JavaScript | A custom focal point picker.                                                        |
+| [Bynder](uix-bynder-input)                  | Input | JavaScript | Browse assets from Bynder using the Compact View V2 component.                      |
+| [Conditional Fields](uix-conditional-field) | Input | TypeScript | UI extension to show how to change visibility for other fields and use fieldConfig. |
 
 <!-- Links -->
 
@@ -203,3 +265,12 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 
 [uix-basic-input]: uix-basic-input
 [uix-cloudinary-input]: uix-cloudinary-input
+
+## Links
+
+[Join our Slack] &middot; [Read the Docs] &middot; [Learn more
+about GraphCMS]
+
+## Contributing
+
+Do you see something missing above that you're working with? Open a Pull Request with your example, and get it featured in our newsletter! [Learn more](https://graphcms.com/community).

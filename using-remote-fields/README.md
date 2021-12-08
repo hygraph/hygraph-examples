@@ -20,7 +20,7 @@ Add .env:
 cp .env.sample .env
 ```
 
-Provide values for `GRAPHCMS_MIGRATION_TOKEN`, `GRAPHCMS_URL` and `STRIPE_SECRET_KEY` keys.
+Provide values for `GRAPHCMS_MIGRATION_TOKEN`, `GRAPHCMS_ENDPOINT` and `STRIPE_SECRET_KEY` keys.
 
 Install & Run:
 

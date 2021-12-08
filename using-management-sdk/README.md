@@ -32,7 +32,7 @@ Add .env:
 cp .env.sample .env
 ```
 
-Provide values for `GRAPHCMS_MIGRATION_TOKEN` and `GRAPHCMS_URL`.
+Provide values for `GRAPHCMS_MIGRATION_TOKEN` and `GRAPHCMS_ENDPOINT`.
 
 Install & Run:
 
