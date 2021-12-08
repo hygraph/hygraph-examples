@@ -64,7 +64,7 @@ Examples where we only query the data will hardcode the `GRAPHCMS_ENDPOINT` to g
 </details>
 
 <details>
-  <summary>Create this schema with migrations (EXPERIMENTAL)
+  <summary>Create this schema with migrations (EXPERIMENTAL)</summary>
 
 You'll need to create a Permanent Auth Token with **ALL** Management API and Content API permissions enabled.
 
