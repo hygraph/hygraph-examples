@@ -121,7 +121,6 @@ frameworks.
 | [With Eleventy] ([Demo][demo28])                                      | An Eleventy example using `graphql-request` to fetch data.                                                               |
 | [With Astro] ([Demo][demo29])                                         | An Astro example using `graphql-request` to fetch data.                                                                  |
 | [With JS] ([Demo][demo30])                                            | Query in the browser with no frameworks, just use the Fetch API.                                                         |
-| [With Remix] ([Demo][demo31])                                         | Query and mutate data with Remix.                                                                                        |
 
 ### UI Extensions
 
