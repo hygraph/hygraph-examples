@@ -1,4 +1,5 @@
 import { SessionProvider } from 'next-auth/react';
+import { Toaster } from 'react-hot-toast';
 
 export default function MyApp({
   Component,
@@ -7,6 +8,7 @@ export default function MyApp({
   return (
     <SessionProvider session={session}>
       <Component {...pageProps} />
+      <Toaster />
     </SessionProvider>
   );
 }

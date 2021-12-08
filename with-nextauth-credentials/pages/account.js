@@ -1,5 +1,6 @@
 import { gql } from 'graphql-request';
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 
 import { getSession } from 'next-auth/react';
 import { graphcmsClient } from '../lib/graphcms';
@@ -18,6 +19,15 @@ const GetUserProfileById = gql`
 export async function getServerSideProps(context) {
   const session = await getSession(context);
 
+  if (!session) {
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false,
+      },
+    };
+  }
+
   const { user } = await graphcmsClient.request(GetUserProfileById, {
     id: session.userId,
   });
@@ -34,12 +44,19 @@ export default function AccountPage({ user }) {
 
   const onSubmit = async ({ name, bio }) => {
     try {
-      await fetch('/api/update-account', {
+      const res = await fetch('/api/update-account', {
         method: 'POST',
         body: JSON.stringify({ name, bio }),
       });
-    } catch {
-      console.log('Something went wrong');
+
+      if (!res.ok) {
+        throw new Error(res.statusText);
+      }
+
+      toast.success('Account updated successfully');
+    } catch (err) {
+      toast.error(err.message || 'Something went wrong. Try again!');
+      console.log(err);
     }
   };
 
