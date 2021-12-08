@@ -127,12 +127,13 @@ frameworks.
 
 We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensions) for you to get started with. These should show how to extend the GraphCMS UI with your own custom components.
 
-| Name                                 | Type  | SDK        | Description                                                    |
-| ------------------------------------ | ----- | ---------- | -------------------------------------------------------------- |
-| [Quickstart](uix-basic-input)        | Input | React      | A basic `<input />` showing how to use UI extensions.          |
-| [Cloudinary](uix-cloudinary-input)   | Input | React      | A custom Cloudinary asset picker.                              |
-| [Focal Point](uix-focal-point-input) | Input | JavaScript | A custom focal point picker.                                   |
-| [Bynder](uix-bynder-input)           | Input | JavaScript | Browse assets from Bynder using the Compact View V2 component. |
+| Name                                        | Type  | SDK        | Description                                                                         |
+| ------------------------------------------- | ----- | ---------- | ----------------------------------------------------------------------------------- |
+| [Quickstart](uix-basic-input)               | Input | React      | A basic `<input />` showing how to use UI extensions.                               |
+| [Cloudinary](uix-cloudinary-input)          | Input | React      | A custom Cloudinary asset picker.                                                   |
+| [Focal Point](uix-focal-point-input)        | Input | JavaScript | A custom focal point picker.                                                        |
+| [Bynder](uix-bynder-input)                  | Input | JavaScript | Browse assets from Bynder using the Compact View V2 component.                      |
+| [Conditional Fields](uix-conditional-field) | Input | TypeScript | UI extension to show how to change visibility for other fields and use fieldConfig. |
 
 <!-- Links -->
 
