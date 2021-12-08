@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@graphcms/management@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@graphcms/management/-/management-1.1.0.tgz#7799d4faf010102dd0a142c60df230f9ead0cb43"
-  integrity sha512-jN+qu06BvvX2fK+tz8Po1ySV43ls4iLqQzNxVyoCyHZTwKEQPOVkvp4TRpusTOkuTxyOeI5r+s1GnKfUeQdPdQ==
+"@graphcms/management@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@graphcms/management/-/management-1.4.0.tgz#8b0f9da758372a635ebeeca7ec2e3c9efe786244"
+  integrity sha512-y2SekG3PCELc8MCaxVFTXSFERn9gnWeIetf3QkJAaxLPAYlLLce77mDUeO5VyV0wypRRxjRq88oT2W9D1+Yxsg==
   dependencies:
     "@types/nanoid" "2.1.0"
     graphql "15.5.0"

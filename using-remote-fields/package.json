@@ -6,9 +6,9 @@
     "start": "node src/index.js"
   },
   "dependencies": {
-    "@graphcms/management": "0.0.19"
+    "@graphcms/management": "1.4.0"
   },
   "devDependencies": {
-    "dotenv": "8.2.0"
+    "dotenv": "10.0.0"
   }
 }
