@@ -66,7 +66,7 @@ Examples where we only query the data will hardcode the `GRAPHCMS_ENDPOINT` to g
 <details>
   <summary>Create this schema with migrations (EXPERIMENTAL)
 
-You'll need to create a Permanent Auth Token with Management API permissions enabled.
+You'll need to create a Permanent Auth Token with **ALL** Management API and Content API permissions enabled.
 
 Inside of the root of this monorepo, add `.env` (template above), and run `npx graphcms-migrate`.
 

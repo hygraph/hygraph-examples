@@ -14,7 +14,7 @@ const migration = newMigration({
 const nextAuthUser = migration.createModel({
   apiId: 'NextAuthUser',
   apiIdPlural: 'NextAuthUsers',
-  displayName: 'Next Auth USer',
+  displayName: 'Next Auth User',
 });
 
 nextAuthUser.addSimpleField({

@@ -15,7 +15,7 @@ product.addRelationalField({
   relationType: RelationType.OneToMany,
   model: 'Review',
   reverseField: {
-    api: 'product',
+    apiId: 'product',
     displayName: 'Product',
   },
 });

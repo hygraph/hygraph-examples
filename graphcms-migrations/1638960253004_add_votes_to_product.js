@@ -1,6 +1,10 @@
 // npx graphcms-migrate
 
-const { newMigration, RelationType } = require('@graphcms/management');
+const {
+  newMigration,
+  RelationType,
+  VisibilityTypes,
+} = require('@graphcms/management');
 
 const migration = newMigration({
   endpoint: process.env.GRAPHCMS_ENDPOINT,
@@ -13,10 +17,12 @@ product.addRelationalField({
   apiId: 'votes',
   displayName: 'Votes',
   relationType: RelationType.OneToMany,
-  model: 'Review',
+  visibility: VisibilityTypes.ApiOnly,
+  model: 'Vote',
   reverseField: {
-    api: 'product',
+    apiId: 'product',
     displayName: 'Product',
+    visibility: VisibilityTypes.ApiOnly,
   },
 });
 

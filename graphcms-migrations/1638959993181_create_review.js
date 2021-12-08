@@ -1,6 +1,6 @@
 // npx graphcms-migrate
 
-const { newMigration, Renderer } = require('@graphcms/management');
+const { newMigration, FieldType, Renderer } = require('@graphcms/management');
 
 const migration = newMigration({
   endpoint: process.env.GRAPHCMS_ENDPOINT,

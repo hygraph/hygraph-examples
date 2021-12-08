@@ -54,11 +54,6 @@ product.addRelationalField({
   apiId: 'image',
   displayName: 'Image',
   type: FieldType.Int,
-});
-
-nextAuthAccount.addSimpleField({
-  apiId: 'token_type',
-  displayName: 'Token Type',
   model: 'Asset',
 });
 
