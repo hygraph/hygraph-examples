@@ -121,6 +121,7 @@ frameworks.
 | [With Eleventy] ([Demo][demo28])                                      | An Eleventy example using `graphql-request` to fetch data.                                                               |
 | [With Astro] ([Demo][demo29])                                         | An Astro example using `graphql-request` to fetch data.                                                                  |
 | [With JS] ([Demo][demo30])                                            | Query in the browser with no frameworks, just use the Fetch API.                                                         |
+| [With NextAuth] ([Demo][demo31])                                      | Authenticate with NextAuth.js and update account info with GraphCMS.                                                     |
 
 ### UI Extensions
 
@@ -260,6 +261,8 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [demo29]: https://graphcms-with-astro.vercel.app/
 [with js]: with-vanilla-javascript
 [demo30]: https://graphcms-with-vanilla-js.vercel.app
+[with-nextauth-credentials]: with-nextauth-credentials
+[demo31]: https://graphcms-with-nextauth-credentials.vercel.app
 
 <!-- UIX -->
 
