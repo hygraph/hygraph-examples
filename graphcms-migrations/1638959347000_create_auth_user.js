@@ -47,4 +47,12 @@ nextAuthUser.addSimpleField({
   formRenderer: Renderer.MultiLine,
 });
 
+nextAuthUser.addSimpleField({
+  apiId: 'auth0Id',
+  displayName: 'Auth0 ID',
+  type: FieldType.String,
+  isUnique: true,
+  visibility: VisibilityTypes.ReadOnly,
+});
+
 module.exports = migration;
