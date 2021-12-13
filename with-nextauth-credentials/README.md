@@ -32,21 +32,21 @@ You will also need to follow instructions [here](https://github.com/graphcms/gra
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-with-nextauth-credentials with-with-nextauth-credentials
+npx degit graphcms/graphcms-examples/with-nextauth-credentials with-nextauth-credentials
 ```
 
 Install & Run:
 
 ```bash
-cd with-with-nextauth-credentials
+cd with-nextauth-credentials
 npm install
 npm run dev
 # or
-cd with-with-nextauth-credentials
+cd with-nextauth-credentials
 yarn
 yarn dev
 ```
 
 ### Run on Codesandbox
 
-[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/with-with-nextauth-credentials)
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/with-nextauth-credentials)
