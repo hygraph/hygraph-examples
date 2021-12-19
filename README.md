@@ -118,10 +118,10 @@ frameworks.
 | [Sapper] ([Demo][demo25])                                             | A Svelte example using Sapper                                                                                            |
 | [SvelteKit] ([Demo][demo26], [Video][video26])                        | A Svelte example using SvelteKit and `graphql-request` to fetch data                                                     |
 | [SvelteKit with URQL] ([Demo][demo27])                                | A SvelteKit example URQL to fetch data                                                                                   |
-| [With Eleventy] ([Demo][demo28])                                      | An Eleventy example using `graphql-request` to fetch data.                                                               |
-| [With Astro] ([Demo][demo29])                                         | An Astro example using `graphql-request` to fetch data.                                                                  |
-| [With JS] ([Demo][demo30])                                            | Query in the browser with no frameworks, just use the Fetch API.                                                         |
-| [With NextAuth] ([Demo][demo31])                                      | Authenticate with NextAuth.js and update account info with GraphCMS.                                                     |
+| [Eleventy] ([Demo][demo28])                                           | An Eleventy example using `graphql-request` to fetch data.                                                               |
+| [Astro] ([Demo][demo29])                                              | An Astro example using `graphql-request` to fetch data.                                                                  |
+| [Vanilla JS] ([Demo][demo30])                                         | Query in the browser with no frameworks, just use the Fetch API.                                                         |
+| [NextAuth] ([Demo][demo31])                                           | Authenticate with NextAuth.js and update account info with GraphCMS.                                                     |
 
 ### UI Extensions
 
@@ -255,13 +255,13 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [demo26]: https://graphcms-with-sveltekit.now.sh/
 [sveltekit with urql]: with-sveltekit-and-urql
 [demo27]: https://with-sveltekit-and-urql-xi.vercel.app/
-[with eleventy]: with-eleventy
+[eleventy]: with-eleventy
 [demo28]: https://graphcms-with-eleventy.vercel.app/
-[with astro]: with-astro
+[astro]: with-astro
 [demo29]: https://graphcms-with-astro.vercel.app/
-[with js]: with-vanilla-javascript
+[vanilla js]: with-vanilla-javascript
 [demo30]: https://graphcms-with-vanilla-js.vercel.app
-[with nextauth]: with-nextauth-credentials
+[nextauth]: with-nextauth-credentials
 [demo31]: https://graphcms-with-nextauth-credentials.vercel.app
 
 <!-- UIX -->
