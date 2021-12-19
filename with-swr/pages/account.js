@@ -61,25 +61,40 @@ export default function AccountPage({ user }) {
     <div>
       <Header />
 
-      <h1>My Account</h1>
+      <div className="max-w-3xl mx-auto px-6 space-y-6">
+        <h1 className="text-3xl font-bold">My Account</h1>
 
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="bio">Bio</label>
-          <br />
-          <textarea
-            name="bio"
-            value={bio}
-            onChange={(e) => setBio(e.target.value)}
-            placeholder="Short bio"
-            id="bio"
-            rows={7}
-          />
-        </div>
-        <div>
-          <button type="submit">Save profile</button>
-        </div>
-      </form>
+        <form
+          onSubmit={handleSubmit}
+          className="bg-white rounded p-4 border border-gray-200 space-y-3"
+        >
+          <div className="space-y-3">
+            <label htmlFor="bio" className="text-purple-500 font-medium mb-3">
+              Bio
+            </label>
+
+            <div>
+              <textarea
+                name="bio"
+                value={bio}
+                onChange={(e) => setBio(e.target.value)}
+                placeholder="Short bio"
+                id="bio"
+                rows={7}
+                className="shadow-sm block w-full border-gray-200 rounded-md"
+              />
+            </div>
+          </div>
+          <div>
+            <button
+              type="submit"
+              className="bg-purple-500 text-white px-3 py-1.5 rounded w-full"
+            >
+              Save profile
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }

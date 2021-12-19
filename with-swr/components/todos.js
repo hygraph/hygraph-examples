@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import useSWR, { mutate } from 'swr';
+import { XIcon } from '@heroicons/react/solid';
+import cc from 'classcat';
 
 async function jsonFetcher(url) {
   const res = await fetch(url);
@@ -24,10 +26,11 @@ function UpdateItemForm({ todo, onSubmit }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="flex items-center space-x-3">
       <input
         name="completed"
         type="checkbox"
+        className="border-gray-400 group-hover:border-gray-800 shadow-sm rounded w-5 h-5"
         checked={currentTodoCompleted}
         onChange={(e) => setCurrentTodoCompleted(e.target.checked)}
       />
@@ -39,6 +42,7 @@ function UpdateItemForm({ todo, onSubmit }) {
         placeholder="Enter todo description"
         value={currentTodoDescription}
         onChange={(e) => setCurrentTodoDescription(e.target.value)}
+        className="border-gray-200 rounded shadow-sm w-full"
       />
     </form>
   );
@@ -59,27 +63,42 @@ function TodoItem({ id, description, completed, onUpdateTodo, onDeleteTodo }) {
   const handleDelete = () => onDeleteTodo({ id });
 
   return (
-    <li>
+    <li className="px-6 py-3 group transition hover:bg-gray-50">
       {isEditing ? (
         <UpdateItemForm
           todo={{ id, completed, description }}
           onSubmit={handleUpdate}
         />
       ) : (
-        <>
-          <input type="checkbox" checked={completed} onChange={handleToggle} />
+        <div className="flex items-center space-x-3">
+          <input
+            type="checkbox"
+            className="border-gray-400 group-hover:border-gray-800 shadow-sm rounded w-5 h-5"
+            checked={completed}
+            onChange={handleToggle}
+          />
 
-          <span
-            style={{
-              textDecoration: completed ? 'line-through' : 'none',
-            }}
-            onClick={() => setIsEditing(true)}
-          >
-            {description}
-          </span>
+          <div className="flex-1">
+            <p
+              className={cc([
+                'text-sm text-gray-600',
+                {
+                  'line-through opacity-50': completed,
+                  'group-hover:text-gray-800': !completed,
+                },
+              ])}
+              onClick={() => setIsEditing(true)}
+            >
+              {description}
+            </p>
+          </div>
 
-          <button onClick={handleDelete}>&times;</button>
-        </>
+          <div>
+            <button className="appearance-none p-1" onClick={handleDelete}>
+              <XIcon className="w-5 h-5 fill-current text-gray-200 group-hover:text-gray-500 transition-colors" />
+            </button>
+          </div>
+        </div>
       )}
     </li>
   );
@@ -95,8 +114,8 @@ function TodoList({ items = [], onNewTodo, onUpdateTodo, onDeleteTodo }) {
   };
 
   return (
-    <div>
-      <ul>
+    <div className="bg-white rounded">
+      <ul className="rounded divide-y divide-gray-200 border border-gray-200 overflow-hidden">
         {items.map((todo) => (
           <TodoItem
             key={todo.id}
@@ -105,9 +124,13 @@ function TodoList({ items = [], onNewTodo, onUpdateTodo, onDeleteTodo }) {
             onDeleteTodo={onDeleteTodo}
           />
         ))}
-        <li>
-          <form onSubmit={handleSubmit}>
-            <input disabled type="checkbox" />
+        <div className="px-6 py-3">
+          <form onSubmit={handleSubmit} className="flex items-center space-x-3">
+            <input
+              disabled
+              type="checkbox"
+              className="border-gray-400 group-hover:border-gray-800 shadow-sm rounded w-5 h-5"
+            />
             <input
               autoFocus
               required
@@ -115,9 +138,10 @@ function TodoList({ items = [], onNewTodo, onUpdateTodo, onDeleteTodo }) {
               placeholder="Add a new todo"
               value={newTodoDescription}
               onChange={(e) => setnewTodoDescription(e.target.value)}
+              className="border-gray-200 rounded shadow-sm w-full"
             />
           </form>
-        </li>
+        </div>
       </ul>
     </div>
   );
@@ -127,7 +151,7 @@ export default function Todos() {
   const { data } = useSWR('/api/todos', jsonFetcher);
 
   if (!data) {
-    return 'loading...';
+    return <p>Fetching todos from GraphCMS...</p>;
   }
 
   const addTodo = async ({ description }) => {

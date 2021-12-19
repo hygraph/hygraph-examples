@@ -9,24 +9,25 @@ export default function Header() {
   if (loading) return null;
 
   return (
-    <header>
-      <Link href="/">
-        <a>Homepage</a>
-      </Link>
+    <header className="bg-white border-b border-gray-200 shadow-sm py-4 mb-6">
+      <div className="max-w-5xl mx-auto flex items-center justify-between px-3 md:px-6">
+        <Link href="/">
+          <a>Home</a>
+        </Link>
 
-      {session ? (
-        <p>
-          <span>Signed in as {session?.user?.email}</span>
-          <Link href="/account">
-            <a>My Account</a>
-          </Link>
-          <button onClick={signOut}>Sign out</button>
-        </p>
-      ) : (
-        <>
-          <button onClick={signIn}>Sign in</button>
-        </>
-      )}
+        {session ? (
+          <div className="space-x-3">
+            <Link href="/account">
+              <a>My Account</a>
+            </Link>
+            <button onClick={signOut}>Sign out</button>
+          </div>
+        ) : (
+          <>
+            <button onClick={signIn}>Sign in</button>
+          </>
+        )}
+      </div>
     </header>
   );
 }
