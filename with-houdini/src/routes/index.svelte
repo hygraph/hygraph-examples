@@ -12,6 +12,8 @@
   const { products } = $data
 </script>
 
+<h1>GraphCMS with Houdini</h1>
+
 <ul>
   {#each products as product}
     <section>
