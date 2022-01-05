@@ -5,7 +5,7 @@
 This example shows how to use the SvelteKit GraphQL library Houdini
 with GraphCMS.
 
-• [Demo]()
+• [Demo](https://graphcms-with-houdini.vercel.app/)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-houdini)
 
