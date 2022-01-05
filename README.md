@@ -271,6 +271,8 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [swift]: with-swift
 [swift with `swift-graphql`]: with-swift-graphql
 [swift-graphql]: https://github.com/maticzav/swift-graphql
+[houdini]: with-houdini
+[demo32]: https://graphcms-with-houdini.vercel.app
 
 <!-- UIX -->
 
