@@ -122,6 +122,7 @@ frameworks.
 | [Astro] ([Demo][demo29])                                              | An Astro example using `graphql-request` to fetch data.                                                                  |
 | [Vanilla JS] ([Demo][demo30])                                         | Query in the browser with no frameworks, just use the Fetch API.                                                         |
 | [NextAuth] ([Demo][demo31])                                           | Authenticate with NextAuth.js and update account info with GraphCMS.                                                     |
+| [Houdini] ([Demo][demo32])                                            | An Houdini example with SvelteKit.                                                                                       |
 
 ### UI Extensions
 
@@ -263,6 +264,8 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [demo30]: https://graphcms-with-vanilla-js.vercel.app
 [nextauth]: with-nextauth-credentials
 [demo31]: https://graphcms-with-nextauth-credentials.vercel.app
+[houdini]: with-houdini
+[demo32]: https://graphcms-with-houdini.vercel.app
 
 <!-- UIX -->
 
