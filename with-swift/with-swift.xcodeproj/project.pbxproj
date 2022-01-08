@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C316C1BD278A51A300BF09C2 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3738CFF277BA76100AE8B00 /* URLSession.swift */; };
 		C34841CC2789D91A00A66DD3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34841CB2789D91A00A66DD3 /* APIService.swift */; };
 		C34841CD2789DA1500A66DD3 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34841CB2789D91A00A66DD3 /* APIService.swift */; };
 		C3738CEB277BA5B700AE8B00 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3738CDE277BA5B700AE8B00 /* Product.swift */; };
@@ -271,6 +272,7 @@
 			files = (
 				C3738CFA277BA66400AE8B00 /* Product.swift in Sources */,
 				C3738CFB277BA66400AE8B00 /* GraphQLResult.swift in Sources */,
+				C316C1BD278A51A300BF09C2 /* URLSession.swift in Sources */,
 				C3738CFC277BA66400AE8B00 /* DetailView.swift in Sources */,
 				C3738CFD277BA66400AE8B00 /* ProductList.swift in Sources */,
 				C3738CFE277BA66400AE8B00 /* ContentView.swift in Sources */,
