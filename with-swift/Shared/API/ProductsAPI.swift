@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension GraphQLOperation where Output == [Product] {
+extension GraphQLOperation {
     static var LIST_PRODUCTS: Self {
         GraphQLOperation(
                     """

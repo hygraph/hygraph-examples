@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GraphQLOperation<Output: Decodable>: Encodable {
+struct GraphQLOperation: Encodable {
     var operationString: String
     
     private let url = URL(string: "https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master")!
@@ -39,10 +39,8 @@ struct GraphQLOperation<Output: Decodable>: Encodable {
 
 class GraphQLAPI {
     
-    func performOperation<Output>(_ operation: GraphQLOperation<Output>) async throws -> Output {
-        let request: URLRequest
-        
-        request = try operation.getURLRequest()
+    func performOperation<Output: Decodable>(_ operation: GraphQLOperation) async throws -> Output {
+        let request: URLRequest = try operation.getURLRequest()
 
         let (data, _) = try await URLSession.shared.getData(from: request)
         
