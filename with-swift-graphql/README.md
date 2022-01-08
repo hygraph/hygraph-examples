@@ -18,3 +18,5 @@ This demonstrates how to use GraphCMS with a Swift application for iOS (iPhone /
 - SwiftUI based
 - `swift-graphql` based GraphQL calls
 - `Codable` objects
+
+![](Swift-GraphQL-Phone.gif)
