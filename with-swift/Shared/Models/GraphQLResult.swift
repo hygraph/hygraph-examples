@@ -36,7 +36,3 @@ struct GraphQLResult<T: Decodable>: Decodable {
         self.errorMessages = errorMessages
     }
 }
-
-struct IDInput: Encodable {
-    let id: String
-}

@@ -50,6 +50,6 @@ class GraphQLAPI {
             throw NSError(domain: "Error", code: 1)
         }
         
-        return object;
+        return object
     }
 }
