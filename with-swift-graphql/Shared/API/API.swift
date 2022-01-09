@@ -12,7 +12,7 @@ class GraphQLAPI {
 
     func performOperation<T>(query: Selection.Query<T>) async throws -> T {
         try await withCheckedThrowingContinuation { continuation in
-            send(query, to: "https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master") { result in
+            SwiftGraphQL.send(query, to: "https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master") { result in
                 if let data = try? result.get() {
                     continuation.resume(returning: data.data)
                 }
