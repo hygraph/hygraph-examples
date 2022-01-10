@@ -38,6 +38,7 @@
 /* Begin PBXFileReference section */
 		C34841CF2789DA6C00A66DD3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		C34841D22789DE3600A66DD3 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		C348BE94278C4D6700391763 /* PlaygroundExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlaygroundExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C3738D09277BB48600AE8B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3738D0E277BB48600AE8B00 /* with-swift-graphql.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "with-swift-graphql.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3738D14277BB48600AE8B00 /* with-swift-graphql.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "with-swift-graphql.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +92,7 @@
 		C3738D01277BB48400AE8B00 = {
 			isa = PBXGroup;
 			children = (
+				C348BE94278C4D6700391763 /* PlaygroundExample.playground */,
 				C3738D06277BB48400AE8B00 /* Shared */,
 				C3738D15277BB48600AE8B00 /* macOS */,
 				C3738D0F277BB48600AE8B00 /* Products */,

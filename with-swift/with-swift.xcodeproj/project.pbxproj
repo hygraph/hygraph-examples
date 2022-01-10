@@ -35,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		C34841CB2789D91A00A66DD3 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C348BE93278C4C3F00391763 /* PlaygroundExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = PlaygroundExample.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C3738CC6277BA58900AE8B00 /* with-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "with-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3738CCC277BA58900AE8B00 /* with-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "with-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3738CCE277BA58900AE8B00 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		C3738CB9277BA58800AE8B00 = {
 			isa = PBXGroup;
 			children = (
+				C348BE93278C4C3F00391763 /* PlaygroundExample.playground */,
 				C3738CBE277BA58800AE8B00 /* Shared */,
 				C3738CCD277BA58900AE8B00 /* macOS */,
 				C3738CC7277BA58900AE8B00 /* Products */,
