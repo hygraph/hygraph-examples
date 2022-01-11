@@ -1,0 +1,8 @@
+scalars:
+  DateTime: DateTimeScalar
+  Long: Int
+  Hex: String
+  Json: String
+  RGBATransparency: String
+  RGBAHue: String
+  RichTextAST: String
