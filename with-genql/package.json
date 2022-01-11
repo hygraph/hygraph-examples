@@ -9,13 +9,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "@genql/runtime": "2.6.0",
-    "graphql": "15.5.1",
-    "next": "11.0.1",
+    "@genql/runtime": "2.9.0",
+    "graphql": "16.2.0",
+    "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@genql/cli": "2.6.0"
+    "@genql/cli": "2.9.0"
   }
 }

@@ -8,11 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "graphql-request": "2.0.0",
+    "graphql-request": "3.7.0",
     "he": "1.2.0",
-    "next": "9.5.1",
-    "next-mdx-remote": "0.6.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "next": "12.0.7",
+    "next-mdx-remote": "3.0.8",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   }
 }

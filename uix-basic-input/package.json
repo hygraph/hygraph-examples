@@ -8,8 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@graphcms/uix-react-sdk": "0.0.19",
-    "next": "10.2.3",
+    "@graphcms/uix-react-sdk": "0.1.9",
+    "next": "12.0.7",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   }

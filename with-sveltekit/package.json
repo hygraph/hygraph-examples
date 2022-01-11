@@ -11,17 +11,17 @@
   "devDependencies": {
     "@sveltejs/adapter-vercel": "^1.0.0-next.16",
     "@sveltejs/kit": "next",
-    "eslint": "^7.27.0",
+    "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.0",
-    "prettier": "~2.3.0",
+    "prettier": "~2.5.0",
     "prettier-plugin-svelte": "^2.3.0",
     "svelte": "^3.38.2",
     "vite": "^2.3.4"
   },
   "type": "module",
   "dependencies": {
-    "graphql": "^15.5.0",
+    "graphql": "^16.0.0",
     "graphql-request": "^3.4.0"
   }
 }
