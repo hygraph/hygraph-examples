@@ -644,6 +644,12 @@ function CloudinaryDialog() {
             { fetch_format: 'auto', quality: 'auto' },
           ],
         ],
+        integration: {
+          type: 'graphcms_cloudinary_extension',
+          platform: 'graphcms',
+          version: 1.0,
+          environment: 'prod',
+        },
       },
       {
         hideHandler: function () {
@@ -726,8 +732,3 @@ function CloseModalButton({ closeModal }: { closeModal: () => void }) {
 }
 
 export default App;
-
-/* 
-if full screen preview then close on escape
-
-*/
