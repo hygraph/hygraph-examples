@@ -2,7 +2,7 @@
 
 [Join our Slack](https://slack.graphcms.com)
 
-This example demonstrates how to use `graphcms-image` with Gatsby.
+This example demonstrates how to use `@graphcms/react-image` with Gatsby.
 
 • [Demo](https://graphcms-with-graphcms-image.now.sh)
 
