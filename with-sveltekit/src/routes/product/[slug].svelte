@@ -3,10 +3,7 @@
 
   export async function load({ params }) {
     const graphcms = new GraphQLClient(
-      'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
-      {
-        headers: {},
-      }
+      'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master'
     );
 
     const { product } = await graphcms.request(
