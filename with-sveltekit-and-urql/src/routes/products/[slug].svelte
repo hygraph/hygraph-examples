@@ -1,5 +1,5 @@
 <script context="module">
-  export const load = async ({ page: { params } }) => {
+  export const load = async ({ params }) => {
     const { slug } = params;
     return {
       props: { slug },
