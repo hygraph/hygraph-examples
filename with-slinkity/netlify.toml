@@ -1,0 +1,3 @@
+[build]
+  command = "npx slinkity"
+  publish = "_site"
