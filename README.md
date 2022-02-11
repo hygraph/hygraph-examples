@@ -125,6 +125,7 @@ frameworks.
 | [Houdini] ([Demo][demo32])                                            | An Houdini example with SvelteKit.                                                                                       |
 | [Swift]                                                               | A native Swift (iOS & Mac) example.                                                                                      |
 | [Swift with `swift-graphql`]                                          | A native Swift (iOS & Mac) example using [swift-graphql](swift-graphql).                                                 |
+| [Slinkity] ([Demo][demo33])                                           | A Slinkity example using `graphql-request` to fetch data.                                                                |
 
 ### UI Extensions
 
@@ -273,6 +274,8 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [swift-graphql]: https://github.com/maticzav/swift-graphql
 [houdini]: with-houdini
 [demo32]: https://graphcms-with-houdini.vercel.app
+[slinkity]: with-slinkity
+[demo33]: https://graphcms-with-slinkity.vercel.app
 
 <!-- UIX -->
 
