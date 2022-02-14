@@ -1,38 +1,28 @@
+// @ts-check
 import {
   Wrapper,
-  useUiExtension,
   FieldExtensionType,
   FieldExtensionFeature,
+  useFieldExtension,
+  ExtensionType,
 } from '@graphcms/uix-react-sdk';
-import { useRouter } from 'next/router';
 
 function MyField() {
-  const { value, onChange } = useUiExtension();
-
-  return (
-    <input
-      value={value}
-      onChange={({ target: { value: val } }) => onChange(val)}
-    />
-  );
+  const { value, onChange } = useFieldExtension();
+  return <input value={value} onChange={(e) => onChange(e.target.value)} />;
 }
 
+/** @type {import('@graphcms/uix-react-sdk').FieldExtensionDeclaration} */
+const declaration = {
+  extensionType: ExtensionType.field,
+  fieldType: FieldExtensionType.STRING,
+  name: 'My custom field',
+  features: [FieldExtensionFeature.FieldRenderer],
+};
+
 export default function MyCustomInputExtensionPage() {
-  const router = useRouter();
-
-  const { extensionUid } = router.query;
-
-  if (!extensionUid) return null;
-
-  const declaration = {
-    extensionType: 'field',
-    fieldType: FieldExtensionType.STRING,
-    name: 'My custom field',
-    features: [FieldExtensionFeature.FieldRenderer],
-  };
-
   return (
-    <Wrapper uid={extensionUid} declaration={declaration}>
+    <Wrapper declaration={declaration}>
       <MyField />
     </Wrapper>
   );

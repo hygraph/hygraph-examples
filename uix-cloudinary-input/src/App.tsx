@@ -4,10 +4,12 @@ import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import {
   Wrapper as ExtensionWrapper,
   useUiExtensionDialog,
-  useUiExtension,
+  useFieldExtension,
   FieldExtensionType,
   FieldExtensionFeature,
   FieldExtensionDeclaration,
+  ExtensionType,
+  ConfigType,
 } from '@graphcms/uix-react-sdk';
 
 type Media = {
@@ -31,9 +33,8 @@ type DialogReturn = Media | Media[] | null;
 // 2. Optional props you'd like to access in the dialog
 type DialogProps = { isList: boolean; media: Media | Media[] | '' };
 
-// Typing the declaration will ensure correct types for the values returned by useUiExtension
 const declaration: FieldExtensionDeclaration = {
-  extensionType: 'field',
+  extensionType: ExtensionType.field,
   fieldType: FieldExtensionType.JSON,
   name: 'Cloudinary asset',
   description: 'Pick asset object in Cloudinary',
@@ -50,12 +51,12 @@ const declaration: FieldExtensionDeclaration = {
   config: {
     CLOUD_NAME: {
       displayName: 'Cloudinary cloud name',
-      type: 'string',
+      type: ConfigType.string,
       required: true,
     },
     API_KEY: {
       displayName: 'Cloudinary public api key',
-      type: 'string',
+      type: ConfigType.string,
       required: true,
     },
   },
@@ -83,8 +84,7 @@ function App() {
 }
 
 function Extension() {
-  // Pass a type parameter to useUiExtension hook for better developer experience
-  const { isTableCell } = useUiExtension<typeof declaration>();
+  const { isTableCell } = useFieldExtension();
   // isTableCell can be used to detect whether the extension is currently rendered in content table
   if (isTableCell) {
     return <TableCellRenderer />;
@@ -106,7 +106,7 @@ function FormFieldRenderer() {
     isExpanded,
     openDialog,
     extension: { config },
-  } = useUiExtension<typeof declaration>();
+  } = useFieldExtension();
 
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -188,7 +188,7 @@ function FormFieldRenderer() {
               key={item.public_id + index}
             >
               <FormAsset
-                cloudName={config.CLOUD_NAME}
+                cloudName={String(config.CLOUD_NAME)}
                 media={item}
                 isExpanded={
                   item.public_id === clickedMedia?.public_id && isExpanded
@@ -236,7 +236,7 @@ function FormFieldRenderer() {
           ))
         ) : (
           <FormAsset
-            cloudName={config.CLOUD_NAME}
+            cloudName={String(config.CLOUD_NAME)}
             isExpanded={
               media.public_id === clickedMedia?.public_id && isExpanded
             }
@@ -264,7 +264,7 @@ function TableCellRenderer() {
     expand,
     field: { isList },
     extension: { config },
-  } = useUiExtension<typeof declaration>();
+  } = useFieldExtension();
 
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -279,7 +279,7 @@ function TableCellRenderer() {
   if (isExpanded && isList) {
     return (
       <TableAssetsPreviewModal
-        cloudName={config.CLOUD_NAME}
+        cloudName={String(config.CLOUD_NAME)}
         media={media}
         closeModal={() => {
           expand(false);
@@ -307,7 +307,7 @@ function TableCellRenderer() {
             }}
           >
             <TableAsset
-              cloudName={config.CLOUD_NAME}
+              cloudName={String(config.CLOUD_NAME)}
               media={item}
               onOpen={() => {
                 expand(true);
@@ -321,7 +321,7 @@ function TableCellRenderer() {
       ) : (
         <div style={{ width: 59, height: 59 }}>
           <TableAsset
-            cloudName={config.CLOUD_NAME}
+            cloudName={String(config.CLOUD_NAME)}
             isExpanded={isExpanded}
             onClose={() => {
               expand(false);
@@ -613,7 +613,7 @@ function FullScreenPreview({
 function CloudinaryDialog() {
   const {
     extension: { config },
-  } = useUiExtension<typeof declaration>();
+  } = useFieldExtension();
   // You can pass type parameters to useUiExtensionDialog
   // onCloseDialog function is always returned from the hook
   const { onCloseDialog, isList, media } = useUiExtensionDialog<

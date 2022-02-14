@@ -1177,25 +1177,26 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@graphcms/uix-react-sdk@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@graphcms/uix-react-sdk/-/uix-react-sdk-0.1.7.tgz#d230e3a619348130925a6ec356cb3bdb883fba91"
-  integrity sha512-k6+TZjznpgvwjFmWmalyPIJxa5o37olJZTllXEln6uw1yUOjgqR6YS27Etq3DPMld6x3EhbbBePKb+yISsmJOA==
+"@graphcms/uix-react-sdk@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@graphcms/uix-react-sdk/-/uix-react-sdk-0.2.5.tgz#0ff388cce54396a7a7f43160fe724ac72905ef5b"
+  integrity sha512-ViAyvGjBvXG+Yr3HLao5SnE1wkMLt3Pprwgi+ZL1WIv0vromWAR9nvC99VIvpH23nE9i1IoJiS0DLYdHmaLd7Q==
   dependencies:
-    "@graphcms/uix-sdk" "^0.1.7"
-    "@graphcms/zoid" "^9.0.64-alpha.2"
+    "@graphcms/uix-sdk" "^0.2.5"
+    "@graphcms/zoid" "^9.0.64-alpha.3"
 
-"@graphcms/uix-sdk@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@graphcms/uix-sdk/-/uix-sdk-0.1.7.tgz#0af96555b0c6f434b254a3b8fa48314e5d602a23"
-  integrity sha512-6BMqw/TMyv0qdVNcBSwDpH8zo/XN4iaucH8fHwgUcDsW5haSG94m502kRFtMEcjK37LajB+F4wHKpTePNX4pJw==
+"@graphcms/uix-sdk@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@graphcms/uix-sdk/-/uix-sdk-0.2.5.tgz#0738bd487989c7d95a1bae9a41d2f94ad8b99ed4"
+  integrity sha512-oXFvsWmCc213g9q4xh2MFfAvWDvOHP/xrS77lWCuBsblfpn8LgE+rzgBwhRhpnj7zzGDUkk7N5nL5+bdMKBuLw==
   dependencies:
-    "@graphcms/zoid" "^9.0.64-alpha.2"
+    "@graphcms/zoid" "^9.0.64-alpha.3"
+    "@types/react" "^17.0.39"
 
-"@graphcms/zoid@^9.0.64-alpha.2":
-  version "9.0.64-alpha.2"
-  resolved "https://registry.yarnpkg.com/@graphcms/zoid/-/zoid-9.0.64-alpha.2.tgz#d4fd44d8d32ec650518190e235cd3bd900bebd74"
-  integrity sha512-cwy9BBttRY1cOqQ7ThLv3AyxqRJsNSxnt3QCCh0DnEpsnp6L2asjnL6n/KZEkCYifPEAk71JIjKH32PZq4Fueg==
+"@graphcms/zoid@^9.0.64-alpha.3":
+  version "9.0.64-alpha.3"
+  resolved "https://registry.yarnpkg.com/@graphcms/zoid/-/zoid-9.0.64-alpha.3.tgz#38626f6f9d65b927628ba6af3ad50fa14897c49c"
+  integrity sha512-dKAArXooK+KsTIzOYwm79FbyE+NIv+dA+mpWj/Xc2P1cnzScRSLcNSU1Fdw/vGCTbSom+ndGzySWxNAvW08Dxw==
   dependencies:
     belter "^1.0.123"
     cross-domain-utils "^2.0.33"
@@ -1850,6 +1851,15 @@
   version "17.0.11"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.11.tgz#67fcd0ddbf5a0b083a0f94e926c7d63f3b836451"
   integrity sha512-yFRQbD+whVonItSk7ZzP/L+gPTJVBkL/7shLEF+i9GC/1cV3JmUxEQz6+9ylhUpWSDuqo1N9qEvqS6vTj4USUA==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^17.0.39":
+  version "17.0.39"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.39.tgz#d0f4cde092502a6db00a1cded6e6bf2abb7633ce"
+  integrity sha512-UVavlfAxDd/AgAacMa60Azl7ygyQNRwC/DsHZmKgNvPmRR5p70AJ5Q9EAmL2NWOJmeV+vVUI4IAP7GZrN8h8Ug==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -2777,9 +2787,9 @@ bcrypt-pbkdf@^1.0.0:
     tweetnacl "^0.14.3"
 
 belter@^1.0.123, belter@^1.0.41:
-  version "1.0.177"
-  resolved "https://registry.yarnpkg.com/belter/-/belter-1.0.177.tgz#4d49b6a7797c19a12eed233f408934964b808e49"
-  integrity sha512-oJCyvKkO6Cz+ocjEVdyYe6itIgcgS+AgONrEVexErIfFx6y4Q8Uv5699mvMkTWLY5wR72BXoCYZFkb17xJ/7dA==
+  version "1.0.190"
+  resolved "https://registry.yarnpkg.com/belter/-/belter-1.0.190.tgz#491857550ef240d9c66b56fc637991f5c3089966"
+  integrity sha512-jz05FHrO+bwitdI6JxV5ESyRdVhTcwMWQ7L4o+q/R4LNJFQrG58sp9EiwsSjhbihhiyYFcmmCMRRagxte6igtw==
   dependencies:
     cross-domain-safe-weakmap "^1"
     cross-domain-utils "^2"
@@ -8103,9 +8113,9 @@ posix-character-classes@^0.1.0:
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
 post-robot@^10:
-  version "10.0.44"
-  resolved "https://registry.yarnpkg.com/post-robot/-/post-robot-10.0.44.tgz#98cf63be8a3cf39e73001c69f78f8b74a7f97d8f"
-  integrity sha512-LbA2E7gw/MkntjFtT2EPUrapIPCN/M9orKT3OTQC9A87raT5nmsL0nsHAr1AMZS0UoZxB6Z4K6OlnTxAgxXidw==
+  version "10.0.46"
+  resolved "https://registry.yarnpkg.com/post-robot/-/post-robot-10.0.46.tgz#39cea5b51033729390fc7c90be3285cd285f0377"
+  integrity sha512-EgVJiuvI4iRWDZvzObWes0X/n8olWBEJWxlSw79zmhpgkigX8UsVL4VOBhVtoJKwf0Y9qP9g2zOONw1rv80QbA==
   dependencies:
     belter "^1.0.41"
     cross-domain-safe-weakmap "^1.0.1"

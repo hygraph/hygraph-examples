@@ -1177,25 +1177,26 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@graphcms/uix-react-sdk@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@graphcms/uix-react-sdk/-/uix-react-sdk-0.1.4.tgz#6a7d5b29ce12038ccb8938ee840fe8b4f4fac925"
-  integrity sha512-efMehQAC7Tq2/0+fbEui99SW6qUJrRsZ0aC4pSVMGleXUmyrvClGjqYyHCi/XPupYbUBd6SEwdIEdY2Lxpmnyw==
+"@graphcms/uix-react-sdk@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@graphcms/uix-react-sdk/-/uix-react-sdk-0.2.5.tgz#0ff388cce54396a7a7f43160fe724ac72905ef5b"
+  integrity sha512-ViAyvGjBvXG+Yr3HLao5SnE1wkMLt3Pprwgi+ZL1WIv0vromWAR9nvC99VIvpH23nE9i1IoJiS0DLYdHmaLd7Q==
   dependencies:
-    "@graphcms/uix-sdk" "^0.1.4"
-    "@graphcms/zoid" "^9.0.64-alpha.2"
+    "@graphcms/uix-sdk" "^0.2.5"
+    "@graphcms/zoid" "^9.0.64-alpha.3"
 
-"@graphcms/uix-sdk@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@graphcms/uix-sdk/-/uix-sdk-0.1.4.tgz#5e1c842b937c8e10a74b8bdc88bc04a385532527"
-  integrity sha512-b1ZnZq9c4BDrwVeC8GxVEem7YpkNDpJSOncWs8MBHSW5ejBHxRdZi4l+b+tWrUOFXN+TY0StEFxZ4VNDqWhqow==
+"@graphcms/uix-sdk@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@graphcms/uix-sdk/-/uix-sdk-0.2.5.tgz#0738bd487989c7d95a1bae9a41d2f94ad8b99ed4"
+  integrity sha512-oXFvsWmCc213g9q4xh2MFfAvWDvOHP/xrS77lWCuBsblfpn8LgE+rzgBwhRhpnj7zzGDUkk7N5nL5+bdMKBuLw==
   dependencies:
-    "@graphcms/zoid" "^9.0.64-alpha.2"
+    "@graphcms/zoid" "^9.0.64-alpha.3"
+    "@types/react" "^17.0.39"
 
-"@graphcms/zoid@^9.0.64-alpha.2":
-  version "9.0.64-alpha.2"
-  resolved "https://registry.yarnpkg.com/@graphcms/zoid/-/zoid-9.0.64-alpha.2.tgz#d4fd44d8d32ec650518190e235cd3bd900bebd74"
-  integrity sha512-cwy9BBttRY1cOqQ7ThLv3AyxqRJsNSxnt3QCCh0DnEpsnp6L2asjnL6n/KZEkCYifPEAk71JIjKH32PZq4Fueg==
+"@graphcms/zoid@^9.0.64-alpha.3":
+  version "9.0.64-alpha.3"
+  resolved "https://registry.yarnpkg.com/@graphcms/zoid/-/zoid-9.0.64-alpha.3.tgz#38626f6f9d65b927628ba6af3ad50fa14897c49c"
+  integrity sha512-dKAArXooK+KsTIzOYwm79FbyE+NIv+dA+mpWj/Xc2P1cnzScRSLcNSU1Fdw/vGCTbSom+ndGzySWxNAvW08Dxw==
   dependencies:
     belter "^1.0.123"
     cross-domain-utils "^2.0.33"
@@ -1850,6 +1851,15 @@
   version "17.0.11"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.11.tgz#67fcd0ddbf5a0b083a0f94e926c7d63f3b836451"
   integrity sha512-yFRQbD+whVonItSk7ZzP/L+gPTJVBkL/7shLEF+i9GC/1cV3JmUxEQz6+9ylhUpWSDuqo1N9qEvqS6vTj4USUA==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^17.0.39":
+  version "17.0.39"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.39.tgz#d0f4cde092502a6db00a1cded6e6bf2abb7633ce"
+  integrity sha512-UVavlfAxDd/AgAacMa60Azl7ygyQNRwC/DsHZmKgNvPmRR5p70AJ5Q9EAmL2NWOJmeV+vVUI4IAP7GZrN8h8Ug==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -2777,9 +2787,9 @@ bcrypt-pbkdf@^1.0.0:
     tweetnacl "^0.14.3"
 
 belter@^1.0.123, belter@^1.0.41:
-  version "1.0.170"
-  resolved "https://registry.yarnpkg.com/belter/-/belter-1.0.170.tgz#501cb6120838daf54aa5cbccbeeb3a124dafbbe6"
-  integrity sha512-UGVb+nSNZglaF+fEEyxbebWTp4fwrb67XqPBTHlwAK0cerBFtdAotqBuCel6FLVBB3Jq6cysZc1lwzkWKoEBsA==
+  version "1.0.190"
+  resolved "https://registry.yarnpkg.com/belter/-/belter-1.0.190.tgz#491857550ef240d9c66b56fc637991f5c3089966"
+  integrity sha512-jz05FHrO+bwitdI6JxV5ESyRdVhTcwMWQ7L4o+q/R4LNJFQrG58sp9EiwsSjhbihhiyYFcmmCMRRagxte6igtw==
   dependencies:
     cross-domain-safe-weakmap "^1"
     cross-domain-utils "^2"
@@ -3659,16 +3669,16 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     sha.js "^2.4.8"
 
 cross-domain-safe-weakmap@^1, cross-domain-safe-weakmap@^1.0.1:
-  version "1.0.28"
-  resolved "https://registry.yarnpkg.com/cross-domain-safe-weakmap/-/cross-domain-safe-weakmap-1.0.28.tgz#d6c3c5af954340ce5f9d4ee5f3c38dba9513a165"
-  integrity sha512-gfQiQYSdWr9cYFVpmzp+b6MyTnefefDHr+fvm+JVv20hQxetV5J6chZOAusrpM/kFpTTbVDnHCziBFaREvgc0Q==
+  version "1.0.29"
+  resolved "https://registry.yarnpkg.com/cross-domain-safe-weakmap/-/cross-domain-safe-weakmap-1.0.29.tgz#0847975c27d9e1cc840f24c1745311958df98022"
+  integrity sha512-VLoUgf2SXnf3+na8NfeUFV59TRZkIJqCIATaMdbhccgtnTlSnHXkyTRwokngEGYdQXx8JbHT9GDYitgR2sdjuA==
   dependencies:
     cross-domain-utils "^2.0.0"
 
 cross-domain-utils@^2, cross-domain-utils@^2.0.0, cross-domain-utils@^2.0.33:
-  version "2.0.34"
-  resolved "https://registry.yarnpkg.com/cross-domain-utils/-/cross-domain-utils-2.0.34.tgz#3f8dc8d82a5434213787433f17b76f51c316e382"
-  integrity sha512-ke4PirGRXwEElEmE/7k5aCvCW+EqbgseT7AOObzFfaVnOLuEVN9SjVWoOfS/qAT0rDPn3ggmNDW6mguMBy4HgA==
+  version "2.0.38"
+  resolved "https://registry.yarnpkg.com/cross-domain-utils/-/cross-domain-utils-2.0.38.tgz#2eaf321c4dfdb61596805ca4233fde4400cb6377"
+  integrity sha512-zZfi3+2EIR9l4chrEiXI2xFleyacsJf8YMLR1eJ0Veb5FTMXeJ3DpxDjZkto2FhL/g717WSELqbptNSo85UJDw==
   dependencies:
     zalgo-promise "^1.0.11"
 
@@ -8155,9 +8165,9 @@ posix-character-classes@^0.1.0:
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
 post-robot@^10:
-  version "10.0.42"
-  resolved "https://registry.yarnpkg.com/post-robot/-/post-robot-10.0.42.tgz#0371d2147ba465271c7362c492e0b5b332850de5"
-  integrity sha512-fuIuJblIbiAUJVKvttYZ1ZABhvrtAJgxZZ/TsWzzAdQGzkXOaewwgvFiGOSZRr0DywRaQs0Wvgxa7bFCYh8pfg==
+  version "10.0.46"
+  resolved "https://registry.yarnpkg.com/post-robot/-/post-robot-10.0.46.tgz#39cea5b51033729390fc7c90be3285cd285f0377"
+  integrity sha512-EgVJiuvI4iRWDZvzObWes0X/n8olWBEJWxlSw79zmhpgkigX8UsVL4VOBhVtoJKwf0Y9qP9g2zOONw1rv80QbA==
   dependencies:
     belter "^1.0.41"
     cross-domain-safe-weakmap "^1.0.1"
@@ -10916,9 +10926,9 @@ unique-string@^1.0.0:
     crypto-random-string "^1.0.0"
 
 universal-serialize@^1.0.4:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/universal-serialize/-/universal-serialize-1.0.8.tgz#93470f043a9ed30094104824c02d21f607b61e6a"
-  integrity sha512-AhC3D26asmMkxAadYjCUJh98AUV/Fpp9uStVz4OuigpaGqIwY+i95EWE392P+4ObOPFHw8TUk/GazyiSGDtxhA==
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/universal-serialize/-/universal-serialize-1.0.10.tgz#3279bb30f47290ea479f45135620f98fa9d3f3a6"
+  integrity sha512-FdouA4xSFa0fudk1+z5vLWtxZCoC0Q9lKYV3uUdFl7DttNfolmiw2ASr5ddY+/Yz6Isr68u3IqC9XMSwMP+Pow==
 
 universalify@^0.1.0:
   version "0.1.2"
@@ -11635,6 +11645,6 @@ yocto-queue@^0.1.0:
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
 zalgo-promise@^1, zalgo-promise@^1.0.11, zalgo-promise@^1.0.3, zalgo-promise@^1.0.45:
-  version "1.0.46"
-  resolved "https://registry.yarnpkg.com/zalgo-promise/-/zalgo-promise-1.0.46.tgz#325988d75d0be4cd63a266bad5e18f8f6cd85675"
-  integrity sha512-tzPpQRqaQQavxl17TY98nznvmr+judUg3My7ugsUcRDbdqisYOE2z79HNNDgXnyX3eA0mf2bMOJrqHptt00npg==
+  version "1.0.48"
+  resolved "https://registry.yarnpkg.com/zalgo-promise/-/zalgo-promise-1.0.48.tgz#9e33eef502d5ed9f5a09fc5728c833c3e87afa2e"
+  integrity sha512-LLHANmdm53+MucY9aOFIggzYtUdkSBFxUsy4glTTQYNyK6B3uCPWTbfiGvSrEvLojw0mSzyFJ1/RRLv+QMNdzQ==

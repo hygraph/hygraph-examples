@@ -1,17 +1,18 @@
 import React from 'react';
 import {
   Wrapper as ExtensionWrapper,
-  useUiExtension,
+  useFieldExtension,
   FieldExtensionType,
   FieldExtensionFeature,
   FieldExtensionDeclaration,
-  VisibilityTypes,
+  VisibilityType,
   VisibilityMap,
+  ExtensionType,
+  ConfigType,
 } from '@graphcms/uix-react-sdk';
 
-// Typing the declaration will ensure correct types for the values returned by useUiExtension
 const declaration: FieldExtensionDeclaration = {
-  extensionType: 'field',
+  extensionType: ExtensionType.field,
   fieldType: FieldExtensionType.BOOLEAN,
   name: 'UIX Conditional field',
   description: 'Hide/Show fields depending on some condition',
@@ -24,7 +25,7 @@ const declaration: FieldExtensionDeclaration = {
     fieldsToToggle: {
       displayName:
         'Comma separated API IDs of field to toggle when UIX checkbox is updated',
-      type: 'string',
+      type: ConfigType.string,
       required: true,
     },
   },
@@ -39,11 +40,9 @@ export default function App() {
 }
 
 function UIX() {
-  // Pass a type parameter to useUiExtension hook for better developer experience
-  const { setFieldsVisibility, fieldConfig, onChange, value } =
-    useUiExtension<typeof declaration>();
+  const { form, extension, onChange, value } = useFieldExtension();
 
-  const fieldsToToggle = (fieldConfig?.fieldsToToggle || '') as string;
+  const fieldsToToggle = String(extension.fieldConfig?.fieldsToToggle || '');
 
   // Cross domain data transfer is a bit slow, so we use transitionary state for immediate UI feedback
   const [isTransitioning, setIsTransitioning] = React.useState(false);
@@ -60,12 +59,12 @@ function UIX() {
       .map((x) => x.trim())
       .filter(Boolean)
       .reduce<VisibilityMap>((acc, curr) => {
-        acc[curr] = value ? VisibilityTypes.READ_WRITE : VisibilityTypes.HIDDEN;
+        acc[curr] = value ? VisibilityType.READ_WRITE : VisibilityType.HIDDEN;
         return acc;
       }, {});
 
-    setFieldsVisibility(fieldsVisibilityMap);
-  }, [value, setFieldsVisibility, fieldsToToggle]);
+    form.setFieldsVisibility(fieldsVisibilityMap);
+  }, [value, fieldsToToggle, form]);
 
   return (
     <label>
