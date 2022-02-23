@@ -1,0 +1,6 @@
+query AllProducts {
+  products {
+    slug
+    name
+  }
+}
