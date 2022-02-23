@@ -1,5 +1,5 @@
 import watchAndRun from '@kitql/vite-plugin-watch-and-run'
-import adapter from '@sveltejs/adapter-auto'
+import adapter from '@sveltejs/adapter-vercel'
 import path from 'path'
 import preprocess from 'svelte-preprocess'
 
