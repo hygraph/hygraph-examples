@@ -1,0 +1,14 @@
+query GetProduct($slug: String!) {
+  product(where: { slug: $slug }) {
+    name
+    description
+    price
+    image {
+      url(
+        transformation: {
+          image: { resize: { width: 400, height: 400, fit: clip } }
+        }
+      )
+    }
+  }
+}
