@@ -8,8 +8,8 @@
   },
   "author": "",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "graphql": "^16.0.0",
-    "graphql-request": "^3.6.1"
+    "graphql-request": "^4.0.0"
   }
 }
