@@ -8,7 +8,9 @@
 
 ## Using this repo
 
-All examples in this repo use the same GraphCMS project. You'll need to create your own project with schema shown below.
+All examples in this repo use the same GraphCMS project. Clone it to get started:
+
+[![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
 
 When working with this repo locally with your own GraphCMS project, you'll need to add the following to your `.env`:
 
@@ -18,59 +20,6 @@ GRAPHCMS_TOKEN=
 ```
 
 Examples where we only query the data will hardcode the `GRAPHCMS_ENDPOINT` to get you going using the example locally, or on Codesandbox.
-
-<details>
-  <summary>Create this schema manually</summary>
-
-## `Product` model
-
-- Display name: Product
-- API ID: Product
-- Plural API ID: Products
-
-### Fields
-
-- Name (String, Single line text, Localized, Required, Title)
-- Slug (String, Single line text, Required, Unique)
-- Description (String, Multi line text)
-- Price (Int, Required)
-- Reviews (Reference: Reviews, One to Many, Multiple Values, Two-way reference)
-- Votes (Reference: Votes, One to Many Multiple Values, Two-way reference, API only)
-- Image (Asset, Two-way reference)
-- Content (RichText, Rich text)
-
-## `Review` model
-
-- Display name: Review
-- API ID: Review
-- Plural API ID: Reviews
-
-### Fields
-
-- Name (String, Single line text)
-- Comment (String, Multi line text, Required)
-- Product (Reference: Product, Two way reference)
-
-## `Vote` model
-
-- Display name: Vote
-- API ID: Vote
-- Plural API ID: Votes
-
-### Fields
-
-- Product (Reference: Product, Two-way reference)
-
-</details>
-
-<details>
-  <summary>Create this schema with migrations (EXPERIMENTAL)</summary>
-
-You'll need to create a Permanent Auth Token with **ALL** Management API and Content API permissions enabled.
-
-Inside of the root of this monorepo, add `.env` (template above), and run `npx graphcms-migrate`.
-
-</details>
 
 ## Examples
 
