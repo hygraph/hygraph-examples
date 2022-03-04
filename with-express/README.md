@@ -6,6 +6,8 @@ A simple [Express](https://expressjs.com/) app using `ejs` templating and [`awes
 
 • [Demo](https://graphcms-with-express.herokuapp.com)
 
+[![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
+
 ## How to Use
 
 ### Download Manually

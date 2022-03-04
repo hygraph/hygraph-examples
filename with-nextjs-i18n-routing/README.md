@@ -6,7 +6,7 @@ This example demonstrates how to use [Next.js Internationalized Routing](https:/
 
 • [Demo](https://graphcms-with-nextjs-i18n-routing.vercel.app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-nextjs-i18n-routing)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-nextjs-i18n-routing) [![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
 
 ## How to Use
 

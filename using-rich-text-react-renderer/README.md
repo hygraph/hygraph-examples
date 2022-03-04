@@ -6,7 +6,7 @@ This example demonstrates how you can render Rich Text from GraphCMS.
 
 • [Demo](https://graphcms-using-rich-text-react-renderer.vercel.app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/using-pagination)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/using-rich-text-react-renderer)
 
 ## How to Use
 

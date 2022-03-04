@@ -6,7 +6,7 @@ This example demonstrates how to query from GraphCMS with Apollo Client 3, TypeS
 
 • [Demo](https://graphcms-with-graphql-codegen.vercel.app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-graphql-codegen)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-graphql-codegen) [![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
 
 ## How to Use
 

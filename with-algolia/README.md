@@ -6,7 +6,7 @@ Using [GraphCMS webhooks](https://graphcms.com/webhooks) to sync data to [Algoli
 
 • [Demo](https://graphcms-with-algolia.vercel.app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-algolia)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-algolia) [![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
 
 ## How to Use
 

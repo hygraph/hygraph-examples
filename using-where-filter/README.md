@@ -8,7 +8,7 @@ This example is built with [Next.js](https://nextjs.org), [`graphql-request`](ht
 
 • [Demo](https://graphcms-using-where-filter.vercel.app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/using-where-filter)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/using-where-filter) [![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
 
 ## How to Use
 

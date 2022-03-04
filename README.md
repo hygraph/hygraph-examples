@@ -64,7 +64,6 @@ frameworks.
 | [Nuxt.js] ([Demo][demo22], [Video][video22])                          | A simple Nuxt.js starter using `create-nuxt-app` CLI with Tailwind and Axios added                                       |
 | [React.js] ([Demo][demo23], [Video][video23])                         | This example demonstrates how to query from GraphCMS with graphql-request in React.js                                    |
 | [Vue.js] ([Demo][demo24], [Video][video24])                           | A vanilla Vue.js starter using `vue create` CLI with Vue Router                                                          |
-| [Sapper] ([Demo][demo25])                                             | A Svelte example using Sapper                                                                                            |
 | [SvelteKit] ([Demo][demo26], [Video][video26])                        | A Svelte example using SvelteKit and `graphql-request` to fetch data                                                     |
 | [SvelteKit with URQL] ([Demo][demo27])                                | A SvelteKit example URQL to fetch data                                                                                   |
 | [Eleventy] ([Demo][demo28])                                           | An Eleventy example using `graphql-request` to fetch data.                                                               |
@@ -200,8 +199,6 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [vue.js]: with-vuejs
 [video24]: https://youtu.be/CVM-BFLWwro
 [demo24]: https://graphcms-with-vuejs.now.sh/
-[sapper]: with-sapper
-[demo25]: https://graphcms-with-sapper.now.sh/
 [sveltekit]: with-sveltekit
 [video26]: https://youtu.be/RHorjtLq1LY
 [demo26]: https://graphcms-with-sveltekit.now.sh/
