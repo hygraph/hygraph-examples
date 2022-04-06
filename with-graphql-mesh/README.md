@@ -26,8 +26,8 @@ npm start
 
 <details>
   <summary>Example query</summary>
-  
-  Fetch products from GraphCMS, a cart from CartQL, and recent Space X launches in one request:
+
+Fetch products from GraphCMS, a cart from CartQL, and recent Space X launches in one request:
 
 ```graphql
 {
@@ -94,7 +94,7 @@ npm start
           }
         ],
         "image": {
-          "url": "https://media.graphcms.com/1bKpf5ihQpyEeRWXn8cg"
+          "url": "https://media.graphassets.com/1bKpf5ihQpyEeRWXn8cg"
         }
       },
       {
@@ -108,7 +108,7 @@ npm start
           }
         ],
         "image": {
-          "url": "https://media.graphcms.com/hmQEPi4NR4ygnMGvRmFB"
+          "url": "https://media.graphassets.com/hmQEPi4NR4ygnMGvRmFB"
         }
       },
       {
@@ -122,7 +122,7 @@ npm start
           }
         ],
         "image": {
-          "url": "https://media.graphcms.com/DhwyUSxTTA6q9GjXBLsa"
+          "url": "https://media.graphassets.com/DhwyUSxTTA6q9GjXBLsa"
         }
       }
     ],

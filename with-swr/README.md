@@ -10,7 +10,7 @@ NextAuth.js has a [REST API](https://next-auth.js.org/getting-started/rest-api) 
 
 • [Demo](https://graphcms-with-swr.vercel.app/)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FGraphCMS%2Fgraphcms-examples%2Ftree%2Fmaster%2Fwith-swr&env=GRAPHCMS_ENDPOINT,GRAPHCMS_TOKEN,NEXTAUTH_URL,NEXTAUTH_SECRET&demo-title=User%20Todo%20App%20Demo&demo-description=A%20todo%20app%20powered%20by%20Next.js%2C%20GraphQL%2C%20and%20useSWR&demo-url=https%3A%2F%2Fgraphcms-with-swr.vercel.app&demo-image=https%3A%2F%2Fmedia.graphcms.com%2FG8ESmbV9RfunqtEXx5hy) [![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FGraphCMS%2Fgraphcms-examples%2Ftree%2Fmaster%2Fwith-swr&env=GRAPHCMS_ENDPOINT,GRAPHCMS_TOKEN,NEXTAUTH_URL,NEXTAUTH_SECRET&demo-title=User%20Todo%20App%20Demo&demo-description=A%20todo%20app%20powered%20by%20Next.js%2C%20GraphQL%2C%20and%20useSWR&demo-url=https%3A%2F%2Fgraphcms-with-swr.vercel.app&demo-image=https%3A%2F%2Fmedia.graphassets.com%2FG8ESmbV9RfunqtEXx5hy) [![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
 
 ## How to Use
 

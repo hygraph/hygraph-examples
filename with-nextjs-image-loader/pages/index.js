@@ -4,7 +4,9 @@ import { GraphQLClient, gql } from 'graphql-request';
 function GraphCMSImageLoader({ src, width }) {
   const relativeSrc = (src) => src.split('/').pop();
 
-  return `https://media.graphcms.com/resize=width:${width}/${relativeSrc(src)}`;
+  return `https://media.graphassets.com/resize=width:${width}/${relativeSrc(
+    src
+  )}`;
 }
 
 function IndexPage({ products }) {
