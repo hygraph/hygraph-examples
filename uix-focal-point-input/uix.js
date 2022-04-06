@@ -1,25 +1,25 @@
 console.log(window.GCUIX);
 const declaration = {
-  extensionType: "field",
-  fieldType: "JSON",
-  name: "Asset Focal point",
-  description: "",
-  features: ["FieldRenderer", "TableRenderer"],
+  extensionType: 'field',
+  fieldType: 'JSON',
+  name: 'Asset Focal point',
+  description: '',
+  features: ['FieldRenderer', 'TableRenderer'],
 };
 
-const originalImage = document.getElementById("originalImage");
-const preview_1_1 = document.getElementById("preview-1-1");
-const preview_1_2 = document.getElementById("preview-1-2");
-const preview_2_1 = document.getElementById("preview-2-1");
-const coords = document.getElementById("coords");
-const expandButton = document.getElementById("expand");
+const originalImage = document.getElementById('originalImage');
+const preview_1_1 = document.getElementById('preview-1-1');
+const preview_1_2 = document.getElementById('preview-1-2');
+const preview_2_1 = document.getElementById('preview-2-1');
+const coords = document.getElementById('coords');
+const expandButton = document.getElementById('expand');
 let isExpanded = false;
 
 function updateExpandButton() {
-  expandButton.innerText = isExpanded ? "Collapse" : "Expand";
+  expandButton.innerText = isExpanded ? 'Collapse' : 'Expand';
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   try {
     window.GCUIX.init({
       declaration,
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     }).then((initialState) => {
       const { status, props } = initialState;
-      if (status === "ok") {
+      if (status === 'ok') {
         const {
           value,
           onChange,
@@ -51,26 +51,26 @@ document.addEventListener("DOMContentLoaded", () => {
         } = props;
 
         if (isTableCell) {
-          document.body.classList.add("isTableCell");
+          document.body.classList.add('isTableCell');
           return;
         }
 
-        if (model.apiId !== "Asset") {
+        if (model.apiId !== 'Asset') {
           throw new Error(
-            "The Focal Point UI extension is meant to be used only on the Asset model",
+            'The Focal Point UI extension is meant to be used only on the Asset model'
           );
         }
 
         if (field.isLocalized === false) {
-          throw new Error("Focal Point field must be localized");
+          throw new Error('Focal Point field must be localized');
         }
 
-        expandButton.addEventListener("click", () => {
+        expandButton.addEventListener('click', () => {
           expand(!isExpanded);
           if (!isExpanded) {
-            document.body.classList.add("fullScreen");
+            document.body.classList.add('fullScreen');
           } else {
-            document.body.classList.remove("fullScreen");
+            document.body.classList.remove('fullScreen');
           }
         });
 
@@ -78,18 +78,18 @@ document.addEventListener("DOMContentLoaded", () => {
           `localization_${locale}.file`,
           ({ value }) => {
             const currentUrl = value?.handle
-              ? `https://media.graphcms.com/${value.handle}`
-              : "https://via.placeholder.com/900x675?text=This+is+a+placeholder+image";
+              ? `https://media.graphassets.com/${value.handle}`
+              : 'https://via.placeholder.com/900x675?text=This+is+a+placeholder+image';
 
             [originalImage, preview_1_1, preview_1_2, preview_2_1].forEach(
               (img) => {
-                if (img.getAttribute("src") !== currentUrl) {
-                  img.setAttribute("src", currentUrl);
+                if (img.getAttribute('src') !== currentUrl) {
+                  img.setAttribute('src', currentUrl);
                 }
-              },
+              }
             );
           },
-          { value: true },
+          { value: true }
         );
 
         makeFocalPoint(value || undefined, onChange, isReadOnly);
