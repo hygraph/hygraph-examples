@@ -8,15 +8,16 @@ const limit = 1;
 const singleProductStyle = {
   display: 'flex',
   flexDirection: 'column',
-  width: '300px',
+  width: '200px',
   margin: '10px',
   color: '#000',
 };
 
 function SingleProduct({product}) {
+  const { image } = product;
   return (
     <div style={singleProductStyle} key={product.id}>
-      <img src={`https://via.placeholder.com/300x200?text=${product.name}`} width={300} height={200} alt={product.name} title={product.name} /> 
+      <img src={image.url} width={200} height={200} alt={product.name} title={product.name} /> 
       <h3>{product.name}</h3>
     </div>
   )
@@ -105,6 +106,17 @@ export async function getStaticProps({ params }) {
           node {
             id
             name
+            image {
+              id
+              url(transformation: {
+                image: {
+                  resize: {
+                    width: 200,
+                    height: 200
+                  }
+                }
+              })
+            }
           }
         }
         pageInfo {
