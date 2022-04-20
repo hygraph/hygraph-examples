@@ -14,10 +14,8 @@ const singleProductStyle = {
 };
 
 function SingleProduct({product}) {
-  const { image } = product;
   return (
     <div style={singleProductStyle} key={product.id}>
-      <img src={image.url} width={200} height={200} alt={product.name} title={product.name} /> 
       <h3>{product.name}</h3>
     </div>
   )
@@ -106,17 +104,6 @@ export async function getStaticProps({ params }) {
           node {
             id
             name
-            image {
-              id
-              url(transformation: {
-                image: {
-                  resize: {
-                    width: 200,
-                    height: 200
-                  }
-                }
-              })
-            }
           }
         }
         pageInfo {
