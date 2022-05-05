@@ -63,6 +63,7 @@ frameworks.
 | [Next.js Image with Custom Loader] ([Demo][demo21], [Video][video21]) | How to use a [custom loader] function with [Next.js Image Component] and GraphCMS assets                                 |
 | [Nuxt.js] ([Demo][demo22], [Video][video22])                          | A simple Nuxt.js starter using `create-nuxt-app` CLI with Tailwind and Axios added                                       |
 | [React.js] ([Demo][demo23], [Video][video23])                         | This example demonstrates how to query from GraphCMS with graphql-request in React.js                                    |
+| [React.js with React Query]                                           | This example demonstrates how to query from GraphCMS with React Query in React.js                                        |
 | [Vue.js] ([Demo][demo24], [Video][video24])                           | A vanilla Vue.js starter using `vue create` CLI with Vue Router                                                          |
 | [SvelteKit] ([Demo][demo26], [Video][video26])                        | A Svelte example using SvelteKit and `graphql-request` to fetch data                                                     |
 | [SvelteKit with URQL] ([Demo][demo27])                                | A SvelteKit example URQL to fetch data                                                                                   |
@@ -194,6 +195,7 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [video22]: https://youtu.be/kTdsFYonNQ4
 [demo22]: https://graphcms-with-nuxtjs.now.sh/
 [react.js]: with-reactjs
+[react.js with react query]: with-react-query
 [video23]: https://youtu.be/QXgtDR9VIWc
 [demo23]: https://graphcms-with-reactjs.now.sh/
 [vue.js]: with-vuejs
