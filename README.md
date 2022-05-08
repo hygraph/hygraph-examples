@@ -73,6 +73,7 @@ frameworks.
 | [Houdini] ([Demo][demo32])                                            | An Houdini example with SvelteKit.                                                                                       |
 | [Swift]                                                               | A native Swift (iOS & Mac) example.                                                                                      |
 | [Swift with `swift-graphql`]                                          | A native Swift (iOS & Mac) example using [swift-graphql](swift-graphql).                                                 |
+| [graphql-hooks]                                                       | This example demonstrates how to query from GraphCMS with graphql-hooks in Next.js.                                      |
 
 ### UI Extensions
 
@@ -219,6 +220,7 @@ We've crafted a few example [UI extensions](https://graphcms.com/docs/ui-extensi
 [swift-graphql]: https://github.com/maticzav/swift-graphql
 [houdini]: with-houdini
 [demo32]: https://graphcms-with-houdini.vercel.app
+[graphql-hooks]: with-graphql-hooks
 
 <!-- UIX -->
 
