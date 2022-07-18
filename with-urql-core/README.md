@@ -13,7 +13,7 @@ This example demonstrates how to query from GraphCMS with core [urql](https://fo
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-urql-core with-urql-core
+npx degit hygraph/hygraph-examples/with-urql-core with-urql-core
 ```
 
 Install & Run:

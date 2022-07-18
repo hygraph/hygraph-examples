@@ -14,7 +14,7 @@ GraphCMS.
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-eleventy with-eleventy
+npx degit hygraph/hygraph-examples/with-eleventy with-eleventy
 ```
 
 Install & Run:

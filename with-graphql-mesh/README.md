@@ -11,7 +11,7 @@ This example demonstrates how to use GraphQL mesh to serve 3 separate APIs, Grap
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-graphql-mesh with-graphql-mesh
+npx degit hygraph/hygraph-examples/with-graphql-mesh with-graphql-mesh
 ```
 
 Install & Run:

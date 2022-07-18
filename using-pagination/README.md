@@ -18,7 +18,7 @@ This example is built with [Next.js](https://nextjs.org) and [`graphql-request`]
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/using-pagination using-pagination
+npx degit hygraph/hygraph-examples/using-pagination using-pagination
 ```
 
 Install & Run:

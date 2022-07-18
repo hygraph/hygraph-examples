@@ -13,7 +13,7 @@ This example demonstrates how to query from GraphCMS with [Genql](https://genql.
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-genql with-genql
+npx degit hygraph/hygraph-examples/with-genql with-genql
 ```
 
 Install & Run:

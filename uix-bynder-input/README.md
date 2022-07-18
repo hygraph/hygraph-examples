@@ -20,12 +20,12 @@ When configuring the extension you'll be asked for the following:
 | Default domain editable | Boolean | Should users be able to change the default domain?              |                                           |
 | Available asset types   | String  | Determines which asset types your users will be able to select. | `["image", "audio", "video", "document"]` |
 
-Follow the guide on [working with GraphCMS UI extensions](https://graphcms.com/guides/working-with-ui-extensions).
+Follow the docs about [Hygraph UI extensions](https://hygraph.com/docs/ui-extensions).
 
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/uix-bynder-input uix-bynder-input
+npx degit hygraph/hygraph-examples/uix-bynder-input uix-bynder-input
 ```
 
 You'll then need to run a server locally, if you're on Mac, you can run a simple Python server within your project directory:

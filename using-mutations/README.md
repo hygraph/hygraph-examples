@@ -13,7 +13,7 @@ This example demonstrates how to mutate GraphCMS data with Next.js.
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/using-mutations using-mutations
+npx degit hygraph/hygraph-examples/using-mutations using-mutations
 ```
 
 Install & Run:

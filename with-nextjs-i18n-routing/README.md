@@ -13,7 +13,7 @@ This example demonstrates how to use [Next.js Internationalized Routing](https:/
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-nextjs-i18n-routing with-nextjs-i18n-routing
+npx degit hygraph/hygraph-examples/with-nextjs-i18n-routing with-nextjs-i18n-routing
 ```
 
 Install & Run:

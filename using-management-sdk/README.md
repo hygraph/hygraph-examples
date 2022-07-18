@@ -23,7 +23,7 @@ It creates the following models and field types:
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/using-management-sdk using-management-sdk
+npx degit hygraph/hygraph-examples/using-management-sdk using-management-sdk
 ```
 
 Add .env:

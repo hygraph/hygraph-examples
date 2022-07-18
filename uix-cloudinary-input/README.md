@@ -10,12 +10,12 @@ Deploy the code to Vercel, or run locally, and install on GraphCMS as a UI exten
 
 You can get started with our hosted example, but you should deploy and maintain this on your own host: `https://graphcms-uix-cloudinary-input.vercel.app/`
 
-Follow the guide on [working with GraphCMS UI extensions](https://graphcms.com/guides/working-with-ui-extensions).
+Follow the docs about [Hygraph UI extensions](https://hygraph.com/docs/ui-extensions).
 
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/uix-cloudinary-input uix-cloudinary-input
+npx degit hygraph/hygraph-examples/uix-cloudinary-input uix-cloudinary-input
 ```
 
 Install & Run:

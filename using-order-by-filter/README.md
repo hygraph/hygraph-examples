@@ -15,7 +15,7 @@ This example is built with [Next.js](https://nextjs.org), [`graphql-request`](ht
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/using-order-by-filter using-order-by-filter
+npx degit hygraph/hygraph-examples/using-order-by-filter using-order-by-filter
 ```
 
 Install & Run:

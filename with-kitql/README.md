@@ -13,7 +13,7 @@ This example shows how to use the KitQL with GraphCMS.
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-kitql with-kitql
+npx degit hygraph/hygraph-examples/with-kitql with-kitql
 ```
 
 Install & Run:

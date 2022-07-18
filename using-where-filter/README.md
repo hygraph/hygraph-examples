@@ -15,7 +15,7 @@ This example is built with [Next.js](https://nextjs.org), [`graphql-request`](ht
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/using-where-filter using-where-filter
+npx degit hygraph/hygraph-examples/using-where-filter using-where-filter
 ```
 
 Install & Run:
