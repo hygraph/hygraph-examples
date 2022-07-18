@@ -17,7 +17,7 @@ This allows you to perform [asset transformations](https://graphcms.com/docs/con
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-nextjs-image-loader with-nextjs-image-loader
+npx degit hygraph/hygraph-examples/with-nextjs-image-loader with-nextjs-image-loader
 ```
 
 Install & Run:

@@ -11,7 +11,7 @@ This example demonstrates how to query from GraphCMS with `React Query` in React
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-react-query with-react-query
+npx degit hygraph/hygraph-examples/with-react-query with-react-query
 ```
 
 Install & Run:

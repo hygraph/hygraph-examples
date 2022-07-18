@@ -11,7 +11,7 @@ This example demonstrates how to query from GraphCMS with Go.
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-golang with-golang
+npx degit hygraph/hygraph-examples/with-golang with-golang
 ```
 
 Install & Run:

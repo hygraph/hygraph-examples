@@ -11,7 +11,7 @@ Included is an example JSON file ([`assets.json`](assets.json)).
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/using-asset-upload using-asset-upload
+npx degit hygraph/hygraph-examples/using-asset-upload using-asset-upload
 ```
 
 Add .env:

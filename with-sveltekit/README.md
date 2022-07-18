@@ -13,7 +13,7 @@ This example shows how to use the SvelteKit with GraphCMS. It uses `graphql-requ
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-sveltekit with-sveltekit
+npx degit hygraph/hygraph-examples/with-sveltekit with-sveltekit
 ```
 
 Install & Run:

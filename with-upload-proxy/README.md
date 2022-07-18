@@ -11,7 +11,7 @@ This example demonstrates how to proxy uploads from your client application to G
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-upload-proxy with-upload-proxy
+npx degit hygraph/hygraph-examples/with-upload-proxy with-upload-proxy
 ```
 
 Add .env:

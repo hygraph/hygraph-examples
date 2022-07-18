@@ -32,7 +32,7 @@ You will also need to follow instructions [here](https://github.com/graphcms/gra
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-nextauth-credentials with-nextauth-credentials
+npx degit hygraph/hygraph-examples/with-nextauth-credentials with-nextauth-credentials
 ```
 
 Install & Run:

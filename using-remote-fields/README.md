@@ -11,7 +11,7 @@ Using [Remote Fields](https://graphcms.com/docs/schema/field-types#remote), we c
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/using-remote-fields using-remote-fields
+npx degit hygraph/hygraph-examples/using-remote-fields using-remote-fields
 ```
 
 Add .env:

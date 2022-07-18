@@ -18,7 +18,7 @@ Using [GraphCMS webhooks](https://graphcms.com/webhooks) to sync data to [Algoli
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-algolia with-algolia
+npx degit hygraph/hygraph-examples/with-algolia with-algolia
 ```
 
 Install & Run:

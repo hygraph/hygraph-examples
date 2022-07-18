@@ -13,7 +13,7 @@ This example demonstrates how to query from GraphCMS with `graphql-request` in N
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-nextjs with-nextjs
+npx degit hygraph/hygraph-examples/with-nextjs with-nextjs
 ```
 
 Install & Run:

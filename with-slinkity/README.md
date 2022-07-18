@@ -14,7 +14,7 @@ GraphCMS.
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-slinkity with-slinkity
+npx degit hygraph/hygraph-examples/with-slinkity with-slinkity
 ```
 
 Install & Run:

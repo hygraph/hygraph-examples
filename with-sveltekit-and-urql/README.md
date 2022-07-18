@@ -13,7 +13,7 @@ This example shows how to use the SvelteKit with GraphCMS and [URQL].
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-sveltekit-and-urql with-sveltekit-and-urql
+npx degit hygraph/hygraph-examples/with-sveltekit-and-urql with-sveltekit-and-urql
 ```
 
 Install & Run:

@@ -13,7 +13,7 @@ This example demonstrates how to query from GraphCMS with Apollo Client 3, TypeS
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-graphql-codegen with-graphql-codegen
+npx degit hygraph/hygraph-examples/with-graphql-codegen with-graphql-codegen
 ```
 
 Install & Run:

@@ -13,7 +13,7 @@ A simple [Express](https://expressjs.com/) app using `ejs` templating and [`awes
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-express with-express
+npx degit hygraph/hygraph-examples/with-express with-express
 ```
 
 Install & Run:

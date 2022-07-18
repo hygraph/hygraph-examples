@@ -13,7 +13,7 @@ This example shows how to use the Astro with GraphCMS.
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-astro with-astro
+npx degit hygraph/hygraph-examples/with-astro with-astro
 ```
 
 Install & Run:

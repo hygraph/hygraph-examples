@@ -13,7 +13,7 @@ This example demonstrates how to use `gatsby-image` in conjunction with [`gatsby
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-gatsby-image with-gatsby-image
+npx degit hygraph/hygraph-examples/with-gatsby-image with-gatsby-image
 ```
 
 Install & Run:

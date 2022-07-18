@@ -15,7 +15,7 @@ This example is built with [Next.js](https://nextjs.org), [`graphql-request`](ht
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/using-union-types using-union-types
+npx degit hygraph/hygraph-examples/using-union-types using-union-types
 ```
 
 Install & Run:

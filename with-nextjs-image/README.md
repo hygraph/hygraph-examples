@@ -13,7 +13,7 @@ This example demonstrates how to use the [Next.js Image Component](https://nextj
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-nextjs-image with-nextjs-image
+npx degit hygraph/hygraph-examples/with-nextjs-image with-nextjs-image
 ```
 
 Install & Run:

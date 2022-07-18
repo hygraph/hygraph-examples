@@ -13,7 +13,7 @@ This example demonstrates how you can render Rich Text from GraphCMS.
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/using-rich-text-react-renderer using-rich-text-react-renderer
+npx degit hygraph/hygraph-examples/using-rich-text-react-renderer using-rich-text-react-renderer
 ```
 
 Install & Run:

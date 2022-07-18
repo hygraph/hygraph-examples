@@ -13,7 +13,7 @@ Using [`apollo-datasource-graphql`](https://github.com/poetic/apollo-datasource-
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-apollo-server with-apollo-server
+npx degit hygraph/hygraph-examples/with-apollo-server with-apollo-server
 ```
 
 Install & Run:

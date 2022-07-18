@@ -14,7 +14,7 @@ with GraphCMS.
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-houdini with-houdini
+npx degit hygraph/hygraph-examples/with-houdini with-houdini
 ```
 
 Install & Run:

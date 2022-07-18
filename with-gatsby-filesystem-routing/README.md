@@ -13,7 +13,7 @@ This example demonstrates how to query data from GraphCMS with [`gatsby-source-g
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-gatsby-filesystem-routing with-gatsby-filesystem-routing
+npx degit hygraph/hygraph-examples/with-gatsby-filesystem-routing with-gatsby-filesystem-routing
 ```
 
 Install & Run:

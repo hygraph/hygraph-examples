@@ -13,7 +13,7 @@ This example demonstrates how to query from GraphCMS with React [urql](https://f
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-urql-react with-urql-react
+npx degit hygraph/hygraph-examples/with-urql-react with-urql-react
 ```
 
 Install & Run:

@@ -13,7 +13,7 @@ This example demonstrates how to use [`gatsby-plugin-mdx`](https://www.gatsbyjs.
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-gatsby-mdx with-gatsby-mdx
+npx degit hygraph/hygraph-examples/with-gatsby-mdx with-gatsby-mdx
 ```
 
 Install & Run:

@@ -11,7 +11,7 @@ This example demonstrates how to query data from GraphCMS in the browser with ju
 ### Download Manually
 
 ```bash
-npx degit graphcms/graphcms-examples/with-vanilla-javascript with-vanilla-javascript
+npx degit hygraph/hygraph-examples/with-vanilla-javascript with-vanilla-javascript
 ```
 
 Install & Run:
