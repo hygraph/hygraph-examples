@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 5rem auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.container p {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+
+.product {
+  margin-top: 2rem;
+}
+
+.product span {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+ul li {
+  margin-bottom: 2rem;
+}
+
+li a {
+  font-size: 1.5rem;
+}
