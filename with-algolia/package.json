@@ -1,5 +1,5 @@
 {
-  "name": "graphcms-with-algolia",
+  "name": "hygraph-with-algolia",
   "private": true,
   "scripts": {
     "dev": "next",

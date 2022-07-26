@@ -151,7 +151,7 @@ export default function Todos() {
   const { data } = useSWR('/api/todos', jsonFetcher);
 
   if (!data) {
-    return <p>Fetching todos from GraphCMS...</p>;
+    return <p>Fetching todos from Hygraph...</p>;
   }
 
   const addTodo = async ({ description }) => {

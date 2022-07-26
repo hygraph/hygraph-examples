@@ -1,7 +1,7 @@
 import { gql } from 'graphql-request';
 import { getSession } from 'next-auth/react';
 
-import { graphcmsClient } from '../../lib/graphcms';
+import { hygraphClient } from '../../lib/hygraph';
 
 const UpdateNextAuthUser = gql`
   mutation UpdateNextAuthUser($userId: ID!, $bio: String) {
@@ -19,7 +19,7 @@ export default async (req, res) => {
   if (session) {
     const { bio } = JSON.parse(req.body);
 
-    const { user } = await graphcmsClient.request(UpdateNextAuthUser, {
+    const { user } = await hygraphClient.request(UpdateNextAuthUser, {
       userId: session.userId,
       bio,
     });

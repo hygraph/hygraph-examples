@@ -10,9 +10,9 @@
       Dolores, aperiam non officia eos quod asperiores
     </p>
 
-    <p class="home-links" v-if="$page.gcms">
+    <p class="home-links" v-if="$page.hygraph">
       <g-link
-        v-for="product in $page.gcms.products"
+        v-for="product in $page.hygraph.products"
         :key="product.slug"
         class="nav__link"
         :to="'product/' + product.slug"
@@ -32,7 +32,7 @@ export default {
 
 <page-query>
   {
-    gcms {
+    hygraph {
       products {
         name
         slug

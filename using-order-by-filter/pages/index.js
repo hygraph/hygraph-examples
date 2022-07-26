@@ -2,8 +2,8 @@ import { gql, GraphQLClient } from 'graphql-request';
 import useSWR from 'swr';
 import { useState } from 'react';
 
-const graphcms = new GraphQLClient(
-  'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master'
+const hygraph = new GraphQLClient(
+  'https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master'
 );
 
 const GetProductsQuery = gql`
@@ -23,7 +23,7 @@ const GetProductsQuery = gql`
 `;
 
 export const getStaticProps = async () => {
-  const initialData = await graphcms.request(GetProductsQuery);
+  const initialData = await hygraph.request(GetProductsQuery);
 
   return {
     props: {
@@ -38,7 +38,7 @@ export default function IndexPage({ initialData }) {
 
   const { data } = useSWR(
     [GetProductsQuery, orderBy],
-    (query, orderBy) => graphcms.request(query, { orderBy }),
+    (query, orderBy) => hygraph.request(query, { orderBy }),
     {
       initialData,
       revalidateOnMount: true,

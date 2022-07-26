@@ -42,12 +42,12 @@ const declaration: FieldExtensionDeclaration = {
     // Enables rendering of a form field
     FieldExtensionFeature.FieldRenderer,
     // Enables handling lists of values
-    // Don't forget to enable multiple values when creating a UI extension field in GraphCMS!
+    // Don't forget to enable multiple values when creating a UI extension field in Hygraph!
     FieldExtensionFeature.ListRenderer,
     // Enables rendering in content table view
     FieldExtensionFeature.TableRenderer,
   ],
-  // Optional fields that will when adding or updating a UI extension in GraphCMS
+  // Optional fields that will when adding or updating a UI extension in Hygraph
   config: {
     CLOUD_NAME: {
       displayName: 'Cloudinary cloud name',
@@ -155,7 +155,7 @@ function FormFieldRenderer() {
             // These props will be returned by the useUiExtensionDialog hook
             //
             openDialog<DialogReturn, DialogProps>('/cloudinary', {
-              // By default, native GraphCMS dialogs have a maxWidth of 600px.
+              // By default, native Hygraph dialogs have a maxWidth of 600px.
               // You can overwrite it by passing a maxWidth prop
               maxWidth: '90vw',
               isList,
@@ -645,8 +645,8 @@ function CloudinaryDialog() {
           ],
         ],
         integration: {
-          type: 'graphcms_cloudinary_extension',
-          platform: 'graphcms',
+          type: 'hygraph_cloudinary_extension',
+          platform: 'hygraph',
           version: 1.0,
           environment: 'prod',
         },

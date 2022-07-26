@@ -1,10 +1,10 @@
-# GraphCMS ⨯ GraphQL Mesh
+# Hygraph ⨯ GraphQL Mesh
 
-[Join our Slack](https://slack.graphcms.com)
+[Join our Slack](https://slack.hygraph.com)
 
-This example demonstrates how to use GraphQL mesh to serve 3 separate APIs, GraphCMS, CartQL, and SpaceXLand.
+This example demonstrates how to use GraphQL mesh to serve 3 separate APIs, Hygraph, CartQL, and SpaceXLand.
 
-[![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
+[![Clone project](https://hygraph.com/button)](https://app.hygraph.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
 
 ## How to Use
 
@@ -27,7 +27,7 @@ npm start
 <details>
   <summary>Example query</summary>
 
-Fetch products from GraphCMS, a cart from CartQL, and recent Space X launches in one request:
+Fetch products from Hygraph, a cart from CartQL, and recent Space X launches in one request:
 
 ```graphql
 {

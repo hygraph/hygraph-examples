@@ -1,8 +1,8 @@
-# Working with the GraphCMS Management SDK
+# Working with the Hygraph Management SDK
 
-[Join our Slack](https://slack.graphcms.com)
+[Join our Slack](https://slack.hygraph.com)
 
-This example demonstrates how to programmatically build a project schema using the [GraphCMS Management SDK](https://www.npmjs.com/package/@graphcms/management).
+This example demonstrates how to programmatically build a project schema using the [Hygraph Management SDK](https://www.npmjs.com/package/@graphcms/management).
 
 It creates the following models and field types:
 
@@ -32,7 +32,7 @@ Add .env:
 cp .env.sample .env
 ```
 
-Provide values for `GRAPHCMS_MIGRATION_TOKEN` and `GRAPHCMS_ENDPOINT`.
+Provide values for `HYGRAPH_MIGRATION_TOKEN` and `HYGRAPH_ENDPOINT`.
 
 Install & Run:
 

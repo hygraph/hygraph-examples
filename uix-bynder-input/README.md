@@ -1,14 +1,14 @@
 # UI Extensions ⨯ Bynder
 
-[Join our Slack](https://slack.graphcms.com)
+[Join our Slack](https://slack.hygraph.com)
 
-This example integrates GraphCMS with Bynder. It leverages Bynder's Compact View v2 component to browse assets from Bynder and use these within GraphCMS content entries.
+This example integrates Hygraph with Bynder. It leverages Bynder's Compact View v2 component to browse assets from Bynder and use these within Hygraph content entries.
 
 ## How to Use
 
-Deploy the code to Vercel, Netlify, GitHub Pages, or run locally, and install on GraphCMS as a UI extension using the URL to your index page as the URL for your extension, and run the compatibility test.
+Deploy the code to Vercel, Netlify, GitHub Pages, or run locally, and install on Hygraph as a UI extension using the URL to your index page as the URL for your extension, and run the compatibility test.
 
-You can get started with our hosted example, but you should deploy and maintain this on your own host: `https://graphcms-uix-bynder.vercel.app/`
+You can get started with our hosted example, but you should deploy and maintain this on your own host: `https://hygraph-uix-bynder.vercel.app/`
 
 ### Example Config Settings
 
@@ -38,7 +38,7 @@ Alternatively, you could run something like [http-server](https://www.npmjs.com/
 
 ## Going further
 
-- [UI Extensions Documentation](https://graphcms.com/docs/ui-extensions)
+- [UI Extensions Documentation](https://hygraph.com/docs/ui-extensions)
 - [Compact View on the Bynder Knowledge Base](https://help.bynder.com/system/compact-view.htm)
 - [Compact View in the Bynder Developer Documentation](https://developer-docs.bynder.com/UI%20components/)
 - [Bynder OAuth2 Documentation](https://developer-docs.bynder.com/authentication-oauth2-oauth-apps)

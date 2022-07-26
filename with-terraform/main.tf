@@ -8,9 +8,9 @@ terraform {
 }
 
 provider "graphql" {
-  url = var.graphcms_endpoint
+  url = var.hygraph_endpoint
   headers = {
-    "Authorization" = "Bearer ${var.graphcms_token}"
+    "Authorization" = "Bearer ${var.HYGRAPH_TOKEN}"
   }
 }
 

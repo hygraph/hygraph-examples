@@ -1,5 +1,5 @@
 {
-  "name": "graphcms-with-gatsby-filesystem-routing",
+  "name": "hygraph-with-gatsby-filesystem-routing",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

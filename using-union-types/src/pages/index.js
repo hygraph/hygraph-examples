@@ -18,7 +18,7 @@ function Index({ page }) {
 
 export async function getStaticProps() {
   const { page } = await request(
-    'https://api-eu-central-1.graphcms.com/v2/ck9e0p6nh1fby01yyfvww984d/master',
+    'https://api-eu-central-1.hygraph.com/v2/ck9e0p6nh1fby01yyfvww984d/master',
     `query PageQuery($slug: String!) {
       page(where: { slug: $slug }) {
         blocks {

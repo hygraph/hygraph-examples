@@ -5,11 +5,11 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-module.exports = function(api) {
+module.exports = function (api) {
   api.createPages(async ({ graphql, createPage }) => {
     const { data } = await graphql(`
       {
-        gcms {
+        hygraph {
           products {
             slug
           }
@@ -17,7 +17,7 @@ module.exports = function(api) {
       }
     `);
 
-    data.gcms.products.forEach(node => {
+    data.hygraph.products.forEach((node) => {
       createPage({
         path: `/product/${node.slug}`,
         component: './src/templates/Product.vue',

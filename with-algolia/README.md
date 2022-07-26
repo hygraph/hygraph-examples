@@ -1,12 +1,12 @@
-# GraphCMS ⨯ Algolia
+# Hygraph ⨯ Algolia
 
-[Join our Slack](https://slack.graphcms.com)
+[Join our Slack](https://slack.hygraph.com)
 
-Using [GraphCMS webhooks](https://graphcms.com/webhooks) to sync data to [Algolia](https://algolia.com) on new published content.
+Using [Hygraph webhooks](https://hygraph.com/webhooks) to sync data to [Algolia](https://algolia.com) on new published content.
 
-• [Demo](https://graphcms-with-algolia.vercel.app)
+• [Demo](https://hygraph-with-algolia.vercel.app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-algolia) [![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/hygraph/hygraph-examples/tree/master/with-algolia) [![Clone project](https://hygraph.com/button)](https://app.hygraph.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
 
 ## How to Use
 
@@ -35,4 +35,4 @@ yarn start
 
 ### Run on Codesandbox
 
-[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/with-algolia)
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/hygraph/hygraph-examples/tree/master/with-algolia)

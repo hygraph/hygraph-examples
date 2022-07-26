@@ -1,10 +1,10 @@
 # Working with the Remote Fields
 
-[Join our Slack](https://slack.graphcms.com)
+[Join our Slack](https://slack.hygraph.com)
 
-This example demonstrates how to programmatically build a project schema using the [GraphCMS Management SDK](https://www.npmjs.com/package/@graphcms/management).
+This example demonstrates how to programmatically build a project schema using the [Hygraph Management SDK](https://www.npmjs.com/package/@graphcms/management).
 
-Using [Remote Fields](https://graphcms.com/docs/schema/field-types#remote), we create a `PricingPlan` model to query for product/price data directly from the [Stripe API](https://stripe.com/docs/api).
+Using [Remote Fields](https://hygraph.com/docs/schema/field-types#remote), we create a `PricingPlan` model to query for product/price data directly from the [Stripe API](https://stripe.com/docs/api).
 
 ## How to Use
 
@@ -20,7 +20,7 @@ Add .env:
 cp .env.sample .env
 ```
 
-Provide values for `GRAPHCMS_MIGRATION_TOKEN`, `GRAPHCMS_ENDPOINT` and `STRIPE_SECRET_KEY` keys.
+Provide values for `HYGRAPH_MIGRATION_TOKEN`, `HYGRAPH_ENDPOINT` and `STRIPE_SECRET_KEY` keys.
 
 Install & Run:
 

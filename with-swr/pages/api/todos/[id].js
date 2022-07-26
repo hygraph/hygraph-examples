@@ -1,7 +1,7 @@
 import { gql } from 'graphql-request';
 import { getSession } from 'next-auth/react';
 
-import { graphcmsClient } from '../../../lib/graphcms';
+import { hygraphClient } from '../../../lib/hygraph';
 
 const UpdateTodoById = gql`
   mutation UpdateTodoById(
@@ -49,7 +49,7 @@ export default async (req, res) => {
 
       // Check is owner?
 
-      const { todo } = await graphcmsClient.request(UpdateTodoById, {
+      const { todo } = await hygraphClient.request(UpdateTodoById, {
         id,
         description,
         completed,
@@ -65,7 +65,7 @@ export default async (req, res) => {
 
       // Check is owner?
 
-      await graphcmsClient.request(DeleteTodoById, {
+      await hygraphClient.request(DeleteTodoById, {
         id,
       });
 

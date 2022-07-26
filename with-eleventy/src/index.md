@@ -1,5 +1,5 @@
 ---
-title: GraphCMS with Eleventy
+title: Hygraph with Eleventy
 layout: base.njk
 ---
 

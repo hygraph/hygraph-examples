@@ -35,7 +35,7 @@ directive @mark(
   """Marks an edge type"""
   edge: Boolean
 
-  """Specifies GraphCMS field type"""
+  """Specifies Hygraph field type"""
   fieldType: String
 
   """Marks filter and links to parent type"""
@@ -231,10 +231,10 @@ type Asset implements Node {
   createdBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `createdBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -311,10 +311,10 @@ type Asset implements Node {
 
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `productImage` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -341,10 +341,10 @@ type Asset implements Node {
   publishedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `publishedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -366,10 +366,10 @@ type Asset implements Node {
 
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `scheduledIn` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -399,10 +399,10 @@ type Asset implements Node {
   updatedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `updatedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -1406,7 +1406,7 @@ input DocumentOutputInput {
   """
   Transforms a document into a desired file type.
   See this matrix for format support:
-  
+
   PDF:	jpg, odp, ods, odt, png, svg, txt, and webp
   DOC:	docx, html, jpg, odt, pdf, png, svg, txt, and webp
   DOCX:	doc, html, jpg, odt, pdf, png, svg, txt, and webp
@@ -2747,10 +2747,10 @@ type NextAuthUser implements Node {
   createdBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `createdBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -2803,10 +2803,10 @@ type NextAuthUser implements Node {
   publishedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `publishedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -2828,10 +2828,10 @@ type NextAuthUser implements Node {
 
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `scheduledIn` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -2853,10 +2853,10 @@ type NextAuthUser implements Node {
   updatedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `updatedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -3733,10 +3733,10 @@ type Product implements Node {
   createdBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `createdBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -3780,10 +3780,10 @@ type Product implements Node {
   image(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `image` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -3819,10 +3819,10 @@ type Product implements Node {
   publishedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `publishedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -3844,10 +3844,10 @@ type Product implements Node {
 
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `reviews` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -3878,10 +3878,10 @@ type Product implements Node {
 
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `scheduledIn` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -3911,10 +3911,10 @@ type Product implements Node {
   updatedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `updatedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -3936,10 +3936,10 @@ type Product implements Node {
 
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `votes` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -4849,10 +4849,10 @@ type Query {
   asset(
     """
     Defines which locales should be returned.
-    
+
     Note that `Asset` will be affected directly by this argument, as well as any other related models with localized fields in the query's subtree.
     The first locale matching the provided list will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -4883,10 +4883,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `Asset` will be affected directly by this argument, as well as any other related models with localized fields in the query's subtree.
     The first locale matching the provided list will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -4920,10 +4920,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `Asset` will be affected directly by this argument, as well as any other related models with localized fields in the query's subtree.
     The first locale matching the provided list will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -4945,10 +4945,10 @@ type Query {
   nextAuthUser(
     """
     Defines which locales should be returned.
-    
+
     Note that `NextAuthUser` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -4979,10 +4979,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `NextAuthUser` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5016,10 +5016,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `NextAuthUser` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5044,10 +5044,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `Node` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5060,10 +5060,10 @@ type Query {
   product(
     """
     Defines which locales should be returned.
-    
+
     Note that `Product` will be affected directly by this argument, as well as any other related models with localized fields in the query's subtree.
     The first locale matching the provided list will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5094,10 +5094,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `Product` will be affected directly by this argument, as well as any other related models with localized fields in the query's subtree.
     The first locale matching the provided list will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5131,10 +5131,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `Product` will be affected directly by this argument, as well as any other related models with localized fields in the query's subtree.
     The first locale matching the provided list will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5156,10 +5156,10 @@ type Query {
   review(
     """
     Defines which locales should be returned.
-    
+
     Note that `Review` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5190,10 +5190,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `Review` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5227,10 +5227,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `Review` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5252,10 +5252,10 @@ type Query {
   scheduledOperation(
     """
     Defines which locales should be returned.
-    
+
     Note that `ScheduledOperation` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5283,10 +5283,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `ScheduledOperation` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5322,10 +5322,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `ScheduledOperation` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5347,10 +5347,10 @@ type Query {
   scheduledRelease(
     """
     Defines which locales should be returned.
-    
+
     Note that `ScheduledRelease` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5378,10 +5378,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `ScheduledRelease` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5417,10 +5417,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `ScheduledRelease` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5442,10 +5442,10 @@ type Query {
   user(
     """
     Defines which locales should be returned.
-    
+
     Note that `User` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5473,10 +5473,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `User` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5510,10 +5510,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `User` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5535,10 +5535,10 @@ type Query {
   vote(
     """
     Defines which locales should be returned.
-    
+
     Note that `Vote` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5569,10 +5569,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `Vote` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5606,10 +5606,10 @@ type Query {
 
     """
     Defines which locales should be returned.
-    
+
     Note that `Vote` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument may be overwritten by another locales definition in a relational child field, this will effectively use the overwritten argument for the affected query's subtree.
     """
     locales: [Locale!]! = [en]
@@ -5680,10 +5680,10 @@ type Review implements Node {
   createdBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `createdBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -5727,10 +5727,10 @@ type Review implements Node {
   product(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `product` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -5743,10 +5743,10 @@ type Review implements Node {
   publishedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `publishedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -5768,10 +5768,10 @@ type Review implements Node {
 
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `scheduledIn` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -5793,10 +5793,10 @@ type Review implements Node {
   updatedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `updatedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -6454,10 +6454,10 @@ type ScheduledOperation implements Node {
 
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `affectedDocuments` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -6473,10 +6473,10 @@ type ScheduledOperation implements Node {
   createdBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `createdBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -6512,10 +6512,10 @@ type ScheduledOperation implements Node {
   publishedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `publishedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -6530,10 +6530,10 @@ type ScheduledOperation implements Node {
   release(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `release` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -6552,10 +6552,10 @@ type ScheduledOperation implements Node {
   updatedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `updatedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -7112,10 +7112,10 @@ type ScheduledRelease implements Node {
   createdBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `createdBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -7166,10 +7166,10 @@ type ScheduledRelease implements Node {
 
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `operations` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -7191,10 +7191,10 @@ type ScheduledRelease implements Node {
   publishedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `publishedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -7219,10 +7219,10 @@ type ScheduledRelease implements Node {
   updatedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `updatedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -8697,10 +8697,10 @@ type Vote implements Node {
   createdBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `createdBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -8741,10 +8741,10 @@ type Vote implements Node {
   product(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `product` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -8757,10 +8757,10 @@ type Vote implements Node {
   publishedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `publishedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -8782,10 +8782,10 @@ type Vote implements Node {
 
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `scheduledIn` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]
@@ -8807,10 +8807,10 @@ type Vote implements Node {
   updatedBy(
     """
     Allows to optionally override locale filtering behaviour in the query's subtree.
-    
+
     Note that `updatedBy` is a model without localized fields and will not be affected directly by this argument, however the locales will be passed on to any relational fields in the query's subtree for filtering.
     For related models with localized fields in the query's subtree, the first locale matching the provided list of locales will be returned, entries with non matching locales will be filtered out.
-    
+
     This argument will overwrite any existing locale filtering defined in the query's tree for the subtree.
     """
     locales: [Locale!]

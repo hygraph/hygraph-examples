@@ -1,14 +1,14 @@
 <template>
   <Layout>
     <div>
-      <h1 v-html="$page.gcms.product.name" />
-      <p v-html="$page.gcms.product.description" />
+      <h1 v-html="$page.hygraph.product.name" />
+      <p v-html="$page.hygraph.product.description" />
       <p>
         {{
           new Intl.NumberFormat('de-DE', {
             style: 'currency',
             currency: 'EUR',
-          }).format($page.gcms.product.price / 100)
+          }).format($page.hygraph.product.price / 100)
         }}
       </p>
     </div>
@@ -17,7 +17,7 @@
 
 <page-query>
 query GetProduct($slug: String) {
-    gcms {
+    hygraph {
         product(where: {slug: $slug}) {
             name
             description

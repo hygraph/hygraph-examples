@@ -5,7 +5,7 @@ export default function IndexPage() {
     <div>
       <Header />
 
-      <h1>GraphCMS with NextAuth.js</h1>
+      <h1>Hygraph with NextAuth.js</h1>
     </div>
   );
 }

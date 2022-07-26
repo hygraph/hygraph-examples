@@ -1,5 +1,5 @@
 {
-  "name": "slinkity-with-graphcms",
+  "name": "slinkity-with-hygraph",
   "version": "1.0.0",
   "description": "A splendid starter for my Slinkity site!",
   "main": ".eleventy.js",

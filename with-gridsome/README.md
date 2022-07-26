@@ -1,10 +1,10 @@
-# GraphCMS ⨯ Gridsome
+# Hygraph ⨯ Gridsome
 
-This example demonstrates how to query data from GraphCMS with `@gridsome/source-graphql`.
+This example demonstrates how to query data from Hygraph with `@gridsome/source-graphql`.
 
-• [Demo](https://graphcms-with-gridsome.now.sh)
+• [Demo](https://hygraph-with-gridsome.vercel.app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-gridsome) [![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/hygraph/hygraph-examples/tree/master/with-gridsome) [![Clone project](https://hygraph.com/button)](https://app.hygraph.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
 
 ## How to Use
 
@@ -28,4 +28,4 @@ yarn dev
 
 ### Run on Codesandbox
 
-[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/with-gridsome)
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/hygraph/hygraph-examples/tree/master/with-gridsome)

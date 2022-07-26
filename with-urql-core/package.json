@@ -1,5 +1,5 @@
 {
-  "name": "graphcms-with-urql-core",
+  "name": "hygraph-with-urql-core",
   "private": true,
   "license": "MIT",
   "scripts": {

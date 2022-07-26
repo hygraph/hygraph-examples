@@ -1,11 +1,11 @@
 sources:
-  - name: GraphCMS
+  - name: Hygraph
     handler:
       graphql:
-        endpoint: https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master
+        endpoint: https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master
     transforms:
       - prefix:
-          value: GraphCMS_
+          value: Hygraph_
   - name: CartQL
     handler:
       graphql:

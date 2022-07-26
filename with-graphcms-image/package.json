@@ -1,5 +1,5 @@
 {
-  "name": "graphcms-with-graphcms-image",
+  "name": "hygraph-with-react-image",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -8,9 +8,9 @@
     "dev": "gatsby develop"
   },
   "dependencies": {
+    "@graphcms/react-image": "^1.1.0",
     "gatsby": "2.21.8",
     "gatsby-source-graphql": "2.5.0",
-    "graphcms-image": "1.1.0-beta4",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   }

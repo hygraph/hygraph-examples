@@ -1,6 +1,6 @@
 import { gql } from 'graphql-request';
 
-import graphCmsClient from '../lib/graphCmsClient';
+import hygraphClient from '../lib/hygraphClient';
 
 function ProductPage({ product }) {
   return <pre>{JSON.stringify(product, null, 2)}</pre>;
@@ -9,7 +9,7 @@ function ProductPage({ product }) {
 export async function getStaticPaths({ locales }) {
   let paths = [];
 
-  const { products } = await graphCmsClient.request(gql`
+  const { products } = await hygraphClient.request(gql`
     {
       products {
         id
@@ -31,7 +31,7 @@ export async function getStaticPaths({ locales }) {
 }
 
 export async function getStaticProps({ locale, params }) {
-  const { product } = await graphCmsClient.request(
+  const { product } = await hygraphClient.request(
     gql`
       query ProductPageQuery($id: ID!, $locale: Locale!) {
         product(where: { id: $id }, locales: [$locale]) {

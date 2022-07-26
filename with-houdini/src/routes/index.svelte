@@ -12,7 +12,7 @@
   const { products } = $data
 </script>
 
-<h1>GraphCMS with Houdini</h1>
+<h1>Hygraph with Houdini</h1>
 
 <ul>
   {#each products as product}

@@ -10,7 +10,7 @@ function Index({ products }) {
 
 export async function getStaticProps() {
   const { products } = await request(
-    'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
+    'https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
     `{
       products {
         id

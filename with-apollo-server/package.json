@@ -1,5 +1,5 @@
 {
-  "name": "graphcms-with-apollo-server",
+  "name": "hygraph-with-apollo-server",
   "private": true,
   "license": "MIT",
   "scripts": {

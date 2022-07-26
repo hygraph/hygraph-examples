@@ -1,16 +1,16 @@
 import { GraphQLClient } from 'graphql-request';
 
 export default async ({ body }, res) => {
-  const graphcms = new GraphQLClient(
-    'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
+  const hygraph = new GraphQLClient(
+    'https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
     {
       headers: {
-        authorization: `Bearer ${process.env.GRAPHCMS_TOKEN}`,
+        authorization: `Bearer ${process.env.HYGRAPH_TOKEN}`,
       },
     }
   );
 
-  const { createVote } = await graphcms.request(
+  const { createVote } = await hygraph.request(
     `mutation upvoteProduct($id: ID!) {
       createVote(data: { product: { connect: { id: $id } } }) {
         id
@@ -19,7 +19,7 @@ export default async ({ body }, res) => {
     { id: body.id }
   );
 
-  await graphcms.request(
+  await hygraph.request(
     `mutation publishUpvote($id: ID!) {
       publishVote(where: { id: $id }, to: PUBLISHED) {
         id
