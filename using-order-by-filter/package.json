@@ -1,5 +1,5 @@
 {
-  "name": "graphcms-using-order-by-filter",
+  "name": "hygraph-using-order-by-filter",
   "private": true,
   "scripts": {
     "dev": "next",

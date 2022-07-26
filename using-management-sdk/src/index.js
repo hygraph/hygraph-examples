@@ -9,8 +9,8 @@ const {
 
 // Create a new `migration` instance
 const migration = newMigration({
-  authToken: process.env.GRAPHCMS_MIGRATION_TOKEN,
-  endpoint: process.env.GRAPHCMS_ENDPOINT,
+  authToken: process.env.HYGRAPH_MIGRATION_TOKEN,
+  endpoint: process.env.HYGRAPH_ENDPOINT,
 });
 
 // create model for blog

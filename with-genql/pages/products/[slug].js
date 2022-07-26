@@ -3,8 +3,7 @@ import { Fragment } from 'react';
 import { createClient } from '../../generated';
 
 const client = createClient({
-  url:
-    'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
+  url: 'https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
 });
 
 export async function getStaticProps({ params }) {

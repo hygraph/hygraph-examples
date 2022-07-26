@@ -3,8 +3,8 @@ import useSWR from 'swr';
 import { useState } from 'react';
 import useTimeout from 'use-timeout';
 
-const graphcms = new GraphQLClient(
-  'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master'
+const hygraph = new GraphQLClient(
+  'https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master'
 );
 
 const GetExpensiveProduct = gql`
@@ -42,13 +42,13 @@ const GetProductsQuery = gql`
 `;
 
 export const getStaticProps = async () => {
-  const initialData = await graphcms.request(GetProductsQuery);
+  const initialData = await hygraph.request(GetProductsQuery);
   const {
     products: [{ price: initialPriceGte }],
-  } = (await graphcms.request(GetCheapestProduct)) || 0;
+  } = (await hygraph.request(GetCheapestProduct)) || 0;
   const {
     products: [{ price: initialPriceLte }],
-  } = (await graphcms.request(GetExpensiveProduct)) || 5000;
+  } = (await hygraph.request(GetExpensiveProduct)) || 5000;
 
   return {
     props: {
@@ -71,7 +71,7 @@ export default function IndexPage({
   const { data } = useSWR(
     [GetProductsQuery, priceGte, priceLte],
     (query, priceGte, priceLte) =>
-      graphcms.request(query, { priceGte, priceLte }),
+      hygraph.request(query, { priceGte, priceLte }),
     {
       initialData,
       revalidateOnMount: true,

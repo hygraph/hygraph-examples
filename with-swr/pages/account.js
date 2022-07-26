@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { gql } from 'graphql-request';
 
 import { getSession } from 'next-auth/react';
-import { graphcmsClient } from '../lib/graphcms';
+import { hygraphClient } from '../lib/hygraph';
 import Header from '../components/header';
 
 const GetUserProfileById = gql`
@@ -26,7 +26,7 @@ export async function getServerSideProps(context) {
     };
   }
 
-  const { user } = await graphcmsClient.request(GetUserProfileById, {
+  const { user } = await hygraphClient.request(GetUserProfileById, {
     id: session.userId,
   });
 

@@ -36,7 +36,7 @@ export default {
       this.loading = true;
 
       try {
-        const data = await this.$graphcms.request(
+        const data = await this.$hygraph.request(
           gql`
             query getProductBySlug($slug: String) {
               product(where: { slug: $slug }) {

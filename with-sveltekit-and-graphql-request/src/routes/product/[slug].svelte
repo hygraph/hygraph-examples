@@ -1,14 +1,14 @@
 <script context="module">
   import { GraphQLClient } from 'graphql-request';
   export async function load(ctx) {
-    const graphcms = new GraphQLClient(
-      'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
+    const hygraph = new GraphQLClient(
+      'https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
       {
         headers: {},
       }
-    )
-    const { product } = await graphcms.request(
-      `query ProductPageQuery($slug: String!) { 
+    );
+    const { product } = await hygraph.request(
+      `query ProductPageQuery($slug: String!) {
         product(where: { slug: $slug }) {
           name
           description
@@ -18,17 +18,17 @@
       {
         slug: ctx.page.params.slug,
       }
-    )
+    );
     return {
       props: {
         product,
       },
-    }
+    };
   }
 </script>
 
 <script>
-  export let product
+  export let product;
 </script>
 
 <svelte:head>

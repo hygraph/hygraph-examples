@@ -1,5 +1,5 @@
 {
-  "name": "graphcms-with-graphql-mesh",
+  "name": "hygraph-with-graphql-mesh",
   "private": true,
   "license": "MIT",
   "scripts": {

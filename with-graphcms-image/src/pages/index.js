@@ -1,10 +1,10 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import GCMSImg from 'graphcms-image';
+import HygraphImage from '@graphcms/react-image';
 
 const pageQuery = graphql`
   {
-    gcms {
+    hygraph {
       products {
         name
         slug
@@ -21,12 +21,12 @@ const pageQuery = graphql`
 
 const IndexPage = () => {
   const {
-    gcms: { products },
+    hygraph: { products },
   } = useStaticQuery(pageQuery);
 
   return products.map((product) => (
     <div style={{ textAlign: 'center' }}>
-      <GCMSImg
+      <HygraphImage
         image={product.image}
         style={{ margin: '0 auto', maxWidth: '50%' }}
       />

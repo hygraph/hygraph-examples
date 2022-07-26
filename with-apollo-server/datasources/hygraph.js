@@ -13,12 +13,12 @@ const getProductsQuery = gql`
   }
 `;
 
-class GraphCMSAPI extends GraphQLDataSource {
+class HygraphAPI extends GraphQLDataSource {
   constructor() {
     super();
 
     this.baseURL =
-      'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master';
+      'https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master';
   }
 
   async getProducts() {
@@ -28,4 +28,4 @@ class GraphCMSAPI extends GraphQLDataSource {
   }
 }
 
-module.exports = GraphCMSAPI;
+module.exports = HygraphAPI;

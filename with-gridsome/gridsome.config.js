@@ -10,10 +10,9 @@ module.exports = {
     {
       use: '@gridsome/source-graphql',
       options: {
-        url:
-          'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
-        fieldName: 'gcms',
-        typeName: 'gcmsTypes',
+        url: 'https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
+        fieldName: 'hygraph',
+        typeName: 'hygraphTypes',
       },
     },
   ],

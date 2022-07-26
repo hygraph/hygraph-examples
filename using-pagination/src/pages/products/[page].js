@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { gql } from 'graphql-request';
 
-import { graphcms } from '../../../lib/_graphcms';
+import { hygraph } from '../../../lib/_hyraph';
 
 const limit = 1;
 
@@ -38,7 +38,7 @@ export async function getStaticPaths() {
       }
     }
   `;
-  const { productsConnection } = await graphcms.request(query);
+  const { productsConnection } = await hygraph.request(query);
 
   function* numberOfPages({ total, limit }) {
     let page = 1;
@@ -87,7 +87,7 @@ export async function getStaticProps({ params }) {
 
   const {
     productsConnection: { products, pageInfo },
-  } = await graphcms.request(query, {
+  } = await hygraph.request(query, {
     limit,
     offset: Number((params.page - 1) * limit),
   });

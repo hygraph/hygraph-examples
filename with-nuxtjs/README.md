@@ -1,12 +1,12 @@
-# GraphCMS ⨯ Nuxt.js
+# Hygraph ⨯ Nuxt.js
 
-[Join our Slack](https://slack.graphcms.com)
+[Join our Slack](https://slack.hygraph.com)
 
-This example demonstrates how to query from GraphCMS with Nuxt.js.
+This example demonstrates how to query from Hygraph with Nuxt.js.
 
-• [Demo](https://graphcms-with-nuxtjs.now.sh)
+• [Demo](https://hygraph-with-nuxtjs.vercel.app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/GraphCMS/graphcms-examples/tree/master/with-nuxtjs)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/hygraph/hygraph-examples/tree/master/with-nuxtjs)
 
 ## How to Use
 
@@ -38,4 +38,4 @@ yarn generate
 
 ### Run on Codesandbox
 
-[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/GraphCMS/graphcms-examples/tree/master/with-nuxtjs)
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/hygraph/hygraph-examples/tree/master/with-nuxtjs)

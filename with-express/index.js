@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 
 const client = new AwesomeGraphQLClient({
   endpoint:
-    'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
+    'https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master',
   fetch,
 });
 
@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', async function (_, res) {
   const query = `
-    { 
+    {
       products {
         name
         slug

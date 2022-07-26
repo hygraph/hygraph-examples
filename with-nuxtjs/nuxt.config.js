@@ -1,3 +1,3 @@
 export default {
-  plugins: ['~/plugins/graphcms.js'],
+  plugins: ['~/plugins/hygraph.js'],
 };

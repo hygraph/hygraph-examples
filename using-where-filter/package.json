@@ -1,5 +1,5 @@
 {
-  "name": "graphcms-using-where-filter",
+  "name": "hygraph-using-where-filter",
   "private": true,
   "scripts": {
     "dev": "next",

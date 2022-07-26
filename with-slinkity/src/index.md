@@ -1,5 +1,5 @@
 ---
-title: GraphCMS with Slinkity
+title: Hygraph with Slinkity
 layout: base.njk
 ---
 

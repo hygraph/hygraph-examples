@@ -28,7 +28,7 @@ export default {
     };
   },
   async created() {
-    const data = await this.$graphcms.request(
+    const data = await this.$hygraph.request(
       gql`
         {
           products {

@@ -1,10 +1,10 @@
 # Working with the Asset Upload proxy
 
-[Join our Slack](https://slack.graphcms.com)
+[Join our Slack](https://slack.hygraph.com)
 
-This example demonstrates how to proxy uploads from your client application to GraphCMS to prevent leaking the Permanent Auth Token needed to [upload new assets](https://graphcms.com/docs/content-api/assets#uploading-assets).
+This example demonstrates how to proxy uploads from your client application to Hygraph to prevent leaking the Permanent Auth Token needed to [upload new assets](https://hygraph.com/docs/content-api/assets#uploading-assets).
 
-[Read more about this on our blog](https://graphcms.com/blog/working-with-react-dropzone-and-graphcms-uploads)
+[Read more about this on our blog](https://hygraph.com/blog/working-with-react-dropzone-and-hygraph-uploads)
 
 ## How to Use
 
@@ -20,11 +20,11 @@ Add .env:
 cp .env.sample .env
 ```
 
-Provide values for `GRAPHCMS_TOKEN` and `GRAPHCMS_ENDPOINT` keys.
+Provide values for `HYGRAPH_TOKEN` and `HYGRAPH_ENDPOINT` keys.
 
-The `GRAPHCMS_TOKEN` must have permission to create and read gassets.
+The `HYGRAPH_TOKEN` must have permission to create and read gassets.
 
-The `GRAPHCMS_ENDPOINT` must be appended with `/upload`.
+The `HYGRAPH_ENDPOINT` must be appended with `/upload`.
 
 Install & Run:
 

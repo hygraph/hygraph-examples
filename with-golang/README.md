@@ -1,10 +1,10 @@
-# GraphCMS ⨯ Go
+# Hygraph ⨯ Go
 
-[Join our Slack](https://slack.graphcms.com)
+[Join our Slack](https://slack.hygraph.com)
 
-This example demonstrates how to query from GraphCMS with Go.
+This example demonstrates how to query from Hygraph with Go.
 
-[![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
+[![Clone project](https://hygraph.com/button)](https://app.hygraph.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
 
 ## How to Use
 

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { GraphQLClient, gql } from 'graphql-request';
 
-function GraphCMSImageLoader({ src, width }) {
+function HygraphImageLoader({ src, width }) {
   const relativeSrc = (src) => src.split('/').pop();
 
   return `https://media.graphassets.com/resize=width:${width}/${relativeSrc(
@@ -15,7 +15,7 @@ function IndexPage({ products }) {
       {products.map((product) => (
         <div key={product.id}>
           <Image
-            loader={GraphCMSImageLoader}
+            loader={HygraphImageLoader}
             src={product.image.url}
             width={400}
             height={400}
@@ -28,11 +28,11 @@ function IndexPage({ products }) {
 }
 
 export async function getStaticProps() {
-  const graphcms = new GraphQLClient(
-    'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master'
+  const hygraph = new GraphQLClient(
+    'https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master'
   );
 
-  const { products } = await graphcms.request(
+  const { products } = await hygraph.request(
     gql`
       {
         products {

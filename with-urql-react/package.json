@@ -1,5 +1,5 @@
 {
-  "name": "graphcms-with-urql-react",
+  "name": "hygraph-with-urql-react",
   "private": true,
   "dependencies": {
     "graphql": "15.5.1",

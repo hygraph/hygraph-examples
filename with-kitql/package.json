@@ -1,5 +1,5 @@
 {
-  "name": "graphcms-with-kitql",
+  "name": "hygraph-with-kitql",
   "version": "0.0.1",
   "scripts": {
     "prepare": "yarn gen",

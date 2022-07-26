@@ -3,7 +3,7 @@ import CredentialsProvider from 'next-auth/providers/credentials';
 import { compare, hash } from 'bcrypt';
 import { gql } from 'graphql-request';
 
-import { graphcmsClient } from '../../../lib/graphcms';
+import { hygraphClient } from '../../../lib/hygraph';
 
 const GetNextAuthUserByEmail = gql`
   query GetNextAuthUserByEmail($email: String!) {
@@ -38,7 +38,7 @@ export default NextAuth({
         email: {
           label: 'Email',
           type: 'email',
-          placeholder: 'jamie@graphcms.com',
+          placeholder: 'support@hygraph.com',
         },
         password: {
           label: 'Password',
@@ -47,12 +47,12 @@ export default NextAuth({
         },
       },
       authorize: async ({ email, password }) => {
-        const { user } = await graphcmsClient.request(GetNextAuthUserByEmail, {
+        const { user } = await hygraphClient.request(GetNextAuthUserByEmail, {
           email,
         });
 
         if (!user) {
-          const { newUser } = await graphcmsClient.request(
+          const { newUser } = await hygraphClient.request(
             CreateNextAuthUserByEmail,
             {
               email,

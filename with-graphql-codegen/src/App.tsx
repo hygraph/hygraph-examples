@@ -2,7 +2,7 @@ import {
   useAllProductsQuery,
   ProductOrderByInput,
   ProductSummaryFragment,
-} from './generated/graphcms-schema';
+} from './generated/hygraph-schema';
 
 function App() {
   const { loading, error, data } = useAllProductsQuery({

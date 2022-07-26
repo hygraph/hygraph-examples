@@ -19,10 +19,10 @@
 import { gql } from 'graphql-request';
 
 export default {
-  async asyncData({ $graphcms, params }) {
+  async asyncData({ $hygraph, params }) {
     const { slug } = params;
 
-    const { product } = await $graphcms.request(
+    const { product } = await $hygraph.request(
       gql`
         query GetProduct($slug: String) {
           product(where: { slug: $slug }) {

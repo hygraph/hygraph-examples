@@ -1,11 +1,11 @@
 {
-  "name": "graphcms-with-genql",
+  "name": "hygraph-with-genql",
   "private": true,
   "license": "MIT",
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "generate": "genql --endpoint https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master --output ./generated",
+    "generate": "genql --endpoint https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master --output ./generated",
     "start": "next start"
   },
   "dependencies": {

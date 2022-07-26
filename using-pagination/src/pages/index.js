@@ -1,6 +1,6 @@
 import { gql } from 'graphql-request';
 
-import { graphcms } from '../../lib/_graphcms';
+import { hygraph } from '../../lib/_hyraph';
 
 const limit = 1;
 
@@ -34,7 +34,7 @@ export async function getStaticProps() {
     while (hasNextPage) {
       const {
         productsConnection: { products, pageInfo },
-      } = await graphcms.request(query, { limit, offset });
+      } = await hygraph.request(query, { limit, offset });
 
       hasNextPage = pageInfo.hasNextPage;
       offset += limit;

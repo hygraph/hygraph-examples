@@ -5,10 +5,10 @@ const fs = require('fs');
 const Queue = require('bee-queue');
 
 const assetUpload = async (data) => {
-  const response = await fetch(`${process.env.GRAPHCMS_ENDPOINT}/upload`, {
+  const response = await fetch(`${process.env.HYGRAPH_ENDPOINT}/upload`, {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${process.env.GRAPHCMS_TOKEN}`,
+      Authorization: `Bearer ${process.env.HYGRAPH_TOKEN}`,
       'Content-Type': 'application/x-www-form-urlencoded',
     },
     body: `url=${encodeURIComponent(data.url)}`,
@@ -38,7 +38,7 @@ const run = async () => {
       throw new Error(error);
     }
 
-    const importQueue = new Queue('GraphCMS Asset Import', {
+    const importQueue = new Queue('Hygraph Asset Import', {
       activateDelayedJobs: true,
     });
 

@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto text-center">
     <div class="pt-4">
-      <h2 class="text-xl">Nuxt with GraphCMS</h2>
+      <h2 class="text-xl">Nuxt with Hygraph</h2>
       <div class="flex justify-center -mx-4 my-4">
         <router-link
           v-for="product in products"
@@ -21,8 +21,8 @@
 import { gql } from 'graphql-request';
 
 export default {
-  async asyncData({ $graphcms }) {
-    const { products } = await $graphcms.request(
+  async asyncData({ $hygraph }) {
+    const { products } = await $hygraph.request(
       gql`
         {
           products {

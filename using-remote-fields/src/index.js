@@ -4,8 +4,8 @@ const { newMigration, FieldType } = require('@graphcms/management');
 
 // Create a new `migration` instance
 const migration = newMigration({
-  authToken: process.env.GRAPHCMS_MIGRATION_TOKEN,
-  endpoint: process.env.GRAPHCMS_ENDPOINT,
+  authToken: process.env.HYGRAPH_MIGRATION_TOKEN,
+  endpoint: process.env.HYGRAPH_ENDPOINT,
 });
 
 // Create the type definitions for objects returned from the Stripe API

@@ -421,7 +421,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.graphcms.swift.with-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hygraph.swift.with-swift";
 				PRODUCT_NAME = "with-swift";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -451,7 +451,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.graphcms.swift.with-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hygraph.swift.with-swift";
 				PRODUCT_NAME = "with-swift";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -481,7 +481,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.graphcms.swift.with-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hygraph.swift.with-swift";
 				PRODUCT_NAME = "with-swift";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -509,7 +509,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.graphcms.swift.with-swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hygraph.swift.with-swift";
 				PRODUCT_NAME = "with-swift";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;

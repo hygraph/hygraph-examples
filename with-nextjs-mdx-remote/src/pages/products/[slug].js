@@ -5,8 +5,8 @@ import he from 'he';
 
 import Test from '../../components/test';
 
-const graphcms = new GraphQLClient(
-  'https://api-eu-central-1.graphcms.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master'
+const hygraph = new GraphQLClient(
+  'https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master'
 );
 
 const components = {
@@ -15,7 +15,7 @@ const components = {
 };
 
 export async function getStaticProps({ params }) {
-  const { product } = await graphcms.request(
+  const { product } = await hygraph.request(
     `
     query ProductPageQuery($slug: String!) {
       product(where: { slug: $slug }) {
@@ -46,7 +46,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const { products } = await graphcms.request(`
+  const { products } = await hygraph.request(`
     {
       products {
         slug

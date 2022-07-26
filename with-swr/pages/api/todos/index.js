@@ -1,7 +1,7 @@
 import { gql } from 'graphql-request';
 import { getSession } from 'next-auth/react';
 
-import { graphcmsClient } from '../../../lib/graphcms';
+import { hygraphClient } from '../../../lib/hygraph';
 
 export const GetAllTodosByUser = gql`
   query GetAllTodosByUser($userId: ID!) {
@@ -44,7 +44,7 @@ export default async (req, res) => {
 
   switch (req.method.toLowerCase()) {
     case 'get': {
-      const { todos } = await graphcmsClient.request(GetAllTodosByUser, {
+      const { todos } = await hygraphClient.request(GetAllTodosByUser, {
         userId: session.userId,
       });
 
@@ -55,7 +55,7 @@ export default async (req, res) => {
     case 'post': {
       const { description, completed } = req.body;
 
-      const { todo } = await graphcmsClient.request(CreateNewTodoForUser, {
+      const { todo } = await hygraphClient.request(CreateNewTodoForUser, {
         description,
         completed,
         userId: session.userId,

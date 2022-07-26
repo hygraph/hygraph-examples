@@ -1,6 +1,6 @@
 const { ApolloServer, gql } = require('apollo-server');
 
-const GraphCMSAPI = require('./datasources/graphcms');
+const HygraphAPI = require('./datasources/hygraph');
 
 const typeDefs = gql`
   type Product {
@@ -18,7 +18,7 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     products: async (parent, args, context) => {
-      return await context.dataSources.GraphCMS.getProducts();
+      return await context.dataSources.Hygraph.getProducts();
     },
   },
 };
@@ -26,7 +26,7 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  dataSources: () => ({ GraphCMS: new GraphCMSAPI() }),
+  dataSources: () => ({ Hygraph: new HygraphAPI() }),
   introspection: true,
   playground: true,
 });

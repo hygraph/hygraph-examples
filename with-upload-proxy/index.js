@@ -14,10 +14,10 @@ app.post('/upload', multer.single('fileUpload'), (req, res) => {
 
   form.append('fileUpload', fileUpload.buffer, fileUpload.originalname);
 
-  fetch(`${process.env.GRAPHCMS_ENDPOINT}/upload`, {
+  fetch(`${process.env.HYGRAPH_ENDPOINT}/upload`, {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${process.env.GRAPHCMS_TOKEN}`,
+      Authorization: `Bearer ${process.env.HYGRAPH_TOKEN}`,
     },
     body: form,
   })
