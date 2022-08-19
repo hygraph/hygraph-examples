@@ -1,0 +1,9 @@
+.form-group {
+    margin-bottom: 1.4rem;
+}
+
+.form-group label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5em;
+}
