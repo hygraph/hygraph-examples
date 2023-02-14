@@ -1,39 +1,32 @@
+// a page to get products from hygraph plugin and display in a simple loop
+
+
 <template>
-  <div class="container mx-auto text-center">
-    <div class="pt-4">
-      <h2 class="text-xl">Nuxt with Hygraph</h2>
-      <div class="flex justify-center -mx-4 my-4">
-        <router-link
-          v-for="product in products"
-          :to="{ name: 'product-slug', params: { slug: product.slug } }"
-          :key="product.slug"
-        >
-          <article class="border rounded-md p-6 mx-2">
-            <h1 class="fopnt-bold text-xl">{{ product.name }}</h1>
-          </article>
-        </router-link>
-      </div>
-    </div>
+  <h1>Hello world</h1>
+  <div v-for="product in products">
+    <h1><NuxtLink :to="`/product/${product.slug}`">{{ product.name }}</NuxtLink></h1>
   </div>
+
 </template>
 
-<script>
-import { gql } from 'graphql-request';
 
-export default {
-  async asyncData({ $hygraph }) {
-    const { products } = await $hygraph.request(
-      gql`
-        {
+<script setup>
+const { data } = await useFetch('https://api-eu-central-1.hygraph.com/v2/ck8sn5tnf01gc01z89dbc7s0o/master', {
+  method: "POST",
+
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    query: `query MyQuery {
           products {
             name
             slug
           }
-        }
-      `
-    );
+        }`
+  }),
+})
 
-    return { products };
-  },
-};
+const products = await data.value.data.products
+
 </script>

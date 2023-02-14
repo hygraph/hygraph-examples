@@ -24,3 +24,5 @@ coverage
 pnpm-lock.yaml
 .yalc/
 yalc.lock
+.output
+dist
