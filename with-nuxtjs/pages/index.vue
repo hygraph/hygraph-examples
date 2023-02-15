@@ -1,6 +1,3 @@
-// a page to get products from hygraph plugin and display in a simple loop
-
-
 <template>
   <h1>Hello world</h1>
   <div v-for="product in products">

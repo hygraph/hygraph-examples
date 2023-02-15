@@ -3,11 +3,9 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "nuxi",
+    "dev": "nuxi dev",
     "build": "nuxi generate",
-    "start": "nuxi start",
-    "export": "nuxi export",
-    "serve": "nuxi serve"
+    "start": "nuxi dev"
   },
   "dependencies": {
     "graphql": "15.3.0",
