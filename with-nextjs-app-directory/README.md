@@ -6,7 +6,7 @@ This example demonstrates how to query from Hygraph with `graphql-request` in Ne
 
 • [Demo](https://hygraph-with-nextjs.vercel.app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/hygraph/hygraph-examples/tree/master/with-nextjs) [![Clone project](https://hygraph.com/button)](https://app.hygraph.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/hygraph/hygraph-examples/tree/master/with-nextjs-app-directory) [![Clone project](https://hygraph.com/button)](https://app.hygraph.com/clone/0ff23f7a41ce4da69a366ab299cc24d8)
 
 ## How to Use
 
@@ -30,4 +30,4 @@ yarn dev
 
 ### Run on Codesandbox
 
-[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/hygraph/hygraph-examples/tree/master/with-nextjs)
+[![Develop with Codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/hygraph/hygraph-examples/tree/master/with-nextjs-app-directory)
