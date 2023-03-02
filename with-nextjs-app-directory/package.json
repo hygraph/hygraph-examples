@@ -1,0 +1,16 @@
+{
+  "name": "hygraph-with-nextjs",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "encoding": "^0.1.13",
+    "graphql-request": "^1.8.2",
+    "next": "^13.1.6",
+    "react": "^18.2.0"
+  }
+}
