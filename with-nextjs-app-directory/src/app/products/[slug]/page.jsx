@@ -7,15 +7,13 @@ const hygraph = new GraphQLClient(
 
 const getProduct = async (params) => {
   const { product } = await hygraph.request(
-    `
-    query ProductPageQuery($slug: String!) {
+    `query ProductPageQuery($slug: String!) {
       product(where: { slug: $slug }) {
         name
         description
         price
       }
-    }
-  `,
+    }`,
     {
       slug: params.slug,
     }
