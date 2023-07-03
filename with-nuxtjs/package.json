@@ -3,15 +3,13 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt generate",
-    "start": "nuxt start",
-    "export": "nuxt export",
-    "serve": "nuxt serve"
+    "dev": "nuxi dev",
+    "build": "nuxi generate",
+    "start": "nuxi dev"
   },
   "dependencies": {
     "graphql": "15.3.0",
-    "graphql-request": "3.1.0",
-    "nuxt": "^2.14.0"
+    "graphql-request": "^5.1.0",
+    "nuxt": "^3.2.0"
   }
 }
