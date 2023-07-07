@@ -62,6 +62,7 @@ frameworks.
 | [Next.js Image] ([Demo][demo20], [Video][video20])                    | How to use [Next.js Image Component] with Hygraph assets                                                                 |
 | [Next.js Image with Custom Loader] ([Demo][demo21], [Video][video21]) | How to use a [custom loader] function with [Next.js Image Component] and Hygraph assets                                  |
 | [Nuxt.js] ([Demo][demo22], [Video][video22])                          | A simple Nuxt.js starter using `create-nuxt-app` CLI with Tailwind and Axios added                                       |
+| [Nuxt3 + nuxt-graphql-client] ([Demo][demoNuxt])                      | A simple Nuxt.js starter using the `nuxt-graphql-client` module                                                          |
 | [React.js] ([Demo][demo23], [Video][video23])                         | This example demonstrates how to query from Hygraph with graphql-request in React.js                                     |
 | [React.js with React Query]                                           | This example demonstrates how to query from Hygraph with React Query in React.js                                         |
 | [Vue.js] ([Demo][demo24], [Video][video24])                           | A vanilla Vue.js starter using `vue create` CLI with Vue Router                                                          |
@@ -194,6 +195,8 @@ We've crafted a few example [UI extensions](https://hygraph.com/docs/ui-extensio
 [nuxt.js]: with-nuxtjs
 [video22]: https://youtu.be/kTdsFYonNQ4
 [demo22]: https://hygraph-with-nuxtjs.vercel.app/
+[demoNuxt]: https://hygraph-with-nuxtjs-nuxt-graphql-client.vercel.app/
+[Nuxt3 + nuxt-graphql-client]: with-nuxt-graphql
 [react.js]: with-reactjs
 [react.js with react query]: with-react-query
 [video23]: https://youtu.be/QXgtDR9VIWc
