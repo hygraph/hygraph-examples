@@ -3,7 +3,7 @@ require('dotenv').config();
 const {
   Client,
   SimpleFieldType,
-  RelationalFieldType
+  RelationalFieldType,
 } = require('@hygraph/management-sdk');
 
 // Create a new `migration` instance
@@ -32,7 +32,7 @@ client.createSimpleField({
   displayName: 'Excerpt',
   modelApiId: 'Blog',
   type: SimpleFieldType.String,
-  formRenderer: "GCMS_MULTI_LINE",
+  formRenderer: 'GCMS_MULTI_LINE',
 });
 
 client.createSimpleField({
@@ -58,7 +58,6 @@ client.createSimpleField({
 });
 
 // add relation to blog for author posts
-
 
 client.createRelationalField({
   parentApiId: 'Blog',
