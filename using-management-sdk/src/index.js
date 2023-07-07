@@ -1,71 +1,76 @@
 require('dotenv').config();
 
 const {
-  newMigration,
-  FieldType,
-  RelationType,
-  Renderer,
-} = require('@graphcms/management');
+  Client,
+  SimpleFieldType,
+  RelationalFieldType
+} = require('@hygraph/management-sdk');
 
 // Create a new `migration` instance
-const migration = newMigration({
+const client = new Client({
   authToken: process.env.HYGRAPH_MIGRATION_TOKEN,
   endpoint: process.env.HYGRAPH_ENDPOINT,
 });
 
 // create model for blog
-const blogModel = migration.createModel({
+client.createModel({
   apiId: 'Blog',
   apiIdPlural: 'Blogs',
   displayName: 'Blog',
 });
 
 // add blog fields
-blogModel.addSimpleField({
+client.createSimpleField({
   apiId: 'title',
   displayName: 'Title',
-  type: FieldType.String,
+  modelApiId: 'Blog',
+  type: SimpleFieldType.String,
 });
 
-blogModel.addSimpleField({
+client.createSimpleField({
   apiId: 'excerpt',
   displayName: 'Excerpt',
-  type: FieldType.String,
-  formRenderer: Renderer.MultiLine,
+  modelApiId: 'Blog',
+  type: SimpleFieldType.String,
+  formRenderer: "GCMS_MULTI_LINE",
 });
 
-blogModel.addSimpleField({
+client.createSimpleField({
   apiId: 'content',
   displayName: 'Content',
-  type: FieldType.Richtext,
+  modelApiId: 'Blog',
+  type: SimpleFieldType.Richtext,
 });
 
 // create model for author
-const authorModel = migration.createModel({
+client.createModel({
   apiId: 'Author',
   apiIdPlural: 'Authors',
   displayName: 'Author',
 });
 
 // add author fields
-authorModel.addSimpleField({
+client.createSimpleField({
   apiId: 'name',
   displayName: 'Name',
-  type: FieldType.String,
+  modelApiId: 'Author',
+  type: SimpleFieldType.String,
 });
 
 // add relation to blog for author posts
 
-// create model for author
-const authorRelation = migration.updateModel({
-  apiId: 'Author',
+
+client.createRelationalField({
+  parentApiId: 'Blog',
+  apiId: 'author',
+  displayName: 'Written By',
+  type: RelationalFieldType.Relation,
+  reverseField: {
+    modelApiId: 'Author',
+    apiId: 'posts',
+    displayName: 'Posts',
+    isList: true,
+  },
 });
 
-authorRelation.addRelationalField({
-  apiId: 'authorPosts',
-  displayName: 'Author Posts',
-  relationType: RelationType.OneToMany,
-  model: 'Blog',
-});
-
-migration.run();
+client.run();
