@@ -6,7 +6,7 @@
     "start": "node src/index.js"
   },
   "dependencies": {
-    "@graphcms/management": "1.1.0"
+    "@hygraph/management-sdk": "^1.2.1"
   },
   "devDependencies": {
     "dotenv": "10.0.0"
