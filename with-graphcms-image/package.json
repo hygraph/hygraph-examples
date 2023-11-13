@@ -9,9 +9,9 @@
   },
   "dependencies": {
     "@graphcms/react-image": "^1.1.0",
-    "gatsby": "2.21.8",
-    "gatsby-source-graphql": "2.5.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "gatsby": "5.12.9",
+    "gatsby-source-graphql": "5.12.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }

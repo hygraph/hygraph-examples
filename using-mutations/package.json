@@ -8,10 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "graphql-request": "1.8.2",
-    "next": "9.3.5",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "swr": "0.2.0"
+    "graphql-request": "6.1.0",
+    "next": "14.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "swr": "2.2.4"
   }
 }
