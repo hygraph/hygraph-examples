@@ -21,11 +21,11 @@ Install & Run:
 ```bash
 cd with-apollo-client-3
 npm install
-npm run dev
+npm run start
 # or
 cd with-apollo-client-3
 yarn
-yarn dev
+yarn start
 ```
 
 ### Run on Codesandbox
