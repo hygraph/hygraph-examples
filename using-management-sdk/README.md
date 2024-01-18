@@ -2,7 +2,7 @@
 
 [Join our Slack](https://slack.hygraph.com)
 
-This example demonstrates how to programmatically build a project schema using the [Hygraph Management SDK](https://www.npmjs.com/package/@graphcms/management).
+This example demonstrates how to programmatically build a project schema using the [Hygraph Management SDK](https://www.npmjs.com/package/@hygraph/management-sdk).
 
 It creates the following models and field types:
 
