@@ -9,6 +9,6 @@
     "@hygraph/management-sdk": "^1.2.1"
   },
   "devDependencies": {
-    "dotenv": "10.0.0"
+    "dotenv": "16.3.1"
   }
 }

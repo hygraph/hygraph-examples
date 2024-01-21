@@ -8,13 +8,13 @@
     "build": "slinkity"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0-beta.8",
+    "@11ty/eleventy": "^2.0.0",
     "graphql": "^16.3.0",
-    "graphql-request": "^4.0.0",
-    "slinkity": "^0.4.1"
+    "graphql-request": "^6.0.0",
+    "slinkity": "^0.8.0"
   }
 }

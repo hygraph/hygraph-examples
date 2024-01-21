@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "encoding": "^0.1.13",
-    "graphql-request": "^1.8.2",
-    "next": "^13.1.6",
+    "graphql-request": "^6.0.0",
+    "next": "^14.0.0",
     "react": "^18.2.0"
   }
 }
