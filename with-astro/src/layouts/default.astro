@@ -1,5 +1,5 @@
 ---
-import astroLogo from '../../public/assets/logo.svg'
+import astroLogo from '../../public/favicon.svg'
 ---
 
 <html lang="en">
@@ -11,9 +11,9 @@ import astroLogo from '../../public/assets/logo.svg'
     <link rel="stylesheet" href="/style/global.css" />
   </head>
   <body>
-    <main>
-      <div style="text-align: center;">
-        <img style="width: 50px;" src={astroLogo} alt="Astro Logo" />
+    <main class="container max-w-full min-h-screen">
+      <div style="mx-auto max-w-xl px-4 py-8 text-align: center;">
+        <img style="width: 50px;" src={astroLogo.src} alt="Astro Logo" />
       </div>
       <header>
         <h1>Hygraph with Astro</h1>

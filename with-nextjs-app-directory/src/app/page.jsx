@@ -24,7 +24,7 @@ export function generateMetadata() {
 
 export default async function Page() {
   const products = await getProducts();
-  console.log(products);
+  //console.log(products);
   return (
     <div>
       <h1>Products</h1>

@@ -3,7 +3,7 @@ import { GraphQLClient, gql } from 'graphql-request';
 
 function IndexPage({ products }) {
   return (
-    <div className="gap-6 grid grid-cols-1 md:grid-cols-3">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
       {products.map((product) => (
         <div key={product.id}>
           <Image
@@ -11,7 +11,7 @@ function IndexPage({ products }) {
             width={product.image.width}
             height={product.image.height}
           />
-          <h2 className="font-semibold text-lg">{product.name}</h2>
+          <h2 className="text-lg font-semibold text-center">{product.name}</h2>
         </div>
       ))}
     </div>
