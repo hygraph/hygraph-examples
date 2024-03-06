@@ -1,27 +1,29 @@
 {
-  "name": "hygraph-with-sveltekit",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
-    "lint": "prettier --check . && eslint --ignore-path .gitignore .",
-    "format": "prettier --write ."
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-vercel": "^1.0.0-next.16",
-    "@sveltejs/kit": "next",
-    "eslint": "^7.27.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-svelte3": "^3.2.0",
-    "prettier": "~2.3.0",
-    "prettier-plugin-svelte": "^2.3.0",
-    "svelte": "^3.38.2",
-    "vite": "^2.3.4"
-  },
-  "type": "module",
-  "dependencies": {
-    "graphql": "^15.5.0",
-    "graphql-request": "^3.4.0"
-  }
+	"name": "hygraph-with-sveltekit",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.20.4",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-svelte": "^2.30.0",
+		"graphql-request": "^6.1.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.10.1",
+		"svelte": "^4.0.5",
+		"svelte-check": "^3.4.3",
+		"typescript": "^5.0.0",
+		"vite": "^4.4.2"
+	},
+	"type": "module"
 }
