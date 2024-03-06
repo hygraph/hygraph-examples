@@ -27,6 +27,6 @@ export async function getStaticProps() {
 export default ({ products }) =>
   products.map(({ slug, name }) => (
     <Link key={slug} href={`/products/${slug}`}>
-      <a>{name}</a>
+      {name}
     </Link>
   ));

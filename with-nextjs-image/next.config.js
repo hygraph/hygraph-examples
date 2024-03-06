@@ -1,5 +1,14 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
-    domains: ['media.graphassets.com'],
-  },
-};
+    dangerouslyAllowSVG: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'media.graphassets.com'
+      }, 
+    ]
+      
+    },
+}
+module.exports = nextConfig
