@@ -1,13 +1,39 @@
+import Link from 'next/link';
 import { gql } from 'graphql-request';
 
 import { hygraph } from '../../lib/_hyraph';
 
 const limit = 1;
 
+const singleProductStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  width: '200px',
+  margin: '10px',
+};
+
+function SingleProduct({product, index}) {
+  return (
+    <div style={singleProductStyle}>
+      <Link href={`/products/${index+1}`}>
+        <a>{product.name}</a>
+      </Link>
+    </div>
+  )
+}
+
+const productListStyle = {
+  display: 'flex'
+};
+
 function IndexPage({ products }) {
-  return products.map(({ node: product }) => (
-    <pre>{JSON.stringify(product, 2, null)}</pre>
-  ));
+  return (
+    <div style={productListStyle}>
+      {products.map(({ node: product }, index) => {
+        return <SingleProduct key={product.id} product={product} index={index} />
+      })}
+    </div>
+  );
 }
 
 export async function getStaticProps() {

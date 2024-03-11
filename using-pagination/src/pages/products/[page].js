@@ -5,6 +5,31 @@ import { hygraph } from '../../../lib/_hyraph';
 
 const limit = 1;
 
+const singleProductStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  width: '200px',
+  margin: '10px',
+  color: '#000',
+};
+
+function SingleProduct({product}) {
+  return (
+    <div style={singleProductStyle} key={product.id}>
+      <h3>{product.name}</h3>
+    </div>
+  )
+}
+
+const navStyle = {
+  display: 'inline-block',
+  backgroundColor: '#ccc',
+  color: '#111',
+  textDecoration: 'none',
+  padding: '2px 6px',
+  marginRight: '5px',
+}
+
 function ProductPage({
   currentPageNumber,
   hasNextPage,
@@ -13,15 +38,19 @@ function ProductPage({
 }) {
   return (
     <React.Fragment>
-      <pre>{JSON.stringify(products, 2, null)}</pre>
+      <Link href={'/'}>
+        <a>Home</a>
+      </Link>
+      <p>Page {currentPageNumber}</p>
+      <SingleProduct product={products[0].node} />
       {hasPreviousPage ? (
         <Link href={`/products/${currentPageNumber - 1}`}>
-          <a>Previous page</a>
+          <a style={navStyle}>Previous page</a>
         </Link>
       ) : null}
       {hasNextPage ? (
         <Link href={`/products/${currentPageNumber + 1}`}>
-          <a>Next page</a>
+          <a style={navStyle}>Next page</a>
         </Link>
       ) : null}
     </React.Fragment>
